@@ -1,0 +1,7 @@
+Calculates interface RMSD between a model and reference
+
+Usage:
+python irmsd.py <model1> <model1's receptor chain> <model1's ligand chain> <reference structure> <reference receptor chain> <reference ligand chain> 
+e.g. 
+python irmsd.py m0.pdb A B 1ABC.pdb A B
+

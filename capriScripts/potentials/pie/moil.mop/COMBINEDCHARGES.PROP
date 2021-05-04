@@ -1,0 +1,3929 @@
+PRTC
+~
+~ The info below is taken from OPLS paper
+~    Jorgensen and Tirado-Rives, JACS 110,1657(1988)
+~ and the Amber paper (for the covalent part)
+~    G. Alagona, S. Profeta Jr., P. Weiner, JACS 106, 765(1984)
+~
+~ assuming all electronegative atoms are protonated, adding charge of the corresponding hydrogen to the atom
+~
+~ Standard OPLS values
+~
+~   OPLS                    MOIL
+~  number   MOIL-NAME(s)  NUMBER(s)  AMBER-type     e.g.
+~    1       CO,CSX          9,46      C           backbone
+~    2       OC,OSX         10,47      O           backbone
+~    3       NH              7         N           backbone
+~    4       HN              8         H           backbone
+~    5       CAG            38         C2          GLY
+~    6       CAH,CAHI       11,108     C           Calpha ALA,DALA
+~    7       CH3,CH3G(?)    13,26      C3          ALA,VAL
+~    8       CBH            49         CH          ILE
+~    9       CH2            14         C2          PRO,ARG,GLU,ILE
+~   10       CH3D           27         C3          ILE
+~   11*      CFH            16         CD          PHE,TRP
+~   11*      CG             15         CA          TRP
+~   12       NAS            71         N           ASN,GLN
+~   13       HAS,HAS1       72,48      H           ASN,GLN
+~   14       CHPR,CHPI      35,118     CH          PRO,DPRO
+~   15       CH2D           34         C2          PRO
+~   16       CH2B,CH2A(?)   73,50      C2          ASP,GLU
+~   17       CX,CX1,CSX1    4,74,51    C           CTER(-),ASP,GLU
+~   18       OX,OX1,OSX1    5,75,52    O2          CTER(-),ASP,GLU
+~   19       CH2K           31         C2          LYS
+~   20       NX              1         N3          LYS,NTER(+)
+~   21       HX              2         H3          LYS,NTER(+)
+~   22       CH2S           32         C2          SER
+~   23       OH             18         OH          SER,THR,TYR
+~   24       HO             19         HO          SER,THR,TYR
+~   25       CHT            33         CH          THR
+~   26       CZ             17         C           TYR
+~   27       CANG           39         C2          NTER(+)GLY
+~   28       CACG           40         C2          CTER(-)GLY
+~   29       CANX,CANI       3,117     CH          NTER(+)ALA,DALA
+~   30       CACX,CACI       6,119     CH          CTER(-)ALA,DALA
+~   31       CH2C           41         C2          CYS
+~   32       SH             42         SH          CYS
+~   33       HS             43         HS          CYS
+~   34       CH2M           28         C2          MET
+~   35       SM             29         S           MET
+~   36       CH3M           30         C3          MET
+~   37       CCH2           44         C2          CYX
+~   38       SC             45         S           CYX
+~   39       CH3T           12         C3          CTER
+~   40       NDHS           23         NA          HIS,TRP
+~   41       HDHS,HDNH      24         H           HIS,TRP
+~   42       NEHS           62         NB          HIS
+~   43       CHEH           63         CP          HIS
+~   44       CHDH           61         CF          HIS
+~   45*      CGHS           25         CC          HIS
+~   45*      CHTR           21         CG          TRP
+~   45*      CGHT           120        CN          TRP
+~   46       NDHP,NEHP      54,57      NA          HIP
+~   47       HDNP,HENP      55,58      H           HIP
+~   48       CHEP           59         CP          HIP
+~   49*      CGHP           53         CC          HIP
+~   49*      CHDP           56         CG          HIP
+~   50*      CGTR           20         C*          TRP
+~   50*      CTR            22         CB          TRP
+~   51       NR2            69         N2          ARG
+~   52       HR2            70         H3          ARG
+~   53       CR3            68         CA          ARG
+~   54       NR1            66         N2          ARG
+~   55       HR1            67         H3          ARG
+~   56       CR2            65         C2          ARG
+~   57       CR1            64         C2          ARG
+~   58       CO2           123         C           CTR5,CTG0
+~   59       OC2           124         O           CTR5,CTG0
+~   60       CA1,CA1I      122,132     CH          CTR5
+~   61       CAG1          121         C2          CTG0
+~   62       OCH3           36         OS          CTR5,CTG0
+~   63       CH3O           37         C3          CTR5,CTG0
+~   64       CA4           112         CT          AIB         (?)
+~   65       CH4,CH4I      113,114     C3          AIB         (?)
+~   NS       NBX           115         N3          NTER(+)PRO
+~   NS       CH3N          116         C3          N-Methyl AA
+~   NS       NX1           125         NT          NTR2,DNT2
+~   NS       HX1           126         H2          NTR2,DNT2
+~   NS       CAX,CAXI      127,128     CH          NTR2,DNT2
+~   NS       CAXG          129         C2          NTR3
+~   NS       CAP,CAPI      130,131     CH          CTR6,DCT6
+~   NS       CH2P          133         C2          BACS
+~   NS       NX2           134         NT          BANS
+~
+~ structure of data
+~ name       mass       charge      epsilon    sigma    index(not read)
+~
+~ charged N-terminal atoms
+PNAM=(NX)    PMAS=14.    PCHG=-0.03    PEPS=0.170   PSGM=3.250    (1)
+PNAM=(HX)    PMAS=1.     PCHG=0.33    PEPS=0.0498  PSGM=0.3      (2)
+PNAM=(CANX)  PMAS=13.    PCHG=0.310   PEPS=0.080   PSGM=3.800    (3)
+~
+~ charged C-terminal atoms
+PNAM=(CX)    PMAS=12.    PCHG=0.70    PEPS=0.105   PSGM=3.750    (4)
+PNAM=(OX)    PMAS=16.    PCHG=-0.80   PEPS=0.210   PSGM=2.960    (5)
+PNAM=(CACX)  PMAS=13.    PCHG=0.10    PEPS=0.080   PSGM=3.800    (6)
+~
+~ Normal backbone atoms
+PNAM=(NH)    PMAS=14.    PCHG=-0.2    PEPS=0.17    PSGM=3.250    (7)
+PNAM=(HN)    PMAS=1.     PCHG=0.370   PEPS=0.0498  PSGM=0.30     (8)
+PNAM=(CO)    PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (9)
+PNAM=(OC)    PMAS=16.    PCHG=-0.5    PEPS=0.21    PSGM=2.960    (10)
+PNAM=(CAH)   PMAS=13.    PCHG=0.20    PEPS=0.080   PSGM=3.800    (11)
+~
+~ uncharged N-terminal atoms
+PNAM=(CH3T)  PMAS=15.    PCHG=0.200   PEPS=0.170   PSGM=3.800    (12)
+~
+~ uncharged C-terminal atoms
+PNAM=(CH3)   PMAS=15.    PCHG=0.00    PEPS=0.16    PSGM=3.9100   (13)
+~
+~ Phe, Tyr,and Trp
+PNAM=(CH2)   PMAS=14.    PCHG=0.00    PEPS=0.118   PSGM=3.905    (14)
+~
+~ Phe, Tyr
+PNAM=(CG)    PMAS=12.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (15)
+~
+~ CH in 6-membered ring in Phe, Trp and Tyr
+PNAM=(CFH)   PMAS=13.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (16)
+~
+~ C bonded with OH group in Tyr
+PNAM=(CZ)    PMAS=12.    PCHG=0.265   PEPS=0.110   PSGM=3.750    (17)
+~
+~ O atom in OH group in Tyr,Ser
+PNAM=(OH)    PMAS=16.    PCHG=-0.265  PEPS=0.170   PSGM=3.070    (18)
+~
+~ HO is the hydrogen atom in OH group in Tyr
+PNAM=(HO)    PMAS=1.     PCHG=0.435   PEPS=0.0498  PSGM=0.3      (19)
+~
+~ CGTR is the carbon atom next to B-carbon in Trp
+PNAM=(CGTR)  PMAS=12.    PCHG=-0.055  PEPS=0.145   PSGM=3.750    (20)
+~
+~ CHTR is the CH in 5-membered ring in Trp
+PNAM=(CHTR)  PMAS=13.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (21)
+~
+~ CTR is the C atom next to CGTR
+PNAM=(CTR)   PMAS=12.    PCHG=-0.055  PEPS=0.145   PSGM=3.750    (22)
+~
+~ NDHS is the N atom in Trp and in single charged Histidine(His)
+PNAM=(NDHS)  PMAS=14.    PCHG=-0.150  PEPS=0.170   PSGM=3.250    (23)
+~
+~ HDHS is the H atom on nitrogen in Trp
+PNAM=(HDHS)  PMAS=1.     PCHG=0.420   PEPS=0.0498  PSGM=0.3      (24)
+~
+~ CGHS is the C atom next to N atom in single charged histidine(His)
+PNAM=(CGHS)  PMAS=12.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (25)
+~
+~ CH3G - dummy atom for valine monomer
+PNAM=(CH3G)  PMAS=15.    PCHG=0.00    PEPS=0.160   PSGM=3.910    (26)
+~
+~carlos's additions follow
+PNAM=(CH3D)  PMAS=15.    PCHG=0.      PEPS=0.175   PSGM=3.905    (27)
+PNAM=(CH2M)  PMAS=14.    PCHG=0.235   PEPS=0.118   PSGM=3.800    (28)
+PNAM=(SM)    PMAS=32.    PCHG=-0.470  PEPS=0.250   PSGM=3.550    (29)
+PNAM=(CH3M)  PMAS=15.    PCHG=0.235   PEPS=0.170   PSGM=3.800    (30)
+PNAM=(CH2K)  PMAS=14.    PCHG=0.310   PEPS=0.118   PSGM=3.905    (31)
+~
+~ parameters for SER
+PNAM=(CH2S)  PMAS=14.    PCHG=0.265   PEPS=0.118   PSGM=3.905    (32)
+~
+~ parameters for THR
+PNAM=(CHT)   PMAS=13.    PCHG=0.265   PEPS=0.080   PSGM=3.850    (33)
+~
+~ parameters for PRO
+PNAM=(CH2D)  PMAS=14.    PCHG=0.285   PEPS=0.118   PSGM=3.800    (34)
+PNAM=(CHPR)  PMAS=13.    PCHG=0.285   PEPS=0.08    PSGM=3.800    (35)
+~
+~ parameters for CTR5,CTG0
+PNAM=(OCH3)  PMAS=16.    PCHG=-0.400  PEPS=0.170   PSGM=3.000    (36)
+PNAM=(CH3O)  PMAS=15.    PCHG=0.250   PEPS=0.170   PSGM=3.800    (37)
+~
+~ CAG - glycine alpha carbon (CH2)
+PNAM=(CAG)   PMAS=14.    PCHG=0.20    PEPS=0.118   PSGM=3.80     (38)
+~
+~ CANG - glycine alpha carbon (CH2) in charged NTRG
+PNAM=(CANG)  PMAS=14.    PCHG=0.31    PEPS=0.118   PSGM=3.80     (39)
+~ CACG - glycine alpha carbon (CH2) in charged CTRG
+PNAM=(CACG)  PMAS=14.    PCHG=0.10    PEPS=0.118   PSGM=3.80     (40)
+~
+~ cysteine side chain atoms
+PNAM=(CH2C)  PMAS=14.    PCHG=0.18    PEPS=0.118   PSGM=3.905    (41)
+PNAM=(SH)    PMAS=32.    PCHG=-0.18   PEPS=0.250   PSGM=3.55     (42)
+PNAM=(HS)    PMAS=1.     PCHG=0.27    PEPS=0.0498  PSGM=0.3      (43)
+~
+~ cystine side chain atoms
+PNAM=(CCH2)  PMAS=14.    PCHG=0.30    PEPS=0.118   PSGM=3.800    (44)
+PNAM=(SC)    PMAS=32.    PCHG=-0.30   PEPS=0.250   PSGM=3.550    (45)
+~
+~ glutamine
+PNAM=(CSX)   PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (46)
+PNAM=(OSX)   PMAS=16.    PCHG=-0.50   PEPS=0.210   PSGM=2.960    (47)
+PNAM=(HAS1)  PMAS=1.     PCHG=0.425   PEPS=0.0498  PSGM=0.300    (48)
+~ valine
+PNAM=(CBH)   PMAS=13.    PCHG=0.00    PEPS=0.080   PSGM=3.850    (49)
+~ glutamic acid
+PNAM=(CH2A)  PMAS=14.    PCHG=-0.10   PEPS=0.118   PSGM=3.905    (50)
+PNAM=(CSX1)  PMAS=12.    PCHG=0.70    PEPS=0.105   PSGM=3.750    (51)
+PNAM=(OSX1)  PMAS=16.    PCHG=-0.80   PEPS=0.210   PSGM=2.960    (52)
+~ doubly charged histidine
+PNAM=(CGHP)  PMAS=13.    PCHG=0.33    PEPS=0.145   PSGM=3.750    (53)
+PNAM=(NDHP)  PMAS=14.    PCHG=-0.08   PEPS=0.170   PSGM=3.250    (54)
+PNAM=(HDNP)  PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.300    (55)
+PNAM=(CHDP)  PMAS=13.    PCHG=0.33    PEPS=0.145   PSGM=3.750    (56)
+PNAM=(NEHP)  PMAS=14.    PCHG=-0.08   PEPS=0.170   PSGM=3.250    (57)
+PNAM=(HENP)  PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.300    (58)
+PNAM=(CHEP)  PMAS=13.    PCHG=0.50    PEPS=0.145   PSGM=3.750    (59)
+~ single (ND) charged histidine
+PNAM=(HDNH)  PMAS=1.     PCHG=0.42    PEPS=0.0498  PSGM=0.300    (60)
+PNAM=(CHDH)  PMAS=13.    PCHG=0.10    PEPS=0.145   PSGM=3.750    (61)
+PNAM=(NEHS)  PMAS=14.    PCHG=-0.49   PEPS=0.170   PSGM=3.250    (62)
+PNAM=(CHEH)  PMAS=13.    PCHG=0.41    PEPS=0.145   PSGM=3.750    (63)
+~
+~ ARG
+PNAM=(CR1)   PMAS=14.    PCHG=0.070   PEPS=0.118   PSGM=3.905    (64)
+PNAM=(CR2)   PMAS=14.    PCHG=0.310   PEPS=0.118   PSGM=3.905    (65)
+PNAM=(NR1)   PMAS=14.    PCHG=-0.26   PEPS=0.170   PSGM=3.250    (66)
+PNAM=(HR1)   PMAS=1.     PCHG=0.44    PEPS=0.0498  PSGM=0.3      (67)
+PNAM=(CR3)   PMAS=13.    PCHG=0.64    PEPS=0.05    PSGM=2.25     (68)
+PNAM=(NR2)   PMAS=14.    PCHG=-0.34    PEPS=0.17    PSGM=3.25     (69)
+PNAM=(HR2)   PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.3      (70)
+~
+~ ASN
+PNAM=(NAS)   PMAS=14.    PCHG=0.00   PEPS=0.170   PSGM=3.25     (71)
+PNAM=(HAS)   PMAS=1.     PCHG=0.425   PEPS=0.0498  PSGM=0.3      (72)
+~
+~ ASP
+PNAM=(CH2B)  PMAS=14.    PCHG=-0.1    PEPS=0.118   PSGM=3.905    (73)
+PNAM=(CX1)   PMAS=12.    PCHG=0.7     PEPS=0.105   PSGM=3.75     (74)
+PNAM=(OX1)   PMAS=16.    PCHG=-0.8    PEPS=0.21    PSGM=2.96     (75)
+~
+~ TIP3 water model
+PNAM=(TIPH)  PMAS=1.     PCHG=0.417   PEPS=0.0498  PSGM=0.3      (76)
+PNAM=(TIPO)  PMAS=16.    PCHG=-0.834  PEPS=0.1521  PSGM=3.15061  (77)
+~
+~ heme contrbuted by haiying
+~
+~ FE: iron in heme whit CO ligand
+~ FE1: iron in heme whitout CO ligand
+~ NP:  heme pyrrole nitrogens
+~ CPA,CPB and CPM: heme a, b and meso carbons
+~ HA: hydrogen bound to CPM
+~ CH2E, CH3E: extended atoms for carbons with 2 and 3 hydrogens
+~ in heme substituens
+~ CR1E: extended atoms for aromatic carbon  with one hydrogen
+~ in heme vinyl substituents
+~ RE MAY 2006:  The iron atom van der Waals parameters was changes from zero to a small finite number
+PNAM=(FE)    PMAS=55.85  PCHG=0.24    PEPS=0.0500  PSGM=0.16     (78)
+PNAM=(FE1)   PMAS=55.85  PCHG=0.24    PEPS=0.0500  PSGM=0.16     (79)
+PNAM=(NP)    PMAS=14.0   PCHG=-0.18   PEPS=0.2384  PSGM=2.85     (80)
+PNAM=(CPA1)  PMAS=12.0   PCHG=0.03    PEPS=0.1200  PSGM=3.74     (81)
+PNAM=(CPA2)  PMAS=12.0   PCHG=0.02    PEPS=0.1200  PSGM=3.74     (82)
+PNAM=(CPM)   PMAS=13.0   PCHG=0.04    PEPS=0.1200  PSGM=3.74     (83)
+PNAM=(HA)    PMAS=1.00   PCHG=0.00    PEPS=0.045   PSGM=2.62     (84)
+PNAM=(CPB1)  PMAS=12.0   PCHG=-0.02   PEPS=0.1200  PSGM=3.74     (85)
+PNAM=(CPB2)  PMAS=12.0   PCHG=0.02    PEPS=0.1200  PSGM=3.74     (86)
+PNAM=(CPB3)  PMAS=12.0   PCHG=-0.05   PEPS=0.1200  PSGM=3.74     (87)
+PNAM=(CHE1)  PMAS=14.0   PCHG=0.04    PEPS=0.114   PSGM=3.98     (88)
+PNAM=(CHE2)  PMAS=14.0   PCHG=-0.1    PEPS=0.114   PSGM=3.98     (89)
+PNAM=(CH3E)  PMAS=15.0   PCHG=-0.04   PEPS=0.18    PSGM=3.86     (90)
+PNAM=(CR1E)  PMAS=13.0   PCHG=0.03    PEPS=0.12    PSGM=3.74     (91)
+~
+PNAM=(CO1)   PMAS=12.0   PCHG=0.30    PEPS=0.105   PSGM=3.75     (92)
+~ this CO is diffent from the CO in amino acids in charge
+~
+PNAM=(CC)    PMAS=12.    PCHG=0.13    PEPS=0.120   PSGM=3.74     (93)
+PNAM=(NA)    PMAS=14.    PCHG=-0.57   PEPS=0.240   PSGM=2.85     (94)
+PNAM=(H)     PMAS=1.     PCHG=0.42    PEPS=0.050   PSGM=1.43     (95)
+PNAM=(CF)    PMAS=13.    PCHG=0.100   PEPS=0.120   PSGM=3.74     (96)
+PNAM=(CP)    PMAS=13.    PCHG=0.41    PEPS=0.120   PSGM=3.74     (97)
+PNAM=(NB)    PMAS=14.    PCHG=-0.49   PEPS=0.238   PSGM=2.85     (98)
+~
+~ CO
+PNAM=(CM)    PMAS=12.    PCHG=0.021   PEPS=0.0262  PSGM=3.83     (99)
+PNAM=(OM)    PMAS=16.    PCHG=-0.021  PEPS=0.159   PSGM=3.12     (100)
+~
+~Sulphour ion (just wild guess should be refined)
+PNAM=(S)     PMAS=32.    PCHG=-0.20   PEPS=0.250   PSGM=3.550    (101)
+PNAM=(OS)    PMAS=16.    PCHG=-0.45   PEPS=0.210   PSGM=2.960    (102)
+~
+~ atoms for PCA
+PNAM=(NHC)   PMAS=14.    PCHG=-0.570  PEPS=0.17    PSGM=3.250    (103)
+PNAM=(HNC)   PMAS=1.     PCHG=0.370   PEPS=0.0498  PSGM=0.30     (104)
+PNAM=(COC)   PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (105)
+PNAM=(OCC)   PMAS=16.    PCHG=-0.5    PEPS=0.21    PSGM=2.960    (106)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ chen atopm types for peptor's building units
+~ atom type for pseudo beta carbon of glycineg
+~(for hydrophobic potential)
+~based on alanin beta carbon
+PNAM=(CBG)   PMAS=10.    PCHG=0.0     PEPS=0.0     PSGM=0.0      (107)
+~
+~ D-CAH(11)
+PNAM=(CAHI)  PMAS=13.    PCHG=0.20    PEPS=0.080   PSGM=3.800    (108)
+~
+~ chen
+~ Spetial atom type for N-CH2-N parameters ARBITRARRYLY based on CAG
+~ The Charge was set so that the FBU3 monomer will be newtral
+PNAM=(CNN)   PMAS=14.    PCHG=0.57    PEPS=0.118   PSGM=3.80     (109)
+~
+~ Double bonded carbon with 1 hydrogen (as MOIL's CFH).
+PNAM=(CDBH)  PMAS=13.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (110)
+~
+~ ATOM type for Naftalen arbitrary parameters
+PNAM=(CNFT)  PMAS=13.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (111)
+~
+~ Atom types for AIB (OPLS)
+PNAM=(CA4)   PMAS=12.    PCHG=0.20    PEPS=0.05    PSGM=3.80     (112)
+PNAM=(CH4)   PMAS=15.    PCHG=0.00    PEPS=0.145   PSGM=3.96     (113)
+PNAM=(CH4I)  PMAS=15.    PCHG=0.00    PEPS=0.145   PSGM=3.96     (114)
+~
+~ protonated N-terminus for prolines and building units
+~ (based on NX with different charge)
+PNAM=(NBX)   PMAS=14.    PCHG=-0.28   PEPS=0.170   PSGM=3.250    (115)
+~ Methyl for N-Methyl AA
+PNAM=(CH3N)  PMAS=15.    PCHG=0.285   PEPS=0.170   PSGM=3.800    (116)
+~ D-CANX (3)
+PNAM=(CANI)  PMAS=13.    PCHG=0.310   PEPS=0.080   PSGM=3.800    (117)
+~ D-CHPR (35)
+PNAM=(CHPI)  PMAS=13.    PCHG=0.285   PEPS=0.08    PSGM=3.800    (118)
+~ D-CACX (6)
+PNAM=(CACI)  PMAS=13.    PCHG=0.10    PEPS=0.080   PSGM=3.800    (119)
+~ CGHT is the C atom next to N atom in Trp - as CGHS(25)
+PNAM=(CGHT)  PMAS=12.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (120)
+~ CTR5, CTG0
+PNAM=(CAG1)  PMAS=14.    PCHG=0.250   PEPS=0.118   PSGM=3.800    (121)
+PNAM=(CA1)   PMAS=13.    PCHG=0.250   PEPS=0.080   PSGM=3.800    (122)
+PNAM=(CO2)   PMAS=12.    PCHG=0.550   PEPS=0.105   PSGM=3.750    (123)
+PNAM=(OC2)   PMAS=16.    PCHG=-0.450  PEPS=0.210   PSGM=2.960    (124)
+~ NTR2,DNT2,NTR3 (the charges are from OPLS of MACROMODEL and
+~       the VdW from ARG or CA)
+PNAM=(NX1)   PMAS=14.    PCHG=-0.775  PEPS=0.170   PSGM=3.250    (125)
+PNAM=(HX1)   PMAS=1.     PCHG=0.35    PEPS=0.05    PSGM=0.3      (126)
+PNAM=(CAX)   PMAS=13.    PCHG=0.075   PEPS=0.08    PSGM=3.800    (127)
+PNAM=(CAXI)  PMAS=13.    PCHG=0.075   PEPS=0.08    PSGM=3.800    (128)
+PNAM=(CAXG)  PMAS=14.    PCHG=0.075   PEPS=0.118   PSGM=3.800    (129)
+~CTR6, DCT6
+PNAM=(CAP)   PMAS=13.    PCHG=0.335   PEPS=0.08    PSGM=3.800    (130)
+PNAM=(CAPI)  PMAS=13.    PCHG=0.335   PEPS=0.08    PSGM=3.800    (131)
+~ DCT5
+PNAM=(CA1I)  PMAS=13.    PCHG=0.250   PEPS=0.080   PSGM=3.800    (132)
+~ BACS
+PNAM=(CH2P)  PMAS=14.    PCHG=0.335   PEPS=0.118   PSGM=3.800    (133)
+PNAM=(NX2)   PMAS=14.    PCHG=-0.900  PEPS=0.170   PSGM=3.250    (134)
+PNAM=(CMV)  PMAS=12.      PCHG=-0.75  PEPS=0.0262   PSGM=3.83    (135)
+PNAM=(OMV)  PMAS=16.      PCHG=-0.85  PEPS=0.1591   PSGM=3.12    (136)
+PNAM=(VPCM) PMAS=0.       PCHG=1.6    PEPS=0.       PSGM=0.      (137)
+~
+PNAM=(NA+) PMAS=23.0  PCHG=1.0     PEPS=0.0469     PSGM=2.4299   (138)
+~NO ligand
+PNAM=(NM)   PMAS=14.      PCHG=0.028  PEPS=0.17     PSGM=3.25  (139)
+PNAM=(ONM)   PMAS=16.      PCHG=-0.028  PEPS=0.159   PSGM=3.12  (140)
+~
+~  zaloj data
+~
+~ # 17-28;36-47
+~PNAM=(CHHM)  PMAS=14.  PCHG=0.0064   PEPS=0.118  PSGM=3.905  (141)
+PNAM=(CHHM)  PMAS=14.  PCHG=0.0000   PEPS=0.091  PSGM=3.960
+~ # 31;50
+~PNAM=(MEM)   PMAS=15.  PCHG=-0.0125  PEPS=0.175  PSGM=3.905  (142)
+PNAM=(MEM)   PMAS=15.  PCHG=0.0000   PEPS=0.136  PSGM=3.960
+~ # 15;34 : dual charge sim2
+~PNAM=(COM)   PMAS=12.  PCHG=0.5714   PEPS=0.105  PSGM=3.750  (143)
+PNAM=(COM1)   PMAS=12.  PCHG=0.700   PEPS=0.105  PSGM=3.750
+PNAM=(COM2)   PMAS=12.  PCHG=0.800   PEPS=0.105  PSGM=3.750
+~ # 16;35 : dual charge sim2
+~PNAM=(OCM)   PMAS=16.  PCHG=-0.4548  PEPS=0.210  PSGM=2.960  (144)
+PNAM=(OCM1)   PMAS=16.  PCHG=-0.600  PEPS=0.145  PSGM=2.960
+PNAM=(OCM2)   PMAS=16.  PCHG=-0.700  PEPS=0.145  PSGM=2.960
+~ # 14;33
+~PNAM=(OAM)   PMAS=16.  PCHG=-0.4631  PEPS=0.170  PSGM=3.000  (145)
+PNAM=(OAM)   PMAS=16.  PCHG=-0.7000  PEPS=0.170  PSGM=3.000
+~ # 32
+~PNAM=(C1M)   PMAS=14.  PCHG=0.3200   PEPS=0.118  PSGM=3.905  (146)
+PNAM=(C1M)   PMAS=14.  PCHG=0.5000   PEPS=0.136  PSGM=3.960
+~ # 13
+~PNAM=(C2M)   PMAS=13.  PCHG=0.2231   PEPS=0.080  PSGM=3.850  (147)
+PNAM=(C2M)   PMAS=13.  PCHG=0.3000   PEPS=0.080  PSGM=3.800
+~ # 12
+~PNAM=(C3M)   PMAS=14.  PCHG=0.2101   PEPS=0.118  PSGM=3.905  (148)
+PNAM=(C3M)   PMAS=14.  PCHG=0.4000   PEPS=0.145  PSGM=3.800
+~ # 08
+~PNAM=(PM)    PMAS=31.  PCHG=1.2855   PEPS=0.20   PSGM=3.9    (149)
+PNAM=(PM)    PMAS=31.  PCHG=1.7000   PEPS=0.20   PSGM=3.740
+~ # 09;10
+~PNAM=(OPM)   PMAS=16.  PCHG=-0.7115  PEPS=0.210  PSGM=2.960  (150)
+PNAM=(OPM)   PMAS=16.  PCHG=-0.8000  PEPS=0.210  PSGM=2.960
+~ # 07,11 : dual charge sim2
+~PNAM=(OPCM)  PMAS=16.  PCHG=-0.5491  PEPS=0.170  PSGM=3.000  (151)
+PNAM=(OPC1)  PMAS=16.  PCHG=-0.8000  PEPS=0.170  PSGM=3.000
+PNAM=(OPC2)  PMAS=16.  PCHG=-0.7000  PEPS=0.170  PSGM=3.000
+~ # 06
+~PNAM=(CAM)   PMAS=14.  PCHG=0.1876   PEPS=0.118  PSGM=3.800  (152)
+PNAM=(CAM)   PMAS=14.  PCHG=0.4000   PEPS=0.145  PSGM=3.800
+~ # 05
+~PNAM=(CBM)   PMAS=14.  PCHG=0.2527   PEPS=0.118  PSGM=3.905  (153)
+PNAM=(CBM)   PMAS=14.  PCHG=0.3000   PEPS=0.145  PSGM=3.905
+~ # 04
+~PNAM=(N1M)   PMAS=14.  PCHG=0.0426   PEPS=0.170  PSGM=3.250  (154)
+PNAM=(N1M)   PMAS=14.  PCHG=-0.500   PEPS=0.170  PSGM=3.250
+~ # 01-03
+~PNAM=(CNM)   PMAS=12.  PCHG=-0.2230  PEPS=0.06   PSGM=3.5    (155)
+PNAM=(CNM3)  PMAS=15.  PCHG=0.4000  PEPS=0.145   PSGM=3.960
+~
+~
+~ (OPLS #13, 21 or 52)
+PNAM=(HM)    PMAS=1.   PCHG=0.1370   PEPS=0.0    PSGM=0.0    (156)
+PNAM=(CL)   PMAS=35.  PCHG=-1.      PEPS=0.118   PSGM=3.00   (157)
+~
+PNAM=(XE)    PMAS=131.29 PCHG=0.     PEPSE=0.439 PSGM=4.1    (158)
+PNAM=(ARGO)  PMAS=40.00  PCHG=0.     PEPSE=0.241 PSGM=3.4    (159)
+~
+PNAM=(LI) PMAS=6.94  PCHG=1.0     PEPS=0.0357     PSGM=2.37
+PNAM=(NAO)  PMAS=23.00  PCHG=+1.0     PEPS=0.241 PSGM=3.4    (160)
+PNAM=(K)  PMAS=39.1  PCHG=1.0     PEPS=0.141      PSGM=3.36
+PNAM=(CS)    PMAS=133.0 PCHG=1.0     PEPS=0.267      PSGM=3.92
+~
+~ added for gramocidine (zva & ron)
+~
+PNAM=(CHO)   PMAS=13.   PCHG=0.50    PEPS=0.105 PSGM=3.750
+PNAM=(C2GA)  PMAS=14.   PCHG=0.20    PEPS=0.118 PSGM=3.905
+PNAM=(C2GB)  PMAS=14.   PCHG=0.265   PEPS=0.118 PSGM=3.905
+PNAM=(CAHD) PMAS=13.  PCHG=0.20    PEPS=0.080 PSGM=3.800
+PNAM=(CBHD) PMAS=13.  PCHG=0.00    PEPS=0.080 PSGM=3.850
+PNAM=(CDH2)  PMAS=14.  PCHG=0.00    PEPS=0.118 PSGM=3.905
+~
+~ added for MTS spin label (Felicia)
+~
+~ mass : for united atoms (C)
+~ charges : from ileana's thesis, table 3.1
+~ when C corresponds to H, charge is as calculated for H
+~ peps and psgm : by analogy as indicated
+~
+~ C7fp : CCH2 in CYX or CH2M in MET
+PNAM=(C7fp)  PMAS=14.   PCHG=0.467    PEPS=0.118   PSGM=3.800
+~ C1fp : CG in TYR
+PNAM=(C1fp)  PMAS=12.   PCHG=-0.260    PEPS=0.110   PSGM=3.750
+~ C2fp : CG / CFH in TYR
+PNAM=(C2fp)  PMAS=13.   PCHG=-0.083    PEPS=0.110   PSGM=3.750
+~ C3fp : CH2D in PRO
+PNAM=(C3fp)  PMAS=12.   PCHG=0.078    PEPS=0.118   PSGM=3.800
+~ C31f : CH3
+PNAM=(C31f)  PMAS=15.   PCHG=0.058    PEPS=0.16    PSGM=3.910
+~ N4fp : any N
+PNAM=(N4fp)  PMAS=14.   PCHG=0.255    PEPS=0.170   PSGM=3.250
+~ O6fp : ONM of NO ligand
+PNAM=(O6fp)  PMAS=16.   PCHG=-0.467    PEPS=0.159   PSGM=3.120
+~
+DONE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~ The covalent part of this potential is taken from AMBER paper
+~ Weiner et al. JACS 106,765(1984)
+~ The names of the particles is however different.
+~
+BOND
+NX     HX     434.0    1.01
+~check
+CANX   NX     337.0    1.449
+CANI   NX     337.0    1.449
+CACX   NH     337.0    1.449
+CACI   NH     337.0    1.449
+CACX   CX     317.0    1.522
+CACI   CX     317.0    1.522
+CX     OX     656.0    1.250
+CO     OX     656.0    1.250
+~ C C single bond
+CAH    CO     317.0    1.522
+CAHI   CO     317.0    1.522
+CAX    CO     317.0    1.522
+CAXI   CO     317.0    1.522
+CBH    CO     317.0    1.522
+CACX   CO     317.0    1.522
+CACI   CO     317.0    1.522
+CANX   CO     317.0    1.522
+CANI   CO     317.0    1.522
+~ C O double bond
+CO     OC     570.0    1.229
+~ parameters for PCA
+COC    OCC    570.0    1.229
+CAH    CBH    260.0    1.526
+CAHI   CBH    260.0    1.526
+CAX    CBH    260.0    1.526
+CAXI   CBH    260.0    1.526
+CA1    CBH    260.0    1.526
+CA1I   CBH    260.0    1.526
+CACX   CBH    260.0    1.526
+CACI   CBH    260.0    1.526
+CANX   CBH    260.0    1.526
+CANI   CBH    260.0    1.526
+~ C N single bond
+CAH    NH     337.0    1.449
+CAHI   NH     337.0    1.449
+CA1    NH     337.0    1.449
+CA1I   NH     337.0    1.449
+~ parameters for PCA
+CAH    NHC    337.0    1.449
+CAHI   NHC    337.0    1.449
+NH     HN     434.0    1.010
+~ parameters for PCA
+NHC    HNC    434.0    1.010
+CO     CH3    317.0    1.522
+~ C N partial double bond
+CO     NH     490.0    1.335
+~parameters for PCA
+COC    NHC    490.0    1.335
+CBH    CH3    260.0    1.526
+CBH    CH3G   260.0    1.526
+CH3T   NH     337.0    1.449
+~
+~check
+NX     CACX   337.0    1.449
+NX     CACI   337.0    1.449
+CX     OC     656.0    1.250
+CAH    CH2    260.0    1.526
+CAHI   CH2    260.0    1.526
+CAX    CH2    260.0    1.526
+CAXI   CH2    260.0    1.526
+CA1    CH2    260.0    1.526
+CA1I   CH2    260.0    1.526
+CANX   CH2    260.0    1.526
+CANI   CH2    260.0    1.526
+CACX   CH2    260.0    1.526
+CACI   CH2    260.0    1.526
+~
+~ bonds for Phe, Tyr and Trp
+~
+CH2    CG     317.0    1.51
+~ C C partial double bond
+CG     CFH    469.0    1.40
+CFH    CFH    469.0    1.40
+CFH    CZ     469.0    1.40
+~ C O single bond
+CZ     OH     450.0    1.364
+OH     HO     553.0    0.96
+CH2    CGTR   317.0    1.495
+CGTR   CHTR   546.0    1.352
+CHTR   NDHS   427.0    1.381
+NDHS   HDHS   434.0    1.01
+NDHS   CGHT   428.0    1.38
+CGHT   CTR    447.0    1.419
+CTR    CGTR   388.0    1.459
+CTR    CFH    469.0    1.40
+CGHT   CFH    469.0    1.40
+~
+~carlos's additions follow
+~
+CBH    CH2    260.0    1.526
+CH2    CH3D   260.0    1.526
+CH2    CH2M   260.0    1.526
+CH2M   SM     222.0    1.810
+SM     CH3M   222.0    1.810
+CH2    CH2    260.0    1.526
+CH2    CH2K   260.0    1.526
+CH2K   NX     367.0    1.471
+~
+~ PARAMETRS FOR SER
+CAH    CH2S   260.0    1.526
+CAHI   CH2S   260.0    1.526
+CAX    CH2S   260.0    1.526
+CAXI   CH2S   260.0    1.526
+CA1    CH2S   260.0    1.526
+CA1I   CH2S   260.0    1.526
+CACX   CH2S   260.0    1.526
+CACI   CH2S   260.0    1.526
+CANX   CH2S   260.0    1.526
+CANI   CH2S   260.0    1.526
+CH2S   OH     386.0    1.425
+~parameters for THR
+CAH    CHT    260.0    1.526
+CAHI   CHT    260.0    1.526
+CAX    CHT    260.0    1.526
+CAXI   CHT    260.0    1.526
+CA1    CHT    260.0    1.526
+CA1I   CHT    260.0    1.526
+CACX   CHT    260.0    1.526
+CACI   CHT    260.0    1.526
+CANX   CHT    260.0    1.526
+CANI   CHT    260.0    1.526
+CHT    OH     386.0    1.425
+~check
+CHT    CH3    260.0    1.526
+~ parameters for PRO
+NH     CHPR   337.0    1.449
+NH     CHPI   337.0    1.449
+NH     CAP    337.0    1.449
+NH     CAPI   337.0    1.449
+~check
+NX     CHPR   337.0    1.449
+NX     CHPI   337.0    1.449
+CHPR   CH2    260.0    1.526
+CHPI   CH2    260.0    1.526
+CAP    CH2    260.0    1.526
+CAPI   CH2    260.0    1.526
+CH2    CH2D   260.0    1.526
+CH2D   NH     337.0    1.449
+~check
+HX     NH     434.0    1.010
+CHPR   CO     317.0    1.522
+CHPI   CO     317.0    1.522
+CHPR   CX     317.0    1.522
+CHPI   CX     317.0    1.522
+NX     CH2D   367.0    1.471
+~
+CAH    CH3    260.0    1.526
+CAHI   CH3    260.0    1.526
+CAX    CH3    260.0    1.526
+CAXI   CH3    260.0    1.526
+CA1    CH3    260.0    1.526
+CA1I   CH3    260.0    1.526
+CACX   CH3    260.0    1.526
+CACI   CH3    260.0    1.526
+CANX   CH3    260.0    1.526
+CANI   CH3    260.0    1.526
+~ glycine  - same para as for regular main chain
+CO     CAG    317.0    1.522
+~ parametrs for PCA
+COC    CH2    317.0    1.522
+CAG    NH     337.0    1.449
+~ cystine
+CAH    CCH2   260.0    1.526
+CAHI   CCH2   260.0    1.526
+CAX    CCH2   260.0    1.526
+CAXI   CCH2   260.0    1.526
+CA1    CCH2   260.0    1.526
+CA1I   CCH2   260.0    1.526
+CANX   CCH2   260.0    1.526
+CANI   CCH2   260.0    1.526
+CACX   CCH2   260.0    1.526
+CACI   CCH2   260.0    1.526
+CCH2   SC     222.0    1.81
+SC     SC     166.0    2.038
+~ cysteine
+CAH    CH2C   260.0    1.526
+CAHI   CH2C   260.0    1.526
+CAX    CH2C   260.0    1.526
+CAXI   CH2C   260.0    1.526
+CA1    CH2C   260.0    1.526
+CA1I   CH2C   260.0    1.526
+CACX   CH2C   260.0    1.526
+CACI   CH2C   260.0    1.526
+CANX   CH2C   260.0    1.526
+CANI   CH2C   260.0    1.526
+CH2C   SH     222.0    1.81
+SH     HS     274.0    1.336
+~
+~ CTRG (charged c-terminus for glycine)
+CACG   NH     337.0    1.449
+CACG   NX     367.0    1.471
+CACG   CX     317.0    1.522
+~
+~ NTRG (charged n-terminus for glycine)
+CANG   NX     367.0    1.471
+CANG   CO     317.0    1.522
+~
+~
+~Roberto
+NBX    HX     434.0    1.01
+CANX   NBX    337.0    1.449
+CANI   NBX    337.0    1.449
+CANG   NBX    367.0    1.471
+CANG   CH2    260.0    1.526
+CANG   CAG    260.0    1.526
+CANG   CSX    317.0    1.522
+~
+~  arginine bonds
+~
+CH2    CR1    260.0    1.526
+CR1    CR2    260.0    1.526
+CR2    NR1    337.0    1.463
+NR1    HR1    434.0    1.01
+NR1    CR3    481.0    1.34
+CR3    NR2    481.0    1.34
+HR2    NR2    434.0    1.01
+~
+~
+~
+~aspargine bonds
+CH2    CO     317.0    1.522
+CO     NAS    490.0    1.335
+NAS    HAS    434.0    1.01
+~
+~
+~
+~aspartic acid bonds
+~
+CAH    CH2B   260      1.526
+CAHI   CH2B   260      1.526
+CAX    CH2B   260      1.526
+CAXI   CH2B   260      1.526
+CA1    CH2B   260      1.526
+CA1I   CH2B   260      1.526
+CACX   CH2B   260      1.526
+CACI   CH2B   260      1.526
+CANX   CH2B   260      1.526
+CANI   CH2B   260      1.526
+CH2B   CX1    317.0    1.522
+~ C O partial double bond
+CX1    OX1    656.0    1.25
+~
+~ glutamine
+CH2    CSX    317.0    1.522
+CSX    OSX    570.0    1.229
+CSX    NAS    490.0    1.335
+NAS    HAS1   434.0    1.01
+~
+~ glutamic acid
+CH2    CH2A   260.0    1.526
+CH2A   CSX1   317.0    1.522
+CSX1   OSX1   656.0    1.25
+~
+~ histidine (+)
+CH2    CGHP   317.0    1.504
+~ C C doubl bond
+CGHP   CHDP   518.0    1.371
+CGHP   NDHP   422.0    1.385
+NDHP   HDNP   434.0    1.010
+CHDP   NEHP   427.0    1.381
+NDHP   CHEP   477.0    1.343
+NEHP   CHEP   477.0    1.343
+NEHP   HENP   434.0    1.010
+~ histidine
+CH2    CGHS   317.0    1.504
+CGHS   CHDH   512.0    1.375
+CGHS   NDHS   422.0    1.385
+NDHS   HDNH   434.0    1.010
+CHDH   NEHS   410.0    1.394
+~ C N double bond
+NDHS   CHEH   477.0    1.343
+NEHS   CHEH   488.0    1.335
+~
+~
+~
+~
+~
+TIPH   TIPO   600.0    0.9572
+TIPH   TIPH   0.0      1.5139
+~
+~ heme contributed by haiying
+~
+FE     NP     270.2    1.9569
+FE1    NP     270.2    2.1000
+NP     CPA1   377.2    1.3757
+NP     CPA2   377.2    1.3757
+CPB1   CPB2   340.7    1.3464
+CPB3   CPB2   340.7    1.3464
+CPM    HA     367.6    1.0900
+CPB2   CH3E   441.3    1.5200
+CHE2   CO1    405.0    1.5200
+CHE2   CR1E   250.0    1.4500
+CPA1   CPB2   299.8    1.4432
+CPA2   CPB3   299.8    1.4432
+CPA2   CPB1   299.8    1.4432
+CPA1   CPB1   299.8    1.4432
+CPA2   CPB2   299.8    1.4432
+CPA1   CPM    360.0    1.3716
+CPA2   CPM    360.0    1.3716
+CPB1   CHE1   441.3    1.5200
+CPB3   CR1E   441.3    1.3800
+CO1    OC     656.0    1.2500
+CHE1   CHE2   225.0    1.5200
+~
+~ bonds for CO
+~
+FE     CM     258.0    1.9000
+CM     OM     1115.0   1.128
+CMV  OMV        1115.0     1.128
+~
+~ bonds between heme and histidine
+~
+FE     NEHS   65.0     2.2
+FE1    NEHS   65.0     2.1
+~ met-heme
+
+~ wild guess for sulphour ion
+S      OS     222.0    1.810
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ bond for pseudo beta carbon of glycineg
+~(for hydrophobic potential)
+~based on alanin beta carbon
+CAG    CBG    260.0    1.526
+CANX   CBG    260.0    1.526
+CANI   CBG    260.0    1.526
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  Bonds for sp analogs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~for NGL2 Based on CH2  CH2D
+CAG    CH2D   260.0    1.526
+CAG    CH2    260.0    1.526
+CO     CH2M   317.0    1.522
+~based on CO   CAG    317.0   1.522
+~
+~
+~ chen
+~ bonds for peptors biulding units
+~1) these are the parameters for all bonds of sp3 carbons.
+CH2D   CH2D   260.0    1.526
+~2) based on CSX  NAS   490.0   1.335
+CSX    NH     490.0    1.335
+~3) frm the amber paper
+CDBH   CDBH   549      1350
+~4) Based on CH2  CH2K
+CH2K   CH2D   260.0    1.526
+~5) based on CAG  NH     337.0   1.449
+CNN    NH     337.0    1.449
+~6) based on CH2  CG     317.0   1.51
+CH2D   CG     317.0    1.51
+~7) based on CH2  CG     317.0   1.51
+CAH    CG     317.0    1.51
+CAHI   CG     317.0    1.51
+CAX    CG     317.0    1.51
+CAXI   CG     317.0    1.51
+~ for NAL needs rechecking
+~9) based on CG   CFH    469.0   1.40
+CG     CNFT   469.0    1.40
+CNFT   CFH    469.0    1.40
+~ I know this is not ideal
+CNFT   CNFT   469.0    1.450
+~ end of NAL needs rechecking
+~For AIB (matzootz mehaetzba)
+CA4    CH4    260.0    1.536
+CA4    NX     317.0    1.439
+CA4    CO     317.0    1.537
+CA4    NH     317.0    1.439
+~
+~ Roberto (parameters missing)
+~ parameters for Gly-BU (same as CO-CAG)
+CO     CH2D   317.0    1.522
+CSX    CH2D   317.0    1.522
+CHPR   CH3    260.0    1.526
+CHPI   CH3    260.0    1.526
+CAP    CH3    260.0    1.526
+CAPI   CH3    260.0    1.526
+CH3N   NH     337.0    1.449
+~
+~ CTR5 and CTG0
+CA1    CO2    317.0    1.522
+CA1I   CO2    317.0    1.522
+NH     CAG1   337.0    1.449
+CAG1   CO2    317.0    1.522
+CO2    OC2    570.0    1.229
+OCH3   CH3O   320.0    1.425
+~(using C-OH, OPLS of MACROMODEL uses 1.34 for the dist)
+CO2    OCH3   450.0    1.364
+~
+~ CTR6, DCT6
+CAP    CO2    317.0    1.522
+CAPI   CO2    317.0    1.522
+~
+~ NTR2, DTN2, NTR3
+NX1    CAX    367.0    1.471
+NX1    CAXI   367.0    1.471
+NX1    HX1    434.0    1.010
+NX1    CAXG   367.0    1.471
+CAXG   CO     317.0    1.522
+~
+~BACS
+CH2P   CO2    317.0    1.522
+CH2P   NH     337.0    1.449
+~
+~BANS
+NX2    HX1    434.0    1.010
+NX2    CAG    367.0    1.471
+~
+~ bonds for NO
+FE   NM        109.6      1.7430
+NM   ONM       826.9       1.1510
+~
+~  zaloj data
+~
+CHHM  CHHM    260.0  1.526
+CHHM  MEM     260.0  1.526
+CHHM  COM1    317.0  1.53
+CHHM  COM2    317.0  1.53
+COM1  OCM1    570.0  1.229
+COM2  OCM2    570.0  1.229
+COM1  OAM     450.0  1.364
+COM2  OAM     450.0  1.364
+~
+OAM   C1M     320.0  1.425
+OAM   C2M     320.0  1.425
+C1M   C2M     260.0  1.526
+C2M   C3M     260.0  1.526
+C3M   OPC1    320.0  1.425
+OPC1  PM      230.0  1.61
+PM    OPM     525.0  1.48
+PM    OPC2    230.0  1.61
+~
+OPC2  CAM     320.0  1.425
+CAM   CBM     260.0  1.526
+CBM   N1M     367.0  1.471
+N1M   CNM3    367.0  1.471
+~~
+~ added for gramocidine (zva & ron) bonds
+~
+CHO  NH     490.0   1.335
+CHO  OC     570.0   1.229
+C2GA  C2GB   260.0   1.526
+C2GA NH      337.0   1.449
+C2GA  C2GB   260.0   1.526
+C2GB OH      386.0   1.425
+CAHD CO     317.0   1.522
+CAHD  CBHD  260.0   1.526
+CAHD  NH    337.0   1.449
+CAHD CDH2   260.0   1.526
+CBHD CH3    260.0   1.526
+CBHD CH3G   260.0   1.526
+CBH  CDH2    260.0   1.526
+~
+~ added for heme-cyx
+~
+SC   CR1E    222.0   1.810
+~
+~
+~ added for MTS spin label (Felicia)
+~
+~ as CH2M-CH2 in MET
+C7fp  C1fp   260.0    1.526
+~ as CG-CFH in TYR
+C1fp  C2fp   469.0    1.321
+~ as CH2-CH2D in PRO
+C2fp  C3fp   260.0    1.504
+~ as all sp3 C
+C3fp  C31f   260.0    1.526
+~ as CH2D-NH in PRO
+C3fp  N4fp   337.0    1.455
+~ as CH2-CH2D in PRO
+C3fp  C1fp   260.0    1.504
+~ as NM ONM in NO ligand
+N4fp  O6fp   826.9    1.248
+~ as CCH2-SC in CYX or CH2M-SM in MET by carlo
+C7fp  SC     222.0    1.810
+~ as SC-SC for CYX
+SC    SC     166.0    2.038
+~
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ANGLE
+~
+~ According to AMBER, there seem to be no difference between
+~ angles of the type CH1-X-X, CH2-X-X and CH3-X-X .
+~
+HX     NX     HX     35.0     109.5
+HX     NX     CANX   35.0     109.5
+HX     NX     CANI   35.0     109.5
+HX     NX     CACX   35.0     109.5
+HX     NX     CACI   35.0     109.5
+~force constant below has been changed (Danuta)
+NX     CANX   CH3    80.0     109.5
+NX     CANI   CH3    80.0     109.5
+NX     CACX   CH3    80.0     109.5
+NX     CACI   CH3    80.0     109.5
+NX     CANX   CCH2   80.0     109.5
+NX     CANI   CCH2   80.0     109.5
+NX     CACX   CCH2   80.0     109.5
+NX     CACI   CCH2   80.0     109.5
+NX     CANX   CO     63.0     110.1
+NX     CANI   CO     63.0     110.1
+NH     CACX   CO     63.0     110.1
+NH     CACI   CO     63.0     110.1
+NX     CACX   CO     63.0     110.1
+NX     CACI   CO     63.0     110.1
+CH3    CAH    CO     63.0     111.1
+CH3    CAHI   CO     63.0     111.1
+CH3    CAX    CO     63.0     111.1
+CH3    CAXI   CO     63.0     111.1
+~for beta methilated aa very rough
+CH3    CAH    CH2    63.0     111.5
+CH3    CAHI   CH2    63.0     111.5
+~
+CH3    CBH    CO     63.0     111.1
+CH3    CANX   CO     63.0     111.1
+CH3    CANI   CO     63.0     111.1
+CH2C   CANX   CO     63.0     111.1
+CH2C   CANI   CO     63.0     111.1
+CCH2   CANX   CO     63.0     111.1
+CCH2   CANI   CO     63.0     111.1
+CANX   CO     OC     80.0     120.4
+CANI   CO     OC     80.0     120.4
+CANX   CO     NH     70.0     116.6
+CANI   CO     NH     70.0     116.6
+CO     NH     CACX   50.0     121.9
+CO     NH     CACI   50.0     121.9
+CACX   NH     HN     38.0     118.4
+CACI   NH     HN     38.0     118.4
+NH     CAH    CH3    80.0     109.5
+NH     CAHI   CH3    80.0     109.5
+NH     CA1    CH3    80.0     109.5
+NH     CA1I   CH3    80.0     109.5
+NH     CACX   CH3    80.0     109.5
+NH     CACI   CH3    80.0     109.5
+NH     CACX   CH2C   80.0     109.7
+NH     CACI   CH2C   80.0     109.7
+NH     CACX   CCH2   80.0     109.7
+NH     CACI   CCH2   80.0     109.7
+NH     CACX   CX     63.0     110.1
+NH     CACI   CX     63.0     110.1
+CH3    CACX   CX     63.0     111.1
+CH3    CACI   CX     63.0     111.1
+CH2C   CACX   CX     63.0     111.1
+CH2C   CACI   CX     63.0     111.1
+CCH2   CACX   CX     63.0     111.1
+CCH2   CACI   CX     63.0     111.1
+CACX   CX     OX     65.0     117.0
+CACI   CX     OX     65.0     117.0
+CACX   CO     OC     80.0     120.4
+CACI   CO     OC     80.0     120.4
+OX     CX     OX     80.0     126.0
+CH3    CO     OC     80.0     120.4
+OC     CO     NH     80.0     122.9
+CO     NH     HN     35.0     119.8
+CO     NH     CAH    50.0     121.9
+CO     NH     CAHI   50.0     121.9
+CO     NH     CA1    50.0     121.9
+CO     NH     CA1I   50.0     121.9
+CAH    NH     HN     38.0     118.4
+CAHI   NH     HN     38.0     118.4
+CA1    NH     HN     38.0     118.4
+CA1I   NH     HN     38.0     118.4
+~ this angle for NMDF
+CAHI   NH     CH3T   38.0     118.4
+NH     CAH    CO     63.0     110.1
+NH     CAHI   CO     63.0     110.1
+~parameters for PCA
+NHC    CAH    CO     63.0     110.1
+NHC    CAHI   CO     63.0     110.1
+OCC    COC    NHC    80.0     122.9
+COC    NHC    HNC    35.0     119.8
+COC    CH2    CH2    63.0     112.4
+CH2    COC    NHC    70.0     116.6
+CH2    COC    OCC    80.0     120.4
+COC    NHC    CAH    50.0     121.9
+COC    NHC    CAHI   50.0     121.9
+CAH    NHC    HNC    38.0     118.4
+CAHI   NHC    HNC    38.0     118.4
+NHC    CAH    COC    63.0     110.1
+NHC    CAHI   COC    63.0     110.1
+~ end for PCA
+CAH    CO     OC     80.0     120.4
+CAHI   CO     OC     80.0     120.4
+CAX    CO     OC     80.0     120.4
+CAXI   CO     OC     80.0     120.4
+CBH    CO     OC     80.0     120.4
+CO     NH     CH3T   50.0     121.9
+CH3T   NH     HN     38.0     118.4
+CAH    CO     NH     70.0     116.6
+CAHI   CO     NH     70.0     116.6
+CAX    CO     NH     70.0     116.6
+CAXI   CO     NH     70.0     116.6
+CBH    CO     NH     70.0     116.6
+~glycine
+HN     NH     CAG    38.0     118.4
+NH     CAG    CO     80.0     110.3
+CAG    CO     OC     80.0     120.4
+CAG    CO     NH     70.0     116.6
+CO     NH     CAG    50.0     121.9
+~cysteine
+NH     CAH    CH2C   80.0     109.7
+NH     CAHI   CH2C   80.0     109.7
+NH     CA1    CH2C   80.0     109.7
+NH     CA1I   CH2C   80.0     109.7
+NX     CACX   CH2C   80.0     109.7
+NX     CACI   CH2C   80.0     109.7
+NX     CANX   CH2C   80.0     109.7
+NX     CANI   CH2C   80.0     109.7
+CO     CAH    CH2C   63.0     111.1
+CO     CAHI   CH2C   63.0     111.1
+CO     CAX    CH2C   63.0     111.1
+CO     CAXI   CH2C   63.0     111.1
+CO2    CA1    CH2C   63.0     111.1
+CO2    CA1I   CH2C   63.0     111.1
+CAH    CH2C   SH     50.0     108.6
+CAHI   CH2C   SH     50.0     108.6
+CAX    CH2C   SH     50.0     108.6
+CAXI   CH2C   SH     50.0     108.6
+CA1    CH2C   SH     50.0     108.6
+CA1I   CH2C   SH     50.0     108.6
+CANX   CH2C   SH     50.0     108.6
+CANI   CH2C   SH     50.0     108.6
+CACX   CH2C   SH     50.0     108.6
+CACI   CH2C   SH     50.0     108.6
+CH2C   SH     HS     44.0     96.0
+~cystine
+NH     CAH    CCH2   80.0     109.7
+NH     CAHI   CCH2   80.0     109.7
+NH     CA1    CCH2   80.0     109.7
+NH     CA1I   CCH2   80.0     109.7
+CCH2   CAH    CO     63.0     111.1
+CCH2   CAHI   CO     63.0     111.1
+CCH2   CAX    CO     63.0     111.1
+CCH2   CAXI   CO     63.0     111.1
+CCH2   CA1    CO2    63.0     111.1
+CCH2   CA1I   CO2    63.0     111.1
+CAH    CCH2   SC     50.0     114.7
+CAHI   CCH2   SC     50.0     114.7
+CAX    CCH2   SC     50.0     114.7
+CAXI   CCH2   SC     50.0     114.7
+CA1    CCH2   SC     50.0     114.7
+CA1I   CCH2   SC     50.0     114.7
+CANX   CCH2   SC     50.0     114.7
+CANI   CCH2   SC     50.0     114.7
+CACX   CCH2   SC     50.0     114.7
+CACI   CCH2   SC     50.0     114.7
+~
+~ cys link
+CCH2   SC     SC     68.0     103.7
+~
+~ NTRG
+HX     NX     CANG   35.0     109.5
+~
+~ attention! N3 C2 C not in AMBER, I took N C2 C
+NX     CANG   CO     80.0     110.3
+CANG   CO     OC     80.0     120.4
+CANG   CO     NH     70.0     116.6
+~
+~ CTRG
+CACG   CX     OX     70.0     117.0
+CX     CACG   NH     80.0     110.3
+CX     CACG   NX     63.0     110.1
+CO     NH     CACG   50.0     121.9
+HN     NH     CACG   38.0     118.4
+HX     NX     CACG   35.0     109.5
+~
+~
+NX     CACX   CX     63.0     110.1
+NX     CACI   CX     63.0     110.1
+NX     CANX   CH2    80.0     109.7
+NX     CANI   CH2    80.0     109.7
+NX     CACX   CH2    80.0     109.7
+NX     CACI   CH2    80.0     109.7
+CH2    CAH    CO     63.0     111.1
+CH2    CAHI   CO     63.0     111.1
+CH2    CAX    CO     63.0     111.1
+CH2    CAXI   CO     63.0     111.1
+CH2    CACX   CO     63.0     111.1
+CH2    CACI   CO     63.0     111.1
+CH2    CANX   CO     63.0     111.1
+CH2    CANI   CO     63.0     111.1
+CACX   CX     OC     80.0     120.4
+CACI   CX     OC     80.0     120.4
+NH     CAH    CH2    80.0     109.7
+NH     CAHI   CH2    80.0     109.7
+NH     CA1    CH2    80.0     109.7
+NH     CA1I   CH2    80.0     109.7
+~param for PCA
+NHC    CAH    CH2    80.0     109.5
+NHC    CAHI   CH2    80.0     109.5
+NH     CACX   CH2    80.0     109.7
+NH     CACI   CH2    80.0     109.7
+CH2    CACX   CX     63.0     111.1
+CH2    CACI   CX     63.0     111.1
+OX     CX     OC     80.0     126.0
+OC     CX     OC     80.0     126.0
+~
+CAH    CH2    CG     63.0     114.0
+CAHI   CH2    CG     63.0     114.0
+CAX    CH2    CG     63.0     114.0
+CAXI   CH2    CG     63.0     114.0
+CA1    CH2    CG     63.0     114.0
+CA1I   CH2    CG     63.0     114.0
+CANX   CH2    CG     63.0     114.0
+CANI   CH2    CG     63.0     114.0
+CACX   CH2    CG     63.0     114.0
+CACI   CH2    CG     63.0     114.0
+CH2    CG     CFH    70.0     120.0
+CG     CFH    CFH    85.0     120.0
+CFH    CG     CFH    85.0     120.0
+CFH    CFH    CFH    85.0     120.0
+~
+CFH    CZ     CFH    85.0     120.0
+CFH    CFH    CZ     85.0     120.0
+CFH    CZ     OH     70.0     120.0
+CZ     OH     HO     35.0     113.0
+~
+CAH    CH2    CGTR   63.0     115.6
+CAHI   CH2    CGTR   63.0     115.6
+CAX    CH2    CGTR   63.0     115.6
+CAXI   CH2    CGTR   63.0     115.6
+CA1    CH2    CGTR   63.0     115.6
+CA1I   CH2    CGTR   63.0     115.6
+CANX   CH2    CGTR   63.0     115.6
+CANI   CH2    CGTR   63.0     115.6
+CACX   CH2    CGTR   63.0     115.6
+CACI   CH2    CGTR   63.0     115.6
+CH2    CGTR   CHTR   70.0     125.0
+CH2    CGTR   CTR    70.0     128.6
+CGTR   CHTR   NDHS   70.0     108.7
+CHTR   NDHS   HDHS   35.0     126.35
+CHTR   NDHS   CGHT   70.0     111.6
+CGHT   NDHS   HDHS   35.0     124.2
+NDHS   CGHT   CTR    70.0     104.4
+NDHS   CGHT   CFH    70.0     132.8
+CGHT   CTR    CGTR   85.0     108.8
+CGHT   CTR    CFH    85.0     116.2
+CGHT   CFH    CFH    85.0     120.0
+CTR    CGTR   CHTR   85.0     106.4
+CTR    CFH    CFH    85.0     120.0
+CTR    CGHT   CFH    85.0     122.7
+CGTR   CTR    CFH    85.0     134.9
+~
+~
+~carlos's additions follow
+~
+CACX   CBH    CH3    63.0     111.5
+CACI   CBH    CH3    63.0     111.5
+NH     CACX   CBH    80.0     109.7
+NH     CACI   CBH    80.0     109.7
+CANX   CBH    CH3    63.0     111.5
+CANI   CBH    CH3    63.0     111.5
+CAH    CBH    CH2    63.0     111.5
+CAHI   CBH    CH2    63.0     111.5
+CAX    CBH    CH2    63.0     111.5
+CAXI   CBH    CH2    63.0     111.5
+CA1    CBH    CH2    63.0     111.5
+CA1I   CBH    CH2    63.0     111.5
+CANX   CBH    CH2    63.0     111.5
+CANI   CBH    CH2    63.0     111.5
+CACX   CBH    CH2    63.0     111.5
+CACI   CBH    CH2    63.0     111.5
+CBH    CH2    CH3D   63.0     112.4
+CO     CAH    CH2    63.0     111.1
+CO     CAHI   CH2    63.0     111.1
+CO     CAX    CH2    63.0     111.1
+CO     CAXI   CH2    63.0     111.1
+CX     CACX   CBH    63.0     111.1
+CX     CACI   CBH    63.0     111.1
+CX     CACX   CH2    63.0     111.1
+CX     CACI   CH2    63.0     111.1
+CO     CANX   CH2    63.0     111.1
+CO     CANI   CH2    63.0     111.1
+CAH    CH2    CBH    63.0     112.4
+CAHI   CH2    CBH    63.0     112.4
+CAX    CH2    CBH    63.0     112.4
+CAXI   CH2    CBH    63.0     112.4
+CA1    CH2    CBH    63.0     112.4
+CA1I   CH2    CBH    63.0     112.4
+CANX   CH2    CBH    63.0     112.4
+CANI   CH2    CBH    63.0     112.4
+CACX   CH2    CBH    63.0     112.4
+CACI   CH2    CBH    63.0     112.4
+CH2    CBH    CH3    63.0     111.5
+CH3    CBH    CH3    63.0     111.5
+CAH    CH2    CH2M   63.0     112.4
+CAHI   CH2    CH2M   63.0     112.4
+CAX    CH2    CH2M   63.0     112.4
+CAXI   CH2    CH2M   63.0     112.4
+CA1    CH2    CH2M   63.0     112.4
+CA1I   CH2    CH2M   63.0     112.4
+CANX   CH2    CH2M   63.0     112.4
+CANI   CH2    CH2M   63.0     112.4
+CACX   CH2    CH2M   63.0     112.4
+CACI   CH2    CH2M   63.0     112.4
+CANX   CH2    CH2    63.0     112.4
+CANI   CH2    CH2    63.0     112.4
+CACX   CH2    CH2    63.0     112.4
+CACI   CH2    CH2    63.0     112.4
+CH2    CH2M   SM     50.0     114.7
+CH2M   SM     CH3M   62.0     98.9
+CAH    CH2    CH2    63.0     112.4
+CAHI   CH2    CH2    63.0     112.4
+CAX    CH2    CH2    63.0     112.4
+CAXI   CH2    CH2    63.0     112.4
+CA1    CH2    CH2    63.0     112.4
+CA1I   CH2    CH2    63.0     112.4
+CH2    CH2    CH2    63.0     112.4
+CH2    CH2    CH2K   63.0     112.4
+CH2    CH2K   NX     80.0     111.2
+CH2K   NX     HX     35.0     109.5
+~ parameters for SER
+CAH    CH2S   OH     80.0     109.5
+CAHI   CH2S   OH     80.0     109.5
+CAX    CH2S   OH     80.0     109.5
+CAXI   CH2S   OH     80.0     109.5
+CA1    CH2S   OH     80.0     109.5
+CA1I   CH2S   OH     80.0     109.5
+CANX   CH2S   OH     80.0     109.5
+CANI   CH2S   OH     80.0     109.5
+CACX   CH2S   OH     80.0     109.5
+CACI   CH2S   OH     80.0     109.5
+CO     CAH    CH2S   63.0     111.1
+CO     CAHI   CH2S   63.0     111.1
+CO     CAX    CH2S   63.0     111.1
+CO     CAXI   CH2S   63.0     111.1
+CO2    CA1    CH2S   63.0     111.1
+CO2    CA1I   CH2S   63.0     111.1
+CO     CANX   CH2S   63.0     111.1
+CO     CANI   CH2S   63.0     111.1
+CO     CACX   CH2S   63.0     111.1
+CO     CACI   CH2S   63.0     111.1
+CX     CACX   CH2S   63.0     111.1
+CX     CACI   CH2S   63.0     111.1
+CH2S   OH     HO     55.0     108.5
+NH     CAH    CH2S   80.0     109.7
+NH     CAHI   CH2S   80.0     109.7
+NH     CA1    CH2S   80.0     109.7
+NH     CA1I   CH2S   80.0     109.7
+NX     CACX   CH2S   80.0     109.7
+NX     CACI   CH2S   80.0     109.7
+NX     CANX   CH2S   80.0     109.7
+NX     CANI   CH2S   80.0     109.7
+NH     CANX   CH2S   80.0     109.7
+NH     CANI   CH2S   80.0     109.7
+NH     CACX   CH2S   80.0     109.7
+NH     CACI   CH2S   80.0     109.7
+~ parameters for THR
+NH     CAH    CHT    80.0     109.7
+NH     CAHI   CHT    80.0     109.7
+NH     CA1    CHT    80.0     109.7
+NH     CA1I   CHT    80.0     109.7
+NH     CANX   CHT    80.0     109.7
+NH     CANI   CHT    80.0     109.7
+NX     CANX   CHT    80.0     109.7
+NX     CANI   CHT    80.0     109.7
+NH     CACX   CHT    80.0     109.7
+NH     CACI   CHT    80.0     109.7
+NX     CACX   CHT    80.0     109.7
+NX     CACI   CHT    80.0     109.7
+CO     CAH    CHT    63.0     111.1
+CO     CAHI   CHT    63.0     111.1
+CO     CAX    CHT    63.0     111.1
+CO     CAXI   CHT    63.0     111.1
+CO2    CA1    CHT    63.0     111.1
+CO2    CA1I   CHT    63.0     111.1
+CO     CANX   CHT    63.0     111.1
+CO     CANI   CHT    63.0     111.1
+CO     CACX   CHT    63.0     111.1
+CO     CACI   CHT    63.0     111.1
+CAH    CHT    OH     80.0     109.5
+CAHI   CHT    OH     80.0     109.5
+CAX    CHT    OH     80.0     109.5
+CAXI   CHT    OH     80.0     109.5
+CA1    CHT    OH     80.0     109.5
+CA1I   CHT    OH     80.0     109.5
+CANX   CHT    OH     80.0     109.5
+CANI   CHT    OH     80.0     109.5
+CACX   CHT    OH     80.0     109.5
+CACI   CHT    OH     80.0     109.5
+CAH    CHT    CH3    63.0     111.5
+CAHI   CHT    CH3    63.0     111.5
+CAX    CHT    CH3    63.0     111.5
+CAXI   CHT    CH3    63.0     111.5
+CA1    CHT    CH3    63.0     111.5
+CA1I   CHT    CH3    63.0     111.5
+CANX   CHT    CH3    63.0     111.5
+CANI   CHT    CH3    63.0     111.5
+CACX   CHT    CH3    63.0     111.5
+CACI   CHT    CH3    63.0     111.5
+CH3    CHT    OH     80.0     109.5
+CHT    OH     HO     55.0     108.5
+CX     CACX   CHT    63.0     111.1
+CX     CACI   CHT    63.0     111.1
+~ parametrs for PRO
+NH     CO     OC     80.0     122.9
+CO     NH     CHPR   50.0     121.9
+CO     NH     CHPI   50.0     121.9
+CO     NH     CAP    50.0     121.9
+CO     NH     CAPI   50.0     121.9
+CO     NH     CH2D   50.0     121.9
+NH     CHPR   CO     63.0     110.1
+NH     CHPI   CO     63.0     110.1
+NX     CHPR   CO     63.0     110.1
+NX     CHPI   CO     63.0     110.1
+NH     CHPR   CX     63.0     110.1
+NH     CHPI   CX     63.0     110.1
+CHPR   CO     OC     80.0     120.4
+CHPI   CO     OC     80.0     120.4
+CHPR   CX     OX     65.0     117.0
+CHPI   CX     OX     65.0     117.0
+CHPR   CO     NH     70.0     116.6
+CHPI   CO     NH     70.0     116.6
+NH     CH2D   CH2    80.0     111.2
+NX     CH2D   CH2    80.0     111.2
+CH2D   CH2    CH2    63.0     112.4
+CH2    CH2    CHPR   63.0     112.4
+CH2    CH2    CHPI   63.0     112.4
+CH2    CH2    CAP    63.0     112.4
+CH2    CH2    CAPI   63.0     112.4
+CH2    CHPR   NH     80.0     109.7
+CH2    CHPI   NH     80.0     109.7
+CH2    CAP    NH     80.0     109.7
+CH2    CAPI   NH     80.0     109.7
+CH2    CHPR   NX     80.0     109.7
+CH2    CHPI   NX     80.0     109.7
+CHPR   NH     CH2D   50.0     118.0
+CHPI   NH     CH2D   50.0     118.0
+CAP    NH     CH2D   50.0     118.0
+CAPI   NH     CH2D   50.0     118.0
+CHPR   NX     CH2D   50.0     118.0
+CHPI   NX     CH2D   50.0     118.0
+HX     NH     CH2D   38.0     118.4
+HX     NX     CH2D   35.0     109.5
+CHPR   NH     HX     38.0     118.4
+CHPI   NH     HX     38.0     118.4
+CHPR   NX     HX     38.0     118.4
+CHPI   NX     HX     38.0     118.4
+HX     NH     HX     35.0     120.0
+CH2    CHPR   CO     63.0     111.1
+CH2    CHPI   CO     63.0     111.1
+CH2    CHPR   CX     63.0     111.1
+CH2    CHPI   CX     63.0     111.1
+CH3    CO     NH     70.0     116.6
+~
+~ arginine angles
+~
+CAH    CH2    CR1    63.0     112.4
+CAHI   CH2    CR1    63.0     112.4
+CAX    CH2    CR1    63.0     112.4
+CAXI   CH2    CR1    63.0     112.4
+CA1    CH2    CR1    63.0     112.4
+CA1I   CH2    CR1    63.0     112.4
+CACX   CH2    CR1    63.0     112.4
+CACI   CH2    CR1    63.0     112.4
+CANX   CH2    CR1    63.0     112.4
+CANI   CH2    CR1    63.0     112.4
+CH2    CR1    CR2    63.0     112.4
+CR1    CR2    NR1    80.0     111.2
+CR2    NR1    HR1    35.0     118.4
+CR2    NR1    CR3    50.0     123.2
+HR1    NR1    CR3    35.0     120.0
+NR1    CR3    NR2    70.0     120.0
+NR2    CR3    NR2    70.0     120.0
+HR2    NR2    HR2    35.0     120.0
+CR3    NR2    HR2    35.0     120.0
+~
+~
+~ aspargin angles
+~
+CAH    CH2    CO     63.0     112.4
+CAHI   CH2    CO     63.0     112.4
+CAX    CH2    CO     63.0     112.4
+CAXI   CH2    CO     63.0     112.4
+CA1    CH2    CO     63.0     112.4
+CA1I   CH2    CO     63.0     112.4
+CACX   CH2    CO     63.0     112.4
+CACI   CH2    CO     63.0     112.4
+CANX   CH2    CO     63.0     112.4
+CANI   CH2    CO     63.0     112.4
+CH2    CO     OC     80.0     120.4
+CH2    CO     NAS    70.0     116.6
+OC     CO     NAS    80.0     122.9
+CO     NAS    HAS    35.0     119.8
+HAS    NAS    HAS    35.0     120.0
+~
+~
+~
+~ aspartic acid angles
+~
+NH     CAH    CH2B   80.0     109.7
+NH     CAHI   CH2B   80.0     109.7
+NH     CA1    CH2B   80.0     109.7
+NH     CA1I   CH2B   80.0     109.7
+NX     CACX   CH2B   80.0     109.5
+NX     CACI   CH2B   80.0     109.5
+NH     CACX   CH2B   80.0     109.7
+NH     CACI   CH2B   80.0     109.7
+NX     CANX   CH2B   80.0     109.5
+NX     CANI   CH2B   80.0     109.5
+NH     CANX   CH2B   80.0     109.7
+NH     CANI   CH2B   80.0     109.7
+CO     CAH    CH2B   63.0     111.1
+CO     CAHI   CH2B   63.0     111.1
+CO     CAX    CH2B   63.0     111.1
+CO     CAXI   CH2B   63.0     111.1
+CO2    CA1    CH2B   63.0     111.1
+CO2    CA1I   CH2B   63.0     111.1
+CO     CANX   CH2B   63.0     111.1
+CO     CANI   CH2B   63.0     111.1
+CO     CACX   CH2B   63.0     111.1
+CO     CACI   CH2B   63.0     111.1
+CX     CACX   CH2B   63.0     111.1
+CX     CACI   CH2B   63.0     111.1
+CAH    CH2B   CX1    63.0     112.4
+CAHI   CH2B   CX1    63.0     112.4
+CAX    CH2B   CX1    63.0     112.4
+CAXI   CH2B   CX1    63.0     112.4
+CA1    CH2B   CX1    63.0     112.4
+CA1I   CH2B   CX1    63.0     112.4
+CACX   CH2B   CX1    63.0     112.4
+CACI   CH2B   CX1    63.0     112.4
+CANX   CH2B   CX1    63.0     112.4
+CANI   CH2B   CX1    63.0     112.4
+CH2B   CX1    OX1    70.0     117.0
+OX1    CX1    OX1    80.0     126.0
+~
+~ glutamine
+CH2    CO     NH     70.0     116.6
+CH2    CH2    CSX    63.0     112.4
+CH2    CSX    OSX    80.0     120.4
+CH2    CSX    NAS    70.0     116.6
+OSX    CSX    NAS    80.0     122.9
+CSX    NAS    HAS1   35.0     119.8
+HAS1   NAS    HAS1   35.0     120.0
+~
+~ valine
+NH     CAH    CBH    80.0     109.7
+NH     CAHI   CBH    80.0     109.7
+NH     CA1    CBH    80.0     109.7
+NH     CA1I   CBH    80.0     109.7
+NX     CANX   CBH    80.0     109.7
+NX     CANI   CBH    80.0     109.7
+NX     CACX   CBH    80.0     109.7
+NX     CACI   CBH    80.0     109.7
+CAH    CBH    CH3    63.0     111.5
+CAHI   CBH    CH3    63.0     111.5
+CAX    CBH    CH3    63.0     111.5
+CAXI   CBH    CH3    63.0     111.5
+CA1    CBH    CH3    63.0     111.5
+CA1I   CBH    CH3    63.0     111.5
+CAH    CBH    CH3G   63.0     111.5
+CAHI   CBH    CH3G   63.0     111.5
+CAX    CBH    CH3G   63.0     111.5
+CAXI   CBH    CH3G   63.0     111.5
+CA1    CBH    CH3G   63.0     111.5
+CA1I   CBH    CH3G   63.0     111.5
+CACX   CBH    CH3G   63.0     111.5
+CACI   CBH    CH3G   63.0     111.5
+CANX   CBH    CH3G   63.0     111.5
+CANI   CBH    CH3G   63.0     111.5
+CH3    CBH    CH3G   63.0     111.5
+CBH    CAH    CO     63.0     111.1
+CBH    CAHI   CO     63.0     111.1
+CBH    CAX    CO     63.0     111.1
+CBH    CAXI   CO     63.0     111.1
+CBH    CA1    CO2    63.0     111.1
+CBH    CA1I   CO2    63.0     111.1
+CBH    CANX   CO     63.0     111.1
+CBH    CANI   CO     63.0     111.1
+CBH    CACX   CO     63.0     111.1
+CBH    CACI   CO     63.0     111.1
+~ glutamic acid
+CAH    CH2    CH2A   63.0     112.4
+CAHI   CH2    CH2A   63.0     112.4
+CAX    CH2    CH2A   63.0     112.4
+CAXI   CH2    CH2A   63.0     112.4
+CA1    CH2    CH2A   63.0     112.4
+CA1I   CH2    CH2A   63.0     112.4
+CACX   CH2    CH2A   63.0     112.4
+CACI   CH2    CH2A   63.0     112.4
+CANX   CH2    CH2A   63.0     112.4
+CANI   CH2    CH2A   63.0     112.4
+CH2    CH2A   CSX1   63.0     112.4
+CH2A   CSX1   OSX1   70.0     117.0
+OSX1   CSX1   OSX1   80.0     126.0
+~
+~ histidine
+CAH    CH2    CGHP   63.0     113.1
+CAHI   CH2    CGHP   63.0     113.1
+CAX    CH2    CGHP   63.0     113.1
+CAXI   CH2    CGHP   63.0     113.1
+CA1    CH2    CGHP   63.0     113.1
+CA1I   CH2    CGHP   63.0     113.1
+CACX   CH2    CGHP   63.0     113.1
+CACI   CH2    CGHP   63.0     113.1
+CANX   CH2    CGHP   63.0     113.1
+CANI   CH2    CGHP   63.0     113.1
+CH2    CGHP   NDHP   70.0     122.2
+CH2    CGHP   CHDP   70.0     129.05
+CGHP   NDHP   HDNP   35.0     126.35
+CGHP   NDHP   CHEP   70.0     107.3
+HDNP   NDHP   CHEP   35.0     126.35
+CHDP   CGHP   NDHP   70.0     108.75
+CGHP   CHDP   NEHP   70.0     105.9
+CHDP   NEHP   CHEP   70.0     107.3
+NDHP   CHEP   NEHP   70.0     110.75
+CHDP   NEHP   HENP   35.0     126.35
+CHEP   NEHP   HENP   35.0     126.35
+~ histidine
+CH2    CAH    NH     80.0     109.7
+CH2    CAHI   NH     80.0     109.7
+CH2    CA1    NH     80.0     109.7
+CH2    CA1I   NH     80.0     109.7
+CAH    CH2    CGHS   63.0     113.1
+CAHI   CH2    CGHS   63.0     113.1
+CAX    CH2    CGHS   63.0     113.1
+CAXI   CH2    CGHS   63.0     113.1
+CA1    CH2    CGHS   63.0     113.1
+CA1I   CH2    CGHS   63.0     113.1
+CACX   CH2    CGHS   63.0     113.1
+CACI   CH2    CGHS   63.0     113.1
+CANX   CH2    CGHS   63.0     113.1
+CANI   CH2    CGHS   63.0     113.1
+CH2    CGHS   NDHS   70.0     122.2
+CH2    CGHS   CHDH   70.0     131.9
+CGHS   NDHS   HDNH   35.0     126.35
+CGHS   NDHS   CHEH   70.0     107.3
+HDNH   NDHS   CHEH   35.0     126.35
+CHDH   CGHS   NDHS   70.0     105.9
+CGHS   CHDH   NEHS   70.0     109.9
+CHDH   NEHS   CHEH   70.0     105.3
+NDHS   CHEH   NEHS   70.0     111.6
+~
+TIPH   TIPO   TIPH   150.0    104.52
+TIPH   TIPH   TIPO   0.0      127.74
+~
+~heme contributed by haiying
+~
+NP     FE     NP     50.00    90.00
+NP     FE1    NP     80.00    90.00
+CPA1   NP     CPA2   139.30   103.90
+NP     CPA2   CPM    88.00    124.39
+NP     CPA1   CPM    88.00    124.39
+CPA1   CPB2   CPB3   30.08    106.51
+CPA2   CPB3   CPB2   30.08    106.51
+CPA1   CPB2   CPB1   30.08    106.51
+CPA2   CPB1   CPB2   30.08    106.51
+CPA1   CPB1   CPB2   30.08    106.51
+CPA2   CPB2   CPB1   30.08    106.51
+CPA1   CPM    HA     12.70    117.44
+CPA2   CPM    HA     12.70    117.44
+FE     NB     CP     30.00    130.00
+FE1    NB     CP     30.00    130.00
+NB     FE     NP     50.00    90.00
+NB     FE1    NP     50.00    99.00
+CPA1   NP     FE     96.15    128.05
+CPA2   NP     FE     96.15    128.05
+CPA1   NP     FE1    96.15    128.05
+CPA2   NP     FE1    96.15    128.05
+CPB2   CPA2   CPM    61.60    124.07
+CPB2   CPA1   CPM    61.60    124.07
+CPB3   CPA2   CPM    61.60    124.07
+CPB1   CPA2   CPM    61.60    124.07
+CPB1   CPA1   CPM    61.60    124.07
+NP     CPA1   CPB1   122.00   111.54
+NP     CPA2   CPB2   122.00   111.54
+NP     CPA1   CPB2   122.00   111.54
+NP     CPA2   CPB3   122.00   111.54
+NP     CPA2   CPB1   122.00   111.54
+CPA1   CPM    CPA2   94.02    125.12
+CPA1   CPB2   CH3E   65.00    126.75
+CPA2   CPB2   CH3E   65.00    126.75
+CPB3   CPB2   CH3E   65.00    126.75
+CPB1   CPB2   CH3E   65.00    126.75
+CPB2   CPB1   CHE1   65.00    126.75
+CPB2   CPB3   CR1E   70.00    126.75
+CPB1   CHE1   CHE2   70.00    113.00
+CHE1   CHE2   CO1    70.00    113.00
+OC     CO1    OC     85.00    120.00
+CHE2   CO1    OC     85.00    121.60
+CF     NB     CP     65.00    110.00
+CP     NA     CC     60.00    105.00
+CC     NA     H      30.00    127.50
+CPA1   CPB1   CHE1   65.00    126.75
+CPA2   CPB1   CHE1   65.00    126.75
+CPA2   CPB3   CR1E   70.00    126.75
+CPB3   CR1E   CHE2   70.00    121.50
+CC     CF     NB     90.00    102.00
+NB     CP     NA     70.00    111.00
+NA     CC     CF     65.00    110.50
+CP     NA     H      30.00    127.50
+~
+~angle between heme and CO
+~
+FE     CM     OM     35.00    180.0
+NP     FE     CM     50.00    90.0
+~
+~ angles between heme and histidine
+~
+NEHS   FE     CM     50.0     180.00
+NEHS FE   NM              50.0   180.00
+FE     NEHS   CHDH   30.0     120.00
+FE     NEHS   CHEH   30.0     130.00
+NEHS   FE     NP     50.0     90.00
+FE1    NEHS   CHDH   30.0     120.00
+FE1    NEHS   CHEH   30.0     130.00
+NEHS   FE1    NP     50.0     99.00
+~ wild guess (just to get going to sulphor ion)
+OS     S      OS     80.0     109.7
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ angles for pseudo beta carbon of glycine
+~(for hydrophobic potential)
+~based on alanin beta carbon
+CBG    CAG    CO     63.0     111.1
+CBG    CANX   CO     63.0     111.1
+CBG    CANI   CO     63.0     111.1
+NH     CAG    CBG    80.0     109.5
+NX     CANX   CBG    80.0     109.5
+NX     CANI   CBG    80.0     109.5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  Angles for sp analogs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~for NGL2 Based  NH CH2D  CH2     80.0  111.2
+NH     CH2D   CAG    80.0     111.2
+~
+~for NGL2 Based on CHPR NH  CH2D    50.0  118.0
+CAG    NH     CH2D   50.0     118.0
+CACG   NH     CH2D   50.0     118.0
+~
+~for NGL2 based on NH    CAG  CO      80.0  110.3
+NH     CAG    CH2D   80.0     111.2
+~
+~ For CMET based on CH2 CO NAS 70.0 116.6
+CAH    CO     NAS    70.0     116.6
+CAHI   CO     NAS    70.0     116.6
+~
+~for SCZ ~based  n CH2   CH2 CSX     63.0  112.4
+CH2    CH2    CO     63.0     112.4
+~
+~for NGL3 based on CH2D CH2   CH2     63.0  112.4
+CH2D   CH2    CAG    63.0     112.4
+~
+~for NGL6 based on CH2D CH2   CH2     63.0  112.4
+CH2    CH2    CAG    63.0     112.4
+~
+~ for CMT1 based on CH2M SM   CH3M     62.0   98.9
+CH2M   SM     CH2M   62.0     98.9
+~
+~ for CMT1 based on CH2  CH2M SM       50.0  114.7
+CO     CH2M   SM     50.0     114.7
+~
+~for CMT1 based on CAG   CO   NH      70.0  116.6
+CH2M   CO     NH     70.0     116.6
+~
+~for CMT1 based on CAG   CO   OC      80.0  120.4
+CH2M   CO     OC     80.0     120.4
+~
+~
+CH2    CAG    NH     80.0     111.2
+~
+~ chen - parameters for peptors biulding units
+~1) based on NH CH2D  CH2     80.0  111.2
+NH     CH2D   CH2D   80.0     111.2
+~2) based on CH2  CSX  NAS     70.0  116.6
+CH2    CSX    NH     70.0     116.6
+~3) based on OSX   CSX  NAS     80.0  122.9
+OSX    CSX    NH     80.0     122.9
+~4) based on CSX   NAS  HAS1    35.0  119.8
+CSX    NH     HN     35.0     119.8
+~5) based on CHPR NH  CH2D    50.0  118.0
+CAH    NH     CH2D   50.0     118.0
+CAHI   NH     CH2D   50.0     118.0
+CAH    NH     CH3T   50.0     118.0
+CAHI   NH     CH3T   50.0     118.0
+~6) based on HN    NH   CAG     38.0  118.4
+HN     NH     CH2D   38.0     118.4
+~7) based on CO   NH  CH2D    50.0  121.9
+CSX    NH     CH2D   50.0     121.9
+CSX    NH     CNN    50.0     121.9
+~8) based on CSX   NAS  HAS1    35.0  119.8
+CO     NAS    HAS1   35.0     119.8
+~9) based on CH2  CH2K NX       80.0  111.2
+CH2D   CH2K   NX     80.0     111.2
+~10) based on CHPR NX  CH2D    50.0  118.0
+CANX   NX     CH2K   50.0     118.0
+CANI   NX     CH2K   50.0     118.0
+~11) based on NH CH2D  CH2     80.0  111.2
+NH     CH2D   CH2K   80.0     111.2
+~12) based on CH2   CH2 CSX     63.0  112.4
+CH2D   CH2    CSX    63.0     112.4
+~13) based on CH2 CO NAS 70.0  116.6
+CAG    CO     NAS    70.0     116.6
+~14) based on: NH    CAG  CO      80.0  110.3
+NH     CNN    NH     80.0     110.3
+~15) based on CH2   CH2 CSX     63.0  112.4
+CH2K   CH2    CSX    63.0     112.4
+~16) based on CAG   CO    NH   CAG     50.0  121.9
+CO     NH     CNN    50.0     121.9
+~17) based on CHPR NH  CH2D    50.0  118.0
+CAH    NH     CNN    50.0     118.0
+CAHI   NH     CNN    50.0     118.0
+~18)based on HN    NH   CAG     38.0  118.4
+HN     NH     CNN    38.0     118.4
+~19) based on CAH   CH2  CG      63.0  114.0
+NH     CH2D   CG     63.0     114.0
+~20) based on CH2   CG   CFH     70.0  120.0
+CH2D   CG     CFH    70.0     120.0
+~21) based on NH    CAH  CH3     80.0  109.5
+NH     CAH    CG     80.0     109.5
+NH     CAHI   CG     80.0     109.5
+~22) base on CAH   CH2  CG      63.0  114.0
+CH3    CAH    CG     63.0     114.0
+CH3    CAHI   CG     63.0     114.0
+~23) based on CBH  CH2  CH3D     63.0  112.4
+CAH    CH2    CH3D   63.0     112.4
+CAHI   CH2    CH3D   63.0     112.4
+CAX    CH2    CH3D   63.0     112.4
+CAXI   CH2    CH3D   63.0     112.4
+CA1    CH2    CH3D   63.0     112.4
+CA1I   CH2    CH3D   63.0     112.4
+CH2S   CAH    CHT    63.0     111.5
+CH2S   CAHI   CHT    63.0     111.5
+~25)for NAL needs rechecking
+CNFT   CNFT   CFH    85.0     120
+CNFT   CG     CFH    85.0     120.0
+CFH    CNFT   CFH    85.0     120.0
+CG     CNFT   CNFT   85.0     120.0
+CG     CNFT   CFH    85.0     120.0
+CH2    CG     CNFT   85.0     120.0
+CFH    CFH    CNFT   85.0     120.0
+~26) for betha methylated peptoids
+CH3    CAH    CG     85.0     118.00
+CH3    CAHI   CG     85.0     118.00
+CAH    NH     CAG    50.0     118.0
+CAHI   NH     CAG    50.0     118.0
+CAH    CG     CFH    85.0     118.00
+CAHI   CG     CFH    85.0     118.00
+~end of NAL
+~27) based on CAH NH  CH3T    50.0  118.0
+CAG    NH     CH3T   50.0     118.0
+~28) based on CO    NH   CAH     50.0  121.9
+CSX    NH     CAH    50.0     121.9
+CSX    NH     CAHI   50.0     121.9
+~
+~~~
+~ For AIB  (matzootz mehaetzba)
+~29)
+CO     CA4    NH     60.0     106.77
+CH4    CA4    NH     60.0     109.10
+CH4    CA4    CO     60.0     108.00
+CH4    CA4    CH4    60.0     110.05
+CH3    CAH    CH3    63.0     111.5
+CH3    CAHI   CH3    63.0     111.5
+NH     CO     CA4    60.0     115.70
+CO     NH     CA4    60.0     121.90
+OC     CO     CA4    60.0     119.70
+HN     NH     CA4    60.0     117.40
+~
+~
+~Roberto
+~for GBU
+~based on CHPR NH  CH2D    50.0  118.0
+CH2D   NH     CH2D   50.0     118.0
+~based on NH  CAG  CO      80.0  110.3
+NH     CH2D   CO     80.0     110.3
+NH     CH2D   CSX    80.0     110.3
+~based on CAG CO   OC      80.0  120.4
+CH2D   CO     OC     80.0     120.4
+~based on CAG   CO   NH      70.0  116.6
+CH2D   CO     NH     70.0     116.6
+CH2D   CSX    NH     70.0     116.6
+~based on CO   NH  CH2D    50.0  121.9
+CSX    NH     CAG    50.0     121.9
+~based on CAG   CO   OC      80.0  120.4
+CH2D   CSX    OSX    80.0     120.4
+~based on NH    CAH  CH3     80.0  109.5
+NH     CHPR   CH3    80.0     109.5
+NH     CHPI   CH3    80.0     109.5
+NH     CAP    CH3    80.0     109.5
+NH     CAPI   CH3    80.0     109.5
+~based on CH3   CAH  CO      63.0  111.1
+CH3    CHPR   CO     63.0     111.1
+CH3    CHPI   CO     63.0     111.1
+~
+HX     NBX    HX     35.0     109.5
+HX     NBX    CANX   35.0     109.5
+HX     NBX    CANI   35.0     109.5
+NBX    CANX   CO     63.0     110.1
+NBX    CANI   CO     63.0     110.1
+HX     NBX    CANG   35.0     109.5
+NBX    CANG   CO     80.0     110.3
+NBX    CANG   CSX    80.0     110.3
+CANG   CH2    CH2    63.0     112.4
+CANG   CH2    CAG    63.0     112.4
+~N3-C2-C2 (Amber)
+NBX    CANG   CH2    80.0     111.2
+NBX    CANG   CAG    80.0     111.2
+~N-C2-C2 (Amber)
+NH     CAG    CANG   80.0     111.2
+~for N3-CH-C2 took the values of N-CH-C2 (= OH-CH-C2)(Amber)
+NBX    CANX   CH2    80.0     109.5
+NBX    CANI   CH2    80.0     109.5
+~for N3-CH-C3 took the values of N-CH-C3 (= OH-CH-C3)(Amber)
+NBX    CANX   CH3    80.0     109.5
+NBX    CANI   CH3    80.0     109.5
+~roberto's generalization of H3-N3-C2 (Macromodel like)
+CANX   NBX    CANG   50.0     109.5
+CANI   NBX    CANG   50.0     109.5
+CANG   NBX    CANG   50.0     109.5
+~
+CANG   CH2    CSX    63.0     112.4
+CANG   CSX    OSX    80.0     120.4
+CANG   CSX    NH     70.0     116.6
+CHPR   CH2    CG     63.0     114.0
+CHPI   CH2    CG     63.0     114.0
+CAP    CH2    CG     63.0     114.0
+CAPI   CH2    CG     63.0     114.0
+~
+CO     NH     CH3N   50.0     121.9
+~adapted from CH-N-C2 of Amber (as in PRO)
+CHPR   NH     CH3N   50.0     118.0
+CHPI   NH     CH3N   50.0     118.0
+CAP    NH     CH3N   50.0     118.0
+CAPI   NH     CH3N   50.0     118.0
+CH2D   NH     CH3N   50.0     118.0
+~
+CHPR   CO     NAS    70.0     116.6
+CHPI   CO     NAS    70.0     116.6
+CH2D   CO     NAS    70.0     116.6
+~
+~
+~ CTR5  and CTG0
+NH     CA1    CO2    63.0     110.1
+NH     CA1I   CO2    63.0     110.1
+CO2    CA1    CH3    63.0     111.1
+CO2    CA1I   CH3    63.0     111.1
+CO2    CA1    CH2    63.0     111.1
+CO2    CA1I   CH2    63.0     111.1
+CA1    CO2    OC2    80.0     120.4
+CA1I   CO2    OC2    80.0     120.4
+CAG1   NH     HN     38.0     118.4
+CAG1   NH     CO     50.0     121.9
+NH     CAG1   CO2    80.0     110.3
+CAG1   CO2    OC2    80.0     120.4
+~(from OPLS of MACROMODEL)
+CA1    CO2    OCH3   80.0     109.7
+CA1I   CO2    OCH3   80.0     109.7
+OC2    CO2    OCH3   80.0     124.0
+CH3O   OCH3   CO2    85.0     114.0
+CAG1   CO2    OCH3   80.0     109.7
+~
+~ CTR6, DCT6
+NH     CAP    CO2    63.0     110.1
+NH     CAPI   CO2    63.0     110.1
+CO2    CAP    CH3    63.0     111.1
+CO2    CAPI   CH3    63.0     111.1
+CO2    CAP    CH2    63.0     111.1
+CO2    CAPI   CH2    63.0     111.1
+CAP    CO2    OC2    80.0     120.4
+CAPI   CO2    OC2    80.0     120.4
+~(from OPLS of MACROMODEL)
+CAP    CO2    OCH3   80.0     109.7
+CAPI   CO2    OCH3   80.0     109.7
+~
+~ NTR2, DNT2, NTR3
+CAX    NX1    HX1    35.0     109.5
+CAXI   NX1    HX1    35.0     109.5
+HX1    NX1    HX1    35.0     109.5
+NX1    CAX    CO     80.0     109.7
+NX1    CAXI   CO     80.0     109.7
+NX1    CAX    CH2C   80.0     109.7
+NX1    CAXI   CH2C   80.0     109.7
+NX1    CAX    CCH2   80.0     109.7
+NX1    CAXI   CCH2   80.0     109.7
+NX1    CAX    CH2    80.0     109.7
+NX1    CAXI   CH2    80.0     109.7
+NX1    CAX    CH2S   80.0     109.7
+NX1    CAXI   CH2S   80.0     109.7
+NX1    CAX    CHT    80.0     109.7
+NX1    CAXI   CHT    80.0     109.7
+NX1    CAX    CH2B   80.0     109.7
+NX1    CAXI   CH2B   80.0     109.7
+NX1    CAX    CBH    80.0     109.7
+NX1    CAXI   CBH    80.0     109.7
+~ (from N-CH-C3, since N-CH-CH = NT-CH-CH)
+NX1    CAX    CH3    80.0     109.5
+NX1    CAXI   CH3    80.0     109.5
+CAXG   NX1    HX1    35.0     109.5
+NX1    CAXG   CO     80.0     111.2
+CAXG   CO     OC     80.0     120.4
+CAXG   CO     NH     70.0     116.6
+~
+~BACS
+NH     CH2P   CO2    80.0     110.3
+CH2P   CO2    OC2    80.0     120.4
+CH2P   CO2    OCH3   80.0     109.7
+CH2P   NH     CHPR   50.0     118.0
+CH2P   NH     CO     50.0     121.9
+~
+~BANS
+CAG    NX2    HX1    35.0     109.5
+HX1    NX2    HX1    35.0     109.5
+NX2    CAG    CH2D   80.0     111.2
+~
+~angle between heme and NO
+~
+FE   NM    ONM             35.00  153.0
+NP   FE    NM             50.00   90.0
+~
+~ zaloj data
+~
+CNM3   N1M    CNM3       109.9     109.5
+CNM3   N1M    CBM        109.9     109.5
+N1M    CBM    CAM        109.9     109.5
+CBM    CAM    OPC2       109.9     109.5
+CAM    OPC2   PM          94.8     120.0
+OPC2   PM     OPM         94.8     109.6
+OPC2   PM     OPC1        94.8     103.0
+OPM    PM     OPM        139.7     120.0
+OPM    PM     OPC1        94.8     109.6
+PM     OPC1   C3M         94.8     120.0
+OPC1   C3M    C2M        109.9     111.0
+C3M    C2M    C1M        109.9     109.5
+C3M    C2M    OAM        109.9     111.0
+~ first branch
+C2M    C1M    OAM         109.9    111.0
+C1M    OAM    COM1         99.8    120.0
+OAM    COM1   OCM1        119.9    124.0
+OAM    COM1   CHHM        119.9    115.0
+OCM1   COM1   CHHM        119.9    121.0
+COM1   CHHM   CHHM        139.7    120.0
+~ second branch
+C1M    C2M    OAM         109.9    111.0
+C2M    OAM    COM2         99.8    120.0
+OAM    COM2   OCM2        119.9    124.0
+OAM    COM2   CHHM        119.9    115.0
+OCM2   COM2   CHHM        119.9    121.0
+COM2   CHHM   CHHM        139.7    120.0
+~ tail
+CHHM   CHHM   CHHM        109.9    111.0
+CHHM   CHHM   MEM         109.9    111.0
+~
+~
+~
+~ added for gramocidine (zva & ron) angles
+~
+OC    CHO  NH      80.0  122.9
+CHO   NH   CAH     70.0  116.6
+CHO   NH   HN      35.0  119.8
+CAH   NH   C2GA     50.0  118.0
+HN    NH   C2GA     38.0  118.4
+NH    C2GA C2GB    80.0  111.2
+C2GA  C2GB OH      80.0  109.5
+CO    NH   C2GA     50.0  121.9
+NH    C2GA C2GB    80.0  111.2
+C2GA  C2GB OH      80.0  109.5
+C2GB  OH   HO      55.0  108.5
+CO    NH   CAHD     50.0  121.9
+CAHD  NH   HN      38.0  118.4
+NH    CAHD CO      63.0  110.1
+CAHD  CO   OC      80.0  120.4
+CAHD   CO   NH      70.0  116.6
+NH    CAHD CDH2    80.0  109.5
+CO   CAHD CDH2      63.0  111.1
+CAHD CDH2  CBH      63.0  112.4
+NH    CAHD CBHD     80.0  109.7
+CAHD  CBHD  CH3     63.0  111.5
+CAHD  CBHD CH3G    63.0  111.5
+CBHD  CAHD CO      63.0  111.1
+CH3   CBHD CH3G    63.0  111.5
+CDH2  CBH  CH3      63.0  111.5
+~
+~ added for heme-cyx (alfredo)
+~
+SC    CR1E CHE2     50.0  114.7
+CCH2  SC   CR1E     62.0   98.9
+SC    CR1E CPB3     50.0  114.7
+~
+~ added for MTS spin label (Felicia)
+~
+~ as CCH2-SC-SC in CYS-link
+CH2M    SC      SC     68.0     103.7
+SC      SC      C7fp   68.0     103.7
+~ as CH2-CH2M-SM in MET
+SC      C7fp    C1fp   50.0     114.7 
+~ as CH2-CG-CFH in TYR/PHE
+C7fp    C1fp    C2fp   70.0     117.2
+~ as CG-CFH-CFH in TYR/PHE
+C1fp    C2fp    C3fp   85.0     111.8
+~ as CAH-CBH-CH3 in VAL
+C2fp    C3fp    C31f   63.0     111.5
+~ as NH-CH2D-CH2 in PRO
+C2fp    C3fp    N4fp   80.0     101.2
+~ as CHPR-NH-CH2D in PRO
+C3fp    N4fp    O6fp   50.0     123.0
+~ as CHPR-NH-CH2D in PRO
+C3fp    N4fp    C3fp   50.0     111.8
+~ as NH-CH2D-CH2 in PRO 
+N4fp     C3fp   C1fp   80.0     101.2
+~ as CAH-CBH-CH3 in VAL
+C1fp    C3fp    C31f   63.0     111.5
+~ as CH2-CG-CFH in TYR/PHE
+C3fp    C1fp    C7fp   70.0     117.2
+~ conn asks for these angles
+C2fp     C1fp   C3fp   70.0     125.6
+C31f     C3fp   C31f   63.0     111.5
+C31f     C3fp   N4fp   80.0     111.5
+~
+DONE
+~
+TORSION
+~
+~ Note that generic torsions as X-C-C-X must come at the end of
+~ torsion definition, since the program pick up the first compatible
+~ torsion. So generic definition must come last.
+~
+~ The torsion parameters are derived from AMBER using different
+~ notation. I.e. we write E = SUM V(n)/2( 1 + cos(n*phi+gamma)
+~ as k(n)=V(n)/2 and phase=cos(gamma)
+~ Our data structure is therefore
+~ name  name  name  name  k(1)  k(2)  k(3)  n   cos(gamma)
+~ should be added                                  cos(g2) cos(g3)
+~
+~
+~ TO IGNORE A FREE ROTATING BOND USE cos(gamma)=0, otherwise use 1 or -1
+~
+~
+~
+~ stoped here
+~debug
+~
+CAH    CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+~ same as above but for aib..................kapi
+CA4    CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CA4    CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CA4    CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CA4    CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+CBH    CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CBH    CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CBH    CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CBH    CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+CO     NH     CAH    CH3    0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CH3    0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CH3    0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CH3    0.0      0.0      0.0       3   0.0
+~ same as above but for aib..................kapi
+CO     NH     CA4    CH4    0.0      0.0      0.0       3   0.0
+CO     NH     CAH    CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CAH    CCH2   0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CCH2   0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CCH2   0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CAH    CH3    0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CH3    0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CH3    0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CH3    0.0      0.0      0.0       3   0.0
+~ same as above but for aib..................kapi
+HN     NH     CA4    CH4    0.0      0.0      0.0       3   0.0
+CANX   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+CH3    CO     NH     HN     0.0      2.5      0.0       2  -1.0
+~ aib.....kapi
+CH4    CO     NH     HN     0.0      2.5      0.0       2  -1.0
+OC     CO     NH     HN     0.0      2.5      0.0       2  -1.0
+~PCA parameter
+OCC    COC    NHC    HNC    0.0      2.5      0.0       2  -1.0
+CH3    CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CH3    CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CH3    CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CH3    CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+OC     CO     CAH    NH     0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   NH     0.0      0.0      0.1       3  -1.0
+~ same as above 2 but for aib..................kapi
+CA4    CO     NH     HN     0.0      2.5      0.0       2  -1.0
+OC     CO     CA4    NH     0.0      0.0      0.1       3  -1.0
+CO     NH     CAH    CBH    0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CBH    0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CBH    0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CBH    0.0      0.0      0.0       3   0.0
+HN     NH     CAH    CBH    0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CBH    0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CBH    0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CBH    0.0      0.0      0.0       3   0.0
+CO     NH     CAH    CO     0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CO     0.0      0.0      0.0       3   0.0
+~ aib........kapi
+CO     NH     CA4    CO     0.0      0.0      0.0       3   0.0
+HN     NH     CAH    CO     0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CO     0.0      0.0      0.0       3   0.0
+~ aib........kapi
+HN     NH     CA4    CO     0.0      0.0      0.0       3   0.0
+NH     CAH    CBH    CH3G   0.0      0.0      0.5       3   1.0
+NH     CAHI   CBH    CH3G   0.0      0.0      0.5       3   1.0
+NH     CA1    CBH    CH3G   0.0      0.0      0.5       3   1.0
+NH     CA1I   CBH    CH3G   0.0      0.0      0.5       3   1.0
+CO     NH     CACX   CH3    0.0      0.0      0.0       3   0.0
+CO     NH     CACI   CH3    0.0      0.0      0.0       3   0.0
+CO     NH     CACX   CCH2   0.0      0.0      0.0       3   0.0
+CO     NH     CACI   CCH2   0.0      0.0      0.0       3   0.0
+CO     NH     CACX   CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CACI   CH2C   0.0      0.0      0.0       3   0.0
+CO     NH     CACX   CX     0.0      0.0      0.0       3   0.0
+CO     NH     CACI   CX     0.0      0.0      0.0       3   0.0
+HN     NH     CACX   CX     0.0      0.0      0.0       3   0.0
+HN     NH     CACI   CX     0.0      0.0      0.0       3   0.0
+~
+CCH2   CACX   CX     OX     0.0      0.0      0.1       3  -1.0
+CCH2   CACI   CX     OX     0.0      0.0      0.1       3  -1.0
+CH2C   CACX   CX     OX     0.0      0.0      0.1       3  -1.0
+CH2C   CACI   CX     OX     0.0      0.0      0.1       3  -1.0
+~
+~ O-C-CH-N is in AMBER   0.1 180 3
+NH     CACX   CX     OX     0.0      0.0      0.1       3  -1.0
+NH     CACI   CX     OX     0.0      0.0      0.1       3  -1.0
+~
+CH3    CANX   CO     NH     0.0      0.0      0.0       2   0.0
+CH3    CANI   CO     NH     0.0      0.0      0.0       2   0.0
+~
+CCH2   CANX   CO     NH     0.0      0.0      0.0       2   0.0
+CCH2   CANI   CO     NH     0.0      0.0      0.0       2   0.0
+CH2C   CANX   CO     NH     0.0      0.0      0.0       2   0.0
+CH2C   CANI   CO     NH     0.0      0.0      0.0       2   0.0
+~
+CH3    CANX   CO     OC     0.0      0.0      0.0       2   0.0
+CH3    CANI   CO     OC     0.0      0.0      0.0       2   0.0
+~
+CCH2   CANX   CO     OC     0.0      0.0      0.1       3  -1.0
+CCH2   CANI   CO     OC     0.0      0.0      0.1       3  -1.0
+CH2C   CANX   CO     OC     0.0      0.0      0.1       3  -1.0
+CH2C   CANI   CO     OC     0.0      0.0      0.1       3  -1.0
+~
+OC     CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CANX   CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CANI   CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+HN     NH     CACX   CH3    0.0      0.0      0.0       3   0.0
+HN     NH     CACI   CH3    0.0      0.0      0.0       3   0.0
+~
+HN     NH     CACX   CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CACI   CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CACX   CH2C   0.0      0.0      0.0       3   0.0
+HN     NH     CACI   CH2C   0.0      0.0      0.0       3   0.0
+~
+HX     NX     CANX   CH3    0.0      0.0      0.233     3   1.0
+HX     NX     CANI   CH3    0.0      0.0      0.233     3   1.0
+HX     NX     CANX   CCH2   0.0      0.0      0.233     3   1.0
+HX     NX     CANI   CCH2   0.0      0.0      0.233     3   1.0
+HX     NX     CANX   CH2C   0.0      0.0      0.233     3   1.0
+HX     NX     CANI   CH2C   0.0      0.0      0.233     3   1.0
+~
+HX     NX     CANX   CO     0.0      0.0      0.233     3   1.0
+HX     NX     CANI   CO     0.0      0.0      0.233     3   1.0
+NX     CANX   CO     OC     0.0      0.0      0.1       3  -1.0
+NX     CANI   CO     OC     0.0      0.0      0.1       3  -1.0
+NX     CANX   CO     NH     0.0      0.0      0.0       2   0.0
+NX     CANI   CO     NH     0.0      0.0      0.0       2   0.0
+X      CAH    CO     X      0.0      0.0      0.0       3   0.0
+X      CAHI   CO     X      0.0      0.0      0.0       3   0.0
+~ aib.......kapi
+X      CA4    CO     X      0.0      0.0      0.0       3   0.0
+X      CACX   CO     X      0.0      0.0      0.0       3   0.0
+X      CACI   CO     X      0.0      0.0      0.0       3   0.0
+X      CANX   CX     X      0.0      0.0      0.0       3   0.0
+X      CANI   CX     X      0.0      0.0      0.0       3   0.0
+CH3    CBH    CO     NH     0.0      0.0      0.0       2   0.0
+CH3    CBH    CO     OC     0.0      0.0      0.0       2   0.0
+~ glycine
+NH     CAG    CO     OC     0.0      0.0      0.2       3  -1.0
+HN     NH     CAG    CO     0.0      0.0      0.0       3   0.0
+CO     NH     CAG    CO     0.0      0.0      0.0       3   0.0
+CAG    CO     NH     CAG    0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CAG    0.0      2.5      0.0       2  -1.0
+X      CO     NH     X      0.0      2.5      0.0       2  -1.0
+X      CAG    CO     X      0.0      0.0      0.0       3   0.0
+~ cysteine
+X      CAH    CH2C   X      0.0      0.0      1.0       3   1.0
+X      CAHI   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CAX    CH2C   X      0.0      0.0      1.0       3   1.0
+X      CAXI   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CA1    CH2C   X      0.0      0.0      1.0       3   1.0
+X      CA1I   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CANX   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CANI   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CACX   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CACI   CH2C   X      0.0      0.0      1.0       3   1.0
+X      CH2C   SH     X      0.0      0.0      0.75      3   1.0
+HN     NH     CAH    CH2C   0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CH2C   0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CH2C   0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CH2C   0.0      0.0      0.0       3   0.0
+OC     CO     CAH    CH2C   0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CH2C   0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CH2C   0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CH2C   0.0      0.0      0.1       3  -1.0
+NH     CO     CAH    CH2C   0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CH2C   0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CH2C   0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CH2C   0.0      0.0      0.0       2   0.0
+~cystine
+X      CAH    CCH2   X      0.0      0.0      1.0       3   1.0
+X      CAHI   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CAX    CCH2   X      0.0      0.0      1.0       3   1.0
+X      CAXI   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CA1    CCH2   X      0.0      0.0      1.0       3   1.0
+X      CA1I   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CANX   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CANI   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CACX   CCH2   X      0.0      0.0      1.0       3   1.0
+X      CACI   CCH2   X      0.0      0.0      1.0       3   1.0
+HN     NH     CAH    CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CCH2   0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CCH2   0.0      0.0      0.0       3   0.0
+OC     CO     CAH    CCH2   0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CCH2   0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CCH2   0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CCH2   0.0      0.0      0.1       3  -1.0
+NH     CO     CAH    CCH2   0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CCH2   0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CCH2   0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CCH2   0.0      0.0      0.0       2   0.0
+~ cys link
+CCH2   SC     SC     CCH2   0.0      3.5      0.6       3   1.0
+X      CCH2   SC     X      0.0      0.0      1.0       3   1.0
+~
+~ CTR5 and CTG0
+CAG    CO     NH     CAG1   0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CAG1   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CAG1   0.0      2.5      0.0       2  -1.0
+OC     CO     NH     CAG1   0.0      2.5      0.0       2  -1.0
+HN     NH     CA1    CO2    0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CO2    0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CO2    0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CO2    0.0      0.0      0.0       3   0.0
+HN     NH     CAG1   CO2    0.0      0.0      0.0       3   0.0
+CO     NH     CAG1   CO2    0.0      0.0      0.0       3   0.0
+NH     CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+NH     CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH3    CA1    CO2    OC2    0.0      0.0      0.0       2   0.0
+CH3    CA1I   CO2    OC2    0.0      0.0      0.0       2   0.0
+CH2    CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2    CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2S   CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2S   CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CCH2   CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CCH2   CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2B   CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2B   CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2C   CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2C   CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CHT    CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CHT    CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CBH    CA1    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CBH    CA1I   CO2    OC2    0.0      0.0      0.1       3  -1.0
+NH     CAG1   CO2    OC2    0.0      0.0      0.2       3  -1.0
+~ took as in (CH3 CA1  CO2 OC2) for consistency - Not in Amber.
+NH     CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+NH     CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH3    CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH3    CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2    CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2    CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2S   CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2S   CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CCH2   CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CCH2   CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2B   CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2B   CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2C   CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2C   CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CHT    CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CHT    CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CBH    CA1    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CBH    CA1I   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+~ took as in (CH3  CAG1  CO2   OC2) for consistency - Not in Amber.
+NH     CAG1   CO2    OCH3   0.0      0.0      0.2       3  -1.0
+~ all from OPLS of MACROMODEL without V1/2 (similar to X-C-OH-X)
+CA1    CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+CA1I   CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+OC2    CO2    OCH3   CH3O   0.000    2.25     0.00      2  -1.0
+CAG1   CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+~
+~CTR6, DCT6
+HN     NH     CAP    CO2    0.0      0.0      0.0       3   0.0
+HN     NH     CAPI   CO2    0.0      0.0      0.0       3   0.0
+CO     NH     CAP    CO2    0.0      0.0      0.0       3   0.0
+CO     NH     CAPI   CO2    0.0      0.0      0.0       3   0.0
+NH     CAP    CO2    OC2    0.0      0.0      0.1       3  -1.0
+NH     CAPI   CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH3    CAP    CO2    OC2    0.0      0.0      0.0       2   0.0
+CH3    CAPI   CO2    OC2    0.0      0.0      0.0       2   0.0
+CH2    CAP    CO2    OC2    0.0      0.0      0.1       3  -1.0
+CH2    CAPI   CO2    OC2    0.0      0.0      0.1       3  -1.0
+~ took as in (CH3 CAP  CO2 OC2) for consistency - Not in Amber.
+NH     CAP    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+NH     CAPI   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH3    CAP    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH3    CAPI   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2    CAP    CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CH2    CAPI   CO2    OCH3   0.0      0.0      0.1       3  -1.0
+CAP    CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+CAPI   CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+~
+~CTRG
+CAH    CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+CO     NH     CACG   CX     0.0      0.0      0.0       3   0.0
+HN     NH     CACG   CX     0.0      0.0      0.0       3   0.0
+HX     NX     CACG   CX     0.0      0.0      0.467     3   1.0
+NH     CACG   CX     OX     0.0      0.0      0.2       3  -1.0
+NX     CACG   CX     OX     0.0      0.0      0.2       3  -1.0
+OC     CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+~ntrg
+CANG   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CANG   CO     NH     CAHI   0.0      2.5      0.0       2  -1.0
+CANG   CO     NH     CA1    0.0      2.5      0.0       2  -1.0
+CANG   CO     NH     CA1I   0.0      2.5      0.0       2  -1.0
+CANG   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+CANG   CO     NH     CACG   0.0      2.5      0.0       2  -1.0
+HX     NX     CANG   CO     0.0      0.0      0.467     3   1.0
+NX     CANG   CO     OC     0.0      0.0      0.2       3  -1.0
+NX     CANG   CO     NH     0.0      0.0      0.0       3   0.0
+X      CANG   CX     X      0.0      0.0      0.0       3   0.0
+~
+CO     NH     CAH    CH2    0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CH2    0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CH2    0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CH2    0.0      0.0      0.0       3   0.0
+HN     NH     CAH    CH2    0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CH2    0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CH2    0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CH2    0.0      0.0      0.0       3   0.0
+HX     NX     CACX   CH2    0.0      0.0      0.233     3   1.0
+HX     NX     CACI   CH2    0.0      0.0      0.233     3   1.0
+~
+~
+HX     NX     CACX   CX     0.0      0.0      0.233     3   1.0
+HX     NX     CACI   CX     0.0      0.0      0.233     3   1.0
+CAH    CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CAH    CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     CACX   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CAX    CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CAXI   CO     NH     CACI   0.0      2.5      0.0       2  -1.0
+CO     NH     CACX   CH2    0.0      0.0      0.0       3   0.0
+CO     NH     CACI   CH2    0.0      0.0      0.0       3   0.0
+CH2    CACX   CX     OX     0.0      0.0      0.1       3  -1.0
+CH2    CACI   CX     OX     0.0      0.0      0.1       3  -1.0
+CH2    CACX   CX     OC     0.0      0.0      0.1       3  -1.0
+CH2    CACI   CX     OC     0.0      0.0      0.1       3  -1.0
+NX     CACX   CX     OC     0.0      0.0      0.1       3  -1.0
+NX     CACI   CX     OC     0.0      0.0      0.1       3  -1.0
+CH2    CANX   CO     NH     0.0      0.0      0.0       2   0.0
+CH2    CANI   CO     NH     0.0      0.0      0.0       2   0.0
+CH2    CANX   CO     OC     0.0      0.0      0.1       3  -1.0
+CH2    CANI   CO     OC     0.0      0.0      0.1       3  -1.0
+HN     NH     CACX   CH2    0.0      0.0      0.0       3   0.0
+HN     NH     CACI   CH2    0.0      0.0      0.0       3   0.0
+HX     NX     CANX   CH2    0.0      0.0      0.233     3   1.0
+HX     NX     CANI   CH2    0.0      0.0      0.233     3   1.0
+NX     CACX   CX     OX     0.0      0.0      0.1       3  -1.0
+NX     CACI   CX     OX     0.0      0.0      0.1       3  -1.0
+X      CAH    CH2    X      0.0      0.0      1.0       3   1.0
+X      CAHI   CH2    X      0.0      0.0      1.0       3   1.0
+X      CAX    CH2    X      0.0      0.0      1.0       3   1.0
+X      CAXI   CH2    X      0.0      0.0      1.0       3   1.0
+X      CA1    CH2    X      0.0      0.0      1.0       3   1.0
+X      CA1I   CH2    X      0.0      0.0      1.0       3   1.0
+~
+~ PHE
+~
+NX     CACX   CH2    CG     0.0      0.0      1.0       3   1.0
+NX     CACI   CH2    CG     0.0      0.0      1.0       3   1.0
+CX     CACX   CH2    CG     0.0      0.0      1.0       3   1.0
+CX     CACI   CH2    CG     0.0      0.0      1.0       3   1.0
+CAH    CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CAHI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CAX    CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CAXI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CA1    CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CA1I   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CACX   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CACI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CANX   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CANI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CH2    CG     CFH    CFH    0.0      2.6500   0.0       2  -1.0
+CFH    CFH    CG     CFH    0.0      2.6500   0.0       2  -1.0
+CFH    CG     CFH    CFH    0.0      2.6500   0.0       2  -1.0
+CG     CFH    CFH    CFH    0.0      5.3      0.0       2  -1.0
+CFH    CFH    CFH    CFH    0.0      5.3      0.0       2  -1.0
+~
+~ TYR
+~
+CFH    CZ     OH     HO     0.0      0.9      0.0       2  -1.0
+CFH    CFH    CZ     CFH    0.0      2.6500   0.0       2  -1.0
+CFH    CFH    CZ     OH     0.0      2.6500   0.0       2  -1.0
+CG     CFH    CFH    CZ     0.0      5.3      0.0       2  -1.0
+~
+~ TRP
+~
+CAH    CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CAX    CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CA1    CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CACI   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CANX   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CANI   CH2    CGTR   CHTR   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CACI   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CANX   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CANI   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CAH    CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CAX    CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CA1    CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGTR   CTR    0.0      0.0      0.0       2   0.0
+NX     CACX   CH2    CGTR   0.0      0.0      1.0       3   1.0
+NX     CACI   CH2    CGTR   0.0      0.0      1.0       3   1.0
+CX     CACX   CH2    CGTR   0.0      0.0      1.0       3   1.0
+CX     CACI   CH2    CGTR   0.0      0.0      1.0       3   1.0
+CTR    CGHT   NDHS   HDHS   0.0      1.5250   0.0       2  -1.0
+CHTR   CGHT   CTR    CFH    0.0      0.8800   0.0       2  -1.0
+CHTR   CTR    CGHT   CFH    0.0      0.8800   0.0       2  -1.0
+CFH    CTR    CGHT   CFH    0.0      0.8800   0.0       2  -1.0
+CFH    CGHT   NDHS   HDHS   0.0      1.5250   0.0       2  -1.0
+CFH    CFH    CGHT   NDHS   0.0      2.6500   0.0       2  -1.0
+CFH    CFH    CFH    CGHT   0.0      5.3      0.0       2  -1.0
+CFH    CFH    CGHT   CTR    0.0      2.6500   0.0       2  -1.0
+CFH    CGHT   CTR    CGTR   0.0      0.8800   0.0       2  -1.0
+CH2    CGTR   CHTR   NDHS   0.0      11.8     0.0       2  -1.0
+CH2    CGTR   CTR    CFH    0.0      0.6      0.0       2  -1.0
+CH2    CGTR   CTR    CGHT   0.0      0.6      0.0       2  -1.0
+CTR    CGTR   CHTR   NDHS   0.0      11.8     0.0       2  -1.0
+CHTR   CGTR   CTR    CFH    0.0      0.6      0.0       2  -1.0
+CHTR   CGTR   CTR    CGHT   0.0      0.6      0.0       2  -1.0
+CGTR   CHTR   NDHS   CGHT   0.0      3.0000   0.0       2  -1.0
+CGTR   CHTR   NDHS   HDHS   0.0      3.0000   0.0       2  -1.0
+CFH    CFH    CFH    CTR    0.0      5.3      0.0       2  -1.0
+CFH    CFH    CTR    CGHT   0.0      2.6500   0.0       2  -1.0
+CGTR   CTR    CFH    CFH    0.0      2.6500   0.0       2  -1.0
+CGTR   CTR    CGHT   NDHS   0.0      0.8800   0.0       2  -1.0
+CFH    CTR    CGHT   NDHS   0.0      0.8800   0.0       2  -1.0
+CHTR   NDHS   CGHT   CFH    0.0      1.5250   0.0       2  -1.0
+CHTR   NDHS   CGHT   CTR    0.0      1.5250   0.0       2  -1.0
+~
+~carlos's additions
+~
+X      CAH    CBH    X      0.0      0.0      0.5       3   1.0
+X      CAHI   CBH    X      0.0      0.0      0.5       3   1.0
+X      CAX    CBH    X      0.0      0.0      0.5       3   1.0
+X      CAXI   CBH    X      0.0      0.0      0.5       3   1.0
+X      CA1    CBH    X      0.0      0.0      0.5       3   1.0
+X      CA1I   CBH    X      0.0      0.0      0.5       3   1.0
+OC     CO     CAH    CBH    0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CBH    0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CBH    0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CBH    0.0      0.0      0.1       3  -1.0
+OC     CO     CANX   CBH    0.0      0.0      0.1       3  -1.0
+OC     CO     CANI   CBH    0.0      0.0      0.1       3  -1.0
+OX     CX     CACX   CBH    0.0      0.0      0.1       3  -1.0
+OX     CX     CACI   CBH    0.0      0.0      0.1       3  -1.0
+~
+~
+~ parametrs for PRO
+NH     CH2D   CH2    CH2    0.0      0.0      2.0       3   1.0
+NX     CH2D   CH2    CH2    0.0      0.0      2.0       3   1.0
+CH2D   CH2    CH2    CHPR   0.0      0.0      2.0       3   1.0
+CH2D   CH2    CH2    CHPI   0.0      0.0      2.0       3   1.0
+CH2D   CH2    CH2    CAP    0.0      0.0      2.0       3   1.0
+CH2D   CH2    CH2    CAPI   0.0      0.0      2.0       3   1.0
+CH2    CH2    CHPR   NH     0.0      0.0      1.0       3   1.0
+CH2    CH2    CHPI   NH     0.0      0.0      1.0       3   1.0
+CH2    CH2    CAP    NH     0.0      0.0      1.0       3   1.0
+CH2    CH2    CAPI   NH     0.0      0.0      1.0       3   1.0
+CH2    CH2    CHPR   NX     0.0      0.0      1.0       3   1.0
+CH2    CH2    CHPI   NX     0.0      0.0      1.0       3   1.0
+CH2    CHPR   NH     CH2D   0.0      0.0      0.0       3   0.0
+CH2    CHPI   NH     CH2D   0.0      0.0      0.0       3   0.0
+CH2    CAP    NH     CH2D   0.0      0.0      0.0       3   0.0
+CH2    CAPI   NH     CH2D   0.0      0.0      0.0       3   0.0
+CH3    CAP    NH     CH2D   0.0      0.0      0.0       3   0.0
+CH3    CAPI   NH     CH2D   0.0      0.0      0.0       3   0.0
+CH2    CHPR   CX     OX     0.0      0.0      0.1       3  -1.0
+CH2    CHPI   CX     OX     0.0      0.0      0.1       3  -1.0
+NH     CHPR   CX     OX     0.0      0.0      0.1       3  -1.0
+NH     CHPI   CX     OX     0.0      0.0      0.1       3  -1.0
+NX     CHPR   CX     OX     0.0      0.0      0.1       3  -1.0
+NX     CHPI   CX     OX     0.0      0.0      0.1       3  -1.0
+NX     CHPR   CO     OC     0.0      0.0      0.1       3  -1.0
+NX     CHPI   CO     OC     0.0      0.0      0.1       3  -1.0
+CHPR   NH     CH2D   CH2    0.0      0.0      0.0       3   0.0
+CHPI   NH     CH2D   CH2    0.0      0.0      0.0       3   0.0
+CAP    NH     CH2D   CH2    0.0      0.0      0.0       3   0.0
+CAPI   NH     CH2D   CH2    0.0      0.0      0.0       3   0.0
+CHPR   NX     CH2D   CH2    0.0      0.0      0.467     3   1.0
+CHPI   NX     CH2D   CH2    0.0      0.0      0.467     3   1.0
+X      NX     CHPR   X      0.0      0.0      0.233     3   1.0
+X      NX     CHPI   X      0.0      0.0      0.233     3   1.0
+X      NX     CH2D   X      0.0      0.0      0.467     3   1.0
+~ parameters for SER
+X      CH2S   OH     X      0.0      0.0      0.5       3   1.0
+X      CAH    CH2S   X      0.0      0.0      1.0       3   1.0
+X      CAHI   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CAX    CH2S   X      0.0      0.0      1.0       3   1.0
+X      CAXI   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CA1    CH2S   X      0.0      0.0      1.0       3   1.0
+X      CA1I   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CANX   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CANI   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CACX   CH2S   X      0.0      0.0      1.0       3   1.0
+X      CACI   CH2S   X      0.0      0.0      1.0       3   1.0
+OC     CO     CAH    CH2S   0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CH2S   0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CH2S   0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CH2S   0.0      0.0      0.1       3  -1.0
+OC     CO     CANX   CH2S   0.0      0.0      0.1       3  -1.0
+OC     CO     CANI   CH2S   0.0      0.0      0.1       3  -1.0
+OX     CX     CACX   CH2S   0.0      0.0      0.1       3  -1.0
+OX     CX     CACI   CH2S   0.0      0.0      0.1       3  -1.0
+NH     CO     CAH    CH2S   0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CH2S   0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CH2S   0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CH2S   0.0      0.0      0.0       2   0.0
+NH     CO     CANX   CH2S   0.0      0.0      0.0       2   0.0
+NH     CO     CANI   CH2S   0.0      0.0      0.0       2   0.0
+~ parameters for THR
+X      CAH    CHT    X      0.0      0.0      0.5       3   1.0
+X      CAHI   CHT    X      0.0      0.0      0.5       3   1.0
+X      CAX    CHT    X      0.0      0.0      0.5       3   1.0
+X      CAXI   CHT    X      0.0      0.0      0.5       3   1.0
+X      CA1    CHT    X      0.0      0.0      0.5       3   1.0
+X      CA1I   CHT    X      0.0      0.0      0.5       3   1.0
+X      CANX   CHT    X      0.0      0.0      0.5       3   1.0
+X      CANI   CHT    X      0.0      0.0      0.5       3   1.0
+X      CACX   CHT    X      0.0      0.0      0.5       3   1.0
+X      CACI   CHT    X      0.0      0.0      0.5       3   1.0
+X      CHT    OH     X      0.0      0.0      0.5       3   1.0
+OC     CO     CAH    CHT    0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CHT    0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CHT    0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CHT    0.0      0.0      0.1       3  -1.0
+OC     CO     CANX   CHT    0.0      0.0      0.1       3  -1.0
+OC     CO     CANI   CHT    0.0      0.0      0.1       3  -1.0
+OX     CX     CACX   CHT    0.0      0.0      0.1       3  -1.0
+OX     CX     CACI   CHT    0.0      0.0      0.1       3  -1.0
+NH     CO     CAH    CHT    0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CHT    0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CHT    0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CHT    0.0      0.0      0.0       2   0.0
+~
+NH     CO     CANX   CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CANI   CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CAH    CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CBH    0.0      0.0      0.0       2   0.0
+NH     CO     CANX   CHT    0.0      0.0      0.0       2   0.0
+NH     CO     CANI   CHT    0.0      0.0      0.0       2   0.0
+~ parametrs for PRO
+X      CHPR   CO     X      0.0      0.0      0.0       2   0.0
+X      CHPI   CO     X      0.0      0.0      0.0       2   0.0
+X      NH     CH2D   X      0.0      0.0      0.0       3   0.0
+X      NH     CHPR   X      0.0      0.0      0.0       3   0.0
+X      NH     CHPI   X      0.0      0.0      0.0       3   0.0
+X      NH     CAP    X      0.0      0.0      0.0       3   0.0
+X      NH     CAPI   X      0.0      0.0      0.0       3   0.0
+X      CH2    CHPR   X      0.0      0.0      1.0       3   1.0
+X      CH2    CHPI   X      0.0      0.0      1.0       3   1.0
+X      CH2    CAP    X      0.0      0.0      1.0       3   1.0
+X      CH2    CAPI   X      0.0      0.0      1.0       3   1.0
+~
+~ argenin torsions
+~
+~ 2 bonds CAH-CH2
+NH     CAH    CH2    CR1    0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CR1    0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CR1    0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CR1    0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CR1    0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CR1    0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CR1    0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CR1    0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CR1    0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CR1    0.0      0.0      1.0       3   1.0
+~
+CAH    CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CAHI   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CAX    CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CAXI   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CA1    CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CA1I   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CACX   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CACI   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CANX   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CANI   CH2    CR1    CR2    0.0      0.0      2.0       3   1.0
+CH2    CR1    CR2    NR1    0.0      0.0      2.0       3   1.0
+CR1    CR2    NR1    HR1    0.0      0.0      0.0       3   0.0
+CR1    CR2    NR1    CR3    0.0      0.0      0.0       3   0.0
+~ 4 bonds through NR1-CR3 6.8/4=1.7
+CR2    NR1    CR3    NR2    0.0      1.7      0.0       2  -1.0
+HR1    NR1    CR3    NR2    0.0      1.7      0.0       2  -1.0
+~ 4 bonds CR3-NR2
+NR1    CR3    NR2    HR2    0.0      1.7      0.0       2  -1.0
+NR2    CR3    NR2    HR2    0.0      1.7      0.0       2  -1.0
+~
+~
+~
+~ aspargine
+~
+~ 2 torsions through CAH-CH2 2/2=1.
+NH     CAH    CH2    CO     0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CO     0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CO     0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CO     0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CO     0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CO     0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CO     0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CO     0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CO     0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CO     0.0      0.0      1.0       3   1.0
+CAH    CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CAHI   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CAX    CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CAXI   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CA1    CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CA1I   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CACX   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CACI   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CANX   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CANI   CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CAH    CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CAHI   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CAX    CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CAXI   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CA1    CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CA1I   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CACX   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CACI   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CANX   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+CANI   CH2    CO     NAS    0.0      0.0      0.0       3   0.0
+~ 4 torsions through CO-NAS two symmetrical pairs 10./4=2.5
+CH2    CO     NAS    HAS    0.0      2.5      0.0       2  -1.0
+OC     CO     NAS    HAS    0.0      2.5      0.0       2  -1.0
+~
+~
+~
+~ aspartic acid
+~
+HN     NH     CAH    CH2B   0.0      0.0      0.0       3   0.0
+HN     NH     CAHI   CH2B   0.0      0.0      0.0       3   0.0
+HN     NH     CA1    CH2B   0.0      0.0      0.0       3   0.0
+HN     NH     CA1I   CH2B   0.0      0.0      0.0       3   0.0
+CO     NH     CAH    CH2B   0.0      0.0      0.0       3   0.0
+CO     NH     CAHI   CH2B   0.0      0.0      0.0       3   0.0
+CO     NH     CA1    CH2B   0.0      0.0      0.0       3   0.0
+CO     NH     CA1I   CH2B   0.0      0.0      0.0       3   0.0
+NH     CO     CAH    CH2B   0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CH2B   0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CH2B   0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CH2B   0.0      0.0      0.0       2   0.0
+OC     CO     CAH    CH2B   0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CH2B   0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CH2B   0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CH2B   0.0      0.0      0.1       3  -1.0
+OX     CX     CACX   CH2B   0.0      0.0      0.1       3  -1.0
+OX     CX     CACI   CH2B   0.0      0.0      0.1       3  -1.0
+OC     CO     CANX   CH2B   0.0      0.0      0.1       3  -1.0
+OC     CO     CANI   CH2B   0.0      0.0      0.1       3  -1.0
+~
+NBX    CANX   CO     OC     0.0      0.0      0.1       3  -1.0
+NBX    CANI   CO     OC     0.0      0.0      0.1       3  -1.0
+NH     CO     CANX   CH2B   0.0      0.0      0.0       2   0.0
+NH     CO     CANI   CH2B   0.0      0.0      0.0       2   0.0
+~
+NBX    CANX   CO     NH     0.0      0.0      0.0       2   0.0
+NBX    CANI   CO     NH     0.0      0.0      0.0       2   0.0
+~ 2/2=1.
+NH     CAH    CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CA1    CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX     CACX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX     CACI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CACX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CACI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CANX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NH     CANI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX     CANX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX     CANI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CX     CACX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CX     CACI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CACX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CACI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CANX   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CANI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CAH    CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CAX    CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2B   CX1    0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2B   CX1    0.0      0.0      1.0       3   1.0
+CACX   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CACI   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CANX   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CANI   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CAH    CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CAHI   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CAX    CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CAXI   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CA1    CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+CA1I   CH2B   CX1    OX1    0.0      0.0      0.0       3   0.0
+~
+~
+~ glutamine
+OC     CO     CAH    CH2    0.0      0.0      0.1       3  -1.0
+OC     CO     CAHI   CH2    0.0      0.0      0.1       3  -1.0
+OC     CO     CAX    CH2    0.0      0.0      0.1       3  -1.0
+OC     CO     CAXI   CH2    0.0      0.0      0.1       3  -1.0
+NH     CO     CAH    CH2    0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CH2    0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CH2    0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CH2    0.0      0.0      0.0       2   0.0
+NH     CAH    CH2    CH2    0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CH2    0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CH2    0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CH2    0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CH2    0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CH2    0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CH2    0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CH2    0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CH2    0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CH2    0.0      0.0      1.0       3   1.0
+CAH    CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CAHI   CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CAX    CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CAXI   CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CA1    CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CA1I   CH2    CH2    CSX    0.0      0.0      2.0       3   1.0
+CH2    CH2    CSX    OSX    0.0      0.0      0.0       3   0.0
+CH2    CH2    CSX    NAS    0.0      0.0      0.0       3   0.0
+OSX    CSX    NAS    HAS1   0.0      2.5      0.0       2  -1.0
+CH2    CSX    NAS    HAS1   0.0      2.5      0.0       2  -1.0
+~
+~ glutamic acid
+NH     CAH    CH2    CH2A   0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CH2A   0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CH2A   0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CH2A   0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CH2A   0.0      0.0      1.0       3   1.0
+CAH    CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CAHI   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CAX    CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CAXI   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CA1    CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CA1I   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CACX   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CACI   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CANX   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CANI   CH2    CH2A   CSX1   0.0      0.0      2.0       3   1.0
+CH2    CH2A   CSX1   OSX1   0.0      0.0      0.0       2   0.0
+~ histidine
+NH     CAH    CH2    CGHP   0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CGHP   0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CGHP   0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CGHP   0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CGHP   0.0      0.0      1.0       3   1.0
+CAH    CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CAX    CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CA1    CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CACI   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CANX   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CANI   CH2    CGHP   NDHP   0.0      0.0      0.0       2   0.0
+CAH    CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CAX    CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CA1    CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CACI   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CANX   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CANI   CH2    CGHP   CHDP   0.0      0.0      0.0       2   0.0
+CH2    CGHP   NDHP   HDNP   0.0      1.4      0.0       2  -1.0
+CH2    CGHP   NDHP   CHEP   0.0      1.4      0.0       2  -1.0
+CHDP   CGHP   NDHP   HDNP   0.0      1.4      0.0       2  -1.0
+CHDP   CGHP   NDHP   CHEP   0.0      1.4      0.0       2  -1.0
+CH2    CGHP   CHDP   NEHP   0.0      7.95     0.0       2  -1.0
+NDHP   CGHP   CHDP   NEHP   0.0      7.95     0.0       2  -1.0
+CGHP   NDHP   CHEP   NEHP   0.0      4.65     0.0       2  -1.0
+HDNP   NDHP   CHEP   NEHP   0.0      4.65     0.0       2  -1.0
+NDHP   CHEP   NEHP   CHDP   0.0      4.65     0.0       2  -1.0
+NDHP   CHEP   NEHP   HENP   0.0      4.65     0.0       2  -1.0
+CGHP   CHDP   NEHP   HENP   0.0      3.0      0.0       2  -1.0
+CGHP   CHDP   NEHP   CHEP   0.0      3.0      0.0       2  -1.0
+~
+~ histidine
+NH     CAH    CH2    CGHS   0.0      0.0      1.0       3   1.0
+NH     CAHI   CH2    CGHS   0.0      0.0      1.0       3   1.0
+NH     CA1    CH2    CGHS   0.0      0.0      1.0       3   1.0
+NH     CA1I   CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO     CAH    CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO     CAHI   CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO     CAX    CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO     CAXI   CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO2    CA1    CH2    CGHS   0.0      0.0      1.0       3   1.0
+CO2    CA1I   CH2    CGHS   0.0      0.0      1.0       3   1.0
+CAH    CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CAX    CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CA1    CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CACI   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CANX   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CANI   CH2    CGHS   NDHS   0.0      0.0      0.0       2   0.0
+CAH    CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CAHI   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CAX    CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CAXI   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CA1    CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CA1I   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CACX   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CACI   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CANX   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CANI   CH2    CGHS   CHDH   0.0      0.0      0.0       2   0.0
+CH2    CGHS   NDHS   HDNH   0.0      1.4      0.0       2  -1.0
+CH2    CGHS   NDHS   CHEH   0.0      1.4      0.0       2  -1.0
+CHDH   CGHS   NDHS   HDNH   0.0      1.4      0.0       2  -1.0
+CHDH   CGHS   NDHS   CHEH   0.0      1.4      0.0       2  -1.0
+CH2    CGHS   CHDH   NEHS   0.0      7.15     0.0       2  -1.0
+NDHS   CGHS   CHDH   NEHS   0.0      7.15     0.0       2  -1.0
+CGHS   NDHS   CHEH   NEHS   0.0      4.65     0.0       2  -1.0
+HDNH   NDHS   CHEH   NEHS   0.0      4.65     0.0       2  -1.0
+CGHS   CHDH   NEHS   CHEH   0.0      4.8      0.0       2  -1.0
+X      CHDH   NEHS   X      0.0      4.8      0.0       2  -1.0
+NDHS   CHEH   NEHS   CHDH   0.0      10.0     0.0       2  -1.0
+X      CHEH   NEHS   X      0.0      10.0     0.0       2  -1.0
+~
+~heme contributed by haiying
+~
+FE     NP     CPA1   CPM    0.0      0.0      0.0       2   0.0
+FE     NP     CPA2   CPM    0.0      0.0      0.0       2   0.0
+FE     NP     CPA2   CPB2   0.0      0.0      0.0       2   0.0
+FE     NP     CPA2   CPB3   0.0      0.0      0.0       2   0.0
+FE     NP     CPA1   CPB2   0.0      0.0      0.0       2   0.0
+FE     NP     CPA1   CPB1   0.0      0.0      0.0       2   0.0
+FE1    NP     CPA1   CPM    0.0      0.0      0.0       2   0.0
+FE1    NP     CPA2   CPM    0.0      0.0      0.0       2   0.0
+FE1    NP     CPA2   CPB2   0.0      0.0      0.0       2   0.0
+FE1    NP     CPA2   CPB3   0.0      0.0      0.0       2   0.0
+FE1    NP     CPA1   CPB2   0.0      0.0      0.0       2   0.0
+FE1    NP     CPA1   CPB1   0.0      0.0      0.0       2   0.0
+X      CPB3   CR1E   X      0.0      10.4     0.0       2  -1.0
+OC     CO1    CHE2   CHE1   0.0      0.0      0.0       3   0.0
+CO1    CHE2   CHE1   CPB1   0.0      0.0      1.6       3   1.0
+X      CPB1   CHE1   X      0.0      0.0      0.0       3   0.0
+X      CPA1   NP     X      0.0      5.2      0.0       2  -1.0
+X      CPA2   NP     X      0.0      5.2      0.0       2  -1.0
+CPB1   CPA1   NP     CPA2   0.0      5.2      0.0       2  -1.0
+CPB2   CPA2   NP     CPA1   0.0      5.2      0.0       2  -1.0
+CPB2   CPA1   NP     CPA2   0.0      5.2      0.0       2  -1.0
+CPB3   CPA2   NP     CPA1   0.0      5.2      0.0       2  -1.0
+CPB1   CPA2   NP     CPA1   0.0      5.20     0.0       2  -1.0
+X      CPA1   CPB1   X      0.0      10.15    0.0       2  -1.0
+X      CPA1   CPB2   X      0.0      10.15    0.0       2  -1.0
+X      CPA2   CPB2   X      0.0      10.15    0.0       2  -1.0
+X      CPA2   CPB1   X      0.0      10.15    0.0       2  -1.0
+X      CPA2   CPB3   X      0.0      10.15    0.0       2  -1.0
+NP     CPA1   CPB1   CPB2   0.0      10.15    0.0       2  -1.0
+NP     CPA2   CPB2   CPB1   0.0      10.15    0.0       2  -1.0
+NP     CPA1   CPB2   CPB3   0.0      10.15    0.0       2  -1.0
+NP     CPA2   CPB3   CPB2   0.0      10.15    0.0       2  -1.0
+NP     CPA1   CPB2   CPB1   0.0      10.15    0.0       2  -1.0
+NP     CPA2   CPB1   CPB2   0.0      10.15    0.0       2  -1.0
+X      CPA2   CPM    X      0.0      4.58     0.0       2  -1.0
+X      CPA1   CPM    X      0.0      4.58     0.0       2  -1.0
+NP     CPA2   CPM    CPA1   0.0      4.58     0.0       2  -1.0
+NP     CPA1   CPM    CPA2   0.0      4.58     0.0       2  -1.0
+X      FE     NP     X      0.0      0.0      0.0       3   0.0
+X      FE1    NP     X      0.0      0.0      0.0       3   0.0
+X      CPB2   CPB3   X      0.0      0.0      0.0       3   0.0
+X      CPB2   CPB1   X      0.0      0.0      0.0       3   0.0
+~
+X      FE     CM     X      0.0      0.0      0.0       3   0.0
+X      FE     NM     X      0.0      0.0      0.0       3   0.0
+X      FE     NEHS   X      0.0      0.0      0.0       3   0.0
+X      FE1    NEHS   X      0.0      0.0      0.0       3   0.0
+~
+~carlos's adds for generic
+~
+X      CANX   NX     X      0.0      0.0      0.233     3   1.0
+X      CANI   NX     X      0.0      0.0      0.233     3   1.0
+X      CACX   NX     X      0.0      0.0      0.233     3   1.0
+X      CACI   NX     X      0.0      0.0      0.233     3   1.0
+X      CACX   NH     X      0.0      0.0      0.0       3   0.0
+X      CACI   NH     X      0.0      0.0      0.0       3   0.0
+X      CANX   NH     X      0.0      0.0      0.0       3   0.0
+X      CANI   NH     X      0.0      0.0      0.0       3   0.0
+X      NH     CAH    X      0.0      0.0      0.0       3   0.0
+X      NH     CAHI   X      0.0      0.0      0.0       3   0.0
+X      NH     CA1    X      0.0      0.0      0.0       3   0.0
+X      NH     CA1I   X      0.0      0.0      0.0       3   0.0
+X      CBH    CH2    X      0.0      0.0      1.0       3   1.0
+X      CANX   CH2    X      0.0      0.0      1.0       3   1.0
+X      CANI   CH2    X      0.0      0.0      1.0       3   1.0
+X      CANX   CBH    X      0.0      0.0      0.5       3   1.0
+X      CANI   CBH    X      0.0      0.0      0.5       3   1.0
+X      CACX   CBH    X      0.0      0.0      0.5       3   1.0
+X      CACI   CBH    X      0.0      0.0      0.5       3   1.0
+X      CACX   CH2    X      0.0      0.0      1.0       3   1.0
+X      CACI   CH2    X      0.0      0.0      1.0       3   1.0
+X      CACX   CX     X      0.0      0.0      0.0       2   0.0
+X      CACI   CX     X      0.0      0.0      0.0       2   0.0
+X      CANX   CO     X      0.0      0.0      0.0       2   0.0
+X      CANI   CO     X      0.0      0.0      0.0       2   0.0
+X      CH2    CH2M   X      0.0      0.0      2.0       3   1.0
+X      CH2    CH2    X      0.0      0.0      2.0       3   1.0
+X      CH2    CH2K   X      0.0      0.0      2.0       3   1.0
+X      CH2M   SM     X      0.0      0.0      1.0       3   1.0
+X      CH2K   NX     X      0.0      0.0      0.467     3   1.0
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ dihedrals for pseudo beta carbon of glycine
+~(for hydrophobic potential)
+~based on alanin beta carbon
+CO     NH     CAG    CBG    0.0      0.0      0.0       3   0.0
+HN     NH     CAG    CBG    0.0      0.0      0.0       3   0.0
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  Dihydral angles for sp analogs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~for NGL2 Based on CH2  CHPR NH CH2D 0.0      0.0      0.0      3    0.0
+~CH2  CAG NH CH2D 0.0      0.0      0.0      3    0.0
+~
+~fore SCZ based on CAH  CH2  CH2 CSX   0.0     0.0       2.0     3    1.0
+~	  CH2  CH2 CSX  OSX  0.0      0.0      0.0      2   -1.0
+~	  CH2  CH2 CSX  NAS  0.0      0.0      0.0      2   -1.0
+CO     CH2    CH2    CO     0.0      0.0      2.0       3   1.0
+CH2    CH2    CO     OC     0.0      0.0      0.0       3   0.0
+CH2    CH2    CO     NH     0.0      0.0      0.0       2  -1.0
+~
+~for CMT1-NGL2 peptide bond based on CAG  CO   NH   CAG  0.0      1.45     0.0      2   -1.0
+CH2M   CO     NH     CAG    0.0      2.5      0.0       2  -1.0
+~
+~for NGL*-SCZ/GLT/ADP peptide bond based on CAG  CO   NH   CAG  0.0      1.45     0.0      2   -1.0
+CH2    CO     NH     CAG    0.0      2.5      0.0       2  -1.0
+~
+~
+~
+~ chen parameters for peptors building units (CHECK)
+~1)based on NH CH2D CH2  CH2  0.0      0.0      2.0      3    1.0
+NH     CH2D   CG     CFH    0.0      0.0      0.0       2   0.0
+NH     CH2D   CH2D   NH     0.0      0.0      2.0       3   1.0
+~2)based on CH2  CH2 CSX  NAS  0.0      0.0      0.0      2   -1.0
+CH2    CH2    CSX    NH     0.0      0.0      0.0       2  -1.0
+~3)based on OSX  CSX  NAS  HAS1  0.0     2.5      0.0      2   -1.0
+OSX    CSX    NH     HN     0.0      2.5      0.0       2  -1.0
+~4)based on CH2 CSX  NAS  HAS1  0.0     2.5      0.0      2   -1.0
+CH2    CSX    NH     HN     0.0      2.5      0.0       2  -1.0
+CAG    CO     NAS    HN     0.0      2.5      0.0       2  -1.0
+~5)based on HN   NH   CAG  CO   0.0      0.0      0.0      3    0.0
+HN     NH     CH2D   CH2D   0.0      0.0      0.0       3   0.0
+~6)based on CAH  CO   NH   CAH  0.0      2.5      0.0      2   -1.0
+CH2D   NH     CSX    CH2    0.0      2.5      0.0       2  -1.0
+~6)based on OC   CO   NH   CAH  0.0      2.5      0.0      2   -1.0
+OSX    CSX    NH     CH2D   0.0      2.5      0.0       2  -1.0
+CAH    CO     NAS    HAS1   0.0      2.5      0.0       2  -1.0
+CAHI   CO     NAS    HAS1   0.0      2.5      0.0       2  -1.0
+OC     CO     NAS    HAS1   0.0      2.5      0.0       2  -1.0
+~3) based on X    CH2  CH2K X    0.0      0.0      2.0      3    1.0
+NH     CH2D   CH2K   NX     0.0      0.0      2.0       3   1.0
+~4) based on HN   NH   CAG  CO   0.0      0.0      0.0      3    0.0
+CH2D   NH     CAG    CO     0.0      0.0      0.0       3   0.0
+~5)based on CH2 CO NAS HAS 0.0 2.5 0.0 2 -1.
+CAH    CO     NAS    HAS    0.0      2.5      0.0       2  -1.0
+CAHI   CO     NAS    HAS    0.0      2.5      0.0       2  -1.0
+~6)based on:
+~NH   CAG  CO   OC   0.0      0.0      0.0      3    0.0
+~HN   NH   CAG  CO   0.0      0.0      0.0      3    0.0
+~CO   NH   CAG  CO   0.0      0.0      0.0      3    0.0
+~CAG  CO   NH   CAG  0.0      1.45     0.0      2   -1.0
+~OC   CO   NH   CAG  0.0      1.45     0.0      2   -1.0
+~X    CAG  CO   X    0.0      0.0      0.0      3    0.0
+NH     CNN    NH     CAG    0.0      0.0      0.0       3   0.0
+HN     NH     CNN    NH     0.0      0.0      0.0       3   0.0
+CO     NH     CNN    NH     0.0      0.0      0.0       3   0.0
+OC     CO     NH     CNN    0.0      1.45     0.0       2  -1.0
+X      CNN    CO     X      0.0      0.0      0.0       3   0.0
+~7) based on:
+~CAH  CH2  CH2 CSX   0.0     0.0       2.0     3    1.0
+~CH2  CH2 CSX  OSX  0.0      0.0      0.0      2   -1.0
+~CH2  CH2 CSX  NAS  0.0      0.0      0.0      2   -1.0
+NX     CH2K   CH2    CSX    0.0      0.0      2.0       3   1.0
+CH2K   CH2    CSX    OSX    0.0      0.0      0.0       2  -1.0
+CH2K   CH2    CSX    NAS    0.0      0.0      0.0       2  -1.0
+CH2D   CH2    CSX    NAS    0.0      0.0      0.0       2  -1.0
+CH2D   CH2    CSX    OSX    0.0      0.0      0.0       2  -1.0
+~8) based on
+~NH CH2D CH2  CH2  0.0      0.0      2.0      3    1.0
+NH     CH2D   CH2    CSX    0.0      0.0      2.0       3   1.0
+~9) based on X    CO   NH   X    0.0      2.5      0.0      2   -1.0
+X      CO     NAS    X      0.0      2.5      0.0       2  -1.0
+~10) based on CH2  CH2 CSX  NAS  0.0      0.0      0.0      2   -1.0
+CH2D   CH2    CSX    NH     0.0      0.0      0.0       2  -1.0
+~11) base on CFH  CFH  CFH  CFH  0.0      5.3      0.0      2    -1.0
+CNFT   CNFT   CFH    CFH    0.0      5.3      0.0       2  -1.0
+CFH    CNFT   CNFT   CFH    0.0      5.3      0.0       2  -1.0
+CNFT   CFH    CFH    CFH    0.0      5.3      0.0       2  -1.0
+CFH    CNFT   CFH    CFH    0.0      5.3      0.0       2  -1.0
+CFH    CG     CNFT   CNFT   0.0      5.3      0.0       2  -1.0
+CG     CNFT   CNFT   CFH    0.0      5.3      0.0       2  -1.0
+CFH    CG     CNFT   CFH    0.0      5.3      0.0       2  -1.0
+CG     CNFT   CFH    CFH    0.0      5.3      0.0       2  -1.0
+~12)based on CAH  CO   NH   CH3T 0.0      2.5      0.0      2   -1.0
+CAG    CO     NH     CH3T   0.0      2.5      0.0       2  -1.0
+~13) based on CAH  CO   NH   CAH  0.0      2.5      0.0      2   -1.0
+OSX    CSX    NH     CAH    0.0      2.5      0.0       2  -1.0
+OSX    CSX    NH     CAHI   0.0      2.5      0.0       2  -1.0
+CH2    CSX    NH     CAH    0.0      2.5      0.0       2  -1.0
+CH2    CSX    NH     CAHI   0.0      2.5      0.0       2  -1.0
+~
+~
+~roberto (copied from Chen meanwhile)
+~NH   CAG  CO   OC   0.0      0.0      0.0      3    0.0
+NH     CH2D   CO     OC     0.0      0.0      0.0       3   0.0
+NH     CH2D   CSX    OSX    0.0      0.0      0.0       3   0.0
+~NH CH2D CH2  CH2  0.0      0.0      2.0      3    1.0
+NH     CH2D   CAG    NH     0.0      0.0      2.0       3   1.0
+~HN   NH   CAG  CO   0.0      0.0      0.0      3    0.0
+HN     NH     CAG    CH2D   0.0      0.0      0.0       3   0.0
+~CAH  CO   NH   CAH  0.0      2.5      0.0      2   -1.0
+CAG    NH     CSX    CH2    0.0      2.5      0.0       2  -1.0
+CAG    NH     CSX    CH2D   0.0      2.5      0.0       2  -1.0
+~OC   CO   NH   CAH  0.0      2.5      0.0      2   -1.0
+OSX    CSX    NH     CAG    0.0      2.5      0.0       2  -1.0
+~X    CAG  CO   X    0.0      0.0      0.0      3    0.0
+X      CH2D   CO     X      0.0      0.0      0.0       3   0.0
+X      CH2D   CSX    X      0.0      0.0      0.0       3   0.0
+NBX    CANG   CO     NH     0.0      0.0      0.0       3   0.0
+~X-C2-N-X   (0.0  0.0  0.0  3  0.0) (Amber)
+CH2D   CAG    NH     HN     0.0      0.0      0.0       3   0.0
+CH2    CAG    NH     HN     0.0      0.0      0.0       3   0.0
+CANG   CAG    NH     HN     0.0      0.0      0.0       3   0.0
+CH2D   CAG    NH     CSX    0.0      0.0      0.0       3   0.0
+CANG   CAG    NH     CSX    0.0      0.0      0.0       3   0.0
+CH2    CAG    NH     CSX    0.0      0.0      0.0       3   0.0
+NH     CH2D   CH2    CAG    0.0      0.0      2.0       3   1.0
+NH     CAG    CH2    CH2D   0.0      0.0      2.0       3   1.0
+CH2D   CSX    NH     HN     0.0      2.5      0.0       2  -1.0
+CANG   CSX    NH     HN     0.0      2.5      0.0       2  -1.0
+CANG   CSX    NH     CAG    0.0      2.5      0.0       2  -1.0
+~
+CHPR   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CHPI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CAP    CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CAPI   CH2    CG     CFH    0.0      0.0      0.0       2   0.0
+CANG   CH2    CSX    OSX    0.0      0.0      0.0       2   0.0
+CANG   CH2    CSX    NH     0.0      0.0      0.0       2   0.0
+NBX    CANG   CO     OC     0.0      0.0      0.2       3  -1.0
+NBX    CANG   CSX    OSX    0.0      0.0      0.0       3   0.0
+NBX    CANG   CSX    NH     0.0      0.0      0.0       3   0.0
+~X-C2-N3-X   (0.0  0.0  1.4  3  1.0) (Amber)
+HX     NBX    CANG   CH2    0.0      0.0      0.467     3   1.0
+HX     NBX    CANG   CAG    0.0      0.0      0.467     3   1.0
+HX     NBX    CANG   CO     0.0      0.0      0.467     3   1.0
+HX     NBX    CANG   CSX    0.0      0.0      0.467     3   1.0
+CANX   NBX    CANG   CH2    0.0      0.0      0.467     3   1.0
+CANI   NBX    CANG   CH2    0.0      0.0      0.467     3   1.0
+CANG   NBX    CANG   CH2    0.0      0.0      0.467     3   1.0
+CANG   NBX    CANG   CO     0.0      0.0      0.467     3   1.0
+CANG   NBX    CANG   CSX    0.0      0.0      0.467     3   1.0
+CANG   NBX    CANG   CAG    0.0      0.0      0.467     3   1.0
+CANX   NBX    CANG   CAG    0.0      0.0      0.467     3   1.0
+CANI   NBX    CANG   CAG    0.0      0.0      0.467     3   1.0
+CANX   NBX    CANG   CSX    0.0      0.0      0.467     3   1.0
+CANI   NBX    CANG   CSX    0.0      0.0      0.467     3   1.0
+~C-CH-N3-X   (0.0  0.0  0.5  3  1.0) (Amber-Macromodel)
+HX     NBX    CANX   CO     0.0      0.0      0.167     3   1.0
+HX     NBX    CANI   CO     0.0      0.0      0.167     3   1.0
+CANG   NBX    CANX   CO     0.0      0.0      0.167     3   1.0
+CANG   NBX    CANI   CO     0.0      0.0      0.167     3   1.0
+~X-CH-N3-X   (0.0  0.0  0.7  3  1.0) (Amber-Macromodel)
+HX     NBX    CANX   CH2    0.0      0.0      0.233     3   1.0
+HX     NBX    CANI   CH2    0.0      0.0      0.233     3   1.0
+HX     NBX    CANX   CH3    0.0      0.0      0.233     3   1.0
+HX     NBX    CANI   CH3    0.0      0.0      0.233     3   1.0
+CANG   NBX    CANX   CH2    0.0      0.0      0.233     3   1.0
+CANG   NBX    CANI   CH2    0.0      0.0      0.233     3   1.0
+CANG   NBX    CANX   CH3    0.0      0.0      0.233     3   1.0
+CANG   NBX    CANI   CH3    0.0      0.0      0.233     3   1.0
+~X-C2-C2-X   (0.0  0.0  2.0  3  1.0) (Amber)
+CH2    CH2    CANG   NBX    0.0      0.0      2.0       3   1.0
+CAG    CH2    CANG   NBX    0.0      0.0      2.0       3   1.0
+CSX    CH2    CANG   NBX    0.0      0.0      2.0       3   1.0
+NH     CAG    CANG   NBX    0.0      0.0      2.0       3   1.0
+NH     CAG    CH2    CANG   0.0      0.0      2.0       3   1.0
+~
+~ NTR2, DNT2, NTR3
+CAXG   CO     NH     CAH    0.0      2.5      0.0       2  -1.0
+CAXG   CO     NH     HN     0.0      2.5      0.0       2  -1.0
+~(used N-CH-C-O)
+NX1    CAX    CO     OC     0.0      0.0      0.1       3  -1.0
+NX1    CAXI   CO     OC     0.0      0.0      0.1       3  -1.0
+~(used X-CH-C-X)
+NX1    CAX    CO     NH     0.0      0.0      0.0       2   0.0
+NX1    CAXI   CO     NH     0.0      0.0      0.0       2   0.0
+X      CAX    CO     X      0.0      0.0      0.0       3   0.0
+X      CAXI   CO     X      0.0      0.0      0.0       3   0.0
+~(from the OPLS of MACROMODEL, =1/4*(X-NT-C2-X))
+HX1    NX1    CAX    CH3    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CH3    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CH2    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CH2    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CBH    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CBH    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CH2C   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CH2C   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CH2S   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CH2S   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CH2B   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CH2B   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CCH2   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CCH2   0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CHT    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CHT    0.0      0.0      0.25      3   1.0
+HX1    NX1    CAX    CO     0.0      0.0      0.25      3   1.0
+HX1    NX1    CAXI   CO     0.0      0.0      0.25      3   1.0
+CX     CAX    NX1    HX1    0.0      0.0      0.25      3   1.0
+CX     CAXI   NX1    HX1    0.0      0.0      0.25      3   1.0
+NX1    CAX    CBH    CH3G   0.0      0.0      0.5       3   1.0
+NX1    CAXI   CBH    CH3G   0.0      0.0      0.5       3   1.0
+NX1    CAX    CH2    CO     0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CO     0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2    CR1    0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CR1    0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2B   CX1    0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2    CH2    0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CH2    0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2    CH2A   0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CH2A   0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2    CGHP   0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CGHP   0.0      0.0      1.0       3   1.0
+NX1    CAX    CH2    CGHS   0.0      0.0      1.0       3   1.0
+NX1    CAXI   CH2    CGHS   0.0      0.0      1.0       3   1.0
+~(used N-C2-C-O)
+NX1    CAXG   CO     OC     0.0      0.0      0.2       3  -1.0
+~(used X-C2-C-X)
+NX1    CAXG   CO     NH     0.0      0.0      0.0       3   0.0
+~(used 1/2*(X-NT-C2-X))
+HX1    NX1    CAXG   CO     0.0      0.0      0.5       3   1.0
+CX     CAXG   NX1    HX1    0.0      0.0      0.5       3   1.0
+~
+~BACS
+CO     NH     CH2P   CO2    0.0      0.0      0.0       3   0.0
+CHPR   NH     CH2P   CO2    0.0      0.0      0.0       3   0.0
+NH     CH2P   CO2    OC2    0.0      0.0      0.2       3  -1.0
+NH     CH2P   CO2    OCH3   0.0      0.0      0.2       3  -1.0
+CH2P   CO2    OCH3   CH3O   0.000    2.75     0.00      2  -1.0
+CH2P   NH     CO     OC     0.0      2.5      0.0       2  -1.0
+CH2P   NH     CO     CH3    0.0      2.5      0.0       2  -1.0
+CH2P   NH     CHPR   CO     0.0      0.0      0.0       3   0.0
+CH2P   NH     CHPR   CH3    0.0      0.0      0.0       3   0.0
+~
+~BANS
+HX1    NX2    CAG    CH2D   0.0      0.0      0.5       3   1.0
+NX2    CAG    CH2D   NH     0.0      0.0      2.0       3   1.0
+~
+~ zaloj data
+~
+CNM3   N1M    CBM     CAM    0.0     0.0     0.9     3      1.0
+N1M    CBM    CAM     OPC2   0.0     0.0     1.4     3      1.0
+CBM    CAM    OPC2    PM     0.0     0.0     0.9     3      1.0
+CAM    OPC2   PM      OPC1   0.0     0.75    0.0     2      1.0
+OPC2   PM     OPC1    C3M    0.0     0.75    0.0     2      1.0
+PM     OPC1   C3M     C2M    0.0     0.0     0.9     3      1.0
+~
+OPC1   C3M    C2M     OAM    0.0     0.5     0.0     2      1.0
+OPC1   C3M    C2M     C1M    0.0     0.0     1.4     3      1.0
+C3M    C2M    C1M     OAM    0.0     0.0     0.1     3      1.0
+C3M    C2M    OAM     COM2   0.0     0.0     0.9     3      1.0
+C1M    C2M    OAM     COM2   0.0     0.0     0.9     3      1.0
+OAM    C1M    C2M     OAM    0.0     0.5     0.0     2      1.0
+~ first branch
+C2M    C1M    OAM     COM1   0.0     0.0     0.9     3      1.0
+C1M    OAM    COM1    CHHM   0.0     4.0     0.0     2     -1.0
+OAM    COM1   CHHM    CHHM   0.0     0.0     0.1     3      1.0
+COM1   CHHM   CHHM    CHHM   0.0     0.0     1.4     3      1.0
+~ second branch
+C2M    OAM    COM2    CHHM   0.0     4.0     0.0     2     -1.0
+OAM    COM2   CHHM    CHHM   0.0     0.0     0.1     3      1.0
+COM2   CHHM   CHHM    CHHM   0.0     0.0     1.4     3      1.0
+~ tail
+CHHM   CHHM   CHHM    CHHM   0.0     0.0     2.0     3      1.0
+CHHM   CHHM   CHHM    MEM    0.0     0.0     2.0     3      1.0
+~
+~ parameters for ALA
+NH     CO     CAHI   NH     0.0      0.0      0.0       2   0.0
+OC     CO     CAH    CH3    0.0      0.0      0.0       2   0.0
+OC     CO     CAHI   CH3    0.0      0.0      0.0       2   0.0
+OC     CO     CAX    CH3    0.0      0.0      0.0       2   0.0
+OC     CO     CAXI   CH3    0.0      0.0      0.0       2   0.0
+OX     CX     CACX   CH3    0.0      0.0      0.0       2   0.0
+OX     CX     CACI   CH3    0.0      0.0      0.0       2   0.0
+NH     CO     CAH    CH3    0.0      0.0      0.0       2   0.0
+NH     CO     CAHI   CH3    0.0      0.0      0.0       2   0.0
+NH     CO     CAX    CH3    0.0      0.0      0.0       2   0.0
+NH     CO     CAXI   CH3    0.0      0.0      0.0       2   0.0
+NH     CAG    CO     NH     0.0      0.0      0.0       3   0.0
+~
+~ added for gramocidine (zva & ron) torsions
+~
+X    CHO  NH   X    0.0      2.5      0.0      2   -1.0
+X    C2GA C2GB X    0.0      0.0      2.0      3    1.0
+X    NH   C2GA X    0.0      0.0      0.0      3    0.0
+X    C2GA C2GB X    0.0      0.0      2.0      3    1.0
+X    C2GB OH   X    0.0      0.0      0.5      3    1.0
+CAHD CO   NH   CAHD 0.0000   2.5000   0.0000   2   -1.0
+OC   CO   NH   CAHD 0.0000   2.5000   0.0000   2   -1.0
+CAHD CO   NH   HN   0.0000   2.5000   0.0000   2   -1.0
+OC   CO   CAHD NH   0.0      0.0      0.1      3   -1.0
+CO   NH   CAHD CBHD 0.0      0.0      0.0      3    0.0
+HN   NH   CAHD CBHD 0.0      0.0      0.0      3    0.0
+CO   NH   CAHD CO   0.0      0.0      0.0      3    0.0
+HN   NH   CAHD CO   0.0      0.0      0.0      3    0.0
+NH   CAHD CBHD CH3G 0.0      0.0      0.5      3   -1.0
+NH   CAHD CBHD CH3 0.0      0.0      0.5      3   -1.0
+OC   CO   CAHD CBHD 0.0      0.0      0.1      3   -1.0
+OC   CO   CAHD CDH2  0.0      0.0      0.1      3   -1.0
+X    NH   CAHD X    0.0      0.0      0.0      3    0.0
+X    CAHD CO   X    0.0      0.0      0.0      2    0.0
+X    CAHD CBHD X    0.0      0.0      0.5      3    1.0
+X    CAHD CDH2 X    0.0      0.0      1.0      3    1.0
+X    CBH  CDH2 X    0.0      0.0      1.0      3    1.0
+~
+~ added for heme-cyx (alfredo)
+~
+X    SC   CR1E X    0.0      0.0      1.0      3    1.0
+~
+~
+DONE
+~
+IMPROPER
+~ the improper are set to very high value since
+~ the current setup is such v(phi) = k ((phi) - (phieq))^2
+~
+NH     CAH    CO     HN     45.0     0.0
+NH     CAHI   CO     HN     45.0     0.0
+NH     CA1    CO     HN     45.0     0.0
+NH     CA1I   CO     HN     45.0     0.0
+~ aib.......kapi
+NH     CA4    CO     HN     45.0     0.0
+~ for NMDF
+NH     CAHI   CO     CH3T   45.0     0.0
+NH     CH3T   CO     HN     45.0     0.0
+~
+CO     CAH    OC     NH     100.0    0.0
+CO     CAHI   OC     NH     100.0    0.0
+CO     CAX    OC     NH     100.0    0.0
+CO     CAXI   OC     NH     100.0    0.0
+~ aib.......kapi
+CO     CA4    OC     NH     100.0    0.0
+~ for NMDF
+CO     CAHI   OC     CH3T   100.0    0.0
+CO     CAX    OC     CH3T   100.0    0.0
+CO     CAXI   OC     CH3T   100.0    0.0
+CO     CH3    OC     NH     100.0    0.0
+~ aib........kapi
+CO     CH4    OC     NH     100.0    0.0
+CO     CANX   OC     NH     100.0    0.0
+CO     CANI   OC     NH     100.0    0.0
+CX     CACX   OX     OX     100.0    0.0
+CX     CACI   OX     OX     100.0    0.0
+~???????????
+CO     CAH    OC     OC     100.0    0.0
+CO     CAHI   OC     OC     100.0    0.0
+CO     CAX    OC     OC     100.0    0.0
+CO     CAXI   OC     OC     100.0    0.0
+~aib ......kapi
+CO     CA4    OC     OC     100.0    0.0
+CX     OX     CACX   OX     100.0    0.0
+CX     OX     CACI   OX     100.0    0.0
+CANX   NX     CO     CH2    55.0     35.26
+CANI   NX     CO     CH2    55.0     -35.26
+CACX   NH     CX     CH2    55.0     35.26
+CACI   NH     CX     CH2    55.0     -35.26
+CAH    NH     CO     CH2    55.0     35.26
+CAHI   NH     CO     CH2    55.0     -35.26
+CA1    NH     CO2    CH2    55.0     35.26
+CA1I   NH     CO2    CH2    55.0     -35.26
+CBH    CH3    CH3    CO     55.0     35.26
+CACX   NX     CH2    CX     55.0     35.26
+CACI   NX     CH2    CX     55.0     -35.26
+~
+~ PHE
+~
+CG     CFH    CFH    CFH    25.0     0.0
+CFH    CFH    CG     CFH    25.0     0.0
+CG     CFH    CH2    CFH    90.0     0.0
+~
+~ TYR
+~
+CZ     CFH    CFH    OH     150.0    0.0
+CG     CFH    CFH    CZ     25.0     0.0
+CFH    CFH    CZ     CFH    25.0     0.0
+CFH    CG     CFH    CFH    25.0     0.0
+~
+~ TRP
+~
+CTR    CGHT   NDHS   HDHS   75.0     0.0
+CGTR   CH2    CHTR   CTR    90.0     0.0
+NDHS   CHTR   CGHT   HDHS   45.0     0.0
+CTR    CGHT   CFH    CFH    25.0     0.0
+CGHT   CFH    CFH    CFH    25.0     0.0
+CFH    CFH    CFH    CFH    25.0     0.0
+CTR    CFH    CFH    CFH    25.0     0.0
+CGHT   CFH    CTR    CFH    25.0     0.0
+CFH    CTR    CGHT   CFH    25.0     0.0
+CGTR   CHTR   NDHS   CGHT   25.0     0.0
+CTR    NDHS   CGHT   CHTR   25.0     0.0
+CGTR   CGHT   CTR    NDHS   100.0    0.0
+CGHT   CTR    CGTR   CHTR   25.0     0.0
+CGHT   CFH    CTR    NDHS   100.0    0.0
+CTR    CGTR   CHTR   NDHS   100.0    0.0
+CTR    CGTR   CFH    CGHT   25.0     0.0
+~
+~
+CANX   NX     CO     CH3    55.0     35.26
+CANI   NX     CO     CH3    55.0     -35.26
+CACX   NX     CO     CH3    55.0     35.26
+CACI   NX     CO     CH3    55.0     -35.26
+CACX   NX     CX     CH3    55.0     35.26
+CACI   NX     CX     CH3    55.0     -35.26
+~
+CANX   NX     CO     CCH2   55.0     35.26
+CANI   NX     CO     CCH2   55.0     -35.26
+CACX   NX     CX     CCH2   55.0     35.26
+CACI   NX     CX     CCH2   55.0     -35.26
+CANX   NX     CO     CH2C   55.0     35.26
+CANI   NX     CO     CH2C   55.0     -35.26
+CACX   NX     CO     CH2C   55.0     35.26
+CACI   NX     CO     CH2C   55.0     -35.26
+CACX   NX     CX     CH2C   55.0     35.26
+CACI   NX     CX     CH2C   55.0     -35.26
+~
+CACX   NH     CX     CH3    55.0     35.26
+CACI   NH     CX     CH3    55.0     -35.26
+~
+CACX   NH     CX     CCH2   55.0     35.26
+CACI   NH     CX     CCH2   55.0     -35.26
+CACX   NH     CX     CH2C   55.0     35.26
+CACI   NH     CX     CH2C   55.0     -35.26
+NH     CO     HN     CACX   45.0     0.0
+NH     CO     HN     CACI   45.0     0.0
+~
+CAH    NH     CO     CH3    55.0     35.26
+CAHI   NH     CO     CH3    55.0     -35.26
+CA1    NH     CO2    CH3    55.0     35.26
+CA1I   NH     CO2    CH3    55.0     -35.26
+~aib......kapi
+CA4    NH     CO     CH4    55.0     35.26
+~cysteine
+CAH    NH     CO     CH2C   55.0     35.26
+CAHI   NH     CO     CH2C   55.0     -35.26
+CA1    NH     CO2    CH2C   55.0     35.26
+CA1I   NH     CO2    CH2C   55.0     -35.26
+~cystine
+CAH    NH     CO     CCH2   55.0     35.26
+CAHI   NH     CO     CCH2   55.0     -35.26
+CA1    NH     CO2    CCH2   55.0     35.26
+CA1I   NH     CO2    CCH2   55.0     -35.26
+~gly
+CO     CAG    NH     OC     100.0    0.0
+NH     CO     CAG    HN     45.0     0.0
+~ charged c-term for glycine
+CX     CACG   OX     OX     100.0    0.0
+NH     CO     HN     CACG   45.0     0.0
+~ charged n-term for glycine
+CO     CANG   OC     NH     100.0    0.0
+~parameter for SER
+CAH    NH     CO     CH2S   55.0     35.26
+CAHI   NH     CO     CH2S   55.0     -35.26
+CA1    NH     CO2    CH2S   55.0     35.26
+CA1I   NH     CO2    CH2S   55.0     -35.26
+CANX   NH     CO     CH2S   55.0     35.26
+CANI   NH     CO     CH2S   55.0     -35.26
+CACX   NH     CO     CH2S   55.0     35.26
+CACI   NH     CO     CH2S   55.0     -35.26
+CACX   NX     CO     CH2S   55.0     35.26
+CACI   NX     CO     CH2S   55.0     -35.26
+CACX   NX     CX     CH2S   55.0     35.26
+CACI   NX     CX     CH2S   55.0     -35.26
+CANX   NX     CO     CH2S   55.0     35.26
+CANI   NX     CO     CH2S   55.0     -35.26
+CO     CAH    NH     OC     100.0    0.0
+CO     CAHI   NH     OC     100.0    0.0
+CO     CAX    NH     OC     100.0    0.0
+CO     CAXI   NH     OC     100.0    0.0
+CO2    CA1    NH     OC2    100.0    0.0
+CO2    CA1I   NH     OC2    100.0    0.0
+CO     CBH    NH     OC     100.0    0.0
+CO     CANX   NH     OC     100.0    0.0
+CO     CANI   NH     OC     100.0    0.0
+CO     CACX   NH     OC     100.0    0.0
+CO     CACI   NH     OC     100.0    0.0
+CO     NH     CH3    OC     100.0    0.0
+NH     CO     CAH    HN     45.0     0.0
+NH     CO     CAHI   HN     45.0     0.0
+NH     CO     CANX   HN     45.0     0.0
+NH     CO     CANI   HN     45.0     0.0
+NH     CO     CACX   HN     45.0     0.0
+NH     CO     CACI   HN     45.0     0.0
+NH     CO     CH3    HN     45.0     0.0
+~ parameters for THR
+CAH    NH     CO     CHT    55.0     35.26
+CAHI   NH     CO     CHT    55.0     -35.26
+CA1    NH     CO2    CHT    55.0     35.26
+CA1I   NH     CO2    CHT    55.0     -35.26
+CACX   NX     CO     CHT    55.0     35.26
+CACI   NX     CO     CHT    55.0     -35.26
+CANX   NX     CO     CHT    55.0     35.26
+CANI   NX     CO     CHT    55.0     -35.26
+CANX   NH     CO     CHT    55.0     35.26
+CANI   NH     CO     CHT    55.0     -35.26
+CACX   NH     CO     CHT    55.0     35.26
+CACI   NH     CO     CHT    55.0     -35.26
+CHT    OH     CH3    CAH    55.0     35.26
+CHT    OH     CH3    CAHI   55.0     35.26
+CHT    OH     CH3    CAX    55.0     35.26
+CHT    OH     CH3    CAXI   55.0     35.26
+CHT    OH     CH3    CA1    55.0     35.26
+CHT    OH     CH3    CA1I   55.0     35.26
+CHT    OH     CH3    CANX   55.0     35.26
+CHT    OH     CH3    CANI   55.0     35.26
+CHT    OH     CH3    CACX   55.0     35.26
+CHT    OH     CH3    CACI   55.0     35.26
+~ parametrs for PRO
+NH     CHPR   CH2D   CO     45.0     0.0
+NH     CHPI   CH2D   CO     45.0     0.0
+CO     CHPR   NH     OC     100.0    0.0
+CO     CHPI   NH     OC     100.0    0.0
+CO     NH     OC     CH3    90.0     0.0
+CO     CHPR   OC     NH     100.0    0.0
+CO     CHPI   OC     NH     100.0    0.0
+NH     CO     HN     CH3T   45.0     0.0
+CHPR   NH     CO     CH2    55.0     35.26
+CHPI   NH     CO     CH2    55.0     -35.26
+CHPR   NX     CO     CH2    55.0     35.26
+CHPI   NX     CO     CH2    55.0     -35.26
+CHPR   NH     CX     CH2    55.0     35.26
+CHPI   NH     CX     CH2    55.0     -35.26
+NH     CHPR   CO     CH2D   45.0     0.0
+NH     CHPI   CO     CH2D   45.0     0.0
+NH     CAP    CO     CH2D   45.0     0.0
+NH     CAPI   CO     CH2D   45.0     0.0
+NH     CO     CH2D   CHPR   45.0     0.0
+NH     CO     CH2D   CHPI   45.0     0.0
+~CHPR   NH     CH2    CO     100.0    0.0    OLD MOIL
+~CHPI   NH     CH2    CO     100.0    0.0    OLD MOIL
+~CHPR   NX     CH2    CO     100.0    0.0    OLD MOIL
+~CHPI   NX     CH2    CO     100.0    0.0    OLD MOIL
+~CHPR   NH     CH2    CX     100.0    0.0    OLD MOIL
+~CHPI   NH     CH2    CX     100.0    0.0    OLD MOIL
+CO     OC     NH     CHPR   100.0    0.0
+CO     OC     NH     CHPI   100.0    0.0
+CO     OC     NH     CH3    90.0     0.0
+CX     OX     CHPR   OX     100.0    0.0
+CX     OX     CHPI   OX     100.0    0.0
+~
+~carlos's adds follow
+~
+NH     CACX   CO     HN     45.0     0.0
+NH     CACI   CO     HN     45.0     0.0
+CBH    CAH    CH2    CH3    55.0     35.26
+CBH    CAHI   CH2    CH3    55.0     35.26
+CBH    CAX    CH2    CH3    55.0     35.26
+CBH    CAXI   CH2    CH3    55.0     35.26
+CBH    CA1    CH2    CH3    55.0     35.26
+CBH    CA1I   CH2    CH3    55.0     35.26
+CBH    CACX   CH2    CH3    55.0     35.26
+CBH    CACI   CH2    CH3    55.0     35.26
+CBH    CANX   CH2    CH3    55.0     35.26
+CBH    CANI   CH2    CH3    55.0     35.26
+~CBH  CH2  CH3  CH3     55.0    35.26 MODIFIED TO GET POSITIVE ANGLE
+~ YP fixed for sign of equilibrium angle (from 35.26 to -35.26) 15/09/98
+CBH    CH3    CH3    CH2    55.0     -35.26
+CANX   NX     CO     CBH    55.0     35.26
+CANI   NX     CO     CBH    55.0     -35.26
+~
+~ argenine
+~
+NR1    CR2    CR3    HR1    45.0     0.0
+~CR3 NR2 NR2 NR1 100. 0.0
+CR3    NR1    NR2    NR2    100.0    0.0
+NR2    CR3    HR2    HR2    45.0     0.0
+~
+~
+~
+~ aspargin
+~
+CO     OC     CH2    NAS    90.0     0.0
+NAS    CO     HAS    HAS    45.0     0.0
+~
+~
+~
+~
+~  aspartic acid
+~
+CAH    NH     CO     CH2B   55.0     35.26439
+CAHI   NH     CO     CH2B   55.0     -35.26439
+CA1    NH     CO2    CH2B   55.0     35.26439
+CA1I   NH     CO2    CH2B   55.0     -35.26439
+CACX   NX     CX     CH2B   55.0     35.26439
+CACI   NX     CX     CH2B   55.0     -35.26439
+CACX   NH     CX     CH2B   55.0     35.26439
+CACI   NH     CX     CH2B   55.0     -35.26439
+CANX   NX     CO     CH2B   55.0     35.26439
+CANI   NX     CO     CH2B   55.0     -35.26439
+CANX   NH     CO     CH2B   55.0     35.26439
+CANI   NH     CO     CH2B   55.0     -35.26439
+CX1    CH2B   OX1    OX1    100.0    0.0
+~
+~
+~ glutamine
+CO     CH2    OC     NH     100.0    0.0
+CSX    OSX    CH2    NAS    100.0    0.0
+NAS    HAS1   CSX    HAS1   100.0    0.0
+~ valine
+CACX   NH     CX     CBH    55.0     35.26
+CACI   NH     CX     CBH    55.0     -35.26
+CAH    NH     CO     CBH    55.0     35.26
+CAHI   NH     CO     CBH    55.0     -35.26
+CA1    NH     CO2    CBH    55.0     35.26
+CA1I   NH     CO2    CBH    55.0     -35.26
+CACX   NX     CX     CBH    55.0     35.26
+CACI   NX     CX     CBH    55.0     -35.26
+CANX   NX     CX     CBH    55.0     35.26
+CANI   NX     CX     CBH    55.0     -35.26
+CACX   NX     CO     CBH    55.0     35.26
+CACI   NX     CO     CBH    55.0     -35.26
+CACX   NH     CO     CBH    55.0     35.26
+CACI   NH     CO     CBH    55.0     -35.26
+CANX   NH     CO     CBH    55.0     35.26
+CANI   NH     CO     CBH    55.0     -35.26
+CBH    CAH    CH3    CH3G   55.0     35.26
+CBH    CAHI   CH3    CH3G   55.0     35.26
+CBH    CAX    CH3    CH3G   55.0     35.26
+CBH    CAXI   CH3    CH3G   55.0     35.26
+CBH    CA1    CH3    CH3G   55.0     35.26
+CBH    CA1I   CH3    CH3G   55.0     35.26
+~CBH    CH3    CH3G   CAH    55.0     35.26 redundant OLD MOIL
+CBH    CH3    CH3G   CACX   55.0     35.26
+CBH    CH3    CH3G   CACI   55.0     35.26
+CBH    CH3    CH3G   CANX   55.0     35.26
+CBH    CH3    CH3G   CANI   55.0     35.26
+~ glutamic acid
+CSX1   OSX1   CH2A   OSX1   100.0    0.0
+~
+~ histidine
+~
+CGHP   CH2    CHDP   NDHP   90.0     0.0
+NDHP   CGHP   CHEP   HDNP   100.0    0.0
+NEHP   CHDP   CHEP   HENP   100.0    0.0
+~
+~ histidine
+CGHS   NDHS   CH2    CHDH   90.0     0.0
+NDHS   CGHS   CHEH   HDNH   45.0     0.0
+~
+~heme contributed by haiying
+~
+CPB3   CPA2   CPB2   CR1E   90.0     0.0
+CPB2   CPA1   CPB3   CH3E   90.0     0.0
+CPB2   CPA2   CPB1   CH3E   90.0     0.0
+CPB2   CPA1   CPB1   CH3E   90.0     0.0
+CPA1   CPB1   CPM    NP     32.70    0.0
+CPA2   CPB2   CPM    NP     32.70    0.0
+CPA2   CPB1   CPM    NP     32.70    0.0
+CPA1   CPB2   CPM    NP     32.70    0.0
+CPA2   CPB3   CPM    NP     32.70    0.0
+CO1    CHE2   OC     OC     100.0    0.0
+CC     NA     CP     NB     25.0     0.0
+CP     NB     CF     CC     25.0     0.0
+NB     CF     CC     NA     25.0     0.0
+CPB1   CPA1   CPB2   CHE1   90.0     0.0
+CPB1   CPA2   CPB2   CHE1   90.0     0.0
+CPM    CPA1   HA     CPA2   29.40    0.0
+NP     FE     CPA1   CPA2   137.40   0.0
+NP     FE1    CPA1   CPA2   137.40   0.0
+NA     CC     CP     H      45.0     0.0
+NA     CP     NB     CF     25.0     0.0
+CF     CC     NA     CP     25.0     0.0
+NEHS   CHDH   CHEH   FE     0.0      0.0
+NEHS   CHDH   CHEH   FE1    0.0      0.0
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ improper for pseudo beta carbon of glycine
+~(for hydrophobic potential)
+~based on alanin beta carbon
+CO     CBG    OC     NH     100.0    0.0
+CO     CBG    OC     NX     100.0    0.0
+CANX   NX     CO     CBG    55.0     35.26
+CANI   NX     CO     CBG    55.0     -35.26
+CAG    NH     CO     CBG    55.0     35.26
+~
+~ PCA parameters
+NHC    CAH    COC    HNC    45.0     0.0
+NHC    CAHI   COC    HNC    45.0     0.0
+COC    CH2    OCC    NHC    100.0    0.0
+CAH    NHC    CO     CH2    55.0     35.26
+CAHI   NHC    CO     CH2    55.0     -35.26
+~ end PCA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  Improper angles for sp analogs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~based on NH CHPR CH2D CO      45.0   0.0
+NH     CAG    CH2D   CO     45.0     0.0
+~
+~For CMET based on CO   CAH  OC   NH   100.0     0.0
+CO     CAH    OC     NAS    100.0    0.0
+CO     CAHI   OC     NAS    100.0    0.0
+~
+~For CMET based on CSX  OSX  CH2 NAS   100.0     0.0
+CO     OC     CH2    NH     100.0    0.0
+~
+~for CMT1 based on CO   CAG  NH   OC   100.0      0.0
+~			NH   CO   CAG  HN    45.0      0.0
+CO     CH2M   NH     OC     100.0    0.0
+NH     CO     CH2M   HN     45.0     0.0
+~
+~chen for peptors biulding units
+~
+~1) based on CSX  OSX  CH2 NAS   100.0     0.0
+CSX    OSX    CH2    NH     100.0    0.0
+~2) based on NAS  HAS1 CSX  HAS1  100.0     0.0
+NH     HN     CSX    HAS1   100.0    0.0
+HN     CH2D   NH     CSX    100.0    0.0
+NH     CH2D   HN     CSX    100.0    0.0
+NH     CO     CH2D   CAH    100.0    0.0
+NH     CO     CH2D   CAHI   100.0    0.0
+NAS    CO     HAS1   HAS1   100.0    0.0
+NH     HN     CH2D   CAH    100.0    0.0
+NH     HN     CH2D   CAHI   100.0    0.0
+NH     CO     CACG   CH2D   100.0    0.0
+CO     CAG    OC     NAS    100.0    0.0
+~3) based on:
+~ CO   CAG  NH   OC   100.0      0.0
+~NH   CO   CAG  HN    45.0      0.0
+CO     CNN    NH     OC     100.0    0.0
+NH     CO     CNN    CAH    100.0    0.0
+NH     CO     CNN    CAHI   100.0    0.0
+NH     CO     CNN    HN     45.0     0.0
+NH     CSX    CNN    HN     100.0    0.0
+NH     HN     CH2D   CO     100.0    0.0
+CG     CH2D   CFH    CFH    100.0    0.0
+~4) based on NH CHPR CH2D CO      45.0   0.0
+NH     CAH    CH3T   CO     45.0     0.0
+NH     CAHI   CH3T   CO     45.0     0.0
+NH     CAG    CH3T   CO     45.0     0.0
+~5) based on CAH  NH   CO   CHT     55.0    35.26
+CAH    NH     CH2S   CHT    55.0     35.26
+CAHI   NH     CH2S   CHT    55.0     -35.26
+CG     CH2    CFH    CNFT   100      0.0
+CNFT   CFH    CNFT   CFH    100      0.0
+CNFT   CG     CNFT   CFH    100      0.0
+~6)
+NH     CO     CAG    CAH    100      0.0
+NH     CO     CAG    CAHI   100      0.0
+NH     CO     CAG    CAX    100      0.0
+NH     CO     CAG    CAXI   100      0.0
+CAH    NH     CG     CH3    55       30
+CAHI   NH     CG     CH3    55       -30
+CG     CAH    CFH    CFH    100      0.0
+CG     CAHI   CFH    CFH    100      0.0
+~7) based on NH   CAH  CO   HN    45.0     0.0
+NH     CAH    CSX    HN     45.0     0.0
+NH     CAHI   CSX    HN     45.0     0.0
+~8) based on CO   CAH  OC   NH   100.0     0.0
+CSX    CAH    OSX    NH     100.0    0.0
+CSX    CAHI   OSX    NH     100.0    0.0
+~
+~ 9) For AIB (matzootz mehaetzba)
+NH     CO     HN     CA4    100.0    0.0
+CA4    NH     CH4    CO     100.0    35.0
+~
+~roberto
+~based on NH CHPR CH2D CO      45.0   0.0
+NH     CH2D   CH2D   CO     45.0     0.0
+~based on CO   CAG  NH   OC   100.0      0.0
+CO     CH2D   NH     OC     100.0    0.0
+~based on NH   CO   CAG  HN    45.0      0.0
+NH     CSX    CAG    HN     45.0     0.0
+CSX    NH     CH2D   OSX    100.0    0.0
+CHPR   NH     CO     CH3    55.0     35.26
+CHPI   NH     CO     CH3    55.0     -35.26
+CANX   NBX    CO     CH2    55.0     35.26
+CANI   NBX    CO     CH2    55.0     -35.26
+CANX   NBX    CO     CH3    55.0     35.26
+CANI   NBX    CO     CH3    55.0     -35.26
+CSX    OSX    CANG   NH     100.0    0.0
+NH     CHPR   CH3N   CO     45.0     0.0
+NH     CHPI   CH3N   CO     45.0     0.0
+NH     CH2D   CH3N   CO     45.0     0.0
+~
+CO     CHPR   OC     NAS    100.0    0.0
+CO     CHPI   OC     NAS    100.0    0.0
+CO     CH2D   OC     NAS    100.0    0.0
+~
+~CTR5 and CTG0
+NH     CAG1   CO     HN     45.0     0.0
+CA1    NH     CO2    CH3    55.0     35.26
+CA1I   NH     CO2    CH3    55.0     -35.26
+CA1    NH     CO2    CH2    55.0     35.26
+CA1I   NH     CO2    CH2    55.0     -35.26
+CO2    CA1    OC2    OCH3   100.0    0.0
+CO2    CA1I   OC2    OCH3   100.0    0.0
+CO2    CAG1   OC2    OCH3   100.0    0.0
+~
+~CTR6, DCT6
+CAP    NH     CO2    CH3    55.0     35.26
+CAPI   NH     CO2    CH3    55.0     -35.26
+CAP    NH     CO2    CH2    55.0     35.26
+CAPI   NH     CO2    CH2    55.0     -35.26
+CO2    CAP    OC2    OCH3   100.0    0.0
+CO2    CAPI   OC2    OCH3   100.0    0.0
+NH     CAP    CH2D   CO     45.0     0.0
+NH     CAPI   CH2D   CO     45.0     0.0
+NH     CAP    CH3N   CO     45.0     0.0
+NH     CAPI   CH3N   CO     45.0     0.0
+~
+~NTR2, DNT2, NTR3
+CAX    NX1    CO     CH3    55.0     35.26
+CAXI   NX1    CO     CH3    55.0     -35.26
+CAX    NX1    CO     CH2    55.0     35.26
+CAXI   NX1    CO     CH2    55.0     -35.26
+CAX    NX1    CO     CH2C   55.0     35.26
+CAXI   NX1    CO     CH2C   55.0     -35.26
+CAX    NX1    CO     CCH2   55.0     35.26
+CAXI   NX1    CO     CCH2   55.0     -35.26
+CAX    NX1    CO     CH2S   55.0     35.26
+CAXI   NX1    CO     CH2S   55.0     -35.26
+CAX    NX1    CO     CHT    55.0     35.26
+CAXI   NX1    CO     CHT    55.0     -35.26
+CAX    NX1    CO     CH2B   55.0     35.26
+CAXI   NX1    CO     CH2B   55.0     -35.26
+CAX    NX1    CO     CBH    55.0     35.26
+CAXI   NX1    CO     CBH    55.0     -35.26
+NX1    CAX    HX1    HX1    10.0     39.6
+NX1    CAXI   HX1    HX1    10.0     39.6
+CAXG   NX1    CO     CH3    55.0     35.26
+NX1    CAXG   HX1    HX1    10.0     39.6
+CO     CAXG   OC     NH     100.0    0.0
+~
+~BACS
+CO2    CH2P   OC2    OCH3   100.0    0.0
+NH     CO     CH2P   CHPR   100.0    0.0
+~
+~BANS
+NX2    CAG    HX1    HX1    10.0     39.6
+~
+~ zaloj data
+~
+C2M   OAM    C1M    C3M    40.0     35.264
+COM1   CHHM  OCM1   OAM    20.0     0.000
+COM2   CHHM  OCM2   OAM    20.0     0.000
+~
+~ (or COM CHHM OAM OCM)
+~CO1L  C1L1  OC1L  O1L   100.0   0.0
+~ (or CO1L C1L1 O1L OC1L)
+~CO2L  C2L1  OC2L  O2L   100.0   0.0
+~ (or CO2L C2L1 O2L OC2L)
+~
+CACX   NH     CX     CH2S   55.0     35.26
+CACI   NH     CX     CH2S   55.0     -35.26
+CACX   NH     CX     CHT    55.0     35.26
+CACI   NH     CX     CHT    55.0     -35.26
+~
+~ added for gramicidin (zva & ron) improper
+~
+NH   CHO  HN   CAHD    45.0     0.0
+NH   CHO  HN   CAH    45.0     0.0
+NH   CO   HN   C2GA    45.0     0.0
+CO   CAHD  OC   NH   100.0     0.0
+CAHD NH   CO   CDH2    55.0   -35.26
+NH   CHO  HN   CAHD    45.0     0.0
+NH   CO  HN   CAHD    45.0     0.0
+CAHD NH   CO   CBHD    55.0   -35.26
+CBHD  CAHD  CH3  CH3G    55.0    35.26
+CBHD  CAHD  CH3G  CH3    55.0    35.26
+CBH  CH3  CH3  CDH2     55.0   -35.26
+~
+~
+~ added for heme-cyx (alfredo)
+~
+CR1E  SC  CHE2  CPB3     40.0   35.264
+~
+~ added for MTS spin label (Felicia)
+~
+~ conn asks for these impropers
+~ as in TYR/PHE
+C1fp  C7fp  C2fp  C3fp    25.0    0.0
+N4fp  C3fp  C3fp  O6fp   150.0    0.0
+~
+DONE
+*EOD

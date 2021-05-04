@@ -1,0 +1,20 @@
+HEADER    CAPRI_30_68
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: CASP target T0759;                                                      
+COMPND   3 CHAIN: A, B                                                         
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 SYNTHETIC: YES
+EXPDTA    THEORETICAL MODEL,10 STRUCTURES
+AUTHOR    RON ELBER, D.V.S RAVIKANT, SHRUTHI VISWANATH, MING HAN (DOCK/PIERR)
+REMARK 300 FFT docking with models scored according to PIE (residue potential), 
+REMARK 300 PISA (atomic piotential) and Hyd-NN (hydrogen bond potential).
+REMARK   9 MODEL     1318 MD5 ba6d464ac0a947b7fe28cfc1ccaee578
+REMARK   9 MODEL      450 MD5 390c852e46137d7ebadae61e2e5a5cb6
+REMARK   9 MODEL      611 MD5 4da8dedda215bb8bcbf6d0068d05597a
+REMARK   9 MODEL      272 MD5 99ec12af66398d8cf02f04eae8d91aa3
+REMARK   9 MODEL      935 MD5 158ed027d13ed66bd38ff558de4cd73d
+REMARK   9 MODEL      230 MD5 21b637f6e18b6d019a0082ea8f0bee69
+REMARK   9 MODEL       70 MD5 90e2abe305b8fbf8f8277ad8776cad9b
+REMARK   9 MODEL      612 MD5 919e96b2dac2c3976935017dc56231bb
+REMARK   9 MODEL      987 MD5 88be93500e4c9a2eda7345cb63682037
+REMARK   9 MODEL      557 MD5 7c670d7e6714e58f1e47b480f8b3cce4

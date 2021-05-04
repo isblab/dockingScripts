@@ -1,0 +1,43 @@
+PIE Residue Potential for Protein-Protein Docking
+Copyright, DVS Ravikant and Ron Elber, 2011
+
+How to install PIE?
+1. Go to the pie/src folder
+2. Use the makefile, Makefile.pie and do a make clean like this:
+make clean -f Makefile.pie
+3. Then compile the executable and required object files
+make -f Makefile.pie
+
+If this is done successfully, you should get an executable, pie_score, in the pie/bin folder. 
+
+NOTE:
+PIE is written in C++, so you can compile it with any C++ compiler.(default is G++). To change the default, go to the makefile, Makefil.pie and change the value of CC. 
+
+How to run PIE?
+1. Make sure to set the environment variable PIEDOCK_HOME to point to the location of the pie folder.
+Add a line like this to your .bashrc (or equivalent) initialization script. 
+export PIEDOCK_HOME=/location/to/pie/dir
+
+2. PIE is simply run like this:
+/location/to/pie/dir/bin/pie_score <complex_PDB> <receptor_chain> <ligand_chain> <location of PIE parameters file>
+
+The PIE parameters file can be found in the pie/bin directory (called pie.params)
+
+e.g. /h2/shruthi/pie/bin/pie_score complex_22.pdb A D /h2/shruthi/pie/bin/pie.params
+
+NOTE:
+Multiple receptor/ligand chains should be entered as a single string. 
+e.g. if the complex, complex_1.pdb has receptor chains A and B and ligand chains C and D, call PIE like this
+
+/h2/shruthi/pie/bin/pie_score complex_1.pdb AB CD /h2/shruthi/pie/bin/pie.params 
+
+Testing PIE
+In the example folder there are 5 PDB files, a pie.commands file and pie.energy file. 
+Running the commands in the pie.commands file should produce for you the pie.energy file. 
+
+
+
+
+
+
+

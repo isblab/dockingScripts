@@ -1,0 +1,284 @@
+PRTC
+~
+~ The info below is taken from OPLS paper
+~    Jorgensen and Tirado-Rives, JACS 110,1657(1988)
+~ and the Amber paper (for the covalent part)
+~    G. Alagona, S. Profeta Jr., P. Weiner, JACS 106, 765(1984)
+~
+~last changed in (28/7/98) by Roberto.
+~
+~ Standard OPLS values
+~
+~   OPLS                    MOIL
+~  number   MOIL-NAME(s)  NUMBER(s)  AMBER-type     e.g.
+~    1       CO,CSX          9,46      C           backbone
+~    2       OC,OSX         10,47      O           backbone
+~    3       NH              7         N           backbone
+~    4       HN              8         H           backbone
+~    5       CAG            38         C2          GLY
+~    6       CAH,CAHI       11,108     C           Calpha ALA,DALA
+~    7       CH3,CH3G(?)    13,26      C3          ALA,VAL
+~    8       CBH            49         CH          ILE
+~    9       CH2            14         C2          PRO,ARG,GLU,ILE
+~   10       CH3D           27         C3          ILE
+~   11*      CFH            16         CD          PHE,TRP
+~   11*      CG             15         CA          TRP
+~   12       NAS            71         N           ASN,GLN
+~   13       HAS,HAS1       72,48      H           ASN,GLN
+~   14       CHPR,CHPI      35,118     CH          PRO,DPRO
+~   15       CH2D           34         C2          PRO
+~   16       CH2B,CH2A(?)   73,50      C2          ASP,GLU
+~   17       CX,CX1,CSX1    4,74,51    C           CTER(-),ASP,GLU
+~   18       OX,OX1,OSX1    5,75,52    O2          CTER(-),ASP,GLU
+~   19       CH2K           31         C2          LYS
+~   20       NX              1         N3          LYS,NTER(+)
+~   21       HX              2         H3          LYS,NTER(+)
+~   22       CH2S           32         C2          SER
+~   23       OH             18         OH          SER,THR,TYR
+~   24       HO             19         HO          SER,THR,TYR
+~   25       CHT            33         CH          THR
+~   26       CZ             17         C           TYR
+~   27       CANG           39         C2          NTER(+)GLY
+~   28       CACG           40         C2          CTER(-)GLY
+~   29       CANX,CANI       3,117     CH          NTER(+)ALA,DALA
+~   30       CACX,CACI       6,119     CH          CTER(-)ALA,DALA
+~   31       CH2C           41         C2          CYS
+~   32       SH             42         SH          CYS
+~   33       HS             43         HS          CYS
+~   34       CH2M           28         C2          MET
+~   35       SM             29         S           MET
+~   36       CH3M           30         C3          MET
+~   37       CCH2           44         C2          CYX
+~   38       SC             45         S           CYX
+~   39       CH3T           12         C3          CTER
+~   40       NDHS           23         NA          HIS,TRP
+~   41       HDHS,HDNH      24         H           HIS,TRP
+~   42       NEHS           62         NB          HIS
+~   43       CHEH           63         CP          HIS
+~   44       CHDH           61         CF          HIS
+~   45*      CGHS           25         CC          HIS
+~   45*      CHTR           21         CG          TRP
+~   45*      CGHT           120        CN          TRP
+~   46       NDHP,NEHP      54,57      NA          HIP
+~   47       HDNP,HENP      55,58      H           HIP
+~   48       CHEP           59         CP          HIP
+~   49*      CGHP           53         CC          HIP
+~   49*      CHDP           56         CG          HIP
+~   50*      CGTR           20         C*          TRP
+~   50*      CTR            22         CB          TRP
+~   51       NR2            69         N2          ARG
+~   52       HR2            70         H3          ARG
+~   53       CR3            68         CA          ARG
+~   54       NR1            66         N2          ARG
+~   55       HR1            67         H3          ARG
+~   56       CR2            65         C2          ARG
+~   57       CR1            64         C2          ARG
+~   58       CO2           123         C           CTR5,CTG0
+~   59       OC2           124         O           CTR5,CTG0
+~   60       CA1,CA1I      122,132     CH          CTR5
+~   61       CAG1          121         C2          CTG0
+~   62       OCH3           36         OS          CTR5,CTG0
+~   63       CH3O           37         C3          CTR5,CTG0
+~   64       CA4           112         CT          AIB         (?)
+~   65       CH4,CH4I      113,114     C3          AIB         (?)
+~   NS       NBX           115         N3          NTER(+)PRO
+~   NS       CH3N          116         C3          N-Methyl AA
+~   NS       NX1           125         NT          NTR2,DNT2
+~   NS       HX1           126         H2          NTR2,DNT2
+~   NS       CAX,CAXI      127,128     CH          NTR2,DNT2
+~   NS       CAXG          129         C2          NTR3
+~   NS       CAP,CAPI      130,131     CH          CTR6,DCT6
+~   NS       CH2P          133         C2          BACS
+~   NS       NX2           134         NT          BANS
+~
+~ structure of data
+~ name       mass       charge      epsilon    sigma    index(not read)
+~
+~ charged N-terminal atoms
+PNAM=(NX)    PMAS=14.    PCHG=-0.3    PEPS=0.170   PSGM=3.250    (1)
+PNAM=(HX)    PMAS=1.     PCHG=0.33    PEPS=0.0498  PSGM=0.3      (2)
+PNAM=(CANX)  PMAS=13.    PCHG=0.310   PEPS=0.080   PSGM=3.800    (3)
+~
+~ charged C-terminal atoms
+PNAM=(CX)    PMAS=12.    PCHG=0.70    PEPS=0.105   PSGM=3.750    (4)
+PNAM=(OX)    PMAS=16.    PCHG=-0.80   PEPS=0.210   PSGM=2.960    (5)
+PNAM=(CACX)  PMAS=13.    PCHG=0.10    PEPS=0.080   PSGM=3.800    (6)
+~
+~ Normal backbone atoms
+PNAM=(NH)    PMAS=14.    PCHG=-0.570  PEPS=0.17    PSGM=3.250    (7)
+PNAM=(HN)    PMAS=1.     PCHG=0.370   PEPS=0.0498  PSGM=0.30     (8)
+PNAM=(CO)    PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (9)
+PNAM=(OC)    PMAS=16.    PCHG=-0.5    PEPS=0.21    PSGM=2.960    (10)
+PNAM=(CAH)   PMAS=13.    PCHG=0.20    PEPS=0.080   PSGM=3.800    (11)
+~
+~ uncharged N-terminal atoms
+PNAM=(CH3T)  PMAS=15.    PCHG=0.200   PEPS=0.170   PSGM=3.800    (12)
+~
+~ uncharged C-terminal atoms
+PNAM=(CH3)   PMAS=15.    PCHG=0.00    PEPS=0.16    PSGM=3.9100   (13)
+~
+~ Phe, Tyr,and Trp
+PNAM=(CH2)   PMAS=14.    PCHG=0.00    PEPS=0.118   PSGM=3.905    (14)
+~
+~ Phe, Tyr
+PNAM=(CG)    PMAS=12.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (15)
+~
+~ CH in 6-membered ring in Phe, Trp and Tyr
+PNAM=(CFH)   PMAS=13.    PCHG=0.00    PEPS=0.110   PSGM=3.750    (16)
+~
+~ C bonded with OH group in Tyr
+PNAM=(CZ)    PMAS=12.    PCHG=0.265   PEPS=0.110   PSGM=3.750    (17)
+~
+~ O atom in OH group in Tyr,Ser
+PNAM=(OH)    PMAS=16.    PCHG=-0.700  PEPS=0.170   PSGM=3.070    (18)
+~
+~ HO is the hydrogen atom in OH group in Tyr
+PNAM=(HO)    PMAS=1.     PCHG=0.435   PEPS=0.0498  PSGM=0.3      (19)
+~
+~ CGTR is the carbon atom next to B-carbon in Trp
+PNAM=(CGTR)  PMAS=12.    PCHG=-0.055  PEPS=0.145   PSGM=3.750    (20)
+~
+~ CHTR is the CH in 5-membered ring in Trp
+PNAM=(CHTR)  PMAS=13.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (21)
+~
+~ CTR is the C atom next to CGTR
+PNAM=(CTR)   PMAS=12.    PCHG=-0.055  PEPS=0.145   PSGM=3.750    (22)
+~
+~ NDHS is the N atom in Trp and in single charged Histidine(His)
+PNAM=(NDHS)  PMAS=14.    PCHG=-0.570  PEPS=0.170   PSGM=3.250    (23)
+~
+~ HDHS is the H atom on nitrogen in Trp
+PNAM=(HDHS)  PMAS=1.     PCHG=0.420   PEPS=0.0498  PSGM=0.3      (24)
+~
+~ CGHS is the C atom next to N atom in single charged histidine(His)
+PNAM=(CGHS)  PMAS=12.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (25)
+~
+~ CH3G - dummy atom for valine monomer
+PNAM=(CH3G)  PMAS=15.    PCHG=0.00    PEPS=0.160   PSGM=3.910    (26)
+~
+~carlos's additions follow
+PNAM=(CH3D)  PMAS=15.    PCHG=0.      PEPS=0.175   PSGM=3.905    (27)
+PNAM=(CH2M)  PMAS=14.    PCHG=0.235   PEPS=0.118   PSGM=3.800    (28)
+PNAM=(SM)    PMAS=32.    PCHG=-0.470  PEPS=0.250   PSGM=3.550    (29)
+PNAM=(CH3M)  PMAS=15.    PCHG=0.235   PEPS=0.170   PSGM=3.800    (30)
+PNAM=(CH2K)  PMAS=14.    PCHG=0.310   PEPS=0.118   PSGM=3.905    (31)
+~
+~ parameters for SER
+PNAM=(CH2S)  PMAS=14.    PCHG=0.265   PEPS=0.118   PSGM=3.905    (32)
+~
+~ parameters for THR
+PNAM=(CHT)   PMAS=13.    PCHG=0.265   PEPS=0.080   PSGM=3.850    (33)
+~
+~ parameters for PRO
+PNAM=(CH2D)  PMAS=14.    PCHG=0.285   PEPS=0.118   PSGM=3.800    (34)
+PNAM=(CHPR)  PMAS=13.    PCHG=0.285   PEPS=0.08    PSGM=3.800    (35)
+~
+~ parameters for CTR5,CTG0
+PNAM=(OCH3)  PMAS=16.    PCHG=-0.400  PEPS=0.170   PSGM=3.000    (36)
+PNAM=(CH3O)  PMAS=15.    PCHG=0.250   PEPS=0.170   PSGM=3.800    (37)
+~
+~ CAG - glycine alpha carbon (CH2)
+PNAM=(CAG)   PMAS=14.    PCHG=0.20    PEPS=0.118   PSGM=3.80     (38)
+~
+~ CANG - glycine alpha carbon (CH2) in charged NTRG
+PNAM=(CANG)  PMAS=14.    PCHG=0.31    PEPS=0.118   PSGM=3.80     (39)
+~ CACG - glycine alpha carbon (CH2) in charged CTRG
+PNAM=(CACG)  PMAS=14.    PCHG=0.10    PEPS=0.118   PSGM=3.80     (40)
+~
+~ cysteine side chain atoms
+PNAM=(CH2C)  PMAS=14.    PCHG=0.18    PEPS=0.118   PSGM=3.905    (41)
+PNAM=(SH)    PMAS=32.    PCHG=-0.45   PEPS=0.250   PSGM=3.55     (42)
+PNAM=(HS)    PMAS=1.     PCHG=0.27    PEPS=0.0498  PSGM=0.3      (43)
+~
+~ cystine side chain atoms
+PNAM=(CCH2)  PMAS=14.    PCHG=0.30    PEPS=0.118   PSGM=3.800    (44)
+PNAM=(SC)    PMAS=32.    PCHG=-0.30   PEPS=0.250   PSGM=3.550    (45)
+~
+~ glutamine
+PNAM=(CSX)   PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (46)
+PNAM=(OSX)   PMAS=16.    PCHG=-0.50   PEPS=0.210   PSGM=2.960    (47)
+PNAM=(HAS1)  PMAS=1.     PCHG=0.425   PEPS=0.0498  PSGM=0.300    (48)
+~ valine
+PNAM=(CBH)   PMAS=13.    PCHG=0.00    PEPS=0.080   PSGM=3.850    (49)
+~ glutamic acid
+PNAM=(CH2A)  PMAS=14.    PCHG=-0.10   PEPS=0.118   PSGM=3.905    (50)
+PNAM=(CSX1)  PMAS=12.    PCHG=0.70    PEPS=0.105   PSGM=3.750    (51)
+PNAM=(OSX1)  PMAS=16.    PCHG=-0.80   PEPS=0.210   PSGM=2.960    (52)
+~ doubly charged histidine
+PNAM=(CGHP)  PMAS=13.    PCHG=0.33    PEPS=0.145   PSGM=3.750    (53)
+PNAM=(NDHP)  PMAS=14.    PCHG=-0.54   PEPS=0.170   PSGM=3.250    (54)
+PNAM=(HDNP)  PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.300    (55)
+PNAM=(CHDP)  PMAS=13.    PCHG=0.33    PEPS=0.145   PSGM=3.750    (56)
+PNAM=(NEHP)  PMAS=14.    PCHG=-0.54   PEPS=0.170   PSGM=3.250    (57)
+PNAM=(HENP)  PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.300    (58)
+PNAM=(CHEP)  PMAS=13.    PCHG=0.50    PEPS=0.145   PSGM=3.750    (59)
+~ single (ND) charged histidine
+PNAM=(HDNH)  PMAS=1.     PCHG=0.42    PEPS=0.0498  PSGM=0.300    (60)
+PNAM=(CHDH)  PMAS=13.    PCHG=0.10    PEPS=0.145   PSGM=3.750    (61)
+PNAM=(NEHS)  PMAS=14.    PCHG=-0.49   PEPS=0.170   PSGM=3.250    (62)
+PNAM=(CHEH)  PMAS=13.    PCHG=0.41    PEPS=0.145   PSGM=3.750    (63)
+~
+~ ARG
+PNAM=(CR1)   PMAS=14.    PCHG=0.070   PEPS=0.118   PSGM=3.905    (64)
+PNAM=(CR2)   PMAS=14.    PCHG=0.310   PEPS=0.118   PSGM=3.905    (65)
+PNAM=(NR1)   PMAS=14.    PCHG=-0.70   PEPS=0.170   PSGM=3.250    (66)
+PNAM=(HR1)   PMAS=1.     PCHG=0.44    PEPS=0.0498  PSGM=0.3      (67)
+PNAM=(CR3)   PMAS=13.    PCHG=0.64    PEPS=0.05    PSGM=2.25     (68)
+PNAM=(NR2)   PMAS=14.    PCHG=-0.8    PEPS=0.17    PSGM=3.25     (69)
+PNAM=(HR2)   PMAS=1.     PCHG=0.46    PEPS=0.0498  PSGM=0.3      (70)
+~
+~ ASN
+PNAM=(NAS)   PMAS=14.    PCHG=-0.85   PEPS=0.170   PSGM=3.25     (71)
+PNAM=(HAS)   PMAS=1.     PCHG=0.425   PEPS=0.0498  PSGM=0.3      (72)
+~
+~ ASP
+PNAM=(CH2B)  PMAS=14.    PCHG=-0.1    PEPS=0.118   PSGM=3.905    (73)
+PNAM=(CX1)   PMAS=12.    PCHG=0.7     PEPS=0.105   PSGM=3.75     (74)
+PNAM=(OX1)   PMAS=16.    PCHG=-0.8    PEPS=0.21    PSGM=2.96     (75)
+~
+PNAM=(H)     PMAS=1.     PCHG=0.42    PEPS=0.050   PSGM=1.43     (95)
+~
+~
+~ atoms for PCA
+PNAM=(NHC)   PMAS=14.    PCHG=-0.570  PEPS=0.17    PSGM=3.250    (103)
+PNAM=(HNC)   PMAS=1.     PCHG=0.370   PEPS=0.0498  PSGM=0.30     (104)
+PNAM=(COC)   PMAS=12.    PCHG=0.50    PEPS=0.105   PSGM=3.750    (105)
+PNAM=(OCC)   PMAS=16.    PCHG=-0.5    PEPS=0.21    PSGM=2.960    (106)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ chen atopm types for peptor's building units
+~ atom type for pseudo beta carbon of glycineg
+~(for hydrophobic potential)
+~based on alanin beta carbon
+~
+~ chen
+~ Spetial atom type for N-CH2-N parameters ARBITRARRYLY based on CAG
+~ The Charge was set so that the FBU3 monomer will be newtral
+~
+~ protonated N-terminus for prolines and building units
+~ (based on NX with different charge)
+PNAM=(NBX)   PMAS=14.    PCHG=-0.28   PEPS=0.170   PSGM=3.250    (115)
+~ Methyl for N-Methyl AA
+PNAM=(CH3N)  PMAS=15.    PCHG=0.285   PEPS=0.170   PSGM=3.800    (116)
+~ D-CANX (3)
+PNAM=(CANI)  PMAS=13.    PCHG=0.310   PEPS=0.080   PSGM=3.800    (117)
+~ D-CHPR (35)
+PNAM=(CHPI)  PMAS=13.    PCHG=0.285   PEPS=0.08    PSGM=3.800    (118)
+~ D-CACX (6)
+PNAM=(CACI)  PMAS=13.    PCHG=0.10    PEPS=0.080   PSGM=3.800    (119)
+~ CGHT is the C atom next to N atom in Trp - as CGHS(25)
+PNAM=(CGHT)  PMAS=12.    PCHG=0.130   PEPS=0.145   PSGM=3.750    (120)
+~ CTR5, CTG0
+PNAM=(CAG1)  PMAS=14.    PCHG=0.250   PEPS=0.118   PSGM=3.800    (121)
+PNAM=(CA1)   PMAS=13.    PCHG=0.250   PEPS=0.080   PSGM=3.800    (122)
+PNAM=(CO2)   PMAS=12.    PCHG=0.550   PEPS=0.105   PSGM=3.750    (123)
+PNAM=(OC2)   PMAS=16.    PCHG=-0.450  PEPS=0.210   PSGM=2.960    (124)
+~ NTR2,DNT2,NTR3 (the charges are from OPLS of MACROMODEL and
+~       the VdW from ARG or CA)
+PNAM=(NX1)   PMAS=14.    PCHG=-0.775  PEPS=0.170   PSGM=3.250    (125)
+PNAM=(HX1)   PMAS=1.     PCHG=0.35    PEPS=0.05    PSGM=0.3      (126)
+PNAM=(CAX)   PMAS=13.    PCHG=0.075   PEPS=0.08    PSGM=3.800    (127)
+PNAM=(CAXI)  PMAS=13.    PCHG=0.075   PEPS=0.08    PSGM=3.800    (128)
+PNAM=(CAXG)  PMAS=14.    PCHG=0.075   PEPS=0.118   PSGM=3.800    (129)
+~
+~
+DONE

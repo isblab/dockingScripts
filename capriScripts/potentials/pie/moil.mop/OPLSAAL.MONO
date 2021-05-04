@@ -1,0 +1,937 @@
+~
+~  List of basic monomers for OPLS-AAL forcefield
+~  based on parameter file oplsaal.prm
+~
+MONO LIST
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ALA) #prt=11 chrg=-0.50
+~
+~      HB1 HB2 HB3
+~          \|/
+~           CB   O
+~           |    |
+~       N - CA - C...N
+~       |   \
+~       H    HA
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CH3)              SAID=2
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB1)      PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N CA-HA N-H CB-HB1 CB-HB2 CB-HB3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               ARG              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ ARGININ
+~ 
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)     1HH2
+~           |                   |
+~(HG2,HG3)- CG - CD - NE - CZ - NH1 - 1HH1
+~               /     |    |
+~       (HD2,HD3)     HE   NH2
+~                          |  \
+~                        2HH1  2HH2
+~
+~
+~ hydrogren naming modified by YS
+MONO=(ARG) #prt=25 chrg=.50 
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1 
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(CB)       PRTC=(CBR)              SAID=3 
+UNIQ=(CG)       PRTC=(CH3)              SAID=3    PCHG=-0.05000
+UNIQ=(CD)       PRTC=(CH3)              SAID=2    PCHG=0.19000
+UNIQ=(NE)       PRTC=(NR)               SAID=16
+UNIQ=(HE)       PRTC=(HX)               SAID=1    PCHG=0.44000
+UNIQ=(CZ)       PRTC=(CR3)              SAID=4
+UNIQ=(NH1)      PRTC=(NR)               SAID=12   PCHG=-0.8000
+UNIQ=(HH11)     PRTC=(HX)               SAID=1    PCHG=0.46000
+UNIQ=(HH12)     PRTC=(HX)               SAID=1    PCHG=0.46000
+UNIQ=(NH2)      PRTC=(NR)               SAID=12   PCHG=-0.8000
+UNIQ=(HH21)     PRTC=(HX)               SAID=1    PCHG=0.46000
+UNIQ=(HH22)     PRTC=(HX)               SAID=1    PCHG=0.46000
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+UNIQ=(HD2)      PRTC=(H0)               SAID=1
+UNIQ=(HD3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+H-N N-CA CA-C C-O C-N* CA-CB CB-CG CG-CD CD-NE
+NE-HE NE-CZ CZ-NH1 CZ-NH2 NH2-HH21 NH2-HH22 NH1-HH11
+NH1-HH12
+CA-HA CB-HB2 CB-HB3 CG-HG2 CG-HG3 CD-HD2 CD-HD3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               ASN              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~    aspargin
+~
+~
+MONO=(ASN) #prt=15 chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2, HB3)
+~           |
+~           CG - ND2 - 1HD2
+~           |    |
+~           OD1  2HD2
+~
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBN)              SAID=3
+UNIQ=(CG)       PRTC=(CO)               SAID=7
+UNIQ=(OD1)      PRTC=(OC)               SAID=10
+UNIQ=(ND2)      PRTC=(NH)               SAID=15  PCHG=-0.76000
+UNIQ=(1HD2)     PRTC=(HN)               SAID=1   PCHG=0.38000
+UNIQ=(2HD2)     PRTC=(HN)               SAID=1   PCHG=0.38000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+N-CA C-O C-CA CA-CB CB-CG CG-OD1 CG-ND2 ND2-1HD2 ND2-2HD2
+N-H CA-HA CB-HB2 CB-HB3
+C-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               ASP              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ aspartic acid
+MONO=(ASP) #prt=13 chrg=-1.5
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)
+~           |
+~           CG - OD2
+~           | (-)
+~           OD1
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBA)              SAID=3
+UNIQ=(CG)       PRTC=(CX)               SAID=7
+UNIQ=(OD1)      PRTC=(OX)               SAID=11
+UNIQ=(OD2)      PRTC=(OX)               SAID=11
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+H-N N-CA CA-C C-O CA-CB CB-CG CG-OD1 CG-OD2
+C-N* CA-HA CB-HB2 CB-HB3
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                   charged C-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~charged C-terminus (1)~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~
+MONO=(CTER) #prt=4 chrg=-0.86 
+~
+~
+~           CB   O
+~       :   :    |(-)
+~    ...N...CA - C - OX2
+~
+UNIQ=(C)        PRTC=(CX)     PREV      SAID=7    
+UNIQ=(OT1)        PRTC=(OX)     PREV      SAID=11
+UNIQ=(CA)       PRTC=(CH3)    PREV      SAID=4   PCHG=0.0400
+UNIQ=(OT2)      PRTC=(OX)               SAID=11
+DONE
+BOND
+OX2-C*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               CYS              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CYS) #prt=12 chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   | 
+~       H   CB - (HB2,HB3)
+~           |
+~           SG - HG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(CB)       PRTC=(CBC)              SAID=3
+UNIQ=(SG)       PRTC=(SH)               SAID=18
+UNIQ=(HG)       PRTC=(HS)               SAID=1
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H CA-CB CB-SG SG-HG
+CA-HA CB-HB2 CB-HB3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS AA)~~~
+MONO=(CYX) #prt=11 chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2, HB3)
+~           |
+~           SG
+~
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(CB)       PRTC=(CH3)              SAID=3    PCHG=0.09750
+UNIQ=(SG)       PRTC=(SM)               SAID=18   PCHG=-0.21750
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H CA-CB CB-SG
+CA-HA CB-HB2 CB-HB3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               GLN              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLN)    #prt=18   chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)
+~           |
+~           CG - CD - NE2 - HE21
+~          /     |    |
+~  (HG2,HG3)    OE1  HE22
+~
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBGN)             SAID=3
+UNIQ=(CG)       PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(CD)       PRTC=(CO)               SAID=7
+UNIQ=(OE1)      PRTC=(OC)               SAID=10
+UNIQ=(NE2)      PRTC=(NH)               SAID=15   PCHG=-0.76000
+UNIQ=(HE21)     PRTC=(HN)               SAID=1    PCHG=0.38000
+UNIQ=(HE22)     PRTC=(HN)               SAID=1    PCHG=0.38000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-NE2 NE2-HE21 NE2-HE22
+CA-C C-O C-N* CA-HA CB-HB2 CB-HB3 CG-HG2 CG-HG3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               GLU              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+MONO=(GLU)    #prt=16   chrg=-1.50
+~    
+~           HA   O
+~           |    | 
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2, HB3)
+~           |
+~ (HG2,HG3)-CG - CD - OE2
+~                | (-)
+~                OE1
+~
+~ glutamic acid  
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1 
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBG)              SAID=3
+UNIQ=(CG)       PRTC=(CH3)              SAID=3   PCHG=-0.22000
+UNIQ=(CD)       PRTC=(CX)               SAID=7
+UNIQ=(OE1)      PRTC=(OX)               SAID=11
+UNIQ=(OE2)      PRTC=(OX)               SAID=11
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-OE2
+CA-C C-O C-N* CA-HA CB-HB2 CB-HB3 
+CG-HG2 CG-HG3
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               GLY              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLY) #prt=8 chrg=-0.50
+~
+~           HA2  O
+~           |    |
+~       N - CA - C...N
+~       |   \
+~       H    HA3
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=3    PCHG=0.08000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(HA2)      PRTC=(H0)               SAID=1
+UNIQ=(HA3)      PRTC=(H0)               SAID=1
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H
+CA-HA2 CA-HA3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~
+~HISTIDINE
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)
+~           |
+~           CG - ND1 -HD1
+~           ||      \
+~           ||       CE1 - HE1
+~           ||      //
+~     HD2 - CD2 - NE2
+~          
+~         
+~ histidine
+MONO=(HIS)    #prt=18   chrg=-0.50
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CH3)              SAID=3    PCHG=-0.00500
+UNIQ=(CG)       PRTC=(CGHS)             SAID=7
+UNIQ=(CD2)      PRTC=(CHDH)             SAID=6
+UNIQ=(ND1)      PRTC=(NDHS)             SAID=16
+UNIQ=(HD1)      PRTC=(HN)               SAID=1    PCHG=0.42000
+UNIQ=(NE2)      PRTC=(NEHS)             SAID=16
+UNIQ=(CE1)      PRTC=(CHEH)             SAID=1
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HD2)      PRTC=(HA)               SAID=1     
+UNIQ=(HE1)      PRTC=(HA)               SAID=1     
+DONE
+BOND
+N-H N-CA CA-CB
+CB-CG CG-CD2 CD2-NE2 CG-ND1 ND1-HD1 ND1-CE1 CE1-NE2
+CA-C C-O C-N* CA-HA CB-HB2 CB-HB3 CD2-HD2 CE1-HE1
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               ILE              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Isoleucine
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG1 - CD1 - (HD11,HD12,HD13)
+~         / |     \
+~       HB  CG2    (HG12,HG13)
+~            \
+~             (HG21,HG22,HG23)
+~
+MONO=(ILE) #prt=20 chrg=-0.50
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBI)              SAID=4
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2
+UNIQ=(CG1)      PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(CD1)      PRTC=(CH3)              SAID=2
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB)       PRTC=(H0)               SAID=1
+UNIQ=(HG12)     PRTC=(H0)               SAID=1
+UNIQ=(HG13)     PRTC=(H0)               SAID=1
+UNIQ=(HG21)     PRTC=(H0)               SAID=1
+UNIQ=(HG22)     PRTC=(H0)               SAID=1
+UNIQ=(HG23)     PRTC=(H0)               SAID=1
+UNIQ=(HD11)     PRTC=(H0)               SAID=1
+UNIQ=(HD12)     PRTC=(H0)               SAID=1
+UNIQ=(HD13)     PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG2 CB-CG1 CG1-CD1
+CA-HA CB-HB CG1-HG12 CG1-HG13 CG2-HG21 CG2-HG22 
+CG2-HG23 CD1-HD11 CD1-HD12 CD1-HD13
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               LEU              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Leucine
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |     /HG
+~       H   CB - CG - CD1 - (HD11, HD12, HD13)
+~          /|     |
+~       HB2 HB3   CD2- (HD21, HD22, HD23)
+~
+MONO=(LEU) #prt=20 chrg=-0.50
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBV)              SAID=3   PCHG=-0.12000
+UNIQ=(CG)       PRTC=(CH3)              SAID=4   PCHG=-0.06000
+UNIQ=(CD1)      PRTC=(CH3)              SAID=2
+UNIQ=(CD2)      PRTC=(CH3)              SAID=2
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG)       PRTC=(H0)               SAID=1
+UNIQ=(HD11)     PRTC=(H0)               SAID=1
+UNIQ=(HD12)     PRTC=(H0)               SAID=1
+UNIQ=(HD13)     PRTC=(H0)               SAID=1
+UNIQ=(HD21)     PRTC=(H0)               SAID=1
+UNIQ=(HD22)     PRTC=(H0)               SAID=1
+UNIQ=(HD23)     PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2
+CA-HA CB-HB2 CB-HB3 CG-HG CD1-HD11 CD1-HD12
+CD1-HD13 CD2-HD21 CD2-HD22 CD2-HD23
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               LYS              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Lysine
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB -(HB2,HB3)   
+~           |               
+~           CG - CD - CE - NZ - (HZ1,HZ2,HZ3)
+~         /      |     \    
+~(HG2,HG3)   (HD2,HD3)  (HE2,HE3)                    
+~
+MONO=(LYS) #prt=23 chrg=0.50
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBLY)             SAID=3
+UNIQ=(CG)       PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(CD)       PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(CE)       PRTC=(CH3)              SAID=3    PCHG=0.19000
+UNIQ=(NZ)       PRTC=(NX)               SAID=12
+UNIQ=(HZ1)      PRTC=(HX)               SAID=1    PCHG=0.33000
+UNIQ=(HZ2)      PRTC=(HX)               SAID=1    PCHG=0.33000
+UNIQ=(HZ3)      PRTC=(HX)               SAID=1    PCHG=0.33000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+UNIQ=(HD2)      PRTC=(H0)               SAID=1
+UNIQ=(HD3)      PRTC=(H0)               SAID=1
+UNIQ=(HE2)      PRTC=(H0)               SAID=1
+UNIQ=(HE3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD CD-CE CE-NZ
+NZ-HZ1 NZ-HZ2 NZ-HZ3
+CA-HA CB-HB2 CB-HB3 CG-HG2 CG-HG3 CD-HD2 CD-HD3
+CE-HE2 CE-HE3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               MET              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Methionine
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   | 
+~       H   CB - (HB2, HB3)
+~           |
+~           CG - SD - CE - (HE1,HE2,HE3)
+~          /
+~ (HG2,HG3)
+~
+MONO=(MET) #prt=18 chrg=-0.50
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4     PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBM)              SAID=3
+UNIQ=(CG)       PRTC=(CH3)              SAID=3     PCHG=0.04750
+UNIQ=(SD)       PRTC=(SM)               SAID=19
+UNIQ=(CE)       PRTC=(CH3)              SAID=2     PCHG=-0.01250
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+UNIQ=(HE1)      PRTC=(H0)               SAID=1
+UNIQ=(HE2)      PRTC=(H0)               SAID=1
+UNIQ=(HE3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-SD SD-CE
+CA-HA CB-HB2 CB-HB3 CG-HG2 CG-HG3 
+CE-HE1 CE-HE2 CE-HE3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                    charged N-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~charged N-terminus (1)~~~~~(not gly,pro,BU)~~~~~(OPLS)~~~
+~
+MONO=(NTER) #prt=5 chrg=0.88
+~
+~
+~             H   X    O
+~             |(+):    :
+~       HX2 - N - CA...C...
+~             |
+~             HX3
+~
+UNIQ=(N)        PRTC=(NX)     NEXT      SAID=12
+UNIQ=(H)        PRTC=(HX)     NEXT      SAID=1
+UNIQ=(CA)       PRTC=(CH3)    NEXT      SAID=4   PCHG=0.19000
+UNIQ=(HT2)      PRTC=(HX)               SAID=1
+UNIQ=(HT3)      PRTC=(HX)               SAID=1
+DONE
+BOND
+HX2-N* HX3-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               PHE              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Phenylalanine
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2, HB3)
+~           |
+~           CG 
+~          //  \        
+~   HD2 - CD2   CD1 - HD1
+~         |     ||
+~  HE2 - CE2    CE1 - HE1
+~          \\  /
+~            CZ -HZ
+~
+MONO=(PHE)   #prt=21   chrg=-0.50
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4  PCHG=0.14000
+UNIQ=(CB)       PRTC=(CH3)              SAID=3  PCHG=-0.0050
+UNIQ=(CG)       PRTC=(CFH)              SAID=7
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6
+UNIQ=(CZ)       PRTC=(CFH)              SAID=6
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HD1)      PRTC=(HA)               SAID=1  
+UNIQ=(HD2)      PRTC=(HA)               SAID=1  
+UNIQ=(HE1)      PRTC=(HA)               SAID=1  
+UNIQ=(HE2)      PRTC=(HA)               SAID=1  
+UNIQ=(HZ)       PRTC=(HA)               SAID=1  
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ CE2-CZ CA-HA CB-HB2 CB-HB3 CD1-HD1 CD2-HD2
+CE1-HE1 CE2-HE2 CZ-HZ
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               PRO              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~proline
+MONO=(PRO)   #prt=15 chrg=-0.50
+~
+~                HA   O
+~                |    |    
+~            N - CA - C...N
+~            |   |
+~ (HD2,HD3)- CD  CB - (HB2,HB3)
+~             \  /
+~              CG - (HG2, HG3)
+~ 
+UNIQ=(N)        PRTC=(NH)               SAID=17   PCHG=-0.14000
+UNIQ=(CD)       PRTC=(CDP)              SAID=3
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.01000
+UNIQ=(CB)       PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(CG)       PRTC=(CH3)              SAID=3    PCHG=-0.12000
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+UNIQ=(HD2)      PRTC=(H0)               SAID=1
+UNIQ=(HD3)      PRTC=(H0)               SAID=1
+UNIQ=(HG2)      PRTC=(H0)               SAID=1
+UNIQ=(HG3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+N-CD CD-CG CG-CB CB-CA N-CA
+CA-C C-O C-N* CA-HA CB-HB2 CB-HB3
+CD-HD2 CD-HD3 CG-HG2 CG-HG3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               SER              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~serine
+MONO=(SER)   #prt=12  chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)  
+~           |   
+~           OG  
+~           |
+~           HG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4    PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBS)              SAID=3    
+UNIQ=(OG)       PRTC=(OH)               SAID=8    
+UNIQ=(HG)       PRTC=(HO)               SAID=1
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1
+UNIQ=(HB3)      PRTC=(H0)               SAID=1
+DONE
+BOND
+N-H N-CA CA-CB CB-OG OG-HG
+CA-C C-O C-N* CA-HA CB-HB2 CB-HB3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               THR              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~threonine
+MONO=(THR)   #prt=15  chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG2 - (HG21,HG22,HG23)
+~          /|
+~        HB OG1
+~           |
+~           HG1
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CH3)              SAID=4   PCHG=0.20500
+UNIQ=(OG1)      PRTC=(OH)               SAID=8
+UNIQ=(HG1)      PRTC=(HO)               SAID=1
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB)       PRTC=(H0)               SAID=1
+UNIQ=(HG21)     PRTC=(H0)               SAID=1
+UNIQ=(HG22)     PRTC=(H0)               SAID=1
+UNIQ=(HG23)     PRTC=(H0)               SAID=1
+DONE
+BOND
+N-H N-CA  CA-CB CB-OG1 OG1-HG1 CB-CG2
+CA-C C-O C-N* CA-HA CB-HB
+CG2-HG21 CG2-HG22 CG2-HG23
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               TRP              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~tryptophan
+MONO=(TRP)   #prt=25   chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2,HB3)  
+~           |    
+~           CG = CD1 - HD1 
+~           |       \    
+~           |        NE1 - HE1
+~           |       /
+~           CD2 = CE2
+~          /        \
+~  HE3 - CE3        CZ2 - HZ2
+~          \\       //
+~     HZ3 - CZ3 - CH2 - HH2
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBT)              SAID=3
+~
+UNIQ=(CG)       PRTC=(CGTR)             SAID=7
+UNIQ=(CD2)      PRTC=(CTR)              SAID=7
+UNIQ=(CE2)      PRTC=(CGHT)             SAID=7
+UNIQ=(CE3)      PRTC=(CFH)              SAID=6
+~
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6
+UNIQ=(NE1)      PRTC=(NDHS)             SAID=16
+UNIQ=(HE1)      PRTC=(HN)               SAID=1   PCHG=0.42000
+~
+UNIQ=(CZ2)      PRTC=(CFH)              SAID=6
+UNIQ=(CZ3)      PRTC=(CFH)              SAID=6
+UNIQ=(CH2)      PRTC=(CFH)              SAID=6
+~
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)        PRTC=(H0)               SAID=1
+UNIQ=(HB2)       PRTC=(H0)               SAID=1
+UNIQ=(HB3)       PRTC=(H0)               SAID=1
+UNIQ=(HD1)       PRTC=(HA)               SAID=1   
+UNIQ=(HE3)       PRTC=(HA)               SAID=1   
+UNIQ=(HZ2)       PRTC=(HA)               SAID=1   
+UNIQ=(HZ3)       PRTC=(HA)               SAID=1   
+UNIQ=(HH2)       PRTC=(HA)               SAID=1   
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-NE1
+NE1-HE1 CD2-CE2 CE2-NE1  CD2-CE3 CE2-CZ2 CE3-CZ3 CZ2-CH2
+CZ3-CH2 C-N* CA-HA CB-HB2 CB-HB3 CD1-HD1 CE3-HE3
+CZ2-HZ2 CZ3-HZ3 CH2-HH2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               TYR              (OPLS AA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~tyrosine
+MONO=(TYR)     #prt=22    chrg=-0.50
+~
+~           HA   O
+~           |    |
+~       N - CA - C...N
+~       |   |
+~       H   CB - (HB2, HB3)
+~           |
+~           CG 
+~          /  \          
+~  HD2 - CD2   CD1 - HD1
+~        |       |
+~  HE2 - CE2   CE1 - HE1
+~          \  /
+~           CZ - OH -HH
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CH3)              SAID=3   PCHG=-0.0050
+UNIQ=(CG)       PRTC=(CFH)              SAID=7
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6
+UNIQ=(CZ)       PRTC=(CFH)              SAID=7   PCHG=0.1500
+UNIQ=(OH)       PRTC=(OHT)              SAID=8
+UNIQ=(HH)       PRTC=(HO)               SAID=1   PCHG=0.4350
+UNIQ=(C)        PRTC=(CO)               SAID=7
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+~
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB2)      PRTC=(H0)               SAID=1 
+UNIQ=(HB3)      PRTC=(H0)               SAID=1   
+UNIQ=(HD1)      PRTC=(HA)               SAID=1   
+UNIQ=(HD2)      PRTC=(HA)               SAID=1   
+UNIQ=(HE1)      PRTC=(HA)               SAID=1
+UNIQ=(HE2)      PRTC=(HA)               SAID=1
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ  CE2-CZ CZ-OH OH-HH C-N*
+CA-HA CB-HB2 CB-HB3 CD1-HD1 CD2-HD2 CE1-HE1 CE2-HE2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               VAL              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(VAL)   #prt=17  chrg=-0.50
+~
+~            HA   O
+~            |    |
+~       N -  CA - C...N
+~       |    |       /HG21
+~       H    CB - CG2-HG22
+~           / |      \HG23
+~          HB  CG1-HG11
+~               | \HG12
+~               HG13
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16
+UNIQ=(H)        PRTC=(HN)               SAID=1
+UNIQ=(CA)       PRTC=(CH3)              SAID=4   PCHG=0.14000
+UNIQ=(CB)       PRTC=(CBV)              SAID=4
+UNIQ=(CG1)      PRTC=(CH3)              SAID=2
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16
+UNIQ=(HA)       PRTC=(H0)               SAID=1
+UNIQ=(HB)       PRTC=(H0)               SAID=1
+UNIQ=(HG11)     PRTC=(H0)               SAID=1
+UNIQ=(HG12)     PRTC=(H0)               SAID=1
+UNIQ=(HG13)     PRTC=(H0)               SAID=1
+UNIQ=(HG21)     PRTC=(H0)               SAID=1
+UNIQ=(HG22)     PRTC=(H0)               SAID=1
+UNIQ=(HG23)     PRTC=(H0)               SAID=1
+DONE
+BOND
+N-H N-CA  CA-CB CB-CG1 CB-CG2
+CA-C C-O C-N* CA-HA CB-HB
+CG1-HG11 CG1-HG12 CG1-HG13
+CG2-HG21 CG2-HG22 CG2-HG23
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               WATER      (OPLS - AAL)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  WATER TIP3P
+MONO=(TIP3) #prt=3 chrg=0.
+~
+UNIQ=(OH2)      PRTC=(TIPO)             SAID=1
+UNIQ=(H1)       PRTC=(TIPH)             SAID=1
+UNIQ=(H2)       PRTC=(TIPH)             SAID=1
+DONE
+BOND
+H1-OH2 H2-OH2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                               WATER      
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  WATER SPCE
+MONO=(SPCE) #prt=3 chrg=0.
+~
+UNIQ=(OH2)      PRTC=(SPCO)             SAID=1
+UNIQ=(H1)       PRTC=(SPCH)             SAID=1
+UNIQ=(H2)       PRTC=(SPCH)             SAID=1
+DONE
+BOND
+H1-OH2 H2-OH2
+DONE
+~
+*EOD

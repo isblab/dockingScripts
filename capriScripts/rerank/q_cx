@@ -1,0 +1,47 @@
+#$ -N call.tgt
+#$ -cwd
+#$ -V
+#$ -l h_rt=12:00:00
+#$ -q all.q
+#$ -pe mpich 1
+#$ -S /bin/bash
+
+module load openmpi
+ulimit -c unlimited
+
+atomEnergyFile=tgt'.pisa.energy'
+
+resEnergyFile=tgt'.pie.energy'
+
+# STEP 0. Get all the energy in one file!
+rm $atomEnergyFile $resEnergyFile
+
+for i in `cat seqnumbers_list`;
+do 
+	for pot in pie pisa
+	do 
+		cat $pot'.'$i'.energy' >> tgt'.'$pot'.energy' 
+	done
+done
+
+# STEP 1 Evaluate the combined energy of each decoy of this target
+
+for comb in 1 2 3
+do 
+	energyFile=tgt.c$comb'.energy'
+
+	python ~/mini_dock/scripts/evalC$comb'.py' $resEnergyFile $atomEnergyFile  > /state/partition1/$energyFile
+
+	mv /state/partition1/$energyFile .
+done 
+
+# STEP 2 Rerank the decoys based on the energy
+for comb in c1 c2 c3 
+do 
+	python ~/data/capri28/scripts/rerankAnyEnergy.py tgt $comb asc
+done
+
+# For PIE need sort the descending way!
+python ~/data/capri28/scripts/rerankAnyEnergy.py tgt pie desc
+
+

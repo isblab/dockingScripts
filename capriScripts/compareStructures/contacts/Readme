@@ -1,0 +1,9 @@
+Calculates number of interface contacts of a structure 
+
+Usage:
+python  <modelpdb> <model's receptor chain> <model's ligand chain> <param file>  
+e.g.
+python getPIEContacts.py m0.pdb A B pie_vdw_res_bkbn.csv |wc -l 
+
+getPIEContacts lists all the contacts. wc -l can give you number of contacts 
+

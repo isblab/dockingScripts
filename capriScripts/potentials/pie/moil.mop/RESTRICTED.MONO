@@ -1,0 +1,2108 @@
+~
+~-----------------------------------------------------------------
+~CLASS          NAME   DESCRIPTION                    STATUS
+~-----------------------------------------------------------------
+~TERMINAL       NTR0   uncharged N-terminus (1)       (OPLS)
+~
+~               PCA    uncharged N-terminus (2)       CHECK
+~
+~               NTR1   uncharged N-terminus (3)       CHECK
+~                      (not gly,pro,BU)
+~               NTG0   uncharged N-terminus (4)       (OPLS)
+~                      (for glycine)
+~               NTP0   uncharged N-terminus (5)       (OPLS)
+~                      (for proline)
+~               NTR2   uncharged N-terminus (6)       (Roberto)
+~                      (not gly,pro,BU)
+~               NTR3   uncharged N-terminus (7)       (Roberto)
+~                      (for glycine)
+~               NTRA   uncharged N-terminus (8)       (OPLS)
+~                      (may substitute NTR0,NTG0,NTP0)
+~               CTR0   uncharged C-terminus (1)       (OPLS)
+~                      (not gly,pro,BU)
+~               CTG0   uncharged C-terminus (2)       (OPLS)
+~                      (for glycine)
+~               CTG1   uncharged C-terminus (3)       (OPLS)
+~                      (for glycine)
+~               CTP0   uncharged C-terminus (4)       (OPLS)
+~                      (for proline)
+~               CTR1   uncharged C-terminus (5)       (Roberto)
+~                      (not gly,pro,BU)
+~               CTR2   uncharged C-terminus (6)       (Roberto)
+~                      (for glycine)
+~               CTR3   uncharged C-terminus (7)       (Roberto)
+~                      (pro, Ala-likeBU)
+~               CTR4   uncharged C-terminus (8)       (Roberto)
+~                      (for GLY-BU)
+~               CTR5   uncharged C-terminus (9)       (Roberto)
+~                      (not gly,pro,BU)
+~               CTR6   uncharged C-terminus (10)      (Roberto)
+~                      (pro, Ala-likeBU)
+~               NTER   charged N-terminus (1)         (OPLS)
+~                      (not gly,pro,BU)
+~               NTRG   charged N-terminus (2)         (OPLS)
+~                      (for glycine)
+~               NTRP   charged N-terminus (3)         (Roberto)
+~                      (for proline)
+~               NTPA   charged N-terminus (4)         (Roberto)
+~                      (for ALA(like)-BU)
+~               NTPG   charged N-terminus (5)         (Roberto)
+~                      (for Gly-BU)
+~               CTER   charged C-terminus (1)         (OPLS)
+~
+~               CTRG   charged C-terminus (2)         (OPLS)
+~                      (for glycine)
+~               CTRP   charged terminus               (CHECK !)
+~                      (for proline)
+~TERM. D-AA     DNT0   uncharged N-terminus(1) D-NTR0 (OPLS)
+~
+~               DNT1   uncharged N-terminus(3) D-NTR1 (CHECK)
+~                      (not gly,pro,BU)
+~               DNT2   uncharged N-terminus(6) D-NTR2 (Roberto)
+~                      (not gly,pro,BU)
+~               DNP0   uncharged N-terminus(5) D-NTP0 (OPLS)
+~                      (for D-proline)
+~               DCT0   uncharged C-terminus(1) D-CTR0 (OPLS)
+~                      (not gly,pro,BU)
+~               DCP0   uncharged C-terminus(4) D-CTP0 (OPLS)
+~                      (for D-proline)
+~               DCT1   uncharged C-terminus(5) D-CTR1 (Roberto)
+~                      (not gly,pro,BU)
+~               DCT3   uncharged C-terminus(7) D-CTR3 (Roberto)
+~                      (pro, Ala-likeBU)
+~               DCT5   uncharged C-terminus(9) D-CTR5 (Roberto)
+~                      (not gly,pro,BU)
+~               DCT6   uncharged C-terminus(10)D-CTR6 (Roberto)
+~                      (pro, Ala-likeBU)
+~               DNTR   charged N-terminus(1) D-NTER   (OPLS)
+~                      (not gly,pro,BU)
+~               DNTP   charged N-terminus(3) D-NTRP   (Roberto)
+~                      (for proline)
+~               DNTB   charged N-terminus(4) D-NTPA   (Roberto)
+~                      (for ALA(like)-BU)
+~               DCTR   charged C-terminus(1) D-CTER   (OPLS)
+~
+~               DCTP   charged terminus D-CTRP        (CHECK !)
+~                      (for proline)
+~ NATURAL AA    BACK   backbone                       (OPLS)
+~
+~               ALAS   Alanine side chain
+~
+~               ALA    Alanine                        (OPLS)
+~
+~               ALAC   Alanine (for cyclic)           (OPLS)
+~
+~               ARG    Arginine                       (OPLS)
+~
+~               ARGC   Arginine(for cyclic)           (OPLS)
+~
+~               ASN    Aspargin                       (OPLS)
+~
+~               ASNC   Aspargin(for cyclic)           (OPLS)
+~
+~               ASP    Aspartic acid                  (OPLS)
+~
+~               ASPC   Aspartic acid(for cyclic)      (OPLS)
+~
+~               CYS    Cysteine                       (OPLS)
+~
+~               CYSC   Cysteine(for cyclic)           (OPLS)
+~
+~               CYX    reduced Cysteine               (CHECK)
+~
+~               GLN    Glutamine                      (OPLS)
+~
+~               GLNC   Glutamine(for cyclic)          (OPLS)
+~
+~               GLU    Glutamic acid                  (OPLS)
+~
+~               GLUC   Glutamic acid(for cyclic)      (OPLS)
+~
+~               GLY    Glycine                        (OPLS)
+~
+~               GLYC   Glycine(for cyclic)            (OPLS)
+~
+~               HIP    Histidine(+)                   (OPLS)
+~
+~               HIPC   Histidine(+)(for cyclic)       (OPLS)
+~
+~               HIS    Histidine                      (OPLS)
+~
+~               HISC   Histidine(for cyclic)          (OPLS)
+~
+~               ILE    Isoleucine                     (OPLS)
+~
+~               ILEC   Isoleucine (for cyclic)        (OPLS)
+~
+~               LEU    Leucine                        (OPLS)
+~
+~               LEUC   Leucine (for cyclic)           (OPLS)
+~
+~               LYS    Lysine                         (OPLS)
+~
+~               LYSC   Lysine(for cyclic)             (OPLS)
+~
+~               MET    Methionine                     (OPLS)
+~
+~               METC   Methionine(for cyclic)         (OPLS)
+~
+~               PHE    Phenylalanine                  (OPLS)
+~
+~               PHEC   Phenylalanine (for cyclic)     (OPLS)
+~
+~               PRO    Proline                        (OPLS)
+~
+~               PROC   Proline (for cyclic)           (OPLS)
+~
+~               SER    Serine                         (OPLS)
+~
+~               SERC   Serine(for cyclic)             (OPLS)
+~
+~               THR    Threonine                      (OPLS)
+~
+~               THRC   Threonine(for cyclic)          (OPLS)
+~
+~               TRP    Tryptophan                     (OPLS)
+~
+~               TRPC   Tryptophan(for cyclic)         (OPLS)
+~
+~               TYR    Tyrosine                       (OPLS)
+~
+~               TYRC   Tyrosine(for cyclic)           (OPLS)
+~
+~               VAL    Valine                         (OPLS)
+~
+~               VALC   Valine(for cyclic)             (OPLS)
+~
+~               GLY1   Glycine with pseudo bata carbon(CHECK)
+~
+~
+~
+~=========================================================
+~                         TERMINALS
+~=========================================================
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                    uncharged N-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~uncharged N-terminus (1)~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~
+MONO=(NTR0) #prt=6  chrg=0.0
+~
+~                 X    O
+~                 :    :
+~    ME - C - N - CA...C...
+~         |   |
+~         O   H
+~
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+UNIQ=(H)        PRTC=(HN)     NEXT      SAID=1    
+UNIQ=(CA)       PRTC=(CAH)    NEXT      SAID=4    
+UNIQ=(ME)       PRTC=(CH3)              SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-N* C-O C-ME
+DONE
+~
+~ <BKMK>
+~uncharged N-terminus (2)~~~~~~~~~~~~~~~~~~~~~~~~~CHECK~~~
+~
+MONO=(PCA) #prt=10  chrg=-0.57
+~
+~
+~       --CG-CB
+~       |    |
+~	CD=N-CA-C=N*
+~	|| |
+~	OE H
+~
+UNIQ=(N)        PRTC=(NHC)              SAID=16   
+UNIQ=(H)        PRTC=(HNC)              SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(COC)              SAID=7    
+UNIQ=(OE)       PRTC=(OCC)              SAID=11   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-N* C-O C-CA CA-CB CB-CG CG-CD CD-OE CD-N N-CA N-H
+DONE
+~
+~
+~uncharged N-terminus (3)~~~(not gly,pro,BU)~~~~~~CHECK~~~
+~
+MONO=(NTR1) #prt=8  chrg=0.0
+~
+~                        X    O
+~                        :    :
+~    ME1 - CA0 - C - N - CA...C...
+~          |     |   |
+~         ME2    O   H
+~
+~
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+UNIQ=(H)        PRTC=(HN)     NEXT      SAID=1    
+UNIQ=(CA)       PRTC=(CAH)    NEXT      SAID=4    
+UNIQ=(CA0)      PRTC=(CBH)              SAID=4    
+UNIQ=(ME1)      PRTC=(CH3)              SAID=2    
+UNIQ=(ME2)      PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-N* C-O C-CA0 CA0-ME1 CA0-ME2
+DONE
+~
+~
+~
+~uncharged N-terminus (4)~(for glycine)~~~~~~~~~~(OPLS)~~~
+~
+MONO=(NTG0) #prt=6  chrg=0.0
+~
+~
+~                      O
+~                      :
+~    ME - C - N - CA...C...
+~         |   |
+~         O   H
+~
+~
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+UNIQ=(H)        PRTC=(HN)     NEXT      SAID=1    
+UNIQ=(CA)       PRTC=(CAG)    NEXT      SAID=3    
+UNIQ=(ME)       PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-N* C-O C-ME
+DONE
+~
+~
+~
+~uncharged N-terminus (5)~(for proline)~~~~~~~~~~(OPLS)~~~
+~
+MONO=(NTP0) #prt=6  chrg=0.0
+~
+~
+~             CD  CB   O
+~             |   :    :
+~    ME - C - N - CA...C...
+~         |
+~         O
+~
+~
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+UNIQ=(CA)       PRTC=(CHPR)   NEXT      SAID=4    
+UNIQ=(CD)       PRTC=(CH2D)   NEXT      SAID=2    
+UNIQ=(ME)       PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-N* C-O C-ME
+DONE
+~
+~
+~uncharged N-terminus (6)~~~(not gly,pro,BU)~~~Roberto~~~
+~
+MONO=(NTR2) #prt=4  chrg=0.0
+~
+~            X    O
+~            :    :
+~    H - N - CA...C...
+~        |
+~        HX2
+~
+~
+UNIQ=(N)        PRTC=(NX1)    NEXT      SAID=16   
+UNIQ=(H)        PRTC=(HX1)    NEXT      SAID=1    
+UNIQ=(HX2)      PRTC=(HX1)              SAID=1    
+UNIQ=(CA)       PRTC=(CAX)    NEXT      SAID=4    
+DONE
+BOND
+HX2-N*
+DONE
+~
+~uncharged N-terminus (6)~~~(for glycine)~~~~~~Roberto~~~
+~
+MONO=(NTR3) #prt=4  chrg=0.0
+~
+~                 O
+~                 :
+~    H - N - CA...C...
+~        |
+~        HX2
+~
+~
+UNIQ=(N)        PRTC=(NX1)    NEXT      SAID=16   
+UNIQ=(H)        PRTC=(HX1)    NEXT      SAID=1    
+UNIQ=(HX2)      PRTC=(HX1)              SAID=1    
+UNIQ=(CA)       PRTC=(CAXG)   NEXT      SAID=3    
+DONE
+BOND
+HX2-N*
+DONE
+~
+~uncharged N-terminus (7)~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~(simplified version of the NTR0, which may substitute NTR0,NTG0,NTP0
+~ since it does not change the type of the atoms in the next residue)
+MONO=(NTRA) #prt=4  chrg=-0.57
+~
+~                 X    O
+~                 :    :
+~    ME - C - N...CA...C...
+~         |   :
+~         O   Y
+~
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+UNIQ=(ME)       PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-N* C-O C-ME
+DONE
+~
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                   uncharged C-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~uncharged C-terminus (1)~(not gly,pro,BU)~~~~~~~(OPLS)~~~
+~
+MONO=(CTR0) #prt=6 chrg=0.2
+~
+~           X    O   H
+~       :   :    |   |
+~    ...N...CA - C - N -ME
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CAH)    PREV      SAID=4    
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(ME)       PRTC=(CH3T)             SAID=2    
+DONE
+BOND
+N-H N-ME
+DONE
+~
+~
+~uncharged C-terminus (2)~(for glycine)~~~~~~~~~~(OPLS)~~~
+~(it has no N as expected from Gly's side, so it produces
+~ an irrelevant warning message)
+~
+MONO=(CTG0) #prt=5 chrg=0.2
+~
+~
+~                O
+~       :        |
+~    ...N...CA - C - OC -ME
+~
+~
+UNIQ=(C)        PRTC=(CO2)    PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC2)    PREV      SAID=9    
+UNIQ=(CA)       PRTC=(CAG1)   PREV      SAID=3    
+UNIQ=(OC)       PRTC=(OCH3)             SAID=1    
+UNIQ=(ME)       PRTC=(CH3O)             SAID=1    
+DONE
+BOND
+OC-C* OC-ME
+DONE
+~
+~
+~uncharged C-terminus (3)~(for glycine)~~~~~~~~~~(OPLS)~~~
+~
+MONO=(CTG1) #prt=6 chrg=0.2
+~
+~           X    O   H
+~       :   :    |   |
+~    ...N...CA - C - N -ME
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CAG)    PREV      SAID=4    
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(ME)       PRTC=(CH3T)             SAID=2    
+DONE
+BOND
+N-H N-ME
+DONE
+~
+~
+~uncharged C-terminus (4)~(for proline)~~~~~~~~~~(OPLS)~~~
+~
+MONO=(CTP0) #prt=6 chrg=0.285
+~
+~
+~       CD  CB   O   H
+~       :   :    |   |
+~    ...N...CA - C - N -ME
+~
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CHPR)   PREV      SAID=4    
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(ME)       PRTC=(CH3T)             SAID=2    
+DONE
+BOND
+N-H N-ME
+DONE
+~
+~uncharged C-terminus (5)~(not gly,pro,BU)~~~~(Roberto)~~~
+~(it has no N as expected from PREV monomer, so it
+~ produces an irrelevant warning message)
+~
+MONO=(CTR1) #prt=6 chrg=0.2
+~
+~           X    O   H11
+~       :   :    |   |
+~    ...N...CA - C - N1 -H21
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CAH)    PREV      SAID=4    
+UNIQ=(N1)       PRTC=(NAS)              SAID=15   
+UNIQ=(H11)      PRTC=(HAS)              SAID=1    
+UNIQ=(H21)      PRTC=(HAS)              SAID=1    
+DONE
+BOND
+N1-C* N1-H11 N1-H21
+DONE
+~
+~uncharged C-terminus (6)~(for glycine)~~~~~~~(Roberto)~~~
+~(it has no N as expected from PREV monomer, so it
+~ produces an irrelevant warning message)
+~
+MONO=(CTR2) #prt=6 chrg=0.2
+~
+~           X    O   H11
+~       :   :    |   |
+~    ...N...CA - C - N1 -H21
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CAG)    PREV      SAID=4    
+UNIQ=(N1)       PRTC=(NAS)              SAID=15   
+UNIQ=(H11)      PRTC=(HAS)              SAID=1    
+UNIQ=(H21)      PRTC=(HAS)              SAID=1    
+DONE
+BOND
+N1-C* N1-H11 N1-H21
+DONE
+~
+~
+~uncharged C-terminus (7)~(pro, Ala-likeBU)~~~(Roberto)~~~
+~(it has no N as expected from PREV monomer, so it
+~ produces an irrelevant warning message)
+~(tested on ALA,PHE,LYS BU's)
+MONO=(CTR3) #prt=6 chrg=0.285
+~
+~           X    O   H11
+~       :   :    |   |
+~    ...N...CA - C - N1 -H21
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CHPR)   PREV      SAID=4    
+UNIQ=(N1)       PRTC=(NAS)              SAID=15   
+UNIQ=(H11)      PRTC=(HAS)              SAID=1    
+UNIQ=(H21)      PRTC=(HAS)              SAID=1    
+DONE
+BOND
+N1-C* N1-H11 N1-H21
+DONE
+~
+~
+~uncharged C-terminus (8)~(for GLY-BU)~~~~~~~(Roberto)~~~
+~(it has no N as expected from PREV monomer, so it
+~ produces an irrelevant warning message)
+MONO=(CTR4) #prt=6 chrg=0.285
+~
+~           X    O   H11
+~       :   :    |   |
+~    ...N...CA - C - N1 -H21
+~
+UNIQ=(C)        PRTC=(CO)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC)     PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CH2D)   PREV      SAID=4    
+UNIQ=(N1)       PRTC=(NAS)              SAID=15   
+UNIQ=(H11)      PRTC=(HAS)              SAID=1    
+UNIQ=(H21)      PRTC=(HAS)              SAID=1    
+DONE
+BOND
+N1-C* N1-H11 N1-H21
+DONE
+~
+~
+~uncharged C-terminus (9)~(not gly,pro,BU)~~~~~~~~~~(OPLS)~~~
+~(it has no N as expected from Ala's side, so it produces
+~ an irrelevant warning message)
+~
+MONO=(CTR5) #prt=5 chrg=0.2
+~
+~           X    O
+~       :   :    |
+~    ...N...CA - C - OC -ME
+~
+~
+UNIQ=(C)        PRTC=(CO2)    PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC2)    PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CA1)    PREV      SAID=4    
+UNIQ=(OC)       PRTC=(OCH3)             SAID=9    
+UNIQ=(ME)       PRTC=(CH3O)             SAID=1    
+DONE
+BOND
+OC-C* OC-ME
+DONE
+~
+~
+~
+~uncharged C-terminus (10)~(pro, Ala-likeBU)~~~(Roberto)~~
+~(it has no N as expected from Ala's side, so it produces
+~ an irrelevant warning message)
+~
+MONO=(CTR6) #prt=5 chrg=0.285
+~
+~       Y   X    O
+~       :   :    |
+~    ...N...CA - C - OC -ME
+~
+~
+UNIQ=(C)        PRTC=(CO2)    PREV      SAID=7    
+UNIQ=(O)        PRTC=(OC2)    PREV      SAID=10   
+UNIQ=(CA)       PRTC=(CAP)    PREV      SAID=4    
+UNIQ=(OC)       PRTC=(OCH3)             SAID=9    
+UNIQ=(ME)       PRTC=(CH3O)             SAID=2    
+DONE
+BOND
+OC-C* OC-ME
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                    charged N-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~charged N-terminus (1)~~~~~(not gly,pro,BU)~~~~~(OPLS)~~~
+~
+MONO=(NTER) #prt=5 chrg=1.
+~
+~
+~             H   X    O
+~             |(+):    :
+~       HX2 - N - CA...C...
+~             |
+~             HX3
+~
+UNIQ=(N)        PRTC=(NX)     NEXT      SAID=12   
+UNIQ=(H)        PRTC=(HX)     NEXT      SAID=1    
+UNIQ=(CA)       PRTC=(CANX)   NEXT      SAID=4    
+UNIQ=(HX2)      PRTC=(HX)               SAID=1    
+UNIQ=(HX3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+HX2-N* HX3-N*
+DONE
+~
+~
+~charged N-terminus (2)~(for glycine)~~~~~~~~~~~~(OPLS)~~~
+~
+MONO=(NTRG) #prt=5 chrg=1.
+~
+~
+~             H        O
+~             |(+)     :
+~       HG2 - N - CA...C...
+~             |
+~             HG3
+~
+~
+UNIQ=(N)        PRTC=(NX)     NEXT      SAID=12   
+UNIQ=(H)        PRTC=(HX)     NEXT      SAID=1    
+UNIQ=(CA)       PRTC=(CANG)   NEXT      SAID=4    
+UNIQ=(HG2)      PRTC=(HX)               SAID=1    
+UNIQ=(HG3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+HG2-N* HG3-N*
+DONE
+~
+~ charged N-terminus (3) for proline~~~~~~~~~~~~~~(Roberto)~~~
+~
+MONO=(NTRP) #prt=5 chrg=1.0
+~
+~
+~             CD  CB   O
+~             |(+):    :
+~       HX2 - N - CA...C...
+~             |
+~             HX3
+~
+~
+UNIQ=(N)        PRTC=(NBX)    NEXT      SAID=13   
+UNIQ=(CD)       PRTC=(CANG)   NEXT      SAID=2    
+UNIQ=(CA)       PRTC=(CANX)   NEXT      SAID=4    
+UNIQ=(HX2)      PRTC=(HX)               SAID=1    
+UNIQ=(HX3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+HX2-N* HX3-N*
+DONE
+~
+~
+~
+~ charged N-terminus (4) for ALA(like)-BU~~~~~~~~~(Roberto)~~~
+~(tested on Ala, Lys, Phe)
+MONO=(NTPA) #prt=5 chrg=1.0
+~
+~
+~             CN  CB   O
+~             |(+):    :
+~       HX2 - N - CA...C...
+~             |
+~             HX3
+~
+~
+UNIQ=(N)        PRTC=(NBX)    NEXT      SAID=13   
+UNIQ=(CN)       PRTC=(CANG)   NEXT      SAID=2    
+UNIQ=(CA)       PRTC=(CANX)   NEXT      SAID=4    
+UNIQ=(HX2)      PRTC=(HX)               SAID=1    
+UNIQ=(HX3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+HX2-N* HX3-N*
+DONE
+~
+~
+~ charged N-terminus (5) for Gly-BU ~~~~~~~~~~~~~~(Roberto)~~~
+~
+MONO=(NTPG) #prt=5 chrg=1.0
+~
+~
+~             CN       O
+~             |(+)     :
+~       HX2 - N - CA...C...
+~             |
+~             HX3
+~
+~
+UNIQ=(N)        PRTC=(NBX)    NEXT      SAID=13   
+UNIQ=(CN)       PRTC=(CANG)   NEXT      SAID=2    
+UNIQ=(CA)       PRTC=(CANG)   NEXT      SAID=3    
+UNIQ=(HX2)      PRTC=(HX)               SAID=1    
+UNIQ=(HX3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+HX2-N* HX3-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~                   charged C-terminus
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~charged C-terminus (1)~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~
+MONO=(CTER) #prt=4 chrg=-0.8
+~
+~
+~           CB   O
+~       :   :    |(-)
+~    ...N...CA - C - OX2
+~
+~why not CX1,OX1 as in ASP
+~
+UNIQ=(C)        PRTC=(CX)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OX)     PREV      SAID=11   
+UNIQ=(CA)       PRTC=(CACX)   PREV      SAID=4    
+UNIQ=(OX2)      PRTC=(OX)               SAID=11   
+DONE
+BOND
+OX2-C*
+DONE
+~
+~
+~charged C-terminus (2)~(for glycine)~~~~~~~~~~~~(OPLS)~~~
+~
+MONO=(CTRG) #prt=4 chrg=-0.8
+~
+~
+~                O
+~       :        |(-)
+~    ...N...CA - C - OX2
+~
+~
+UNIQ=(C)        PRTC=(CX)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OX)     PREV      SAID=11   
+UNIQ=(CA)       PRTC=(CACG)   PREV      SAID=3    
+UNIQ=(OX2)      PRTC=(OX)               SAID=11    
+DONE
+BOND
+OX2-C*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(Roberto-CHECK)~~~
+~ charged terminus for proline    NEED NEW DEFINITIONS !!!!!!!!!!!!!!
+~  CHECK !!!!!
+~
+MONO=(CTRP) #prt=4 chrg=-0.615
+~
+~
+~       CD  CB   O
+~       :   :    |(-)
+~    ...N...CA - C - OX2
+~
+~
+UNIQ=(C)        PRTC=(CX)     PREV      SAID=7    
+UNIQ=(O)        PRTC=(OX)     PREV      SAID=11   
+UNIQ=(CA)       PRTC=(CHPR)   PREV      SAID=4    
+UNIQ=(OX2)      PRTC=(OX)               SAID=11   
+DONE
+BOND
+OX2-C*
+DONE
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~=========================================================
+~                      NATURAL AMINO ACIDS
+~=========================================================
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~   				BACKBONE         (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~
+~                O
+~            :   |
+~       N - CA - C...N
+~       |
+~       H
+~
+~
+MONO=(BACK) #prt=6 chrg=-0.57
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-N N-H
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~ Alanine side chain
+~    |
+~    CH3
+~
+~
+MONO=(ALAS) #prt=1 chrg=0.0
+UNIQ=(CB)       PRTC=(CH3)              SAID=2    
+DONE
+BOND
+DONE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				ALA              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ALA) #prt=7 chrg=-0.57
+~
+~
+~           CB   O
+~           |    |
+~       N - CA - C...N
+~       |
+~       H
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  C terminal ALA in head to tail cyclization
+~  It is IDENTICAL to ALA but binding to the next monomer
+~  is done explicitly with addb.
+~
+MONO=(ALAC) #prt=6 chrg=0.0
+~                   O
+~                   |
+~           H-N-CAH-C..N
+~               |
+~               CB3H
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH3)              SAID=2    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				ARG              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ ARGININ
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB                 1HH2
+~           |                   |
+~           CG - CD - NE - CZ - NH1 - 1HH1
+~                     |    |
+~                     HE   NH2
+~                          |  \
+~                        2HH1  2HH2
+~
+~
+~ hydrogren naming modified by YS 
+MONO=(ARG) #prt=18 chrg=.43
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CR1)              SAID=3    
+UNIQ=(CD)       PRTC=(CR2)              SAID=2    
+UNIQ=(NE)       PRTC=(NR1)              SAID=16    
+UNIQ=(HE)       PRTC=(HR1)              SAID=1    
+UNIQ=(CZ)       PRTC=(CR3)              SAID=4    
+UNIQ=(NH1)      PRTC=(NR2)              SAID=12    
+UNIQ=(1HH1)     PRTC=(HR2)              SAID=1    
+UNIQ=(1HH2)     PRTC=(HR2)              SAID=1    
+UNIQ=(NH2)      PRTC=(NR2)              SAID=12    
+UNIQ=(2HH1)     PRTC=(HR2)              SAID=1    
+UNIQ=(2HH2)     PRTC=(HR2)              SAID=1    
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+H-N N-CA CA-C C-O C-N* CA-CB CB-CG CG-CD CD-NE
+NE-HE NE-CZ CZ-NH1 CZ-NH2 NH2-2HH1 NH2-2HH2 NH1-1HH1
+NH1-1HH2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  ARGC is IDENTICAL to ARG but binding to the next monomer
+~  is done explicitly with addb.
+~
+MONO=(ARGC) #prt=17 chrg=1.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CR1)              SAID=1    
+UNIQ=(CD)       PRTC=(CR2)              SAID=3    
+UNIQ=(NE)       PRTC=(NR1)              SAID=16    
+UNIQ=(HE)       PRTC=(HR1)              SAID=1    
+UNIQ=(CZ)       PRTC=(CR3)              SAID=1    
+UNIQ=(NH1)      PRTC=(NR2)              SAID=12    
+UNIQ=(NH2)      PRTC=(NR2)              SAID=12    
+UNIQ=(1HH1)     PRTC=(HR2)              SAID=1    
+UNIQ=(1HH2)     PRTC=(HR2)              SAID=1    
+UNIQ=(2HH1)     PRTC=(HR2)              SAID=1    
+UNIQ=(2HH2)     PRTC=(HR2)              SAID=1    
+DONE
+BOND
+H-N N-CA CA-C C-O CA-CB CB-CG CG-CD CD-NE
+NE-HE NE-CZ CZ-NH1 CZ-NH2 NH2-2HH1 NH2-2HH2 NH1-1HH1
+NH1-1HH2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				ASN              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~    aspargin
+~
+~ YS hydrogen name modified
+
+MONO=(ASN) #prt=12 chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - ND2 - 1HD2
+~           |    |
+~           OD1  2HD2
+~
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CO)               SAID=7    
+UNIQ=(OD1)      PRTC=(OC)               SAID=10    
+UNIQ=(ND2)      PRTC=(NAS)              SAID=15    
+UNIQ=(1HD2)     PRTC=(HAS)              SAID=1    
+UNIQ=(2HD2)     PRTC=(HAS)              SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+N-CA C-O C-CA CA-CB CB-CG CG-OD1 CG-ND2 ND2-1HD2 ND2-2HD2
+N-H
+C-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  ASNC is IDENTICAL to ASN but binding to the next monomer
+~  is done explicitly with addb.
+~
+MONO=(ASNC) #prt=11 chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CO)               SAID=7    
+UNIQ=(OD1)      PRTC=(OC)               SAID=10    
+UNIQ=(ND2)      PRTC=(NAS)              SAID=15    
+UNIQ=(1HD2)     PRTC=(HAS)              SAID=1    
+UNIQ=(2HD2)     PRTC=(HAS)              SAID=1    
+DONE
+BOND
+N-CA C-O C-CA CA-CB CB-CG CG-OD1 CG-ND2 ND2-1HD2 ND2-2HD2
+N-H
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				ASP              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ aspartic acid
+MONO=(ASP) #prt=10 chrg=-1.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - OD2
+~           | (-)
+~           OD1
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2B)             SAID=3    
+UNIQ=(CG)       PRTC=(CX1)              SAID=7    
+UNIQ=(OD1)      PRTC=(OX1)              SAID=11    
+UNIQ=(OD2)      PRTC=(OX1)              SAID=11    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+H-N N-CA CA-C C-O CA-CB CB-CG CG-OD1 CG-OD2
+C-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  ASPC is IDENTICAL to ASP but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(ASPC) #prt=9 chrg=-1.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2B)             SAID=3    
+UNIQ=(CG)       PRTC=(CX1)              SAID=7    
+UNIQ=(OD1)      PRTC=(OX1)              SAID=11    
+UNIQ=(OD2)      PRTC=(OX1)              SAID=11    
+DONE
+BOND
+H-N N-CA CA-C C-O CA-CB CB-CG CG-OD1 CG-OD2
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				CYS              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CYS) #prt=9 chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           SG - HG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2C)             SAID=3    
+UNIQ=(SG)       PRTC=(SH)               SAID=18    
+UNIQ=(HG)       PRTC=(HS)               SAID=1    
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H CA-CB CB-SG SG-HG
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  CYSC is IDENTICAL to CYS but binding to the next monomer
+~  is done explicitly with addb.
+~
+MONO=(CYSC) #prt=8 chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2C)             SAID=3    
+UNIQ=(SG)       PRTC=(SH)               SAID=18    
+UNIQ=(HG)       PRTC=(HS)               SAID=1    
+DONE
+BOND
+C-O CA-C N-CA N-H CA-CB CB-SG SG-HG
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~(CHECK)
+MONO=(CYX) #prt=8 chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           SG
+~
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CCH2)             SAID=3    
+UNIQ=(SG)       PRTC=(SC)               SAID=18    
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H CA-CB CB-SG
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				GLN              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLN)    #prt=13   chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - CD - NE2 - 1HE2
+~                |    |
+~                OE1 2HE2
+~
+~whynot CO,OC instead of CSX,OSX ?
+~whynot HAS instead of HAS1 ?
+~
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(CSX)              SAID=7    
+UNIQ=(OE1)      PRTC=(OSX)              SAID=10    
+UNIQ=(NE2)      PRTC=(NAS)              SAID=15    
+UNIQ=(1HE2)     PRTC=(HAS1)             SAID=1    
+UNIQ=(2HE2)     PRTC=(HAS1)             SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-NE2 NE2-1HE2 NE2-2HE2
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  GLNC is IDENTICAL to GLN but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(GLNC)    #prt=12   chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(CSX)              SAID=7    
+UNIQ=(OE1)      PRTC=(OSX)              SAID=1    
+UNIQ=(NE2)      PRTC=(NAS)              SAID=15    
+UNIQ=(1HE2)     PRTC=(HAS1)             SAID=1    
+UNIQ=(2HE2)     PRTC=(HAS1)             SAID=1    
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-NE2 NE2-1HE2 NE2-2HE2
+CA-C C-O
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				GLU              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+MONO=(GLU)    #prt=11   chrg=-1.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - CD - OE2
+~                | (-)
+~                OE1
+~
+~why not CX1,OX1 (ASP) instead of CSX1,OSX1?
+~why not CH2B (ASP) instead of CH2A?
+~
+~ glutamic acid
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2A)             SAID=3    
+UNIQ=(CD)       PRTC=(CSX1)             SAID=7    
+UNIQ=(OE1)      PRTC=(OSX1)             SAID=11    
+UNIQ=(OE2)      PRTC=(OSX1)             SAID=11    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-OE2
+CA-C C-O C-N*
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  GLUC is IDENTICAL to GLU but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(GLUC)    #prt=10   chrg=-1.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2A)             SAID=3    
+UNIQ=(CD)       PRTC=(CSX1)             SAID=7    
+UNIQ=(OE1)      PRTC=(OSX1)             SAID=11    
+UNIQ=(OE2)      PRTC=(OSX1)             SAID=11    
+DONE
+BOND
+N-H N-CA CA-CB CB-CG CG-CD CD-OE1 CD-OE2
+CA-C C-O
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				GLY              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLY) #prt=6 chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |
+~       H
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAG)              SAID=3    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* CA-C N-CA N-H
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLYC) #prt=5 chrg=0.0
+~  C terminal Gly in head to tail cyclization
+~  It is IDENTICAL to Gly but binding to the next
+~  monomer is done explicitly with addb.
+~
+~                O
+~                |
+~       N - CA - C
+~       |
+~       H
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAG)              SAID=3    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+DONE
+BOND
+C-O  CA-C N-CA N-H
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				HIS              (OPLS)(-)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ HISTIDINE (+)
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB         HE2
+~           |          |
+~           CG - CD2 - NE2
+~           |           |
+~     HD1 - ND1 ------ CE1
+~
+~why not NDHP,HDNP instead of NEHP,HENP?
+~
+~
+MONO=(HIP)    #prt=14   chrg=0.43
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+~ histidine
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CGHP)             SAID=7    
+UNIQ=(CD2)      PRTC=(CHDP)             SAID=6    
+UNIQ=(ND1)      PRTC=(NDHP)             SAID=16    
+UNIQ=(HD1)      PRTC=(HDNP)             SAID=1    
+UNIQ=(NE2)      PRTC=(NEHP)             SAID=16    
+UNIQ=(HE2)      PRTC=(HENP)             SAID=1    
+UNIQ=(CE1)      PRTC=(CHEP)             SAID=6    
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=3   
+DONE
+BOND
+N-H N-CA CA-CB
+CB-CG CG-CD2 CD2-NE2 CG-ND1 ND1-HD1 ND1-CE1 CE1-NE2
+NE2-HE2 CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  HIPC is IDENTICAL to HIP but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(HIPC)    #prt=13   chrg=1.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CGHP)             SAID=7    
+UNIQ=(CD2)      PRTC=(CHDP)             SAID=6    
+UNIQ=(ND1)      PRTC=(NDHP)             SAID=16    
+UNIQ=(HD1)      PRTC=(HDNP)             SAID=1    
+UNIQ=(NE2)      PRTC=(NEHP)             SAID=16    
+UNIQ=(HE2)      PRTC=(HENP)             SAID=1    
+UNIQ=(CE1)      PRTC=(CHEP)             SAID=6    
+DONE
+BOND
+N-H N-CA CA-CB
+CB-CG CG-CD2 CD2-NE2 CG-ND1 ND1-HD1 ND1-CE1 CE1-NE2
+NE2-HE2 CA-C C-O
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~(OPLS)~~~
+~
+~HISTIDINE
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - CD2 - NE2
+~           |           |
+~     HD1 - ND1 ------ CE1
+~
+~ histidine
+MONO=(HIS)    #prt=13   chrg=-0.57
+~ backbone
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CGHS)             SAID=7    
+UNIQ=(CD2)      PRTC=(CHDH)             SAID=6    
+UNIQ=(ND1)      PRTC=(NDHS)             SAID=16    
+UNIQ=(HD1)      PRTC=(HDNH)             SAID=1    
+UNIQ=(NE2)      PRTC=(NEHS)             SAID=16    
+UNIQ=(CE1)      PRTC=(CHEH)             SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+N-H N-CA CA-CB
+CB-CG CG-CD2 CD2-NE2 CG-ND1 ND1-HD1 ND1-CE1 CE1-NE2
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  HISC is IDENTICAL to HIS but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(HISC)    #prt=12   chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CGHS)             SAID=7    
+UNIQ=(CD2)      PRTC=(CHDH)             SAID=6    
+UNIQ=(ND1)      PRTC=(NDHS)             SAID=16    
+UNIQ=(HD1)      PRTC=(HDNH)             SAID=1    
+UNIQ=(NE2)      PRTC=(NEHS)             SAID=16    
+UNIQ=(CE1)      PRTC=(CHEH)             SAID=1    
+DONE
+BOND
+N-H N-CA CA-CB
+CB-CG CG-CD2 CD2-NE2 CG-ND1 ND1-HD1 ND1-CE1 CE1-NE2
+CA-C C-O
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				ILE              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Isoleucine
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG1 - CD1
+~           |
+~           CG2
+~
+~ YS change CD1 to CD
+MONO=(ILE) #prt=10 chrg=-0.57
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CBH)              SAID=4    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+UNIQ=(CG1)      PRTC=(CH2)              SAID=3    
+UNIQ=(CD1)       PRTC=(CH3D)             SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG2 CB-CG1 CG1-CD1
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ C-terminal ILE. for head to tail cyclic peptides
+~ it is IDENTICAL to ILE but binding to the
+~ next monomer ( the N-terminus is done explicitly
+~ with addb.
+MONO=(ILEC) #prt=9 chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CBH)              SAID=4    
+UNIQ=(CG1)      PRTC=(CH2)              SAID=3    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+UNIQ=(CD1)      PRTC=(CH3D)             SAID=2    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG2 CB-CG1 CG1-CD1
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				LEU              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Leucine
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG - CD1
+~                |
+~                CD2
+~
+MONO=(LEU) #prt=10 chrg=-0.57
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CBH)              SAID=4    
+UNIQ=(CD1)      PRTC=(CH3)              SAID=2    
+UNIQ=(CD2)      PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  C terminal LEU in head to tail cyclization
+~  It is IDENTICAL to LEU but binding to the
+~  next monomer is done explicitly with addb.
+MONO=(LEUC) #prt=9 chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CBH)              SAID=4    
+UNIQ=(CD1)      PRTC=(CH3)              SAID=2    
+UNIQ=(CD2)      PRTC=(CH3)              SAID=2    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				LYS              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Lysine
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB             HZ1
+~           |              |
+~           CG - CD - CE - NZ - HZ2
+~                          |
+~                          HZ3
+~
+MONO=(LYS) #prt=14 chrg=0.43
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(CH2)              SAID=3    
+UNIQ=(CE)       PRTC=(CH2K)             SAID=3    
+UNIQ=(NZ)       PRTC=(NX)               SAID=12    
+UNIQ=(HZ1)      PRTC=(HX)               SAID=1    
+UNIQ=(HZ2)      PRTC=(HX)               SAID=1    
+UNIQ=(HZ3)      PRTC=(HX)               SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD CD-CE CE-NZ
+NZ-HZ1 NZ-HZ2 NZ-HZ3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  LYSC is IDENTICAL to LYS but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(LYSC) #prt=13 chrg=1.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(CH2)              SAID=3    
+UNIQ=(CE)       PRTC=(CH2K)             SAID=3    
+UNIQ=(NZ)       PRTC=(NX)               SAID=12    
+UNIQ=(HZ1)      PRTC=(HX)               SAID=1    
+UNIQ=(HZ2)      PRTC=(HX)               SAID=1    
+UNIQ=(HZ3)      PRTC=(HX)               SAID=1    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD CD-CE CE-NZ
+NZ-HZ1 NZ-HZ2 NZ-HZ3
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				MET              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Methionine
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - SD - CE
+~
+~
+~
+MONO=(MET) #prt=10 chrg=-0.57
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2M)             SAID=3    
+UNIQ=(SD)       PRTC=(SM)               SAID=19    
+UNIQ=(CE)       PRTC=(CH3M)             SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-SD SD-CE
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  METC is IDENTICAL to MET but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(METC) #prt=9 chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2M)             SAID=3    
+UNIQ=(SD)       PRTC=(SM)               SAID=19    
+UNIQ=(CE)       PRTC=(CH3M)             SAID=2    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-SD SD-CE
+DONE
+~
+~
+~
+~MTS spin label to cystein via S-S bond
+~                O
+~                |
+~       N - CA - C...N 
+~       |   |
+~       H   CB
+~           |
+~           SG - here comes mts, starting at s8
+~
+MONO=(MTS)  #prt=20     chrg=-0.57
+UNIQ=(N)    PRTC=(NH)     PCHG=-0.57
+UNIQ=(H)    PRTC=(HN)     PCHG=0.37
+UNIQ=(CA)   PRTC=(CAH)    PCHG=0.20
+UNIQ=(C)    PRTC=(CO)     PCHG=0.50
+UNIQ=(O)    PRTC=(OC)     PCHG=-0.50
+UNIQ=(CB)   PRTC=(CCH2)   PCHG=0.30
+UNIQ=(SG)   PRTC=(SC)     PCHG=-0.30
+UNIQ=(S8)   PRTC=(SC)     PCHG=-0.30
+UNIQ=(C7)   PRTC=(C7fp)   PCHG=0.467
+UNIQ=(C1)   PRTC=(C1fp)   PCHG=-0.260
+UNIQ=(C2)   PRTC=(C2fp)   PCHG=-0.083
+UNIQ=(C3)   PRTC=(C3fp)   PCHG=0.078
+UNIQ=(C31)  PRTC=(C31f)   PCHG=0.058
+UNIQ=(C32)  PRTC=(C31f)   PCHG=0.058
+UNIQ=(N4)   PRTC=(N4fp)   PCHG=0.255
+UNIQ=(C5)   PRTC=(C3fp)   PCHG=0.078
+UNIQ=(C51)  PRTC=(C31f)   PCHG=0.058
+UNIQ=(C52)  PRTC=(C31f)   PCHG=0.058
+UNIQ=(O6)   PRTC=(O6fp)   PCHG=-0.467
+UNIQ=(N)    PRTC=(NH) NEXT
+DONE
+BOND
+H-N N-CA CA-CB CB-SG SG-S8 S8-C7 C7-C1 C1-C2
+C2-C3 C3-C31 C3-C32 C3-N4 N4-O6 N4-C5 C5-C51
+C5-C52 C5-C1 CA-C C-O C-N*
+DONE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				PHE              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~Phenylalanine
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - CD1 - CE1
+~           |          |
+~           CD2- CE2 - CZ
+~
+~
+MONO=(PHE)   #prt=13   chrg=-0.57
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CG)               SAID=7    
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ)       PRTC=(CFH)              SAID=6    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-N* C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ CE2-CZ
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ C terminal PHE in head to tail cyclization
+~ It is IDENTICAL to PHE but binding to the next
+~ monomer is done explicitly
+~ with addb.
+~
+MONO=(PHEC)   #prt=12   chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CG)               SAID=7    
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ)       PRTC=(CFH)              SAID=6    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ CE2-CZ
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				PRO              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~proline
+MONO=(PRO)   #prt=8 chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       CD  CB
+~       \  /
+~        CG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=17   
+UNIQ=(CD)       PRTC=(CH2D)             SAID=3    
+UNIQ=(CA)       PRTC=(CHPR)             SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+ N-CD CD-CG CG-CB CB-CA N-CA
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(PROC)   #prt=7 chrg=0.0
+~  C terminal PRO in head to tail cyclization
+~  It is IDENTICAL to PRO but binding to the next
+~  monomer is done explicitly with addb.
+~
+~                O
+~                |
+~       N - CA - C
+~       |   |
+~       CD  CB
+~       \  /
+~        CG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=17   
+UNIQ=(CA)       PRTC=(CHPR)             SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CH2)              SAID=3    
+UNIQ=(CD)       PRTC=(CH2D)             SAID=3    
+DONE
+BOND
+ N-CD CD-CG CG-CB CB-CA N-CA
+CA-C C-O
+DONE
+~
+~
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				SER              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~serine
+MONO=(SER)   #prt=9  chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           OG
+~           |
+~           HG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2S)             SAID=3    
+UNIQ=(OG)       PRTC=(OH)               SAID=8    
+UNIQ=(HG)       PRTC=(HO)               SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+N-H N-CA CA-CB CB-OG OG-HG
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  SERC is IDENTICAL to SER but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(SERC)   #prt=8  chrg=0.0
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           OG
+~           |
+~           HG
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2S)             SAID=3    
+UNIQ=(OG)       PRTC=(OH)               SAID=8    
+UNIQ=(HG)       PRTC=(HO)               SAID=1    
+DONE
+BOND
+N-H N-CA CA-CB CB-OG OG-HG
+CA-C C-O
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				THR              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~threonine
+MONO=(THR)   #prt=10  chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG2
+~           |
+~           OG1
+~           |
+~           HG1
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CHT)              SAID=4    
+UNIQ=(OG1)      PRTC=(OH)               SAID=8    
+UNIQ=(HG1)      PRTC=(HO)               SAID=1    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+ N-H N-CA  CA-CB CB-OG1 OG1-HG1 CB-CG2
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ C terminal THR in head to tail cyclization
+~ It is IDENTICAL to THR but binding to the next
+~ monomer is done explicitly with addb.
+~
+MONO=(THRC)   #prt=9  chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CHT)              SAID=4    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+UNIQ=(OG1)      PRTC=(OH)               SAID=8    
+UNIQ=(HG1)      PRTC=(HO)               SAID=1    
+DONE
+BOND
+ N-H N-CA  CA-CB CB-OG1 OG1-HG1 CB-CG2
+CA-C C-O
+DONE
+~
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				TRP              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~tryptophan
+MONO=(TRP)   #prt=17   chrg=-0.57
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB   CE3 - CZ3 - CH2
+~           |    |           |
+~           CG - CD2 - CE2 - CZ2
+~           |           |
+~           CD1 ------ NE1 - HE1
+~
+~
+~ YS: atom order modified according to CHARMM19
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+~
+UNIQ=(CG)       PRTC=(CGTR)             SAID=7    
+UNIQ=(CD2)      PRTC=(CTR)              SAID=7    
+UNIQ=(CE2)      PRTC=(CGHT)             SAID=7    
+UNIQ=(CE3)      PRTC=(CFH)              SAID=6    
+~
+UNIQ=(CD1)      PRTC=(CHTR)             SAID=6    
+UNIQ=(NE1)      PRTC=(NDHS)             SAID=16    
+UNIQ=(HE1)      PRTC=(HDHS)             SAID=1    
+~
+UNIQ=(CZ2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ3)      PRTC=(CFH)              SAID=6    
+UNIQ=(CH2)      PRTC=(CFH)              SAID=6    
+~
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-NE1
+NE1-HE1 CD2-CE2 CE2-NE1  CD2-CE3 CE2-CZ2 CE3-CZ3 CZ2-CH2
+CZ3-CH2 C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  TRPC is IDENTICAL to TRP but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(TRPC)   #prt=16   chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CGTR)             SAID=7    
+UNIQ=(CD1)      PRTC=(CHTR)             SAID=6    
+UNIQ=(CD2)      PRTC=(CTR)              SAID=7    
+UNIQ=(CE3)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ3)      PRTC=(CFH)              SAID=6    
+UNIQ=(CH2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE2)      PRTC=(CGHT)             SAID=7    
+UNIQ=(NE1)      PRTC=(NDHS)             SAID=16    
+UNIQ=(HE1)      PRTC=(HDHS)             SAID=1    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-NE1
+NE1-HE1 CD2-CE2 CE2-NE1  CD2-CE3 CE2-CZ2 CE3-CZ3 CZ2-CH2
+CZ3-CH2
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				TYR              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~tyrosine
+MONO=(TYR)     #prt=15    chrg=-0.57
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB
+~           |
+~           CG - CD1 - CE1
+~           |          |
+~           CD2- CE2 - CZ - OH - HH
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CG)               SAID=7    
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ)       PRTC=(CZ)               SAID=7    
+UNIQ=(OH)       PRTC=(OH)               SAID=8    
+UNIQ=(HH)       PRTC=(HO)               SAID=1    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ  CE2-CZ CZ-OH OH-HH C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~  TYRC is IDENTICAL to TYR but binding to the next monomer
+~  is done explicitly with addb.
+MONO=(TYRC)  #prt=14   chrg=0.0
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CH2)              SAID=3    
+UNIQ=(CG)       PRTC=(CG)               SAID=7    
+UNIQ=(CD1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CD2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE1)      PRTC=(CFH)              SAID=6    
+UNIQ=(CE2)      PRTC=(CFH)              SAID=6    
+UNIQ=(CZ)       PRTC=(CZ)               SAID=7    
+UNIQ=(OH)       PRTC=(OH)               SAID=8    
+UNIQ=(HH)       PRTC=(HO)               SAID=1    
+DONE
+BOND
+C-O C-CA CA-CB CA-N N-H CB-CG CG-CD1 CG-CD2 CD1-CE1
+CD2-CE2 CE1-CZ  CE2-CZ CZ-OH OH-HH
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~				VAL              (OPLS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(VAL)   #prt=9  chrg=-0.570
+~
+~                O
+~                |
+~       N - CA - C...N
+~       |   |
+~       H   CB - CG2
+~           |
+~           CG1
+~
+~why not CH3 instead of CH3G (maybe because of improper torsion)?
+~
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(CB)       PRTC=(CBH)              SAID=4    
+UNIQ=(CG1)      PRTC=(CH3G)             SAID=2    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(N)        PRTC=(NH)     NEXT      SAID=16   
+DONE
+BOND
+ N-H N-CA  CA-CB CB-CG1 CB-CG2
+CA-C C-O C-N*
+DONE
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(VALC)   #prt=8  chrg=0.0
+~  C terminal VAL in head to tail cyclization
+~  It is IDENTICAL to VAL but binding to the next
+~  monomer is done explicitly
+~  with addb.
+~
+~                O
+~                |
+~       N - CA - C
+~       |   |
+~       H   CB - CG2
+~           |
+~           CG1
+~
+UNIQ=(N)        PRTC=(NH)               SAID=16   
+UNIQ=(H)        PRTC=(HN)               SAID=1    
+UNIQ=(CA)       PRTC=(CAH)              SAID=4    
+UNIQ=(C)        PRTC=(CO)               SAID=7    
+UNIQ=(O)        PRTC=(OC)               SAID=10   
+UNIQ=(CB)       PRTC=(CBH)              SAID=4    
+UNIQ=(CG1)      PRTC=(CH3G)             SAID=2    
+UNIQ=(CG2)      PRTC=(CH3)              SAID=2    
+DONE
+BOND
+ N-H N-CA  CA-CB CB-CG1 CB-CG2
+CA-C C-O
+DONE
+~
+~
+~~
+~
+~
+~
+~
+~
+~
+~
+~
+*EOD

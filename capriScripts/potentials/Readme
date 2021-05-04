@@ -1,0 +1,17 @@
+This folder contains executables and source code for calculating:
+
+1. PIE score : residue potential
+2. PISA energy : atomic potential
+3. HBNN : hydrogen bond potential from neural networks
+
+You first need to make sure that executables in these three subfolders are working properly. 
+Look at subdirectories for information on how to obtain these individual energies for a given model.
+
+This folder also contains a wrapper script to obtain the total energy of a given model.
+The total energy can be obtained like this:
+
+sh <path to totalEnergy.sh> <modelpdb> <model receptor chain> <model ligand chain>
+sh totalEnergy.sh m0.pdb A B 
+
+Important! 
+Make sure to set the scripts directly correctly in totalEnergy.sh 

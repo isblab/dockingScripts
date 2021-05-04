@@ -1,0 +1,1300 @@
+PRTC
+~
+~  OPLS-AAL force field parameters based on oplsaal.prm parameter file
+~  The parameter file was prepared with bash script parse_opls.bat
+~  The script uses files dictionary.oplsaa and oplsaal.prm as input files
+~
+~  prepared by Peter Majek  12/01/2008
+~
+PNAM=(NH)     PMAS=14.007   PCHG=-0.5000  PEPS=0.1700   PSGM=3.2500   (1)          
+PNAM=(CO)     PMAS=12.000   PCHG=0.5000   PEPS=0.1050   PSGM=3.7500   (2)          
+PNAM=(HN)     PMAS=1.008    PCHG=0.3000   PEPS=0.0498   PSGM=0.3      (3)          
+PNAM=(OC)     PMAS=15.999   PCHG=-0.5000  PEPS=0.2100   PSGM=2.9600   (4)          
+PNAM=(H0)     PMAS=1.008    PCHG=0.0600   PEPS=0.0300   PSGM=2.5000   (5)          
+PNAM=(CH3)    PMAS=12.000   PCHG=-0.1800  PEPS=0.0660   PSGM=3.5000   (6)          
+PNAM=(CBV)    PMAS=12.000   PCHG=-0.0600  PEPS=0.0660   PSGM=3.5000   (7)          
+PNAM=(CBI)    PMAS=12.000   PCHG=-0.0600  PEPS=0.0660   PSGM=3.5000   (8)          
+PNAM=(OH)     PMAS=15.999   PCHG=-0.6830  PEPS=0.1700   PSGM=3.1200   (9)          
+PNAM=(CBS)    PMAS=12.000   PCHG=0.1450   PEPS=0.0660   PSGM=3.5000   (10)         
+PNAM=(HO)     PMAS=1.008    PCHG=0.4180   PEPS=0.0498   PSGM=0.3      (11)         
+PNAM=(CBC)    PMAS=12.000   PCHG=0.0600   PEPS=0.0660   PSGM=3.5000   (12)         
+PNAM=(SH)     PMAS=32.066   PCHG=-0.3350  PEPS=0.4250   PSGM=3.6000   (13)         
+PNAM=(HS)     PMAS=1.008    PCHG=0.1550   PEPS=0.0498   PSGM=0.3      (14)         
+PNAM=(CDP)    PMAS=12.000   PCHG=-0.0500  PEPS=0.0660   PSGM=3.5000   (15)         
+PNAM=(CFH)    PMAS=12.000   PCHG=-0.1150  PEPS=0.0700   PSGM=3.5500   (16)         
+PNAM=(OHT)    PMAS=15.999   PCHG=-0.5850  PEPS=0.1700   PSGM=3.0700   (17)         
+PNAM=(CBT)    PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (18)         
+PNAM=(CGTR)   PMAS=12.000   PCHG=0.0750   PEPS=0.0700   PSGM=3.5500   (19)         
+PNAM=(CTR)    PMAS=12.000   PCHG=-0.0550  PEPS=0.0700   PSGM=3.5500   (20)         
+PNAM=(NDHS)   PMAS=14.007   PCHG=-0.5700  PEPS=0.1700   PSGM=3.2500   (21)         
+PNAM=(CGHT)   PMAS=12.000   PCHG=0.1300   PEPS=0.0700   PSGM=3.5500   (22)         
+PNAM=(CGHS)   PMAS=12.000   PCHG=0.0150   PEPS=0.0700   PSGM=3.5500   (23)         
+PNAM=(CHDH)   PMAS=12.000   PCHG=-0.0150  PEPS=0.0700   PSGM=3.5500   (24)         
+PNAM=(CHEH)   PMAS=12.000   PCHG=0.2950   PEPS=0.0700   PSGM=3.5500   (25)         
+PNAM=(NEHS)   PMAS=14.007   PCHG=-0.4900  PEPS=0.1700   PSGM=3.2500   (26)         
+PNAM=(CX)     PMAS=12.000   PCHG=0.7000   PEPS=0.1050   PSGM=3.7500   (27)         
+PNAM=(OX)     PMAS=15.999   PCHG=-0.8000  PEPS=0.2100   PSGM=2.9600   (28)         
+PNAM=(CBA)    PMAS=12.000   PCHG=-0.2200  PEPS=0.0660   PSGM=3.5000   (29)         
+PNAM=(CBN)    PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (30)         
+PNAM=(CR3)    PMAS=12.000   PCHG=0.6400   PEPS=0.0500   PSGM=2.2500   (31)         
+PNAM=(NR)     PMAS=14.007   PCHG=-0.7000  PEPS=0.1700   PSGM=3.2500   (32)         
+PNAM=(CBG)    PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (33)         
+PNAM=(CBGN)   PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (34)         
+PNAM=(CBM)    PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (35)         
+PNAM=(SM)     PMAS=32.066   PCHG=-0.3350  PEPS=0.3550   PSGM=3.6000   (36)         
+PNAM=(CBLY)   PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (37)         
+PNAM=(NX)     PMAS=14.007   PCHG=-0.3000  PEPS=0.1700   PSGM=3.2500   (38)         
+PNAM=(CBR)    PMAS=12.000   PCHG=-0.1200  PEPS=0.0660   PSGM=3.5000   (39)         
+PNAM=(HX)     PMAS=1.008    PCHG=0.3300   PEPS=0.0498   PSGM=0.3      (40)         
+PNAM=(HA)     PMAS=1.008    PCHG=0.1150   PEPS=0.0300   PSGM=2.4200   (41)         
+PNAM=(SPCO)   PMAS=15.999   PCHG=-0.8200  PEPS=0.155406042 PSGM=3.165555296 (42)         
+PNAM=(TIPO)   PMAS=15.999   PCHG=-0.8340  PEPS=0.152072595 PSGM=3.150656111 (43)         
+PNAM=(TIPH)   PMAS=1.008    PCHG=0.4170   PEPS=0.0498   PSGM=0.3      (44)         
+PNAM=(AHO)    PMAS=1.00800  PCHG=0.418    PEPS=0        PSGM=0        (1)          
+PNAM=(AOH)    PMAS=15.99940 PCHG=-0.683   PEPS=0.170114 PSGM=3.12     (2)          
+PNAM=(AH1)    PMAS=1.00800  PCHG=0.040    PEPS=0.0300201 PSGM=2.5      (3)          
+PNAM=(AOS)    PMAS=15.99940 PCHG=-0.400   PEPS=0.140094 PSGM=2.9      (4)          
+PNAM=(AN*)    PMAS=14.00670 PCHG=-0.600   PEPS=0.170114 PSGM=3.25     (5)          
+PNAM=(AC)     PMAS=12.01100 PCHG=0.500    PEPS=0.10507  PSGM=3.75     (6)          
+PNAM=(AO)     PMAS=15.99940 PCHG=-0.400   PEPS=0.210141 PSGM=2.96     (7)          
+PNAM=(ANA)    PMAS=14.00670 PCHG=-0.510   PEPS=0.170114 PSGM=3.25     (8)         
+PNAM=(AH)     PMAS=1.00800  PCHG=0.360    PEPS=0        PSGM=0        (9)         
+PNAM=(ACM)    PMAS=12.01100 PCHG=-0.140   PEPS=0.0800535 PSGM=3.5      (10)         
+PNAM=(AHC)    PMAS=1.00800  PCHG=0.080    PEPS=0.0500335 PSGM=2.5      (11)         
+PNAM=(AH4)    PMAS=1.00800  PCHG=0.100    PEPS=0.0500335 PSGM=2.5      (12)         
+PNAM=(ACT)    PMAS=12.01100 PCHG=0.300    PEPS=0.0660442 PSGM=3.5      (13)         
+PNAM=(AH2)    PMAS=1.00800  PCHG=-0.030   PEPS=0.0300201 PSGM=2.5      (14)         
+PNAM=(AP)     PMAS=30.97376 PCHG=0.0    PEPS=0.200134 PSGM=3.74     (15)         
+PNAM=(ACK)    PMAS=12.01100 PCHG=0.200    PEPS=0.0800535 PSGM=3.5      (16)         
+PNAM=(AH5)    PMAS=1.00800  PCHG=0.200    PEPS=0.0500335 PSGM=2.5      (17)         
+PNAM=(AHA)    PMAS=1.00800  PCHG=0.0300    PEPS=0.0300201 PSGM=2.5      (18)         
+PNAM=(ANB)    PMAS=14.00670 PCHG=-0.490   PEPS=0.170114 PSGM=3.25     (19)         
+PNAM=(ACB)    PMAS=12.01100 PCHG=0.150    PEPS=0.0800535 PSGM=3.5      (20)         
+PNAM=(ACA)    PMAS=12.01100 PCHG=0.440    PEPS=0.0800535 PSGM=3.5      (21)         
+PNAM=(AN2)    PMAS=14.00670 PCHG=-0.810   PEPS=0.170114 PSGM=3.25     (22)         
+PNAM=(AH61)   PMAS=1.00800  PCHG=0.385    PEPS=0        PSGM=0        (23)         
+PNAM=(AH62)   PMAS=1.00800  PCHG=0.355    PEPS=0        PSGM=0        (24)         
+PNAM=(AN1)    PMAS=14.00670 PCHG=-0.530   PEPS=0.170114 PSGM=3.25     (25)         
+PNAM=(ACQ)    PMAS=12.01100 PCHG=0.220    PEPS=0.0800535 PSGM=3.5      (26)         
+PNAM=(ANC)    PMAS=14.00670 PCHG=-0.550   PEPS=0.170114 PSGM=3.25     (27)         
+PNAM=(AN3)    PMAS=14.00670 PCHG=-0.550   PEPS=0.170114 PSGM=3.25     (28)         
+PNAM=(AO2)    PMAS=15.99940 PCHG=-0.920   PEPS=0.200134 PSGM=3.15     (29) 
+PNAM=(MG)       PMAS=24.3050   PCHG=2.00000   PEPS=0.875044 PSGM=1.644471  (30)
+PNAM=(CL)       PMAS=35.453    PCHG=-1.0000    PEPS=0.1180   PSGM=4.41724  (31)
+PNAM=(SR)       PMAS=87.620    PCHG=2.0000    PEPS=0.118226   PSGM=3.102688 (32)
+PNAM=(NAO)      PMAS=22.990    PCHG=1.0000   PEPS=0.002772   PSGM=3.330445  (34)
+~
+DONE
+~
+1-4P
+~ 1-4 interaction parameters here
+v14f=0.5
+~
+el14=0.5
+~
+DONE
+~
+BOND
+~
+CH3     CH3     268.0   1.5290 
+CH3     H0      340.0   1.0900 
+CH3     HO      340.0   1.0900 
+CH3     CFH     317.0   1.5100 
+CH3     OH      320.0   1.4100 
+CH3     SH      222.0   1.8100 
+CH3     SM      222.0   1.8100 
+CH3     CO      317.0   1.5220 
+CH3     NH      337.0   1.4490 
+CH3     CX      317.0   1.5220 
+CH3     NX      367.0   1.4710 
+CH3     NR      337.0   1.4630 
+CH3     CGTR    317.0   1.4950 
+CH3     CHDH    317.0   1.5040 
+CH3     CGHS    317.0   1.5040 
+CH3     CDP     268.0   1.5290 
+CH3     CBS     268.0   1.5290 
+CH3     CBC     268.0   1.5290 
+CH3     CBN     268.0   1.5290 
+CH3     CBGN    268.0   1.5290 
+CH3     CBV     268.0   1.5290 
+CH3     CBI     268.0   1.5290 
+CH3     CBM     268.0   1.5290 
+CH3     CBT     268.0   1.5290 
+CH3     CBA     268.0   1.5290 
+CH3     CBG     268.0   1.5290 
+CH3     CBLY    268.0   1.5290 
+CH3     CBR     268.0   1.5290 
+CX      NH      337.0   1.4490 
+H0      CDP     340.0   1.0900 
+H0      CBS     340.0   1.0900 
+H0      CBC     340.0   1.0900 
+H0      CBN     340.0   1.0900 
+H0      CBGN    340.0   1.0900 
+H0      CBV     340.0   1.0900 
+H0      CBI     340.0   1.0900 
+H0      CBM     340.0   1.0900 
+H0      CBT     340.0   1.0900 
+H0      CBA     340.0   1.0900 
+H0      CBG     340.0   1.0900 
+H0      CBLY    340.0   1.0900 
+H0      CBR     340.0   1.0900 
+CFH     CFH     469.0   1.4000 
+CFH     HA      367.0   1.0800 
+CFH     OHT     450.0   1.3640 
+CFH     CGTR    546.0   1.3520 
+CFH     CTR     469.0   1.4000 
+CFH     CGHT    469.0   1.4000 
+CFH     NDHS    427.0   1.3810 
+HA      CHEH    367.0   1.0800 
+HA      CHDH    367.0   1.0800 
+HA      CGHS    367.0   1.0800 
+OH      HO      553.0   0.9450 
+OH      CBS     320.0   1.4100 
+HO      OHT     553.0   0.9450 
+SH      HS      274.0   1.3360 
+SH      CBC     222.0   1.8100 
+SM      SM      166.0   2.0380 
+CO      OC      570.0   1.2290 
+CO      NH      490.0   1.3350 
+CO      CBN     317.0   1.5220 
+NH      HN      434.0   1.0100 
+NH      CDP     337.0   1.4490 
+HN      NDHS    434.0   1.0100 
+CX      OX      656.0   1.2500 
+CX      CBA     317.0   1.5220 
+NX      HX      434.0   1.0100 
+HX      NR      434.0   1.0100 
+HX      NEHS    434.0   1.0100 
+NR      CR3     481.0   1.3400 
+CGTR    CTR     388.0   1.4590 
+CGTR    CBT     317.0   1.4950 
+CTR     CGHT    447.0   1.4190 
+CGHT    NDHS    428.0   1.3800 
+NDHS    CHEH    477.0   1.3430 
+NDHS    CGHS    427.0   1.3810 
+CHEH    NEHS    488.0   1.3350 
+CHDH    CGHS    518.0   1.3710 
+CHDH    NEHS    410.0   1.3940 
+CGHS    CGHS    518.0   1.3710 
+TIPO    TIPH    529.6   0.9572 
+TIPH    SPCO    527.2   1.0000 
+ACK     AH5     367.0    1.0800
+ACQ     AH5     367.0    1.0800
+ACT     ACT     310.0   1.5260 
+ACT     AC      317.0   1.5220 
+ACT     ACA     317.0   1.5100 
+ACT     ACM     317.0   1.5100 
+ACT     AN*     337.0   1.4750 
+ACT     AN2     337.0   1.4630 
+ACT     AOH     320.0   1.4100 
+ACT     AOS     320.0   1.4100 
+ACT     AHC     340.0   1.0900 
+ACT     AH1     340.0   1.0900 
+ACT     AH2     340.0   1.0900 
+AC      ACA     469.0   1.4090 
+AC      ACM     410.0   1.4440 
+AC      ACB     447.0   1.4190 
+AC      ANA     418.0   1.3880 
+AC      ANC     457.0   1.3580 
+AC      AN*     424.0   1.3830 
+AC      AO      570.0   1.2290 
+AC      AO2     656.0   1.2500 
+ACA     ACA     469.0   1.4000 
+ACA     ACM     427.0   1.4330 
+ACA     ACB     469.0   1.4040 
+ACA     ANA     427.0   1.3810 
+ACA     ANC     483.0   1.3390 
+ACA     AN2     481.0   1.3400 
+ACA     AOH     450.0   1.3640 
+ACA     AHA     367.0   1.0800 
+ACA     AH4     367.0   1.0800 
+ACM     ACM     549.0   1.3500 
+ACM     AN*     448.0   1.3650 
+ACM     AHA     367.0   1.0800 
+ACM     AH4     367.0   1.0800 
+ACB     ACB     520.0   1.3700 
+ACB     ANB     414.0   1.3910 
+ACB     ANC     461.0   1.3540 
+ACB     AN*     436.0   1.3740 
+ACK     ANB     529.0   1.3040 
+ACK     AN*     440.0   1.3710 
+ACQ     ANC     502.0   1.3240 
+ANA     AH      434.0   1.0100 
+AN*     AH      434.0   1.0100 
+AN2     AH      434.0   1.0100 
+AOH     AP      230.0   1.6100 
+AOH     AHO     553.0   0.9600 
+AO2     AHO     553.0   0.9600 
+AOS     AP      230.0   1.6100 
+AOS     AHO     553.0   0.9600 
+AO2     AP      525.0   1.4800 
+DONE
+~
+ANGLE
+~
+NH      CO      NH      0.0     0.0 
+CO      NH      CO      0.0     0.0 
+CH3     CO      OX      0       0
+OX      CO      NH      0       0 
+CH3     CH3     CH3     58.35   112.70 
+CH3     CH3     H0      37.50   110.70 
+CH3     CH3     CFH     63.00   114.00 
+CH3     CH3     OH      50.00   109.50 
+CH3     CH3     SH      50.00   108.60 
+CH3     CH3     SM      50.00   114.70 
+CH3     CH3     CO      63.00   111.10 
+CH3     CH3     NH      80.00   109.70 
+CH3     CH3     CX      63.00   111.10 
+CH3     CH3     NX      80.00   111.20 
+CH3     CH3     NR      80.00   111.20 
+CH3     CH3     CGTR    63.00   115.60 
+CH3     CH3     CHDH    63.00   114.00 
+CH3     CH3     CGHS    63.00   114.00 
+CH3     CH3     CDP     58.35   112.70 
+CH3     CH3     CBV     58.35   112.70 
+CH3     CH3     CBI     58.35   112.70 
+CH3     CH3     CBLY    58.35   112.70 
+CH3     CH3     CBR     58.35   112.70 
+H0      CH3     H0      33.00   107.80 
+HO      CH3     HO      33.00   107.80 
+H0      CH3     CFH     35.00   109.50 
+H0      CH3     OH      35.00   109.50 
+H0      CH3     SH      35.00   109.50 
+H0      CH3     SM      35.00   109.50 
+H0      CH3     CO      35.00   109.50 
+HO      CH3     CO      35.00   109.50 
+H0      CH3     NH      35.00   109.50 
+H0      CH3     CX      35.00   109.50 
+H0      CH3     NX      35.00   109.50 
+H0      CH3     NR      35.00   109.50 
+H0      CH3     CGTR    35.00   109.50 
+H0      CH3     CHDH    35.00   109.50 
+H0      CH3     CGHS    35.00   109.50 
+H0      CH3     CDP     37.50   110.70 
+H0      CH3     CBS     37.50   110.70 
+H0      CH3     CBC     37.50   110.70 
+H0      CH3     CBN     37.50   110.70 
+H0      CH3     CBGN    37.50   110.70 
+H0      CH3     CBV     37.50   110.70 
+H0      CH3     CBI     37.50   110.70 
+H0      CH3     CBM     37.50   110.70 
+H0      CH3     CBT     37.50   110.70 
+H0      CH3     CBA     37.50   110.70 
+H0      CH3     CBG     37.50   110.70 
+H0      CH3     CBLY    37.50   110.70 
+H0      CH3     CBR     37.50   110.70 
+SM      CH3     CBM     50.00   114.70 
+CO      CH3     NH      63.00   110.10 
+CO      CH3     NX      80.00   111.20 
+CO      CH3     CBS     63.00   111.10 
+CO      CH3     CBC     63.00   111.10 
+CO      CH3     CBN     63.00   111.10 
+CO      CH3     CBGN    63.00   111.10 
+CO      CH3     CBV     63.00   111.10 
+CO      CH3     CBI     63.00   111.10 
+CO      CH3     CBM     63.00   111.10 
+CO      CH3     CBT     63.00   111.10 
+CO      CH3     CBA     63.00   111.10 
+CO      CH3     CBG     63.00   111.10 
+CO      CH3     CBLY    63.00   111.10 
+CO      CH3     CBR     63.00   111.10 
+NH      CH3     CX      63.00   110.10 
+NH      CH3     CBS     80.00   109.70 
+NH      CH3     CBC     80.00   109.70 
+NH      CH3     CBN     80.00   109.70 
+NH      CH3     CBGN    80.00   109.70 
+NH      CH3     CBV     80.00   109.70 
+NH      CH3     CBI     80.00   109.70 
+NH      CH3     CBM     80.00   109.70 
+NH      CH3     CBT     80.00   109.70 
+NH      CH3     CBA     80.00   109.70 
+NH      CH3     CBG     80.00   109.70 
+NH      CH3     CBLY    80.00   109.70 
+NH      CH3     CBR     80.00   109.70 
+CX      CH3     NX      80.00   111.20 
+CX      CH3     CBS     63.00   111.10 
+CX      CH3     CBC     63.00   111.10 
+CX      CH3     CBN     63.00   111.10 
+CX      CH3     CBGN    63.00   111.10 
+CX      CH3     CBV     63.00   111.10 
+CX      CH3     CBI     63.00   111.10 
+CX      CH3     CBM     63.00   111.10 
+CX      CH3     CBT     63.00   111.10 
+CX      CH3     CBA     63.00   111.10 
+CX      CH3     CBG     63.00   111.10 
+CX      CH3     CBG     63.00   111.10 
+CX      CH3     CBLY    63.00   111.10 
+CX      CH3     CBR     63.00   111.10 
+NX      CH3     CBS     80.00   111.20 
+NX      CH3     CBC     80.00   111.20 
+NX      CH3     CBN     80.00   111.20 
+NX      CH3     CBGN    80.00   111.20 
+NX      CH3     CBV     80.00   111.20 
+NX      CH3     CBI     80.00   111.20 
+NX      CH3     CBM     80.00   111.20 
+NX      CH3     CBT     80.00   111.20 
+NX      CH3     CBA     80.00   111.20 
+NX      CH3     CBG     80.00   111.20 
+NX      CH3     CBLY    80.00   111.20 
+NX      CH3     CBR     80.00   111.20 
+CH3     CFH     CFH     70.00   120.00 
+CFH     CFH     CFH     63.00   120.00 
+CFH     CFH     HA      35.00   120.00 
+CFH     CFH     OHT     70.00   120.00 
+CFH     CFH     CTR     63.00   120.00 
+CFH     CFH     CGHT    85.00   120.00 
+HA      CFH     CGTR    35.00   120.00 
+HA      CFH     CTR     35.00   120.00 
+HA      CFH     CGHT    35.00   120.00 
+HA      CFH     NDHS    35.00   121.60 
+CGTR    CFH     NDHS    70.00   108.70 
+CH3     OH      HO      55.00   108.50 
+HO      OH      CBS     55.00   108.50 
+CFH     OHT     HO      35.00   113.00 
+CH3     SH      HS      44.00   96.00  
+HS      SH      CBC     44.00   96.00  
+CH3     SM      CH3     62.00   98.90  
+CH3     SM      SM      68.00   103.70 
+CH3     CO      OC      80.00   120.40 
+OC      CO      NH      80.00   122.90 
+OC      CO      CBN     80.00   120.40 
+NH      CO      CBN     70.00   116.60 
+CH3     NH      CH3     50.00   118.00 
+CH3     NH      CO      50.00   121.90 
+CH3     NH      HN      38.00   118.40 
+CH3     NH      CDP     50.00   118.00 
+CO      NH      HN      35.00   119.80 
+CO      NH      CDP     50.00   121.90 
+HN      NH      HN      35.00   120.00 
+CH3     CX      OX      70.00   117.00 
+OX      CX      OX      80.00   126.00 
+OX      CX      CBA     70.00   117.00 
+CH3     NX      CH3     50.00   113.00 
+CH3     NX      HX      35.00   109.50 
+HX      NX      HX      35.00   109.50 
+CH3     NR      HX      35.00   118.40 
+CH3     NR      CR3     50.00   123.20 
+HX      NR      HX      35.00   120.00 
+HX      NR      CR3     35.00   120.00 
+NR      CR3     NR      70.00   120.00 
+CH3     CGTR    CFH     70.00   125.00 
+CH3     CGTR    CTR     70.00   128.60 
+CFH     CGTR    CTR     85.00   106.40 
+CFH     CGTR    CBT     70.00   125.00 
+CTR     CGTR    CBT     70.00   128.60 
+CFH     CTR     CGTR    85.00   134.90 
+CFH     CTR     CGHT    85.00   116.20 
+CGTR    CTR     CGHT    85.00   108.80 
+CFH     CGHT    CTR     85.00   122.70 
+CFH     CGHT    NDHS    70.00   132.80 
+CTR     CGHT    NDHS    70.00   104.40 
+CFH     NDHS    HN      35.00   120.00 
+CFH     NDHS    CGHT    70.00   111.60 
+HN      NDHS    CGHT    35.00   123.10 
+HN      NDHS    CHEH    35.00   126.35 
+HN      NDHS    CGHS    35.00   126.35 
+CHEH    NDHS    CGHS    70.00   107.30 
+HA      CHEH    NDHS    35.00   120.00 
+HA      CHEH    NEHS    35.00   120.00
+CHEH    NEHS    HX      35.00   120.00
+NDHS    CHEH    NDHS    70.00   110.75 
+NDHS    CHEH    NEHS    70.00   111.60 
+CH3     CHDH    CGHS    70.00   130.70 
+CH3     CHDH    NEHS    70.00   124.50 
+HA      CHDH    CGHS    35.00   128.20 
+HA      CHDH    NEHS    35.00   120.00 
+CHDH    NEHS    HX      35.00   120.00 
+CGHS    CHDH    NEHS    70.00   108.30 
+CH3     CGHS    NDHS    70.00   121.60 
+CH3     CGHS    CHDH    70.00   130.70 
+CH3     CGHS    CGHS    70.00   130.70 
+HA      CGHS    NDHS    35.00   121.60 
+HA      CGHS    CHDH    35.00   130.70 
+HA      CGHS    CGHS    35.00   130.70 
+NDHS    CGHS    CHDH    70.00   108.70 
+NDHS    CGHS    CGHS    70.00   106.30 
+CHEH    NEHS    CHDH    70.00   105.30
+CH3     CDP     H0      37.50   110.70 
+CH3     CDP     NH      80.00   109.70 
+H0      CDP     H0      33.00   107.80 
+H0      CDP     NH      35.00   109.50 
+TIPH    TIPO    TIPH    34.05   104.52 
+TIPH    SPCO    TIPH    37.95   109.47 
+CH3     CBS     H0      37.50   110.70 
+CH3     CBS     OH      50.00   109.50 
+H0      CBS     H0      33.00   107.80 
+H0      CBS     OH      35.00   109.50 
+CH3     CBC     H0      37.50   110.70 
+CH3     CBC     SH      50.00   108.60 
+H0      CBC     H0      33.00   107.80 
+H0      CBC     SH      35.00   109.50 
+CH3     CBN     H0      37.50   110.70 
+CH3     CBN     CO      63.00   111.10 
+H0      CBN     H0      33.00   107.80 
+H0      CBN     CO      35.00   109.50 
+CH3     CBGN    CH3     58.35   112.70 
+CH3     CBGN    H0      37.50   110.70 
+H0      CBGN    H0      33.00   107.80 
+CH3     CBV     CH3     58.35   112.70 
+CH3     CBV     H0      37.50   110.70 
+H0      CBV     H0      33.00   107.80 
+CH3     CBI     CH3     58.35   112.70 
+CH3     CBI     H0      37.50   110.70 
+CH3     CBM     CH3     58.35   112.70 
+CH3     CBM     H0      37.50   110.70 
+H0      CBM     H0      33.00   107.80 
+CH3     CBT     H0      37.50   110.70 
+CH3     CBT     CGTR    63.00   115.60 
+H0      CBT     H0      33.00   107.80 
+H0      CBT     CGTR    35.00   109.50 
+CH3     CBA     H0      37.50   110.70 
+CH3     CBA     CX      63.00   111.10 
+H0      CBA     H0      33.00   107.80 
+H0      CBA     CX      35.00   109.50 
+CH3     CBG     CH3     58.35   112.70 
+CH3     CBG     H0      37.50   110.70 
+H0      CBG     H0      33.00   107.80 
+CH3     CBLY    CH3     58.35   112.70 
+CH3     CBLY    H0      37.50   110.70 
+H0      CBLY    H0      33.00   107.80 
+CH3     CBR     CH3     58.35   112.70 
+CH3     CBR     H0      37.50   110.70 
+H0      CBR     H0      33.00   107.80 
+CX      NH      HN      35.00   119.80 
+CH3     CX      NH      70.00   116.60 
+CH3     CO      NH      70.00   116.60 
+ACT     ACT     ACT     40.00   109.50 
+ACT     ACT     AC      63.00   111.10 
+ACT     ACT     ACA     63.00   114.00 
+ACT     ACT     AN*     50.00   109.50 
+ACT     ACT     AN2     80.00   111.20 
+ACT     ACT     AOH     50.00   109.50 
+ACT     ACT     AOS     50.00   109.50 
+ACT     ACT     AHC     50.00   109.50 
+ACT     ACT     AH1     50.00   109.50 
+ACT     ACT     AH2     50.00   109.50 
+AC      ACT     AHC     50.00   109.50 
+AC      ACT     AH1     50.00   109.50 
+ACA     ACT     AHC     50.00   109.50 
+ACM     ACT     AHC     50.00   109.50 
+AH5     ACK     AN*     50.0    123.00
+AH5     ACK     ANB     50.0    123.00
+AH5     ACQ     ANC     50.0    123.00
+AN*     ACT     AOS     50.00   109.50 
+AN*     ACT     AH1     50.00   109.50 
+AN*     ACT     AH2     50.00   109.50 
+AN*     ACT     AH1     50.00   109.50 
+AN2     ACT     AH1     50.00   109.50 
+AOH     ACT     AH1     50.00   109.50 
+AOS     ACT     AH1     50.00   109.50 
+AOS     ACT     AH2     50.00   109.50 
+AHC     ACT     AHC     35.00   109.50 
+AH1     ACT     AH1     35.00   109.50 
+AH2     ACT     AH2     35.00   109.50 
+ACT     AC      AO      80.00   120.40 
+ACT     AC      AO2     70.00   117.00 
+ACA     AC      ACA     63.00   120.00 
+ACM     AC      ANA     70.00   114.10 
+ACM     AC      AO      80.00   125.30 
+ACB     AC      ANA     70.00   111.30 
+ACB     AC      AO      80.00   128.80 
+ANA     AC      AN*     70.00   115.40 
+ANA     AC      AO      80.00   120.60 
+ANC     AC      AN*     70.00   118.60 
+ANC     AC      AO      80.00   122.50 
+AN*     AC      AO      80.00   120.90 
+AO      AC      AO      80.00   126.00 
+AO2     AC      AO2     80.00   126.00 
+ACT     ACA     ACA     70.00   120.00 
+AC      ACA     ACA     63.00   120.00 
+AC      ACA     AHA     50.00   120.00 
+ACA     ACA     ACA     63.00   120.00 
+ACA     ACA     ACB     63.00   120.00 
+ACA     ACA     AOH     70.00   120.00 
+ACA     ACA     AHA     50.00   120.00 
+ACA     ACA     AH4     50.00   120.00 
+ACM     ACA     ANC     70.00   121.50 
+ACM     ACA     AN2     70.00   120.10 
+ACB     ACA     ANC     70.00   117.30 
+ACB     ACA     AN2     70.00   123.50 
+ACB     ACA     AHA     50.00   120.00 
+ACB     ACA     AH4     50.00   120.00 
+ANA     ACA     ANC     70.00   123.30 
+ANA     ACA     AN2     70.00   116.00 
+ANC     ACA     AN2     70.00   119.30 
+AN2     ACA     AN2     70.00   120.00 
+ACT     ACM     AC      70.00   119.70 
+ACT     ACM     ACM     70.00   119.70 
+AC      ACM     ACM     63.00   120.70 
+AC      ACM     AHA     50.00   119.70 
+AC      ACM     AH4     50.00   119.70 
+ACA     ACM     ACM     63.00   117.00 
+ACA     ACM     AHA     50.00   123.30 
+ACA     ACM     AH4     50.00   123.30 
+ACM     ACM     AN*     70.00   121.20 
+ACM     ACM     AHA     50.00   119.70 
+ACM     ACM     AH4     50.00   119.70 
+AN*     ACM     AH4     50.00   119.10 
+AC      ACB     ACB     63.00   119.20 
+AC      ACB     ANB     70.00   130.00 
+ACA     ACB     ACB     63.00   117.30 
+ACA     ACB     ANB     70.00   132.40 
+ACB     ACB     ANB     70.00   110.40 
+ACB     ACB     ANC     70.00   127.70 
+ACB     ACB     AN*     70.00   106.20 
+ANC     ACB     AN*     70.00   126.20 
+ANB     ACK     AN*     70.00   113.90 
+ANC     ACQ     ANC     70.00   129.10 
+AC      ANA     AC      70.00   126.40 
+AC      ANA     ACA     70.00   125.20 
+AC      ANA     AH      50.00   116.80 
+ACA     ANA     AH      50.00   118.00 
+ACB     ANB     ACK     70.00   103.80 
+AC      ANC     ACA     70.00   120.50 
+ACA     ANC     ACB     70.00   112.20 
+ACA     ANC     ACQ     70.00   118.60 
+ACB     ANC     ACQ     70.00   111.00 
+ACT     AN*     AC      70.00   117.60 
+ACT     AN*     ACM     70.00   121.20 
+ACT     AN*     ACB     70.00   125.80 
+ACT     AN*     ACK     70.00   128.80 
+AC      AN*     ACM     70.00   121.60 
+AC      AN*     AH      50.00   119.20 
+ACM     AN*     AH      50.00   121.20 
+ACB     AN*     ACK     70.00   105.40 
+ACB     AN*     AH      50.00   125.80 
+ACK     AN*     AH      50.00   128.80 
+ACT     AN2     ACA     50.00   123.20 
+ACT     AN2     AH      50.00   118.40 
+ACA     AN2     AH      50.00   120.00 
+AH      AN2     AH      35.00   120.00 
+ACT     AOH     AHO     55.00   108.50 
+ACA     AOH     AHO     50.00   113.00 
+AP      AOH     AHO     45.00   108.50 
+AP      AO2     AHO     45.00   108.50 
+AP      AOH     ACT     45.00   108.50 
+ACT     AOS     ACT     60.00   109.50 
+ACT     AOS     AP      100.00  120.50 
+AP      AOS     AP      100.00  120.50 
+AOH     AP      AOS     45.00   102.60 
+AOH     AP      AO2     45.00   108.23 
+AOS     AP      AOS     45.00   102.60 
+AOS     AP      AO2     100.00  108.23 
+AO2     AP      AO2     140.00  119.90 
+~
+DONE
+~
+TORSION
+~
+CH3     CH3     CH3     CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CH3     H0      0.000000 0.000000 0.183000 2   1     -1    1    
+CH3     CH3     CH3     SM      1.309500 -0.310000 0.129000 3   1     -1    1    
+CH3     CH3     CH3     CO      -0.848500 -0.228000 0.292500 3   1     -1    1    
+CH3     CH3     CH3     NH      0.422500 -0.481000 0.356500 3   1     -1    1    
+CH3     CH3     CH3     CX      -1.592500 -0.412500 0.246500 3   1     -1    1    
+CH3     CH3     CH3     NX      1.366000 -0.114500 0.242500 3   1     -1    1    
+CH3     CH3     CH3     NR      0.982000 0.000000 0.329500 3   1     -1    1    
+CH3     CH3     CH3     CDP     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CH3     CBLY    0.870000 -0.078500 0.139500 3   1     -1    1    
+H0      CH3     CH3     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CH3     CFH     0.000000 0.000000 0.231000 2   1     -1    1    
+H0      CH3     CH3     OH      0.000000 0.000000 0.234000 2   1     -1    1    
+H0      CH3     CH3     SH      0.000000 0.000000 0.226000 2   1     -1    1    
+H0      CH3     CH3     SM      0.000000 0.000000 0.226000 2   1     -1    1    
+H0      CH3     CH3     CO      0.000000 0.000000 -0.038000 2   1     -1    1    
+H0      CH3     CH3     NH      0.000000 0.000000 0.232000 2   1     -1    1    
+H0      CH3     CH3     CX      0.000000 0.000000 -0.112500 2   1     -1    1    
+H0      CH3     CH3     NX      0.000000 0.000000 0.192000 2   1     -1    1    
+H0      CH3     CH3     NR      0.000000 0.000000 0.232000 2   1     -1    1    
+H0      CH3     CH3     CGTR    0.000000 0.000000 0.231000 2   1     -1    1    
+H0      CH3     CH3     CHDH    0.000000 0.000000 0.231000 2   1     -1    1    
+H0      CH3     CH3     CGHS    0.000000 0.000000 0.231000 2   1     -1    1    
+H0      CH3     CH3     CDP     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CH3     CBV     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CH3     CBI     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CH3     CBLY    0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CH3     CBR     0.000000 0.000000 0.183000 2   1     -1    1    
+CFH     CH3     CH3     CO      -0.848500 -0.228000 0.292500 3   1     -1    1    
+CFH     CH3     CH3     NH      0.422500 -0.481000 0.356500 3   1     -1    1    
+CFH     CH3     CH3     CX      -0.848500 -0.228000 0.292500 3   1     -1    1    
+CFH     CH3     CH3     NX      0.422500 -0.481000 0.356500 3   1     -1    1    
+OH      CH3     CH3     CO      -3.090000 0.000000 0.000000 3   1     -1    1    
+OH      CH3     CH3     NH      3.140000 -0.733500 1.015000 3   1     -1    1    
+OH      CH3     CH3     CX      -3.090000 0.000000 0.000000 3   1     -1    1    
+OH      CH3     CH3     NX      3.140000 -0.733500 1.015000 3   1     -1    1    
+SH      CH3     CH3     CO      -2.107000 -1.057000 0.484500 3   1     -1    1    
+SH      CH3     CH3     NH      0.291500 -0.581500 0.070500 3   1     -1    1    
+SH      CH3     CH3     CX      -2.107000 -1.057000 0.484500 3   1     -1    1    
+SH      CH3     CH3     NX      0.291500 -0.581500 0.070500 3   1     -1    1    
+SM      CH3     CH3     CO      -2.107000 -1.057000 0.484500 3   1     -1    1    
+SM      CH3     CH3     NH      0.291500 -0.581500 0.070500 3   1     -1    1    
+SM      CH3     CH3     CX      -2.107000 -1.057000 0.484500 3   1     -1    1    
+SM      CH3     CH3     NX      0.291500 -0.581500 0.070500 3   1     -1    1    
+CO      CH3     CH3     CO      -0.848500 -0.228000 0.292500 3   1     -1    1    
+CO      CH3     CH3     NH      0.422500 -0.481000 0.356500 3   1     -1    1    
+CO      CH3     CH3     CX      -0.848500 -0.228000 0.292500 3   1     -1    1    
+CO      CH3     CH3     NX      0.422500 -0.481000 0.356500 3   1     -1    1    
+CO      CH3     CH3     CGTR    -0.848500 -0.228000 0.292500 3   1     -1    1    
+CO      CH3     CH3     CHDH    -0.803500 0.023000 0.000000 3   1     -1    1    
+CO      CH3     CH3     CGHS    -0.803500 0.023000 0.000000 3   1     -1    1    
+CGHS    CH3     CH3     CX     -0.803500 0.023000 0.000000 3   1     -1    1    
+NH      CH3     CH3     CX      0.422500 -0.481000 0.356500 3   1     -1    1    
+NH      CH3     CH3     CGTR    0.422500 -0.481000 0.356500 3   1     -1    1    
+NH      CH3     CH3     CHDH    -0.356500 0.251000 0.144500 3   1     -1    1    
+NX      CH3     CH3     CGHS    -0.356500 0.251000 0.144500 3   1     -1    1    
+NH      CH3     CH3     CGHS    -0.356500 0.251000 0.144500 3   1     -1    1    
+CX      CH3     CH3     CX      0.422500 -0.481000 0.356500 3   1     -1    1    
+CX      CH3     CH3     NX      0.422500 -0.481000 0.356500 3   1     -1    1    
+CX      CH3     CH3     CGTR    -0.848500 -0.228000 0.292500 3   1     -1    1    
+CX      CH3     CH3     CHDH    -0.803500 0.023000 0.000000 3   1     -1    1    
+NX      CH3     CH3     CGTR    0.422500 -0.481000 0.356500 3   1     -1    1    
+NR      CH3     CH3     CBR     0.982000 0.000000 0.329500 3   1     -1    1    
+CH3     CH3     CFH     CFH     0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CFH     CFH     0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     OH      HO      -0.178000 -0.087000 0.246000 3   1     -1    1    
+H0      CH3     OH      HO      0.000000 0.000000 0.225000 2   1     -1    1    
+CH3     CH3     SH      HS      -0.379500 -0.141000 0.301500 3   1     -1    1    
+H0      CH3     SH      HS      0.000000 0.000000 0.225500 2   1     -1    1    
+CH3     CH3     SM      CH3     0.462500 -0.288000 0.338500 3   1     -1    1    
+CH3     CH3     SM      SM      0.970500 -0.418000 0.467500 3   1     -1    1    
+H0      CH3     SM      CH3     0.000000 0.000000 0.323500 2   1     -1    1    
+H0      CH3     SM      SM      0.000000 0.000000 0.279000 2   1     -1    1    
+CBM     CH3     SM      CH3     0.462500 -0.288000 0.338500 3   1     -1    1    
+CH3     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+H0      CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CO      NH      0.000000 0.000000 0.000000 2   1     -1    1    
+NH      CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+NH      CH3     CO      NH      0.371500 1.254000 -0.402500 3   1     -1    1    
+NX      CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+NX      CH3     CO      NH      0.908000 0.611000 0.790500 3   1     -1    1    
+CBS     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBS     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBC     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBC     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBN     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBN     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBGN    CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBGN    CH3     CO      NH      -0.145000 1.310500 -0.889000 3   1     -1    1    
+CBV     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBV     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBI     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBI     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBM     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBM     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBT     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBT     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBA     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBA     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBG     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBG     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBLY    CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBLY    CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CBR     CH3     CO      OC      0.000000 0.000000 0.000000 2   1     -1    1    
+CBR     CH3     CO      NH      0.932500 0.044500 0.175500 3   1     -1    1    
+CH3     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CH3     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     NH      CDP     2.376500 -0.367000 0.000000 3   1     -1    1    
+H0      CH3     NH      CH3     0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     NH      CO      0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     NH      CDP     0.000000 0.000000 0.000000 2   1     -1    1    
+CO      CH3     NH      CO      -0.298000 0.139500 -2.456500 3   1     -1    1    
+CO      CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CO      CH3     NH      CDP     -0.868500 0.625500 -1.750500 3   1     -1    1    
+CX      CH3     NH      CO      -1.182500 0.456000 -0.425000 3   1     -1    1    
+CX      CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CX      CH3     NH      CDP     -0.868500 0.625500 -1.750500 3   1     -1    1    
+CBS     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBS     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBC     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBC     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBN     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBN     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBGN    CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBGN    CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBV     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBV     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBI     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBI     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBM     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBM     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBT     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBT     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBA     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBA     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBG     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBG     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBLY    CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBLY    CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CBR     CH3     NH      CO      0.259500 0.438500 2.616500 3   1     -1    1    
+CBR     CH3     NH      HN      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+H0      CH3     CX      OX      0.000000 0.000000 0.000000 2   1     -1    1    
+NH      CH3     CX      OX      0.000000 0.000000 0.000000 2   1     -1    1    
+NX      CH3     CX      OX      0.000000 0.000000 0.000000 2   1     -1    1    
+CBS     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBC     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBN     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBGN    CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBV     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBI     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBM     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBT     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBA     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBG     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBLY    CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CBR     CH3     CX      OX      0.000000 0.410000 0.000000 2   1     -1    1    
+CH3     CH3     NX      CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+H0      CH3     NX      CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     NX      HX      0.000000 0.000000 0.130500 2   1     -1    1    
+CO      CH3     NX      CH3     -0.848500 -0.228000 0.292500 3   1     -1    1    
+CO      CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CX      CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBS     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBC     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBN     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBGN    CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBV     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBI     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBM     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBT     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBA     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBG     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBLY    CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CBR     CH3     NX      HX      0.000000 0.000000 0.173500 2   1     -1    1    
+CH3     CH3     NR      HX      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     NR      CR3     0.914500 0.121500 -0.249000 3   1     -1    1    
+H0      CH3     NR      HX      0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     NR      CR3     0.000000 0.000000 0.088500 2   1     -1    1    
+CH3     CH3     CGTR    CFH     -0.357000 0.000000 0.000000 3   1     -1    1    
+CH3     CH3     CGTR    CTR     0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CGTR    CFH     0.000000 0.000000 -0.240000 2   1     -1    1    
+H0      CH3     CGTR    CTR     0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CHDH    CGHS    0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CHDH    NEHS    -0.271500 0.007000 0.350000 3   1     -1    1    
+H0      CH3     CHDH    CGHS    0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CHDH    NEHS    0.000000 0.000000 0.209500 2   1     -1    1    
+CH3     CH3     CGHS    NDHS    -0.271500 0.007000 0.350000 3   1     -1    1    
+CH3     CH3     CGHS    CHDH    0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CGHS    CGHS    0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CGHS    NDHS    0.000000 0.000000 0.209500 2   1     -1    1    
+H0      CH3     CGHS    CHDH    0.000000 0.000000 0.000000 2   1     -1    1    
+H0      CH3     CGHS    CGHS    0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     CH3     CDP     H0      0.000000 0.000000 0.183000 2   1     -1    1    
+CH3     CH3     CDP     NH      0.422500 -0.481000 0.356500 3   1     -1    1    
+H0      CH3     CDP     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CDP     NH      0.000000 0.000000 0.232000 2   1     -1    1    
+H0      CH3     CBS     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CBS     OH      0.000000 0.000000 0.234000 2   1     -1    1    
+CO      CH3     CBS     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBS     OH      -2.827000 -0.436000 0.000000 3   1     -1    1    
+NH      CH3     CBS     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+NH      CH3     CBS     OH      2.714500 -0.439500 0.529000 3   1     -1    1    
+CX      CH3     CBS     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+CX      CH3     CBS     OH      -2.827000 -0.436000 0.000000 3   1     -1    1    
+NX      CH3     CBS     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+NX      CH3     CBS     OH      2.714500 -0.439500 0.529000 3   1     -1    1    
+H0      CH3     CBC     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CBC     SH      0.000000 0.000000 0.226000 2   1     -1    1    
+CO      CH3     CBC     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBC     SH      -2.172000 -0.857000 0.000000 3   1     -1    1    
+NH      CH3     CBC     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+NH      CH3     CBC     SH      0.714000 0.043000 0.014500 3   1     -1    1    
+CX      CH3     CBC     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+CX      CH3     CBC     SH      -2.172000 -0.857000 0.000000 3   1     -1    1    
+NX      CH3     CBC     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+NX      CH3     CBC     SH      0.714000 0.043000 0.014500 3   1     -1    1    
+H0      CH3     CBN     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CBN     CO      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBN     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBN     CO      0.522500 -0.801500 0.000000 3   1     -1    1    
+CO      CH3     CBN     CX      0.522500 -0.801500 0.000000 3   1     -1    1    
+NH      CH3     CBN     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+NH      CH3     CBN     CO      -1.733500 -0.338500 0.732500 3   1     -1    1    
+CX      CH3     CBN     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+CX      CH3     CBN     CO      -0.848500 -0.228000 0.292500 3   1     -1    1    
+NX      CH3     CBN     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+NX      CH3     CBN     CO      -1.733500 -0.338500 0.732500 3   1     -1    1    
+H0      CH3     CBGN    CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBGN    H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBGN    CH3     -1.346000 0.418000 0.000000 3   1     -1    1    
+CO      CH3     CBGN    H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBGN    CH3     0.583500 -0.263000 0.402500 3   1     -1    1    
+NH      CH3     CBGN    H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBGN    CH3     -1.346000 0.418000 0.000000 3   1     -1    1    
+CX      CH3     CBGN    H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBGN    CH3     0.583500 -0.263000 0.402500 3   1     -1    1    
+NX      CH3     CBGN    H0      0.000000 0.000000 0.192000 2   1     -1    1    
+CH3     CH3     CBV     CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CBV     H0      0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBV     CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBV     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBV     CH3     -0.458000 0.205500 0.000000 3   1     -1    1    
+CO      CH3     CBV     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBV     CH3     0.264000 0.161500 0.258500 3   1     -1    1    
+NH      CH3     CBV     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBV     CH3     -0.458000 0.205500 0.000000 3   1     -1    1    
+CX      CH3     CBV     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBV     CH3     0.264000 0.161500 0.258500 3   1     -1    1    
+NX      CH3     CBV     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+CH3     CH3     CBI     CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CBI     H0      0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBI     CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBI     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBI     CH3     0.339000 0.638000 0.000000 3   1     -1    1    
+CO      CH3     CBI     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBI     CH3     1.323500 0.477000 0.261000 3   1     -1    1    
+NH      CH3     CBI     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBI     CH3     0.339000 0.638000 0.000000 3   1     -1    1    
+CX      CH3     CBI     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBI     CH3     1.323500 0.477000 0.261000 3   1     -1    1    
+NX      CH3     CBI     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+H0      CH3     CBM     CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBM     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+SM      CH3     CBM     CH3     1.309500 -0.310000 0.129000 3   1     -1    1    
+SM      CH3     CBM     H0      0.000000 0.000000 0.226000 2   1     -1    1    
+CO      CH3     CBM     CH3     0.192000 -0.381000 0.000000 3   1     -1    1    
+CO      CH3     CBM     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBM     CH3     0.746500 0.099500 -0.049000 3   1     -1    1    
+NH      CH3     CBM     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBM     CH3     0.192000 -0.381000 0.000000 3   1     -1    1    
+CX      CH3     CBM     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBM     CH3     0.746500 0.099500 -0.049000 3   1     -1    1    
+NX      CH3     CBM     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+H0      CH3     CBT     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CBT     CGTR    0.000000 0.000000 0.231000 2   1     -1    1    
+CO      CH3     CBT     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBT     CGTR    -0.529000 -0.312500 0.000000 3   1     -1    1    
+NH      CH3     CBT     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+NH      CH3     CBT     CGTR    -0.647000 0.281000 0.047000 3   1     -1    1    
+CX      CH3     CBT     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+CX      CH3     CBT     CGTR    -0.529000 -0.312500 0.000000 3   1     -1    1    
+NX      CH3     CBT     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+NX      CH3     CBT     CGTR    -0.647000 0.281000 0.047000 3   1     -1    1    
+H0      CH3     CBA     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+H0      CH3     CBA     CX      0.000000 0.000000 -0.112500 2   1     -1    1    
+CO      CH3     CBA     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+CO      CH3     CBA     CX      -1.029500 1.551500 0.000000 3   1     -1    1    
+NH      CH3     CBA     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+NH      CH3     CBA     CX      -2.250000 0.479000 -0.146500 3   1     -1    1    
+CX      CH3     CBA     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+CX      CH3     CBA     CX      -1.029500 1.551500 0.000000 3   1     -1    1    
+NX      CH3     CBA     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+NX      CH3     CBA     CX      -2.250000 0.479000 -0.146500 3   1     -1    1    
+H0      CH3     CBG     CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBG     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBG     CH3     -0.809000 -0.285500 0.000000 3   1     -1    1    
+CO      CH3     CBG     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBG     CH3     2.476000 -0.128500 -0.117500 3   1     -1    1    
+NH      CH3     CBG     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBG     CH3     -0.809000 -0.285500 0.000000 3   1     -1    1    
+CX      CH3     CBG     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBG     CH3     2.476000 -0.128500 -0.117500 3   1     -1    1    
+NX      CH3     CBG     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+CH3     CH3     CBLY    CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CBLY    H0      0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBLY    CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBLY    CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBLY    H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBLY    CH3     -1.117500 -0.268000 0.000000 3   1     -1    1    
+CO      CH3     CBLY    H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBLY    CH3     0.319500 -0.107000 0.199500 3   1     -1    1    
+NH      CH3     CBLY    H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBLY    CH3     -1.117500 -0.268000 0.000000 3   1     -1    1    
+CX      CH3     CBLY    H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBLY    CH3     0.319500 -0.107000 0.199500 3   1     -1    1    
+NX      CH3     CBLY    H0      0.000000 0.000000 0.192000 2   1     -1    1    
+CH3     CH3     CBR     CH3     0.870000 -0.078500 0.139500 3   1     -1    1    
+CH3     CH3     CBR     H0      0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBR     CH3     0.000000 0.000000 0.183000 2   1     -1    1    
+H0      CH3     CBR     H0      0.000000 0.000000 0.159000 2   1     -1    1    
+CO      CH3     CBR     CH3     -0.339000 0.826500 0.000000 3   1     -1    1    
+CO      CH3     CBR     H0      0.000000 0.000000 -0.038000 2   1     -1    1    
+NH      CH3     CBR     CH3     0.910500 0.475500 0.584000 3   1     -1    1    
+NH      CH3     CBR     H0      0.000000 0.000000 0.232000 2   1     -1    1    
+CX      CH3     CBR     CH3     -0.339000 0.826500 0.000000 3   1     -1    1    
+CX      CH3     CBR     H0      0.000000 0.000000 -0.112500 2   1     -1    1    
+NX      CH3     CBR     CH3     0.910500 0.475500 0.584000 3   1     -1    1    
+NX      CH3     CBR     H0      0.000000 0.000000 0.192000 2   1     -1    1    
+CH3     CFH     CFH     CFH     0.000000 3.625000 0.000000 2   1     -1    1    
+CH3     CFH     CFH     HA      0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CFH     CFH     0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CFH     HA      0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CFH     OHT     0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CFH     CTR     0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CFH     CGHT    0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CFH     HA      0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CFH     OHT     0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CFH     CTR     0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CFH     CGHT    0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     OHT     HO      0.000000 0.841000 0.000000 2   1     -1    1    
+HA      CFH     CGTR    CH3     0.000000 6.525000 0.000000 2   1     -1    1    
+HA      CFH     CGTR    CTR     0.000000 6.525000 0.000000 2   1     -1    1    
+HA      CFH     CGTR    CBT     0.000000 6.525000 0.000000 2   1     -1    1    
+NDHS    CFH     CGTR    CH3     0.000000 6.525000 0.000000 2   1     -1    1    
+NDHS    CFH     CGTR    CTR     0.000000 6.525000 0.000000 2   1     -1    1    
+NDHS    CFH     CGTR    CBT     0.000000 6.525000 0.000000 2   1     -1    1    
+CFH     CFH     CTR     CGTR    0.000000 3.500000 0.000000 2   1     -1    1    
+CFH     CFH     CTR     CGHT    0.000000 3.500000 0.000000 2   1     -1    1    
+HA      CFH     CTR     CGTR    0.000000 3.500000 0.000000 2   1     -1    1    
+HA      CFH     CTR     CGHT    0.000000 3.500000 0.000000 2   1     -1    1    
+CFH     CFH     CGHT    CTR     0.000000 3.625000 0.000000 2   1     -1    1    
+CFH     CFH     CGHT    NDHS    0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CGHT    CTR     0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     CGHT    NDHS    0.000000 3.625000 0.000000 2   1     -1    1    
+HA      CFH     NDHS    HN      0.000000 1.500000 0.000000 2   1     -1    1    
+HA      CFH     NDHS    CGHT    0.000000 1.500000 0.000000 2   1     -1    1    
+CGTR    CFH     NDHS    HN      0.000000 1.500000 0.000000 2   1     -1    1    
+CGTR    CFH     NDHS    CGHT    0.000000 1.500000 0.000000 2   1     -1    1    
+HO      OH      CBS     CH3     -0.495500 -0.434500 0.369500 3   1     -1    1    
+HO      OH      CBS     H0      0.000000 0.000000 0.225000 2   1     -1    1    
+HS      SH      CBC     CH3     -0.379500 -0.141000 0.301500 3   1     -1    1    
+HS      SH      CBC     H0      0.000000 0.000000 0.225500 2   1     -1    1    
+CH3     SM      SM      CH3     0.000000 -3.707000 0.852500 2   1     -1    1    
+CH3     CO      NH      CH3     1.150000 3.044500 0.000000 3   1     -1    1    
+CH3     CO      NH      HN      0.000000 2.450000 0.000000 2   1     -1    1    
+CH3     CO      NH      CDP     1.150000 3.044500 0.000000 3   1     -1    1    
+OC      CO      NH      CH3     0.000000 3.044500 0.000000 2   1     -1    1    
+OC      CO      NH      HN      0.000000 2.450000 0.000000 2   1     -1    1    
+OC      CO      NH      CDP     0.000000 3.044500 0.000000 2   1     -1    1    
+CBN     CO      NH      HN      0.000000 2.450000 0.000000 2   1     -1    1    
+OC      CO      CBN     CH3     0.000000 0.000000 0.000000 2   1     -1    1    
+OC      CO      CBN     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+NH      CO      CBN     CH3     0.273000 -1.063500 -0.416000 3   1     -1    1    
+NH      CO      CBN     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     NH      CDP     CH3     1.429500 1.029000 -5.633000 3   1     -1    1    
+CH3     NH      CDP     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+CO      NH      CDP     CH3     0.000000 0.231000 0.000000 2   1     -1    1    
+CO      NH      CDP     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+OX      CX      CBA     CH3     0.000000 0.410000 0.000000 2   1     -1    1    
+OX      CX      CBA     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+CH3     NR      CR3     NR      0.000000 3.968000 0.000000 2   1     -1    1    
+HX      NR      CR3     NR      0.000000 1.950000 0.000000 2   1     -1    1    
+CH3     CGTR    CTR     CFH     0.000000 1.675000 0.000000 2   1     -1    1    
+CH3     CGTR    CTR     CGHT    0.000000 1.675000 0.000000 2   1     -1    1    
+CFH     CGTR    CTR     CFH     0.000000 1.675000 0.000000 2   1     -1    1    
+CFH     CGTR    CTR     CGHT    0.000000 1.675000 0.000000 2   1     -1    1    
+CBT     CGTR    CTR     CFH     0.000000 1.675000 0.000000 2   1     -1    1    
+CBT     CGTR    CTR     CGHT    0.000000 1.675000 0.000000 2   1     -1    1    
+CFH     CGTR    CBT     CH3     -0.357000 0.000000 0.000000 3   1     -1    1    
+CFH     CGTR    CBT     H0      0.000000 0.000000 -0.240000 2   1     -1    1    
+CTR     CGTR    CBT     CH3     0.000000 0.000000 0.000000 2   1     -1    1    
+CTR     CGTR    CBT     H0      0.000000 0.000000 0.000000 2   1     -1    1    
+CFH     CTR     CGHT    CFH     0.000000 3.000000 0.000000 2   1     -1    1    
+CFH     CTR     CGHT    NDHS    0.000000 3.000000 0.000000 2   1     -1    1    
+CGTR    CTR     CGHT    CFH     0.000000 3.000000 0.000000 2   1     -1    1    
+CGTR    CTR     CGHT    NDHS    0.000000 3.000000 0.000000 2   1     -1    1    
+CFH     CGHT    NDHS    CFH     0.000000 1.525000 0.000000 2   1     -1    1    
+CFH     CGHT    NDHS    HN      0.000000 1.525000 0.000000 2   1     -1    1    
+CTR     CGHT    NDHS    CFH     0.000000 1.525000 0.000000 2   1     -1    1    
+CTR     CGHT    NDHS    HN      0.000000 1.525000 0.000000 2   1     -1    1    
+HN      NDHS    CHEH    HA      0.000000 2.325000 0.000000 2   1     -1    1    
+HN      NDHS    CHEH    NDHS    0.000000 2.325000 0.000000 2   1     -1    1    
+HN      NDHS    CHEH    NEHS    0.000000 2.325000 0.000000 2   1     -1    1    
+HX      NEHS    CHEH    NDHS    0.000000 2.325000 0.000000 2   1     -1    1    
+CGHS    NDHS    CHEH    HA      0.000000 2.325000 0.000000 2   1     -1    1    
+CGHS    NDHS    CHEH    NDHS    0.000000 2.325000 0.000000 2   1     -1    1    
+CGHS    NDHS    CHEH    NEHS    0.000000 2.325000 0.000000 2   1     -1    1    
+HN      NDHS    CGHS    CH3     0.000000 1.400000 0.000000 2   1     -1    1    
+HN      NDHS    CGHS    HA      0.000000 1.600000 0.000000 2   1     -1    1    
+HN      NDHS    CGHS    CHDH    0.000000 1.400000 0.000000 2   1     -1    1    
+HN      NDHS    CGHS    CGHS    0.000000 1.400000 0.000000 2   1     -1    1    
+HX      NEHS    CHDH    CGHS    0.000000 1.400000 0.000000 2   1     -1    1    
+CHEH    NDHS    CGHS    CH3     0.000000 1.400000 0.000000 2   1     -1    1    
+CHEH    NDHS    CGHS    HA      0.000000 1.600000 0.000000 2   1     -1    1    
+CHEH    NDHS    CGHS    CHDH    0.000000 1.400000 0.000000 2   1     -1    1    
+CHEH    NDHS    CGHS    CGHS    0.000000 1.400000 0.000000 2   1     -1    1    
+HA      CHEH    NEHS    CHDH    0.000000 5.000000 0.000000 2   1     -1    1    
+NDHS    CHEH    NEHS    CHDH    0.000000 5.000000 0.000000 2   1     -1    1    
+CH3     CHDH    CGHS    HA      0.000000 5.375000 0.000000 2   1     -1    1    
+CH3     CHDH    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+HA      CHDH    CGHS    CH3     0.000000 5.375000 0.000000 2   1     -1    1    
+HA      CHDH    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+NEHS    CHDH    CGHS    CH3     0.000000 5.375000 0.000000 2   1     -1    1    
+NEHS    CHDH    CGHS    HA      0.000000 5.375000 0.000000 2   1     -1    1    
+NEHS    CHDH    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+CH3     CHDH    NEHS    CHEH    0.000000 2.400000 0.000000 2   1     -1    1    
+HA      CHDH    NEHS    CHEH    0.000000 2.400000 0.000000 2   1     -1    1    
+CGHS    CHDH    NEHS    CHEH    0.000000 2.400000 0.000000 2   1     -1    1    
+CH3     CGHS    CGHS    HA      0.000000 5.375000 0.000000 2   1     -1    1    
+CH3     CGHS    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+HA      CGHS    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+NDHS    CGHS    CGHS    NDHS    0.000000 5.375000 0.000000 2   1     -1    1    
+ACT     ACT     ACT     ACT     0.200000 0.250000 0.180000 3   -1    -1    1    
+ACT     ACT     ACT     AC      0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AN*     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AN2     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AOH     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AOS     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AHC     0.000000 0.000000 0.160000 2   1     -1    1    
+ACT     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     ACT     AH2     0.000000 0.000000 0.156000 2   1     -1    1    
+AC      ACT     ACT     AC      0.000000 0.000000 0.156000 2   1     -1    1    
+AC      ACT     ACT     ACA     0.000000 0.000000 0.156000 2   1     -1    1    
+AC      ACT     ACT     AOH     0.000000 0.000000 0.156000 2   1     -1    1    
+AC      ACT     ACT     AHC     0.000000 0.000000 0.156000 2   1     -1    1    
+AC      ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+ACA     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AN*     ACT     ACT     AOH     0.000000 0.000000 0.156000 2   1     -1    1    
+AN*     ACT     ACT     AHC     0.000000 0.000000 0.156000 2   1     -1    1    
+AN*     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AN2     ACT     ACT     AHC     0.000000 0.000000 0.156000 2   1     -1    1    
+AOH     ACT     ACT     AN*     0.000000 0.000000 0.156000 2   1     -1    1    
+AOH     ACT     ACT     AOH     0.000000 1.175000 0.144000 2   1     1     1    
+AOH     ACT     ACT     AOS     0.000000 1.175000 0.144000 2   1     1     1    
+AOH     ACT     ACT     AHC     0.250000 0.000000 0.156000 3   1     -1    1    
+AOH     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AOH     ACT     ACT     AH2     0.000000 0.000000 0.156000 2   1     -1    1    
+AOS     ACT     ACT     AOS     0.000000 1.175000 0.144000 2   1     1     1    
+AOS     ACT     ACT     AHC     0.250000 0.000000 0.156000 3   1     -1    1    
+AOS     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AHC     ACT     ACT     AHC     0.000000 0.000000 0.150000 2   1     -1    1    
+AHC     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AHC     ACT     ACT     AH2     0.000000 0.000000 0.156000 2   1     -1    1    
+AH1     ACT     ACT     AH1     0.000000 0.000000 0.156000 2   1     -1    1    
+AH1     ACT     ACT     AH2     0.000000 0.000000 0.156000 2   1     -1    1    
+ACT     ACT     AC      AO      0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     AC      AO2     0.000000 0.000000 0.000000 2   1     1     1    
+AHC     ACT     AC      AO      0.800000 0.000000 0.080000 3   1     -1    1    
+AHC     ACT     AC      AO2     0.000000 0.000000 0.000000 2   1     1     1    
+AH1     ACT     AC      AO      0.800000 0.000000 0.080000 3   1     -1    1    
+AH1     ACT     AC      AO2     0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     ACA     ACA     0.000000 0.000000 0.000000 2   1     1     1    
+AHC     ACT     ACA     ACA     0.000000 0.000000 0.000000 2   1     1     1    
+AHC     ACT     ACM     AC      0.000000 0.000000 0.000000 2   1     -1    1    
+AHC     ACT     ACM     ACM     1.150000 0.000000 0.380000 3   1     -1    1    
+ACT     ACT     AN*     AC      0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     AN*     ACM     0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     AN*     ACB     0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     AN*     ACK     0.000000 0.000000 0.000000 2   1     1     1    
+AOS     ACT     AN*     AC      0.000000 0.000000 0.000000 2   1     1     1    
+AOS     ACT     AN*     ACM     2.500000 0.000000 0.000000 3   1     -1    1    
+AOS     ACT     AN*     ACB     0.000000 0.000000 0.000000 2   1     1     1    
+AOS     ACT     AN*     ACK     2.500000 0.000000 0.000000 3   1     -1    1    
+AH2     ACT     AN*     AC      0.000000 0.000000 0.000000 2   1     1     1    
+AH2     ACT     AN*     ACM     0.000000 0.000000 0.000000 2   1     1     1    
+AH2     ACT     AN*     ACB     0.000000 0.000000 0.000000 2   1     1     1    
+AH2     ACT     AN*     ACK     0.000000 0.000000 0.000000 2   1     1     1    
+ACT     ACT     AN2     ACA     0.000000 0.000000 0.000000 2   1     -1    1    
+ACT     ACT     AN2     AH      0.000000 0.000000 0.000000 2   1     -1    1    
+AH1     ACT     AN2     ACA     0.000000 0.000000 0.000000 2   1     -1    1    
+AH1     ACT     AN2     AH      0.000000 0.000000 0.000000 2   1     -1    1    
+ACT     ACT     AOH     AHO     0.025000 0.000000 0.160000 3   1     -1    1    
+AH1     ACT     AOH     AHO     0.000000 0.000000 0.167000 2   1     -1    1    
+ACT     ACT     AOS     ACT     0.000000 0.100000 0.383000 2   1     -1    1    
+ACT     ACT     AOS     AC      0.800000 0.000000 0.383000 3   -1    -1    1    
+ACT     ACT     AOS     AP      0.000000 0.000000 0.383000 2   1     -1    1    
+AN*     ACT     AOS     ACT     0.000000 0.650000 0.383000 2   1     1     1    
+AOS     ACT     AOS     ACT     1.350000 0.850000 0.100000 3   -1    -1    1    
+AOS     ACT     AOS     ACT     0.000000 0.850000 0.100000 2   1     -1    1    
+AOS     ACT     AOS     ACT     0.000000 0.850000 0.100000 2   1     -1    1    
+AH1     ACT     AOS     ACT     0.000000 0.000000 0.383000 2   1     -1    1    
+AH1     ACT     AOS     AP      0.000000 0.000000 0.383000 2   1     -1    1    
+AH2     ACT     AOS     ACT     0.000000 0.000000 0.383000 2   1     -1    1    
+ANA     AC      ACM     ACT     0.000000 2.175000 0.000000 2   1     -1    1    
+ANA     AC      ACM     ACM     0.000000 2.175000 0.000000 2   1     -1    1    
+ANA     AC      ACM     AHA     0.000000 2.175000 0.000000 2   1     -1    1    
+AO      AC      ACM     ACT     0.000000 2.175000 0.000000 2   1     -1    1    
+AO      AC      ACM     ACM     0.000000 2.175000 0.300000 2   1     -1    1    
+AO      AC      ACM     AHA     0.000000 2.175000 0.000000 2   1     -1    1    
+ANA     AC      ACB     ACB     0.000000 3.000000 0.000000 2   1     -1    1    
+ANA     AC      ACB     ANB     0.000000 3.000000 0.000000 2   1     -1    1    
+AO      AC      ACB     ACB     0.000000 3.000000 0.000000 2   1     -1    1    
+AO      AC      ACB     ANB     0.000000 3.000000 0.000000 2   1     -1    1    
+ACM     AC      ANA     AC      0.000000 1.350000 0.000000 2   1     -1    1    
+ACM     AC      ANA     AH      0.000000 1.350000 0.000000 2   1     -1    1    
+ACB     AC      ANA     ACA     0.000000 1.350000 0.000000 2   1     -1    1    
+ACB     AC      ANA     AH      0.000000 1.350000 0.000000 2   1     -1    1    
+AN*     AC      ANA     AC      0.000000 1.350000 0.000000 2   1     -1    1    
+AN*     AC      ANA     AH      0.000000 1.350000 0.000000 2   1     -1    1    
+AO      AC      ANA     AC      0.000000 1.350000 0.000000 2   1     -1    1    
+AO      AC      ANA     ACA     0.000000 1.350000 0.000000 2   1     -1    1    
+AO      AC      ANA     AH      0.000000 1.350000 0.000000 2   1     -1    1    
+AN*     AC      ANC     ACA     0.000000 4.000000 0.000000 2   1     -1    1    
+AO      AC      ANC     ACA     0.000000 4.000000 0.000000 2   1     -1    1    
+ANA     AC      AN*     ACT     0.000000 1.450000 0.000000 2   1     -1    1    
+ANA     AC      AN*     ACM     0.000000 1.450000 0.000000 2   1     -1    1    
+ANC     AC      AN*     ACT     0.000000 1.450000 0.000000 2   1     -1    1    
+ANC     AC      AN*     ACM     0.000000 1.450000 0.000000 2   1     -1    1    
+AO      AC      AN*     ACT     0.000000 1.450000 0.000000 2   1     -1    1    
+AO      AC      AN*     ACM     0.000000 1.450000 0.000000 2   1     -1    1    
+AO      AC      AOH     AHO     1.900000 2.300000 0.000000 3   1     -1    1    
+AO      AC      AOS     ACT     1.400000 2.700000 0.000000 3   -1    -1    1    
+ACT     ACA     ACA     ACA     0.000000 3.625000 0.000000 2   1     -1    1    
+ACT     ACA     ACA     AHA     0.000000 3.625000 0.000000 2   1     -1    1    
+ACA     ACA     ACA     ACA     0.000000 3.625000 0.000000 2   1     -1    1    
+ACA     ACA     ACA     ACB     0.000000 3.625000 0.000000 2   1     -1    1    
+ACA     ACA     ACA     AOH     0.000000 3.625000 0.000000 2   1     -1    1    
+ACA     ACA     ACA     AHA     0.000000 3.625000 0.000000 2   1     -1    1    
+ACB     ACA     ACA     AHA     0.000000 3.625000 0.000000 2   1     -1    1    
+AOH     ACA     ACA     AHA     0.000000 3.625000 0.000000 2   1     -1    1    
+AHA     ACA     ACA     AHA     0.000000 3.625000 0.000000 2   1     -1    1    
+ANC     ACA     ACM     ACM     0.000000 2.550000 0.000000 2   1     -1    1    
+ANC     ACA     ACM     AHA     0.000000 2.550000 0.000000 2   1     -1    1    
+AN2     ACA     ACM     ACM     0.000000 2.550000 0.000000 2   1     -1    1    
+AN2     ACA     ACM     AHA     0.000000 2.550000 0.000000 2   1     -1    1    
+ANC     ACA     ACB     ACB     0.000000 3.500000 0.000000 2   1     -1    1    
+ANC     ACA     ACB     ANB     0.000000 3.500000 0.000000 2   1     -1    1    
+AN2     ACA     ACB     ACB     0.000000 3.500000 0.000000 2   1     -1    1    
+AN2     ACA     ACB     ANB     0.000000 3.500000 0.000000 2   1     -1    1    
+ANC     ACA     ANA     AC      0.000000 1.500000 0.000000 2   1     -1    1    
+ANC     ACA     ANA     AH      0.000000 1.500000 0.000000 2   1     -1    1    
+AN2     ACA     ANA     AC      0.000000 1.500000 0.000000 2   1     -1    1    
+AN2     ACA     ANA     AH      0.000000 1.500000 0.000000 2   1     -1    1    
+ACM     ACA     ANC     AC      0.000000 4.800000 0.000000 2   1     -1    1    
+ACB     ACA     ANC     ACQ     0.000000 4.800000 0.000000 2   1     -1    1    
+ANA     ACA     ANC     ACB     0.000000 4.800000 0.000000 2   1     -1    1    
+AN2     ACA     ANC     AC      0.000000 4.800000 0.000000 2   1     -1    1    
+AN2     ACA     ANC     ACB     0.000000 4.800000 0.000000 2   1     -1    1    
+AN2     ACA     ANC     ACQ     0.000000 4.800000 0.000000 2   1     -1    1    
+ACM     ACA     AN2     AH      0.000000 2.400000 0.000000 2   1     -1    1    
+ACB     ACA     AN2     AH      0.000000 2.400000 0.000000 2   1     -1    1    
+ANA     ACA     AN2     AH      0.000000 2.400000 0.000000 2   1     -1    1    
+ANC     ACA     AN2     AH      0.000000 2.400000 0.000000 2   1     -1    1    
+AN2     ACA     AN2     ACT     0.000000 2.400000 0.000000 2   1     -1    1    
+AN2     ACA     AN2     AH      0.000000 2.400000 0.000000 2   1     -1    1    
+ACA     ACA     AOH     AHO     0.000000 0.900000 0.000000 2   1     -1    1    
+ACT     ACM     ACM     ACT     1.900000 6.650000 0.000000 3   -1    -1    1    
+ACT     ACM     ACM     AN*     0.000000 6.650000 0.000000 2   1     -1    1    
+ACT     ACM     ACM     AH4     0.000000 6.650000 0.000000 2   1     -1    1    
+AC      ACM     ACM     AN*     0.000000 6.650000 0.000000 2   1     -1    1    
+AC      ACM     ACM     AH4     0.000000 6.650000 0.000000 2   1     -1    1    
+ACA     ACM     ACM     AN*     0.000000 6.650000 0.000000 2   1     -1    1    
+ACA     ACM     ACM     AH4     0.000000 6.650000 0.000000 2   1     -1    1    
+AHA     ACM     ACM     AN*     0.000000 6.650000 0.000000 2   1     -1    1    
+AHA     ACM     ACM     AH4     0.000000 6.650000 0.000000 2   1     -1    1    
+ACM     ACM     AN*     ACT     0.000000 1.850000 0.000000 2   1     -1    1    
+ACM     ACM     AN*     AC      0.000000 1.850000 0.000000 2   1     -1    1    
+AH4     ACM     AN*     ACT     0.000000 1.850000 0.000000 2   1     -1    1    
+AH4     ACM     AN*     AC      0.000000 1.850000 0.000000 2   1     -1    1    
+AC      ACB     ACB     ANC     0.000000 5.450000 0.000000 2   1     -1    1    
+AC      ACB     ACB     AN*     0.000000 5.450000 0.000000 2   1     -1    1    
+ACA     ACB     ACB     ANC     0.000000 5.450000 0.000000 2   1     -1    1    
+ACA     ACB     ACB     AN*     0.000000 5.450000 0.000000 2   1     -1    1    
+ANB     ACB     ACB     ANC     0.000000 5.450000 0.000000 2   1     -1    1    
+ANB     ACB     ACB     AN*     0.000000 5.450000 0.000000 2   1     -1    1    
+AC      ACB     ANB     ACK     0.000000 2.550000 0.000000 2   1     -1    1    
+ACA     ACB     ANB     ACK     0.000000 2.550000 0.000000 2   1     -1    1    
+ACB     ACB     ANB     ACK     0.000000 2.550000 0.000000 2   1     -1    1    
+ACB     ACB     ANC     ACA     0.000000 4.150000 0.000000 2   1     -1    1    
+ACB     ACB     ANC     ACQ     0.000000 4.150000 0.000000 2   1     -1    1    
+AN*     ACB     ANC     ACA     0.000000 4.150000 0.000000 2   1     -1    1    
+AN*     ACB     ANC     ACQ     0.000000 4.150000 0.000000 2   1     -1    1    
+ACB     ACB     AN*     ACT     0.000000 1.650000 0.000000 2   1     -1    1    
+ACB     ACB     AN*     ACK     0.000000 1.650000 0.000000 2   1     -1    1    
+ANC     ACB     AN*     ACT     0.000000 1.650000 0.000000 2   1     -1    1    
+ANC     ACB     AN*     ACK     0.000000 1.650000 0.000000 2   1     -1    1    
+AN*     ACK     ANB     ACB     0.000000 0.000000 0.000000 2   1     -1    1    
+AH5     ACK     ANB     ACB     0.000000 0.000000 0.000000 2   1     -1    1    
+ANB     ACK     AN*     ACT     0.000000 1.700000 0.000000 2   1     -1    1    
+ANB     ACK     AN*     ACB     0.000000 1.700000 0.000000 2   1     -1    1    
+AH5     ACK     AN*     ACT     0.000000 1.700000 0.000000 2   1     -1    1    
+AH5     ACK     AN*     ACB     0.000000 1.700000 0.000000 2   1     -1    1    
+ANC     ACQ     ANC     ACA     0.000000 6.800000 0.000000 2   1     -1    1    
+ANC     ACQ     ANC     ACB     0.000000 6.800000 0.000000 2   1     -1    1    
+AH5     ACQ     ANC     ACA     0.000000 6.800000 0.000000 2   1     -1    1    
+AH5     ACQ     ANC     ACB     0.000000 6.800000 0.000000 2   1     -1    1    
+AHO     AOH     AP      AOS     0.000000 0.000000 0.250000 2   1     -1    1    
+AHO     AOH     AP      AO2     0.000000 0.000000 0.250000 2   1     -1    1    
+ACT     AOS     AP      AOH     0.000000 1.200000 0.250000 2   1     1     1    
+ACT     AOS     AP      AOS     0.000000 1.200000 0.250000 2   1     1     1    
+ACT     AOS     AP      AO2     0.000000 0.000000 0.250000 2   1     -1    1 
+X       ACK     AN*     X       0.000000 1.700000 0.000000 2   1     -1    1
+X       ACK     ANB     X       0.000000 1.700000 0.000000 2   1     -1    1
+X       AOH     AP      X       0.000000 0.000000 0.250000 2   1     -1    1
+X       AOS     AP      X       0.000000 0.000000 0.250000 2   1     -1    1
+X       AO2     AP      X       0.000000 0.000000 0.250000 2   1     -1    1
+~
+DONE
+~
+IMPROPER
+~
+CFH     CFH     CH3     CFH     13.200  0.0  
+CFH     CFH     HA      CFH     13.200  0.0  
+CFH     CFH     OHT     CFH     13.200  0.0  
+CFH     CGHT    HA      CFH     13.200  0.0  
+CFH     CFH     HA      CTR     13.200  0.0  
+CFH     CGTR    HA      NDHS    13.200  0.0  
+CO      CH3     OC      NH      126.000 0.0  
+NH      CO      HN      CH3     12.000  0.0  
+NH      CO      CDP     CH3     12.000  0.0  
+NH      CO      HN      HN      12.000  0.0  
+CX      CH3     OX      OX      126.000 0.0  
+NR      CR3     HX      CH3     12.000  0.0  
+NR      CR3     HX      HX      12.000  0.0  
+CR3     NR      NR      NR      126.000 0.0  
+CGTR    CFH     CH3     CTR     13.200  0.0  
+CTR     CFH     CGHT    CGTR    13.200  0.0  
+CGHT    CTR     CFH     NDHS    13.200  0.0  
+NDHS    CFH     HN      CGHT    12.000  0.0  
+NDHS    CHEH    HN      CGHS    12.000  0.0  
+CHEH    NDHS    HA      NDHS    13.200  0.0  
+CHEH    NEHS    HA      NDHS    13.200  0.0  
+CHDH    NEHS    CH3     CGHS    13.200  0.0  
+CHDH    NEHS    HA      CGHS    13.200  0.0  
+CGHS    CHDH    CH3     NDHS    13.200  0.0  
+CGHS    CHDH    HA      NDHS    13.200  0.0  
+CGHS    CGHS    CH3     NDHS    13.200  0.0  
+CGHS    CGHS    HA      NDHS    13.200  0.0  
+AC      ANA     AO      ACM     63.000  0.0  
+AC      ANA     AO      ACB     63.000  0.0  
+AC      ANA     AO      AN*     63.000  0.0  
+AC      AO2     AO2     ACT     63.000  0.0  
+ACA     ACA     ACT     ACA     6.600   0.0  
+ACA     ACA     AOH     ACA     6.600   0.0  
+ACA     ACA     AHA     ACA     6.600   0.0  
+ACA     ACM     AN2     ANC     6.600   0.0  
+ACA     ACB     AHA     ACA     6.600   0.0  
+ACA     ANC     AN2     ACB     6.600   0.0  
+ACA     ANC     AN2     ANA     6.600   0.0  
+ACA     AN2     AN2     AN2     63.000  0.0  
+ACM     ACA     AHA     ACM     6.600   0.0  
+ACM     ACM     ACT     AC      6.600   0.0  
+ACM     ACM     AHA     AC      6.600   0.0  
+ACM     ACM     AH4     AN*     6.600   0.0  
+ANA     AC      AH      AC      6.000   0.0  
+ANA     ACA     AH      AC      6.000   0.0  
+AN*     AC      ACT     ACM     6.000   0.0  
+AN*     ACB     ACT     ACK     6.000   0.0  
+AN2     ACA     AH      ACT     6.000   0.0  
+AN2     AH      AH      ACA     6.000   0.0
+~Improper torsions added for Nucleic Acids
+~the values are taken from charmm those can not be found are replaced with something similiar
+AC       ACM     AO     ANA     90.0     0.0 
+ANA      AC      AH     AC      0.8     0.0       
+AC       AN*     ANA     AO    110.0     0.0
+ACM      ACM     ACT     AC     14.0     0.0
+ACA      ACM     AN2     ANC    60.0     0.0 
+AN2      ACA     AH     AH     4.0     0.0                 
+AC       AN*     ANC     AO     80.0     0.0     
+ACB     ANB     ACA     ACB     90.0     0.0 
+ACA     ACB     AN2     ANC     40.0     0.0     
+ACA     ANA     AN2     ANC    90.0      0.0     
+AN*     ACT     ACM     AC     90.0      0.0
+AN*     ACT     ACK     ACB     90.0     0.0
+AC      ACB      AO     ANA     90.0     0.0       
+ACB     ANB      AC     ACB     90.0     0.0 
+~ serdal very rough estimate 
+ACM      AN*     AH4     ACM    14.0    0.0
+~ serdal I used the same value with acm acm act ac  
+ACM      ACM     AHA     AC     14.0     0.0
+~ serdal I used the same value with acm acm act ac         
+ACM      ACM     AHA     ACA    14.0     0.0
+~serdal I assume purine nitrogen is similiar to amide nitrogen and double bonded 
+~purine carbon is similiar to carbonyl carbon 
+ACK     AN*     AH5     ANB     90.0      0.0
+~
+~serdal used the same parameters with ACA ANC ACB ANC      
+ACQ     ANC     AH5     ANC     40.0     0.0     
+~ serdal used the same parameters with c2 o2 n1 n3 bond of cyts 
+ACB     AN*     ACB     ANC     40.0     0.0 
+~    
+~ rough estimate serdal
+ANA      AC      AH     ACA     0.8     0.0    
+~ default improper torsion
+CH3     CH3     CH3     CH3     0.000   0.0
+~
+DONE
+*EOD

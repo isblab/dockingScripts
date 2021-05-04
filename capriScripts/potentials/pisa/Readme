@@ -1,0 +1,14 @@
+The current folder contains:
+pisa.params: The list of parameters for the PISA potential in double precision. 
+
+pisaEnergy.c: The C source code for a program that calculates the PISA energy of a given structure. It also takes the parameters file as command line argument.
+
+An executable of this code has been compiled for Linux using GCC,like this:
+gcc -lm pisaEnergy.c -o pisaEnergy_linux 
+
+Once compiled, it can be run like this:
+./pisaEnergy_linux path_to_pdb_file receptor_chain_list ligand_chain_list params_file
+
+Note that multiple chains in receptor or ligand protein are writted as a single string. 
+e.g. if we want to score a model m0.pdb wwhose receptor contains chains A and B and ligand has chain C, we write:
+./pisaEnergy_linux m0.pdb AB C pisa.params

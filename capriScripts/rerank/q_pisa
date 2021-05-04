@@ -1,0 +1,21 @@
+#$ -N pisa.SeqNumber
+#$ -cwd
+#$ -V
+#$ -l h_rt=1000:00:00
+#$ -q all.q
+#$ -pe mpich 1
+#$ -S /bin/bash
+
+module load openmpi
+ulimit -c unlimited
+
+rm pisa.SeqNumber.energy /state/partition1/pisa.SeqNumber.energy
+
+for i in `cat models_list_SeqNumber`
+do
+        energyVal=`/junior/shruthi/mini_dock/scripts/pisaEnergy models/m$i'.pdb' A B /junior/shruthi/mini_dock/scripts/pisa.params`
+        echo $energyVal >> /state/partition1/pisa.SeqNumber.energy
+done
+
+mv /state/partition1/pisa.SeqNumber.energy . 
+

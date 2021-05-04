@@ -1,0 +1,26 @@
+exedir = ../bin
+
+FLAGS = -g3
+INCLUDEFLAGS = -I. -Idocker 
+
+CC = g++ 
+
+#export OMPI_CXX=/share/apps/intel/cce/10.1.021/bin/icpc
+#CC=$(OMPI_CXX)
+
+all : $(exedir)/pie_score 
+
+UOBJS =  docker/molecule.o docker/utilities.o docker/rmsd.o docker/object.o 
+
+$(exedir)/pie_score : pie_score.cpp $(UOBJS)
+	$(CC) $(FLAGS) -o $(exedir)/pie_score pie_score.cpp $(UOBJS) $(INCLUDEFLAGS) 
+
+%.cpp : %.hpp
+%.c : %.h
+
+%.o : %.cpp %.hpp 
+	$(CC) $(FLAGS) -c -o $@ $< $(INCLUDEFLAGS)
+	
+clean :
+	rm -f */*.o
+

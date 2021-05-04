@@ -1,0 +1,14 @@
+Need the following items for submission:
+1. Directory containing models
+
+2. ranking of models 
+
+3. capri header file from .brk file
+
+First create hash tags given the list of all hash tags in the original CAPRI scoring file containing all models, our modelRanking file for top 10 models and our scoring header. 
+Run like this to get the new header. 
+sh addHashTagsToHeader.sh our_scoring_header modelsRanking.txt capri_scoring_header_T68
+
+Then get the output file to be submitted with all the models like this:
+sh writeModelsForSubmission.sh ~/capri30/models modelRanking.txt capri_header_T68 T68_server_submission
+

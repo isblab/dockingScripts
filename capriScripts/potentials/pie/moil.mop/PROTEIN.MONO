@@ -1,0 +1,2576 @@
+MONO LIST
+~ first list are the uncharged residues
+~
+MONO=(ALA)   #prt=11   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03370
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08230
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.18250
+UNIQ=(HB1)    PRTC=(HC)    PCHG=0.06030
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.06030
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.06030
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ALA
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB1-CB   HB2-CB   HB3-CB   C-CA   O-C   
+DONE
+~number prtc-s in ALA is 11   ;
+~total charge in ALA is 0.00  ;
+~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLY)   #prt=8   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02520
+UNIQ=(HA2)    PRTC=(H1)    PCHG=0.06980
+UNIQ=(HA3)    PRTC=(H1)    PCHG=0.06980
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for GLY
+BOND
+ C-N* H-N    CA-N    HA2-CA   HA3-CA   C-CA   O-C   
+DONE
+~number prtc-s in GLY is 8   ;
+~total charge in GLY is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(SER)   #prt=12   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02490
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08430
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.21170
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.03520
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.03520
+UNIQ=(OG)    PRTC=(OH)    PCHG=-0.65460
+UNIQ=(HG)    PRTC=(HO)    PCHG=0.42750
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for SER
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   OG-CB   HG-OG   
+ C-CA   O-C   
+DONE
+~number prtc-s in SER is 12   ;
+~total charge in SER is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(THR)   #prt=15   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)      PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.03890
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10070
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.36540
+UNIQ=(HB)    PRTC=(H1)    PCHG=0.00430
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.24380
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.06420
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.06420
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.06420
+UNIQ=(OG1)    PRTC=(OH)    PCHG=-0.67610
+UNIQ=(HG1)    PRTC=(HO)    PCHG=0.41020
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for THR
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB   HG21-CG2  
+ HG22-CG2  HG23-CG2  OG1-CB   HG1-OG1  C-CA   O-C   
+DONE
+~number prtc-s in THR is 15   ;
+~total charge in THR is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(LEU)   #prt=20   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.05180
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.09220
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.11020
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04570
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04570
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.35310
+UNIQ=(HG)    PRTC=(HC)    PCHG=-0.03610
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.41210
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(CD2)    PRTC=(CT)    PCHG=-0.41210
+UNIQ=(HD21)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HD22)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HD23)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for LEU
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG-CG   
+ CD1-CG   HD11-CD1  HD12-CD1  HD13-CD1  CD2-CG   HD21-CD2  HD22-CD2  
+ HD23-CD2  C-CA   O-C   
+DONE
+~number prtc-s in LEU is 20   ;
+~total charge in LEU is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ILE)   #prt=20   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.05970
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08690
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.13030
+UNIQ=(HB)    PRTC=(HC)    PCHG=0.01870
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.32040
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.08820
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.08820
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.08820
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.04300
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.02360
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.02360
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.06600
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.01860
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.01860
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.01860
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ILE
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB   HG21-CG2 
+ HG22-CG2  HG23-CG2  CG1-CB   HG12-CG1  HG13-CG1  CD1-CG1 
+ HD11-CD1  HD12-CD1  HD13-CD1  C-CA   O-C   
+DONE
+~number prtc-s in ILE is 20   ;
+~total charge in ILE is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(VAL)   #prt=17   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.08750
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.09690
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.29850
+UNIQ=(HB)    PRTC=(HC)    PCHG=-0.02970
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.31920
+UNIQ=(HG11)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.31920
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.07910
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for VAL
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB-CB   CG1-CB   HG11-CG1 
+ HG12-CG1  HG13-CG1  CG2-CB   HG21-CG2  HG22-CG2  HG23-CG2  C-CA   O-C   
+DONE
+~number prtc-s in VAL is 17   ;
+~total charge in VAL is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ASN)   #prt=15   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.01430
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10480
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.20410
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.07970
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.07970
+UNIQ=(CG)    PRTC=(C)    PCHG=0.71300
+UNIQ=(OD1)    PRTC=(O)    PCHG=-0.59310
+UNIQ=(ND2)    PRTC=(N)    PCHG=-0.91910
+UNIQ=(HD21)    PRTC=(H)    PCHG=0.41960
+UNIQ=(HD22)    PRTC=(H)    PCHG=0.41960
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ASN
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   OD1-CG  
+ ND2-CG   HD21-ND2  HD22-ND2  C-CA   O-C   
+DONE
+~number prtc-s in ASN is 15   ;
+~total charge in ASN is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLN)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.00310
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08500
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00360
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.01710
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.01710
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.06450
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.03520
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.03520
+UNIQ=(CD)    PRTC=(C)    PCHG=0.69510
+UNIQ=(OE1)    PRTC=(O)    PCHG=-0.60860
+UNIQ=(NE2)    PRTC=(N)    PCHG=-0.94070
+UNIQ=(HE21)    PRTC=(H)    PCHG=0.42510
+UNIQ=(HE22)    PRTC=(H)    PCHG=0.42510
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for GLN
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   OE1-CD   NE2-CD   HE21-NE2  HE22-NE2  C-CA   O-C   
+DONE
+~number prtc-s in GLN is 18   ;
+~total charge in GLN is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ARG)   #prt=25   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34790
+UNIQ=(H)    PRTC=(H)    PCHG=0.27470
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.26370
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.15600
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00070
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03270
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03270
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.03900
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.02850
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.02850
+UNIQ=(CD)    PRTC=(CT)    PCHG=0.04860
+UNIQ=(HD2)    PRTC=(H1)    PCHG=0.06870
+UNIQ=(HD3)    PRTC=(H1)    PCHG=0.06870
+UNIQ=(NE)    PRTC=(N2)    PCHG=-0.52950
+UNIQ=(HE)    PRTC=(H)    PCHG=0.34560
+UNIQ=(CZ)    PRTC=(CA)    PCHG=0.80760
+UNIQ=(NH1)    PRTC=(N2)    PCHG=-0.86270
+UNIQ=(HH11)    PRTC=(H)    PCHG=0.44780
+UNIQ=(HH12)    PRTC=(H)    PCHG=0.44780
+UNIQ=(NH2)    PRTC=(N2)    PCHG=-0.86270
+UNIQ=(HH21)    PRTC=(H)    PCHG=0.44780
+UNIQ=(HH22)    PRTC=(H)    PCHG=0.44780
+UNIQ=(C)    PRTC=(C)    PCHG=0.73410
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58940
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ARG
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   HD2-CD   HD3-CD   NE-CD   HE-NE   CZ-NE   NH1-CZ   HH11-NH1 
+ HH12-NH1  NH2-CZ   HH21-NH2  HH22-NH2  C-CA   O-C   
+DONE
+~number prtc-s in ARG is 25   ;
+~total charge in ARG is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(HIS)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.01880
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08810
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.04620
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04020
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04020
+UNIQ=(CG)    PRTC=(CC)    PCHG=-0.02660
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.38110
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.36490
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.20570
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.13920
+UNIQ=(NE2)    PRTC=(NB)    PCHG=-0.57270
+UNIQ=(CD2)    PRTC=(CV)    PCHG=0.12920
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.11470
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for HIS
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   
+ ND1-CG  
+ HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  CG-CD2 CD2-NE2  HD2-CD2  
+ C-CA   O-C   
+DONE
+~number prtc-s in HIS is 18   ;
+~total charge in HIS is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(HID)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.01880
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08810
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.04620
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04020
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04020
+UNIQ=(CG)    PRTC=(CC)    PCHG=-0.02660
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.38110
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.36490
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.20570
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.13920
+UNIQ=(NE2)    PRTC=(NB)    PCHG=-0.57270
+UNIQ=(CD2)    PRTC=(CV)    PCHG=0.12920
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.11470
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for HID
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   
+ ND1-CG  
+ HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  CG-CD2 CD2-NE2  HD2-CD2  
+ C-CA   O-C   
+DONE
+~number prtc-s in HID is 18   ;
+~total charge in HID is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(HIE)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.05810
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13600
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00740
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03670
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03670
+UNIQ=(CG)    PRTC=(CC)    PCHG=0.18680
+UNIQ=(ND1)    PRTC=(NB)    PCHG=-0.54320
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.16350
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.14350
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.27950
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.33390
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.22070
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.18620
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for HIE
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2
+ ND1-CG   CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in HIE is 18   ;
+~total charge in HIE is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(HIP)   #prt=19   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34790
+UNIQ=(H)    PRTC=(H)    PCHG=0.27470
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.13540
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.12120
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.04140
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.08100
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.08100
+UNIQ=(CG)    PRTC=(CC)    PCHG=-0.00120
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.15130
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.38660
+UNIQ=(CE1)    PRTC=(CR)    PCHG=-0.01700
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.26810
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.17180
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.39110
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.11410
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.23170
+UNIQ=(C)    PRTC=(C)    PCHG=0.73410
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58940
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for HIP
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2
+ ND1-CG   HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2 
+ HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in HIP is 19   ;
+~total charge in HIP is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(TRP)   #prt=25   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02750
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.11230
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00500
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03390
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03390
+UNIQ=(CG)    PRTC=(C*)    PCHG=-0.14150
+UNIQ=(CD1)    PRTC=(CW)    PCHG=-0.16380
+UNIQ=(HD1)    PRTC=(H4)    PCHG=0.20620
+UNIQ=(NE1)    PRTC=(NA)    PCHG=-0.34180
+UNIQ=(HE1)    PRTC=(H)    PCHG=0.34120
+UNIQ=(CE2)    PRTC=(CN)    PCHG=0.13800
+UNIQ=(CZ2)    PRTC=(CA)    PCHG=-0.26010
+UNIQ=(HZ2)    PRTC=(HA)    PCHG=0.15720
+UNIQ=(CH2)    PRTC=(CA)    PCHG=-0.11340
+UNIQ=(HH2)    PRTC=(HA)    PCHG=0.14170
+UNIQ=(CZ3)    PRTC=(CA)    PCHG=-0.19720
+UNIQ=(HZ3)    PRTC=(HA)    PCHG=0.14470
+UNIQ=(CE3)    PRTC=(CA)    PCHG=-0.23870
+UNIQ=(HE3)    PRTC=(HA)    PCHG=0.17000
+UNIQ=(CD2)    PRTC=(CB)    PCHG=0.12430
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for TRP
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2 CE2-CD2
+ CD1-CG   HD1-CD1  NE1-CD1  HE1-NE1  CE2-NE1  CZ2-CE2  HZ2-CZ2 
+ CH2-CZ2  HH2-CH2  CZ3-CH2  HZ3-CZ3  CE3-CZ3  HE3-CE3  CD2-CE3  C-CA   O-C   
+DONE
+~number prtc-s in TRP is 25   ;
+~total charge in TRP is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(PHE)   #prt=21   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.00240
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.09780
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.03430
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02950
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02950
+UNIQ=(CG)    PRTC=(CA)    PCHG=0.01180
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.12560
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.13300
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.17040
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.14300
+UNIQ=(CZ)    PRTC=(CA)    PCHG=-0.10720
+UNIQ=(HZ)    PRTC=(HA)    PCHG=0.12970
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.17040
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.14300
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.12560
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.13300
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for PHE
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB CG-CD2 
+ CD1-CG   HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  HZ-CZ   CE2-CZ  
+ HE2-CE2  CD2-CE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in PHE is 21   ;
+~total charge in PHE is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(TYR)   #prt=22   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.00140
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08760
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.01520
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02950
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02950
+UNIQ=(CG)    PRTC=(CA)    PCHG=-0.00110
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.19060
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.16990
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.23410
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.16560
+UNIQ=(CZ)    PRTC=(C)    PCHG=0.32260
+UNIQ=(OH)    PRTC=(OH)    PCHG=-0.55790
+UNIQ=(HH)    PRTC=(HO)    PCHG=0.39920
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.23410
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.16560
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.19060
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.16990
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for TYR
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2
+ CD1-CG   HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  OH-CZ   HH-OH   CE2-CZ  
+ HE2-CE2  CD2-CE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in TYR is 22   ;
+~total charge in TYR is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLU)   #prt=16   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.51630
+UNIQ=(H)    PRTC=(H)    PCHG=0.29360
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03970
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.11050
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.05600
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.01730
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.01730
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.01360
+UNIQ=(HG2)    PRTC=(HC)    PCHG=-0.04250
+UNIQ=(HG3)    PRTC=(HC)    PCHG=-0.04250
+UNIQ=(CD)    PRTC=(C)    PCHG=0.80540
+UNIQ=(OE1)    PRTC=(O2)    PCHG=-0.81880
+UNIQ=(OE2)    PRTC=(O2)    PCHG=-0.81880
+UNIQ=(C)    PRTC=(C)    PCHG=0.53660
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58190
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for GLU
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   OE1-CD   OE2-CD   C-CA   O-C   
+DONE
+~number prtc-s in GLU is 16   ;
+~total charge in GLU is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ASP)   #prt=13   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.51630
+UNIQ=(H)    PRTC=(H)    PCHG=0.29360
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03810
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08800
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.03030
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.01220
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.01220
+UNIQ=(CG)    PRTC=(C)    PCHG=0.79940
+UNIQ=(OD1)    PRTC=(O2)    PCHG=-0.80140
+UNIQ=(OD2)    PRTC=(O2)    PCHG=-0.80140
+UNIQ=(C)    PRTC=(C)    PCHG=0.53660
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58190
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ASP
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   OD1-CG  
+ OD2-CG   C-CA   O-C   
+DONE
+~number prtc-s in ASP is 13   ;
+~total charge in ASP is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(LYS)   #prt=23   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34790
+UNIQ=(H)    PRTC=(H)    PCHG=0.27470
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.24000
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.14260
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00940
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03620
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03620
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.01870
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01030
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01030
+UNIQ=(CD)    PRTC=(CT)    PCHG=-0.04790
+UNIQ=(HD2)    PRTC=(HC)    PCHG=0.06210
+UNIQ=(HD3)    PRTC=(HC)    PCHG=0.06210
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.01430
+UNIQ=(HE2)    PRTC=(HP)    PCHG=0.11350
+UNIQ=(HE3)    PRTC=(HP)    PCHG=0.11350
+UNIQ=(NZ)    PRTC=(N3)    PCHG=-0.38540
+UNIQ=(HZ1)    PRTC=(H)    PCHG=0.34000
+UNIQ=(HZ2)    PRTC=(H)    PCHG=0.34000
+UNIQ=(HZ3)    PRTC=(H)    PCHG=0.34000
+UNIQ=(C)    PRTC=(C)    PCHG=0.73410
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58940
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for LYS
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ HG2-CG   HG3-CG   CD-CG   HD2-CD   HD3-CD   CE-CD   HE2-CE   HE3-CE  
+ NZ-CE   HZ1-NZ   HZ2-NZ   HZ3-NZ   C-CA   O-C   
+DONE
+~number prtc-s in LYS is 23   ;
+~total charge in LYS is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(LYN)   #prt=22   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.07206
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.09940
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.04845
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03400
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03400
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.06612
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01041
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01041
+UNIQ=(CD)    PRTC=(CT)    PCHG=-0.03768
+UNIQ=(HD2)    PRTC=(HC)    PCHG=0.01155
+UNIQ=(HD3)    PRTC=(HC)    PCHG=0.01155
+UNIQ=(CE)    PRTC=(CT)    PCHG=0.32604
+UNIQ=(HE2)    PRTC=(HP)    PCHG=-0.03358
+UNIQ=(HE3)    PRTC=(HP)    PCHG=-0.03358
+UNIQ=(NZ)    PRTC=(N3)    PCHG=-1.03581
+UNIQ=(HZ2)    PRTC=(H)    PCHG=0.38604
+UNIQ=(HZ3)    PRTC=(H)    PCHG=0.38604
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for LYN
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   HD2-CD   HD3-CD   CE-CD   HE2-CE   HE3-CE  
+ NZ-CE   HZ2-NZ   HZ3-NZ   C-CA  
+DONE
+~number prtc-s in LYN is 22   ;
+~total charge in LYN is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(PRO)   #prt=15   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.25480
+UNIQ=(CD)    PRTC=(CT)    PCHG=0.01920
+UNIQ=(HD2)    PRTC=(H1)    PCHG=0.03910
+UNIQ=(HD3)    PRTC=(H1)    PCHG=0.03910
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.01890
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.02130
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.02130
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00700
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02530
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02530
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02660
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.06410
+UNIQ=(C)    PRTC=(C)    PCHG=0.58960
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57480
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for PRO
+BOND
+ C-N* CD-N    HD2-CD   HD3-CD   CG-CD   HG2-CG   HG3-CG   CB-CG  
+ HB2-CB   HB3-CB   CA-N    HA-CA   C-CA  CB-CA  O-C   
+DONE
+~number prtc-s in PRO is 15   ;
+~total charge in PRO is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CYS)   #prt=12   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.02130
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.11240
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.12310
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.11120
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.11120
+UNIQ=(SG)    PRTC=(SH)    PCHG=-0.31190
+UNIQ=(HG)    PRTC=(HS)    PCHG=0.19330
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for CYS
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   SG-CB   HG-SG  
+ C-CA   O-C   
+DONE
+~number prtc-s in CYS is 12   ;
+~total charge in CYS is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CYM)   #prt=11   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.46300
+UNIQ=(HN)    PRTC=(H)    PCHG=0.25200
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03500
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.04800
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.73600
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.24400
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.24400
+UNIQ=(SG)    PRTC=(SH)    PCHG=-0.73600
+UNIQ=(C)    PRTC=(C)    PCHG=0.61600
+UNIQ=(O)    PRTC=(O)    PCHG=-0.50400
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for CYM
+BOND
+ C-N* HN-N    CA-N    HA-CA   CB-CA   HB3-CB   HB2-CB   SG-CB   C-CA   O-C   
+DONE
+~number prtc-s in CYM is 11   ;
+~total charge in CYM is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CYX)   #prt=11   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.04290
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.07660
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.07900
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.09100
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.09100
+UNIQ=(SG)    PRTC=(S)    PCHG=-0.10810
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for CYX
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   SG-CB   C-CA   O-C   
+DONE
+~number prtc-s in CYX is 11   ;
+~total charge in CYX is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(MET)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02370
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08800
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.03420
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02410
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02410
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.00180
+UNIQ=(HG2)    PRTC=(H1)    PCHG=0.04400
+UNIQ=(HG3)    PRTC=(H1)    PCHG=0.04400
+UNIQ=(SD)    PRTC=(S)    PCHG=-0.27370
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.05360
+UNIQ=(HE1)    PRTC=(H1)    PCHG=0.06840
+UNIQ=(HE2)    PRTC=(H1)    PCHG=0.06840
+UNIQ=(HE3)    PRTC=(H1)    PCHG=0.06840
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for MET
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ HG2-CG   HG3-CG   SD-CG   CE-SD   HE1-CE   HE2-CE   HE3-CE   C-CA   O-C   
+DONE
+~number prtc-s in MET is 18   ;
+~total charge in MET is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ACE)   #prt=7   chrg=0.00
+~~
+~~
+~~
+UNIQ=(HH31)    PRTC=(HC)    PCHG=0.11230
+UNIQ=(CH3)    PRTC=(CT)    PCHG=-0.36620
+UNIQ=(HH32)    PRTC=(HC)    PCHG=0.11230
+UNIQ=(HH33)    PRTC=(HC)    PCHG=0.11230
+UNIQ=(C)    PRTC=(C)    PCHG=0.59720
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ACE
+BOND
+ C-N* CH3-HH31 HH32-CH3  HH33-CH3  C-CH3  O-C   
+DONE
+~number prtc-s in ACE is 7   ;
+~total charge in ACE is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NME)   #prt=6   chrg=-0.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CH3)    PRTC=(CT)    PCHG=-0.14900
+UNIQ=(HH31)    PRTC=(H1)    PCHG=0.09760
+UNIQ=(HH32)    PRTC=(H1)    PCHG=0.09760
+UNIQ=(HH33)    PRTC=(H1)    PCHG=0.09760
+DONE
+~Bonds for NME
+BOND
+  H-N    CH3-N    HH31-CH3  HH32-CH3  HH33-CH3 
+DONE
+~number prtc-s in NME is 6   ;
+~total charge in NME is-0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(HOH)   #prt=3   chrg=0.00
+~~
+~~
+~~
+UNIQ=(H1)    PRTC=(HW)    PCHG=0.41700
+UNIQ=(O)    PRTC=(OW)    PCHG=-0.83400
+UNIQ=(H2)    PRTC=(HW)    PCHG=0.41700
+DONE
+~Bonds for HOH
+BOND
+ O-H1   H2-O   
+DONE
+~number prtc-s in HOH is 3   ;
+~total charge in HOH is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(ASH)   #prt=14   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03410
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.08640
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.03160
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04880
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04880
+UNIQ=(CG)    PRTC=(C)    PCHG=0.64620
+UNIQ=(OD1)    PRTC=(O)    PCHG=-0.55540
+UNIQ=(OD2)    PRTC=(OH)    PCHG=-0.63760
+UNIQ=(HD2)    PRTC=(HO)    PCHG=0.47470
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for ASH
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   OD1-CG  
+ OD2-CG   HD2-OD2  C-CA   O-C   
+DONE
+~number prtc-s in ASH is 14   ;
+~total charge in ASH is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(GLH)   #prt=17   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.41570
+UNIQ=(H)    PRTC=(H)    PCHG=0.27190
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.01450
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.07790
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.00710
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02560
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02560
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.01740
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.04300
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.04300
+UNIQ=(CD)    PRTC=(C)    PCHG=0.68010
+UNIQ=(OE1)    PRTC=(O)    PCHG=-0.58380
+UNIQ=(OE2)    PRTC=(OH)    PCHG=-0.65110
+UNIQ=(HE2)    PRTC=(HO)    PCHG=0.46410
+UNIQ=(C)    PRTC=(C)    PCHG=0.59730
+UNIQ=(O)    PRTC=(O)    PCHG=-0.56790
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for GLH
+BOND
+ C-N* H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   OE1-CD   OE2-CD   HE2-OE2  C-CA   O-C   
+DONE
+~number prtc-s in GLH is 17   ;
+~total charge in GLH is 0.00  ;
+~
+~addition -- TIP3 water
+~
+MONO=(TIP3) #prt=3 chrg=0.
+~
+UNIQ=(OH2)   PRTC=(OW)   PCHG=-0.83400
+UNIQ=(H1)  PRTC=(HW)     PCHG=0.41700
+UNIQ=(H2)  PRTC=(HW)     PCHG=0.41700
+DONE
+BOND
+H1-OH2 H2-OH2 H1-H2
+DONE
+~
+~
+~~
+~
+~second list-- the N-termini
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NALA)   #prt=13   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.14140
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19970
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19970
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19970
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.09620
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.08890
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.05970
+UNIQ=(HB1)    PRTC=(HC)    PCHG=0.03000
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03000
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03000
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NALA
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB1-CB  
+ HB2-CB   HB3-CB   C-CA   O-C   
+DONE
+~number prtc-s in NALA is 13   ;
+~total charge in NALA is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NGLY)   #prt=10   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.29430
+UNIQ=(H1)    PRTC=(H)    PCHG=0.16420
+UNIQ=(H2)    PRTC=(H)    PCHG=0.16420
+UNIQ=(H3)    PRTC=(H)    PCHG=0.16420
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.01000
+UNIQ=(HA2)    PRTC=(HP)    PCHG=0.08950
+UNIQ=(HA3)    PRTC=(HP)    PCHG=0.08950
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NGLY
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA2-CA   HA3-CA   C-CA   O-C   
+DONE
+~number prtc-s in NGLY is 10   ;
+~total charge in NGLY is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NSER)   #prt=14   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.18490
+UNIQ=(H1)    PRTC=(H)    PCHG=0.18980
+UNIQ=(H2)    PRTC=(H)    PCHG=0.18980
+UNIQ=(H3)    PRTC=(H)    PCHG=0.18980
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.05670
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.07820
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.25960
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.02730
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.02730
+UNIQ=(OG)    PRTC=(OH)    PCHG=-0.67140
+UNIQ=(HG)    PRTC=(HO)    PCHG=0.42390
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NSER
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ OG-CB   HG-OG   C-CA   O-C   
+DONE
+~number prtc-s in NSER is 14   ;
+~total charge in NSER is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NTHR)   #prt=17   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.18120
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19340
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19340
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19340
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.00340
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10870
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.45140
+UNIQ=(HB)    PRTC=(H1)    PCHG=-0.03230
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.25540
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.06270
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.06270
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.06270
+UNIQ=(OG1)    PRTC=(OH)    PCHG=-0.67640
+UNIQ=(HG1)    PRTC=(HO)    PCHG=0.40700
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NTHR
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB  
+ HG21-CG2  HG22-CG2  HG23-CG2  OG1-CB   HG1-OG1  C-CA   O-C   
+DONE
+~number prtc-s in NTHR is 17   ;
+~total charge in NTHR is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NLEU)   #prt=22   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.10100
+UNIQ=(H1)    PRTC=(H)    PCHG=0.21480
+UNIQ=(H2)    PRTC=(H)    PCHG=0.21480
+UNIQ=(H3)    PRTC=(H)    PCHG=0.21480
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.01040
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10530
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.02440
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02560
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02560
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.34210
+UNIQ=(HG)    PRTC=(HC)    PCHG=-0.03800
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.41060
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(CD2)    PRTC=(CT)    PCHG=-0.41040
+UNIQ=(HD21)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(HD22)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(HD23)    PRTC=(HC)    PCHG=0.09800
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NLEU
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ CG-CB   HG-CG   CD1-CG   HD11-CD1  HD12-CD1  HD13-CD1  CD2-CG   HD21-CD2 
+ HD22-CD2  HD23-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NLEU is 22   ;
+~total charge in NLEU is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NILE)   #prt=22   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.03110
+UNIQ=(H1)    PRTC=(H)    PCHG=0.23290
+UNIQ=(H2)    PRTC=(H)    PCHG=0.23290
+UNIQ=(H3)    PRTC=(H)    PCHG=0.23290
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.02570
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10310
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.18850
+UNIQ=(HB)    PRTC=(HC)    PCHG=0.02130
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.37200
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.09470
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.09470
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.09470
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.03870
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.02010
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.02010
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.09080
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.02260
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.02260
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.02260
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NILE
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB  
+ HG21-CG2  HG22-CG2  HG23-CG2  CG1-CB   HG12-CG1  HG13-CG1  CD1-CG1 
+ HD11-CD1  HD12-CD1  HD13-CD1  C-CA   O-C   
+DONE
+~number prtc-s in NILE is 22   ;
+~total charge in NILE is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NVAL)   #prt=19   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.05770
+UNIQ=(H1)    PRTC=(H)    PCHG=0.22720
+UNIQ=(H2)    PRTC=(H)    PCHG=0.22720
+UNIQ=(H3)    PRTC=(H)    PCHG=0.22720
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.00540
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10930
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.31960
+UNIQ=(HB)    PRTC=(HC)    PCHG=-0.02210
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.31290
+UNIQ=(HG11)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.31290
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.07350
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NVAL
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB-CB   CG1-CB  
+ HG11-CG1  HG12-CG1  HG13-CG1  CG2-CB   HG21-CG2  HG22-CG2  HG23-CG2  C-CA   O-C   
+DONE
+~number prtc-s in NVAL is 19   ;
+~total charge in NVAL is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NASN)   #prt=17   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.18010
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19210
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19210
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19210
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.03680
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.12310
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.02830
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.05150
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.05150
+UNIQ=(CG)    PRTC=(C)    PCHG=0.58330
+UNIQ=(OD1)    PRTC=(O)    PCHG=-0.57440
+UNIQ=(ND2)    PRTC=(N)    PCHG=-0.86340
+UNIQ=(HD21)    PRTC=(H)    PCHG=0.40970
+UNIQ=(HD22)    PRTC=(H)    PCHG=0.40970
+UNIQ=(C)    PRTC=(C)    PCHG=0.61630
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57220
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NASN
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ CG-CB   OD1-CG   ND2-CG   HD21-ND2  HD22-ND2  C-CA   O-C   
+DONE
+~number prtc-s in NASN is 17   ;
+~total charge in NASN is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NGLN)   #prt=20   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.14930
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19960
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19960
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19960
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.05360
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10150
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.06510
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.00500
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.00500
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.09030
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.03310
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.03310
+UNIQ=(CD)    PRTC=(C)    PCHG=0.73540
+UNIQ=(OE1)    PRTC=(O)    PCHG=-0.61330
+UNIQ=(NE2)    PRTC=(N)    PCHG=-1.00310
+UNIQ=(HE21)    PRTC=(H)    PCHG=0.44290
+UNIQ=(HE22)    PRTC=(H)    PCHG=0.44290
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NGLN
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ CG-CB   HG2-CG   HG3-CG   CD-CG   OE1-CD   NE2-CD   HE21-NE2  HE22-NE2  C-CA   O-C   
+DONE
+~number prtc-s in NGLN is 20   ;
+~total charge in NGLN is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NARG)   #prt=27   chrg=2.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.13050
+UNIQ=(H1)    PRTC=(H)    PCHG=0.20830
+UNIQ=(H2)    PRTC=(H)    PCHG=0.20830
+UNIQ=(H3)    PRTC=(H)    PCHG=0.20830
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.02230
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.12420
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.01180
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02260
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02260
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.02360
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.03090
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.03090
+UNIQ=(CD)    PRTC=(CT)    PCHG=0.09350
+UNIQ=(HD2)    PRTC=(H1)    PCHG=0.05270
+UNIQ=(HD3)    PRTC=(H1)    PCHG=0.05270
+UNIQ=(NE)    PRTC=(N2)    PCHG=-0.56500
+UNIQ=(HE)    PRTC=(H)    PCHG=0.35920
+UNIQ=(CZ)    PRTC=(CA)    PCHG=0.82810
+UNIQ=(NH1)    PRTC=(N2)    PCHG=-0.86930
+UNIQ=(HH11)    PRTC=(H)    PCHG=0.44940
+UNIQ=(HH12)    PRTC=(H)    PCHG=0.44940
+UNIQ=(NH2)    PRTC=(N2)    PCHG=-0.86930
+UNIQ=(HH21)    PRTC=(H)    PCHG=0.44940
+UNIQ=(HH22)    PRTC=(H)    PCHG=0.44940
+UNIQ=(C)    PRTC=(C)    PCHG=0.72140
+UNIQ=(O)    PRTC=(O)    PCHG=-0.60130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NARG
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ CG-CB   HG2-CG   HG3-CG   CD-CG   HD2-CD   HD3-CD   NE-CD   HE-NE  
+ CZ-NE   NH1-CZ   HH11-NH1  HH12-NH1  NH2-CZ   HH21-NH2  HH22-NH2  C-CA   O-C   
+DONE
+~number prtc-s in NARG is 27   ;
+~total charge in NARG is 2.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NHID)   #prt=20   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.15420
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19630
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19630
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19630
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.09640
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.09580
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.02590
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02090
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02090
+UNIQ=(CG)    PRTC=(CC)    PCHG=-0.03990
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.38190
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.36320
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.21270
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.13850
+UNIQ=(NE2)    PRTC=(NB)    PCHG=-0.57110
+UNIQ=(CD2)    PRTC=(CV)    PCHG=0.10460
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.12990
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NHID
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB CG-CD2 
+ CG-CB   ND1-CG   HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  CD2-NE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NHID is 20   ;
+~total charge in NHID is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NHIE)   #prt=20   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.14720
+UNIQ=(H1)    PRTC=(H)    PCHG=0.20160
+UNIQ=(H2)    PRTC=(H)    PCHG=0.20160
+UNIQ=(H3)    PRTC=(H)    PCHG=0.20160
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.02360
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.13800
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.04890
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02230
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02230
+UNIQ=(CG)    PRTC=(CC)    PCHG=0.17400
+UNIQ=(ND1)    PRTC=(NB)    PCHG=-0.55790
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.18040
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.13970
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.27810
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.33240
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.23490
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.19630
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NHIE
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB CG-CD2 
+ CG-CB   ND1-CG   CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NHIE is 20   ;
+~total charge in NHIE is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NHIP)   #prt=21   chrg=2.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.25600
+UNIQ=(H1)    PRTC=(H)    PCHG=0.17040
+UNIQ=(H2)    PRTC=(H)    PCHG=0.17040
+UNIQ=(H3)    PRTC=(H)    PCHG=0.17040
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.05810
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10470
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.04840
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.05310
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.05310
+UNIQ=(CG)    PRTC=(CC)    PCHG=-0.02360
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.15100
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.38210
+UNIQ=(CE1)    PRTC=(CR)    PCHG=-0.00110
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.26450
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.17390
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.39210
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.14330
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.24950
+UNIQ=(C)    PRTC=(C)    PCHG=0.72140
+UNIQ=(O)    PRTC=(O)    PCHG=-0.60130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NHIP
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  CG-CD2
+ CG-CB   ND1-CG   HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2 
+ HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NHIP is 21   ;
+~total charge in NHIP is 2.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NTRP)   #prt=27   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.19130
+UNIQ=(H1)    PRTC=(H)    PCHG=0.18880
+UNIQ=(H2)    PRTC=(H)    PCHG=0.18880
+UNIQ=(H3)    PRTC=(H)    PCHG=0.18880
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.04210
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.11620
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.05430
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02220
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02220
+UNIQ=(CG)    PRTC=(C*)    PCHG=-0.16540
+UNIQ=(CD1)    PRTC=(CW)    PCHG=-0.17880
+UNIQ=(HD1)    PRTC=(H4)    PCHG=0.21950
+UNIQ=(NE1)    PRTC=(NA)    PCHG=-0.34440
+UNIQ=(HE1)    PRTC=(H)    PCHG=0.34120
+UNIQ=(CE2)    PRTC=(CN)    PCHG=0.15750
+UNIQ=(CZ2)    PRTC=(CA)    PCHG=-0.27100
+UNIQ=(HZ2)    PRTC=(HA)    PCHG=0.15890
+UNIQ=(CH2)    PRTC=(CA)    PCHG=-0.10800
+UNIQ=(HH2)    PRTC=(HA)    PCHG=0.14110
+UNIQ=(CZ3)    PRTC=(CA)    PCHG=-0.20340
+UNIQ=(HZ3)    PRTC=(HA)    PCHG=0.14580
+UNIQ=(CE3)    PRTC=(CA)    PCHG=-0.22650
+UNIQ=(HE3)    PRTC=(HA)    PCHG=0.16460
+UNIQ=(CD2)    PRTC=(CB)    PCHG=0.11320
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NTRP
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  CG-CD2 CE2-CD2
+ CG-CB   CD1-CG   HD1-CD1  NE1-CD1  HE1-NE1  CE2-NE1  CZ2-CE2  HZ2-CZ2 
+ CH2-CZ2  HH2-CH2  CZ3-CH2  HZ3-CZ3  CE3-CZ3  HE3-CE3  CD2-CE3  C-CA   O-C   
+DONE
+~number prtc-s in NTRP is 27   ;
+~total charge in NTRP is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NPHE)   #prt=23   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.17370
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19210
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19210
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19210
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.07330
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10410
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.03300
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.01040
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.01040
+UNIQ=(CG)    PRTC=(CA)    PCHG=0.00310
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.13920
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.13740
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.16020
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.14330
+UNIQ=(CZ)    PRTC=(CA)    PCHG=-0.12080
+UNIQ=(HZ)    PRTC=(HA)    PCHG=0.13290
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.16030
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.14330
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.13910
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.13740
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NPHE
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  CG-CD2
+ CG-CB   CD1-CG   HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  HZ-CZ   CE2-CZ  
+ HE2-CE2  CD2-CE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NPHE is 23   ;
+~total charge in NPHE is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NTYR)   #prt=24   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.19400
+UNIQ=(H1)    PRTC=(H)    PCHG=0.18730
+UNIQ=(H2)    PRTC=(H)    PCHG=0.18730
+UNIQ=(H3)    PRTC=(H)    PCHG=0.18730
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.05700
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.09830
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.06590
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.01020
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.01020
+UNIQ=(CG)    PRTC=(CA)    PCHG=-0.02050
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.20020
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.17200
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.22390
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.16500
+UNIQ=(CZ)    PRTC=(C)    PCHG=0.31390
+UNIQ=(OH)    PRTC=(OH)    PCHG=-0.55780
+UNIQ=(HH)    PRTC=(HO)    PCHG=0.40010
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.22390
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.16500
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.20020
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.17200
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NTYR
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  CG-CD2
+ CG-CB   CD1-CG   HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  OH-CZ   HH-OH  
+ CE2-CZ   HE2-CE2  CD2-CE2  HD2-CD2  C-CA   O-C   
+DONE
+~number prtc-s in NTYR is 24   ;
+~total charge in NTYR is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NGLU)   #prt=18   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.00170
+UNIQ=(H1)    PRTC=(H)    PCHG=0.23910
+UNIQ=(H2)    PRTC=(H)    PCHG=0.23910
+UNIQ=(H3)    PRTC=(H)    PCHG=0.23910
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.05880
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.12020
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.09090
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.02320
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.02320
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.02360
+UNIQ=(HG2)    PRTC=(HC)    PCHG=-0.03150
+UNIQ=(HG3)    PRTC=(HC)    PCHG=-0.03150
+UNIQ=(CD)    PRTC=(C)    PCHG=0.80870
+UNIQ=(OE1)    PRTC=(O2)    PCHG=-0.81890
+UNIQ=(OE2)    PRTC=(O2)    PCHG=-0.81890
+UNIQ=(C)    PRTC=(C)    PCHG=0.56210
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58890
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NGLU
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB  
+ HB3-CB   CG-CB   HG2-CG   HG3-CG   CD-CG   OE1-CD   OE2-CD   C-CA   O-C   
+DONE
+~number prtc-s in NGLU is 18   ;
+~total charge in NGLU is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NASP)   #prt=15   chrg=0.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.07820
+UNIQ=(H1)    PRTC=(H)    PCHG=0.22000
+UNIQ=(H2)    PRTC=(H)    PCHG=0.22000
+UNIQ=(H3)    PRTC=(H)    PCHG=0.22000
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.02920
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.11410
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.02350
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.01690
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.01690
+UNIQ=(CG)    PRTC=(C)    PCHG=0.81940
+UNIQ=(OD1)    PRTC=(O2)    PCHG=-0.80840
+UNIQ=(OD2)    PRTC=(O2)    PCHG=-0.80840
+UNIQ=(C)    PRTC=(C)    PCHG=0.56210
+UNIQ=(O)    PRTC=(O)    PCHG=-0.58890
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NASP
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB  
+ HB3-CB   CG-CB   OD1-CG   OD2-CG   C-CA   O-C   
+DONE
+~number prtc-s in NASP is 15   ;
+~total charge in NASP is 0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NLYS)   #prt=25   chrg=2.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.09660
+UNIQ=(H1)    PRTC=(H)    PCHG=0.21650
+UNIQ=(H2)    PRTC=(H)    PCHG=0.21650
+UNIQ=(H3)    PRTC=(H)    PCHG=0.21650
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.00150
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.11800
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.02120
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.02830
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.02830
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.00480
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01210
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01210
+UNIQ=(CD)    PRTC=(CT)    PCHG=-0.06080
+UNIQ=(HD2)    PRTC=(HC)    PCHG=0.06330
+UNIQ=(HD3)    PRTC=(HC)    PCHG=0.06330
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.01810
+UNIQ=(HE2)    PRTC=(HP)    PCHG=0.11710
+UNIQ=(HE3)    PRTC=(HP)    PCHG=0.11710
+UNIQ=(NZ)    PRTC=(N3)    PCHG=-0.37640
+UNIQ=(HZ1)    PRTC=(H)    PCHG=0.33820
+UNIQ=(HZ2)    PRTC=(H)    PCHG=0.33820
+UNIQ=(HZ3)    PRTC=(H)    PCHG=0.33820
+UNIQ=(C)    PRTC=(C)    PCHG=0.72140
+UNIQ=(O)    PRTC=(O)    PCHG=-0.60130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NLYS
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB  
+ HB3-CB   CG-CB   HG2-CG   HG3-CG   CD-CG   HD2-CD   HD3-CD   CE-CD  
+ HE2-CE   HE3-CE   NZ-CE   HZ1-NZ   HZ2-NZ   HZ3-NZ   C-CA   O-C   
+DONE
+~number prtc-s in NLYS is 25   ;
+~total charge in NLYS is 2.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NPRO)   #prt=17   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=-0.20200
+UNIQ=(H2)    PRTC=(H)    PCHG=0.31200
+UNIQ=(H3)    PRTC=(H)    PCHG=0.31200
+UNIQ=(CD)    PRTC=(CT)    PCHG=-0.01200
+UNIQ=(HD2)    PRTC=(HP)    PCHG=0.10000
+UNIQ=(HD3)    PRTC=(HP)    PCHG=0.10000
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.12100
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.11500
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.10000
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.10000
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.10000
+UNIQ=(C)    PRTC=(C)    PCHG=0.52600
+UNIQ=(O)    PRTC=(O)    PCHG=-0.50000
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NPRO
+BOND
+ C-N* H2-N    H3-N    CD-N    HD2-CD   HD3-CD   CG-CD   HG2-CG  CB-CA
+ HG3-CG   CB-CG   HB2-CB   HB3-CB   CA-N    HA-CA   C-CA   O-C   
+DONE
+~number prtc-s in NPRO is 17   ;
+~total charge in NPRO is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NCYS)   #prt=14   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.13250
+UNIQ=(H1)    PRTC=(H)    PCHG=0.20230
+UNIQ=(H2)    PRTC=(H)    PCHG=0.20230
+UNIQ=(H3)    PRTC=(H)    PCHG=0.20230
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.09270
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.14110
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.11950
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.11880
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.11880
+UNIQ=(SG)    PRTC=(SH)    PCHG=-0.32980
+UNIQ=(HSG)    PRTC=(HS)    PCHG=0.19750
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NCYS
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB  
+ SG-CB   HSG-SG   C-CA   O-C   
+DONE
+~number prtc-s in NCYS is 14   ;
+~total charge in NCYS is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NCYX)   #prt=13   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.20690
+UNIQ=(H1)    PRTC=(H)    PCHG=0.18150
+UNIQ=(H2)    PRTC=(H)    PCHG=0.18150
+UNIQ=(H3)    PRTC=(H)    PCHG=0.18150
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.10550
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.09220
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.02770
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.06800
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.06800
+UNIQ=(SG)    PRTC=(S)    PCHG=-0.09840
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NCYX
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB  
+ HB3-CB   SG-CB   C-CA   O-C   
+DONE
+~number prtc-s in NCYX is 13   ;
+~total charge in NCYX is 1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(NMET)   #prt=20   chrg=1.00
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N3)    PCHG=0.15920
+UNIQ=(H1)    PRTC=(H)    PCHG=0.19840
+UNIQ=(H2)    PRTC=(H)    PCHG=0.19840
+UNIQ=(H3)    PRTC=(H)    PCHG=0.19840
+UNIQ=(CA)    PRTC=(CT)    PCHG=0.02210
+UNIQ=(HA)    PRTC=(HP)    PCHG=0.11160
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.08650
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.01250
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.01250
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.03340
+UNIQ=(HG2)    PRTC=(H1)    PCHG=0.02920
+UNIQ=(HG3)    PRTC=(H1)    PCHG=0.02920
+UNIQ=(SD)    PRTC=(S)    PCHG=-0.27740
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.03410
+UNIQ=(HE1)    PRTC=(H1)    PCHG=0.05970
+UNIQ=(HE2)    PRTC=(H1)    PCHG=0.05970
+UNIQ=(HE3)    PRTC=(H1)    PCHG=0.05970
+UNIQ=(C)    PRTC=(C)    PCHG=0.61230
+UNIQ=(O)    PRTC=(O)    PCHG=-0.57130
+ UNIQ=(N)      PRTC=(N)    NEXT
+DONE
+~Bonds for NMET
+BOND
+ C-N* H1-N    H2-N    H3-N    CA-N    HA-CA   CB-CA   HB2-CB  
+ HB3-CB   CG-CB   HG2-CG   HG3-CG   SD-CG   CE-SD   HE1-CE   HE2-CE  
+ HE3-CE   C-CA   O-C   
+DONE
+~number prtc-s in NMET is 20   ;
+~total charge in NMET is 1.00  ;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+~
+~now C-termini
+~
+~
+MONO=(CALA)   #prt=11   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.17470
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10670
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.20930
+UNIQ=(HB1)    PRTC=(HC)    PCHG=0.07640
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.07640
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.07640
+UNIQ=(C)    PRTC=(C)    PCHG=0.77310
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80550
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80550
+DONE
+~Bonds for CALA
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB1-CB   HB2-CB   HB3-CB   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CALA is 11   ;
+~total charge in CALA is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CGLY)   #prt=8   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.24930
+UNIQ=(HA2)    PRTC=(H1)    PCHG=0.10560
+UNIQ=(HA3)    PRTC=(H1)    PCHG=0.10560
+UNIQ=(C)    PRTC=(C)    PCHG=0.72310
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.78550
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.78550
+DONE
+~Bonds for CGLY
+BOND
+ H-N    CA-N    HA2-CA   HA3-CA   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CGLY is 8   ;
+~total charge in CGLY is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CSER)   #prt=12   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.27220
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13040
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.11230
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.08130
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.08130
+UNIQ=(OG)    PRTC=(OH)    PCHG=-0.65140
+UNIQ=(HG)    PRTC=(HO)    PCHG=0.44740
+UNIQ=(C)    PRTC=(C)    PCHG=0.81130
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81320
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81320
+DONE
+~Bonds for CSER
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   OG-CB  
+ HG-OG   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CSER is 12   ;
+~total charge in CSER is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CTHR)   #prt=15   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.24200
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.12070
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.30250
+UNIQ=(HB)    PRTC=(H1)    PCHG=0.00780
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.18530
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.05860
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.05860
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.05860
+UNIQ=(OG1)    PRTC=(OH)    PCHG=-0.64960
+UNIQ=(HG1)    PRTC=(HO)    PCHG=0.41190
+UNIQ=(C)    PRTC=(C)    PCHG=0.78100
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80440
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80440
+DONE
+~Bonds for CTHR
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB   HG21-CG2 
+ HG22-CG2  HG23-CG2  OG1-CB   HG1-OG1  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CTHR is 15   ;
+~total charge in CTHR is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CLEU)   #prt=20   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.28470
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13460
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.24690
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.09740
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.09740
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.37060
+UNIQ=(HG)    PRTC=(HC)    PCHG=-0.03740
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.41630
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(CD2)    PRTC=(CT)    PCHG=-0.41630
+UNIQ=(HD21)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(HD22)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(HD23)    PRTC=(HC)    PCHG=0.10380
+UNIQ=(C)    PRTC=(C)    PCHG=0.83260
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81990
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81990
+DONE
+~Bonds for CLEU
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ HG-CG   CD1-CG   HD11-CD1  HD12-CD1  HD13-CD1  CD2-CG  
+ HD21-CD2  HD22-CD2  HD23-CD2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CLEU is 20   ;
+~total charge in CLEU is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CILE)   #prt=20   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.31000
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13750
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.03630
+UNIQ=(HB)    PRTC=(HC)    PCHG=0.07660
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.34980
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.10210
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.10210
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.10210
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.03230
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.03210
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.03210
+UNIQ=(CD1)    PRTC=(CT)    PCHG=-0.06990
+UNIQ=(HD11)    PRTC=(HC)    PCHG=0.01960
+UNIQ=(HD12)    PRTC=(HC)    PCHG=0.01960
+UNIQ=(HD13)    PRTC=(HC)    PCHG=0.01960
+UNIQ=(C)    PRTC=(C)    PCHG=0.83430
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81900
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81900
+DONE
+~Bonds for CILE
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB-CB   CG2-CB   HG21-CG2 
+ HG22-CG2  HG23-CG2  CG1-CB   HG12-CG1  HG13-CG1  CD1-CG1 
+ HD11-CD1  HD12-CD1  HD13-CD1  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CILE is 20   ;
+~total charge in CILE is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CVAL)   #prt=17   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.34380
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.14380
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.19400
+UNIQ=(HB)    PRTC=(HC)    PCHG=0.03080
+UNIQ=(CG1)    PRTC=(CT)    PCHG=-0.30640
+UNIQ=(HG11)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(HG12)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(HG13)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(CG2)    PRTC=(CT)    PCHG=-0.30640
+UNIQ=(HG21)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(HG22)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(HG23)    PRTC=(HC)    PCHG=0.08360
+UNIQ=(C)    PRTC=(C)    PCHG=0.83500
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81730
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81730
+DONE
+~Bonds for CVAL
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB-CB   CG1-CB   HG11-CG1 
+ HG12-CG1  HG13-CG1  CG2-CB   HG21-CG2  HG22-CG2  HG23-CG2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CVAL is 17   ;
+~total charge in CVAL is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CASN)   #prt=15   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.20800
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13580
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.22990
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.10230
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.10230
+UNIQ=(CG)    PRTC=(C)    PCHG=0.71530
+UNIQ=(OD1)    PRTC=(O)    PCHG=-0.60100
+UNIQ=(ND2)    PRTC=(N)    PCHG=-0.90840
+UNIQ=(HD21)    PRTC=(H)    PCHG=0.41500
+UNIQ=(HD22)    PRTC=(H)    PCHG=0.41500
+UNIQ=(C)    PRTC=(C)    PCHG=0.80500
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81470
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81470
+DONE
+~Bonds for CASN
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ OD1-CG   ND2-CG   HD21-ND2  HD22-ND2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CASN is 15   ;
+~total charge in CASN is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CGLN)   #prt=18   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.22480
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.12320
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.06640
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04520
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04520
+UNIQ=(CG)    PRTC=(CT)    PCHG=-0.02100
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.02030
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.02030
+UNIQ=(CD)    PRTC=(C)    PCHG=0.70930
+UNIQ=(OE1)    PRTC=(O)    PCHG=-0.60980
+UNIQ=(NE2)    PRTC=(N)    PCHG=-0.95740
+UNIQ=(HE21)    PRTC=(H)    PCHG=0.43040
+UNIQ=(HE22)    PRTC=(H)    PCHG=0.43040
+UNIQ=(C)    PRTC=(C)    PCHG=0.77750
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80420
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80420
+DONE
+~Bonds for CGLN
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ HG2-CG   HG3-CG   CD-CG   OE1-CD   NE2-CD   HE21-NE2  HE22-NE2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CGLN is 18   ;
+~total charge in CGLN is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CARG)   #prt=25   chrg=-0.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34810
+UNIQ=(H)    PRTC=(H)    PCHG=0.27640
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.30680
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.14470
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.03740
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03710
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03710
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.07440
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01850
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01850
+UNIQ=(CD)    PRTC=(CT)    PCHG=0.11140
+UNIQ=(HD2)    PRTC=(H1)    PCHG=0.04680
+UNIQ=(HD3)    PRTC=(H1)    PCHG=0.04680
+UNIQ=(NE)    PRTC=(N2)    PCHG=-0.55640
+UNIQ=(HE)    PRTC=(H)    PCHG=0.34790
+UNIQ=(CZ)    PRTC=(CA)    PCHG=0.83680
+UNIQ=(NH1)    PRTC=(N2)    PCHG=-0.87370
+UNIQ=(HH11)    PRTC=(H)    PCHG=0.44930
+UNIQ=(HH12)    PRTC=(H)    PCHG=0.44930
+UNIQ=(NH2)    PRTC=(N2)    PCHG=-0.87370
+UNIQ=(HH21)    PRTC=(H)    PCHG=0.44930
+UNIQ=(HH22)    PRTC=(H)    PCHG=0.44930
+UNIQ=(C)    PRTC=(C)    PCHG=0.85570
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.82660
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.82660
+DONE
+~Bonds for CARG
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  
+ HG2-CG   HG3-CG   CD-CG   HD2-CD   HD3-CD   NE-CD   HE-NE  
+ CZ-NE   NH1-CZ   HH11-NH1  HH12-NH1  NH2-CZ   HH21-NH2 
+ HH22-NH2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CARG is 25   ;
+~total charge in CARG is-0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CHID)   #prt=18   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.17390
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.11000
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.10460
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.05650
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.05650
+UNIQ=(CG)    PRTC=(CC)    PCHG=0.02930
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.38920
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.37550
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.19250
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.14180
+UNIQ=(NE2)    PRTC=(NB)    PCHG=-0.56290
+UNIQ=(CD2)    PRTC=(CV)    PCHG=0.10010
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.12410
+UNIQ=(C)    PRTC=(C)    PCHG=0.76150
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80160
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80160
+DONE
+~Bonds for CHID
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2
+ ND1-CG   HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  CD2-NE2  HD2-CD2 
+ C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CHID is 18   ;
+~total charge in CHID is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CHIE)   #prt=18   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.26990
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.16500
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.10680
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.06200
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.06200
+UNIQ=(CG)    PRTC=(CC)    PCHG=0.27240
+UNIQ=(ND1)    PRTC=(NB)    PCHG=-0.55170
+UNIQ=(CE1)    PRTC=(CR)    PCHG=0.15580
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.14480
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.26700
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.33190
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.25880
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.19570
+UNIQ=(C)    PRTC=(C)    PCHG=0.79160
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80650
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80650
+DONE
+~Bonds for CHIE
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   ND1-CG  CG-CD2
+ CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2  HD2-CD2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CHIE is 18   ;
+~total charge in CHIE is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CHIP)   #prt=19   chrg=-0.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34810
+UNIQ=(H)    PRTC=(H)    PCHG=0.27640
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.14450
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.11150
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.08000
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.08680
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.08680
+UNIQ=(CG)    PRTC=(CC)    PCHG=0.02980
+UNIQ=(ND1)    PRTC=(NA)    PCHG=-0.15010
+UNIQ=(HD1)    PRTC=(H)    PCHG=0.38830
+UNIQ=(CE1)    PRTC=(CR)    PCHG=-0.02510
+UNIQ=(HE1)    PRTC=(H5)    PCHG=0.26940
+UNIQ=(NE2)    PRTC=(NA)    PCHG=-0.16830
+UNIQ=(HE2)    PRTC=(H)    PCHG=0.39130
+UNIQ=(CD2)    PRTC=(CW)    PCHG=-0.12560
+UNIQ=(HD2)    PRTC=(H4)    PCHG=0.23360
+UNIQ=(C)    PRTC=(C)    PCHG=0.80320
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81770
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81770
+DONE
+~Bonds for CHIP
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   ND1-CG  
+ HD1-ND1  CE1-ND1  HE1-CE1  NE2-CE1  HE2-NE2  CD2-NE2  HD2-CD2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CHIP is 19   ;
+~total charge in CHIP is-0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CTRP)   #prt=25   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.20840
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.12720
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.07420
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04970
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04970
+UNIQ=(CG)    PRTC=(C*)    PCHG=-0.07960
+UNIQ=(CD1)    PRTC=(CW)    PCHG=-0.18080
+UNIQ=(HD1)    PRTC=(H4)    PCHG=0.20430
+UNIQ=(NE1)    PRTC=(NA)    PCHG=-0.33160
+UNIQ=(HE1)    PRTC=(H)    PCHG=0.34130
+UNIQ=(CE2)    PRTC=(CN)    PCHG=0.12220
+UNIQ=(CZ2)    PRTC=(CA)    PCHG=-0.25940
+UNIQ=(HZ2)    PRTC=(HA)    PCHG=0.15670
+UNIQ=(CH2)    PRTC=(CA)    PCHG=-0.10200
+UNIQ=(HH2)    PRTC=(HA)    PCHG=0.14010
+UNIQ=(CZ3)    PRTC=(CA)    PCHG=-0.22870
+UNIQ=(HZ3)    PRTC=(HA)    PCHG=0.15070
+UNIQ=(CE3)    PRTC=(CA)    PCHG=-0.18370
+UNIQ=(HE3)    PRTC=(HA)    PCHG=0.14910
+UNIQ=(CD2)    PRTC=(CB)    PCHG=0.10780
+UNIQ=(C)    PRTC=(C)    PCHG=0.76580
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80110
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80110
+DONE
+~Bonds for CTRP
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   CD1-CG  CG-CD2 CE2-CD2
+ HD1-CD1  NE1-CD1  HE1-NE1  CE2-NE1  CZ2-CE2  HZ2-CZ2  CH2-CZ2 
+ HH2-CH2  CZ3-CH2  HZ3-CZ3  CE3-CZ3  HE3-CE3  CD2-CE3  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CTRP is 25   ;
+~total charge in CTRP is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CPHE)   #prt=21   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.18250
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10980
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.09590
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04430
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04430
+UNIQ=(CG)    PRTC=(CA)    PCHG=0.05520
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.13000
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.14080
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.18470
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.14610
+UNIQ=(CZ)    PRTC=(CA)    PCHG=-0.09440
+UNIQ=(HZ)    PRTC=(HA)    PCHG=0.12800
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.18470
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.14610
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.13000
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.14080
+UNIQ=(C)    PRTC=(C)    PCHG=0.76600
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80260
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80260
+DONE
+~Bonds for CPHE
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB  CG-CD2
+ CD1-CG   HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  HZ-CZ   CE2-CZ  
+ HE2-CE2  CD2-CE2  HD2-CD2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CPHE is 21   ;
+~total charge in CPHE is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CTYR)   #prt=22   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.20150
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10920
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.07520
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04900
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04900
+UNIQ=(CG)    PRTC=(CA)    PCHG=0.02430
+UNIQ=(CD1)    PRTC=(CA)    PCHG=-0.19220
+UNIQ=(HD1)    PRTC=(HA)    PCHG=0.17800
+UNIQ=(CE1)    PRTC=(CA)    PCHG=-0.24580
+UNIQ=(HE1)    PRTC=(HA)    PCHG=0.16730
+UNIQ=(CZ)    PRTC=(C)    PCHG=0.33950
+UNIQ=(OH)    PRTC=(OH)    PCHG=-0.56430
+UNIQ=(HH)    PRTC=(HO)    PCHG=0.40170
+UNIQ=(CE2)    PRTC=(CA)    PCHG=-0.24580
+UNIQ=(HE2)    PRTC=(HA)    PCHG=0.16730
+UNIQ=(CD2)    PRTC=(CA)    PCHG=-0.19220
+UNIQ=(HD2)    PRTC=(HA)    PCHG=0.17800
+UNIQ=(C)    PRTC=(C)    PCHG=0.78170
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80700
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80700
+DONE
+~Bonds for CTYR
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   CD1-CG  CG-CD2
+ HD1-CD1  CE1-CD1  HE1-CE1  CZ-CE1  OH-CZ   HH-OH   CE2-CZ   HE2-CE2 
+ CD2-CE2  HD2-CD2  C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CTYR is 22   ;
+~total charge in CTYR is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CGLU)   #prt=16   chrg=-2.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.51920
+UNIQ=(H)    PRTC=(H)    PCHG=0.30550
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.20590
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13990
+UNIQ=(CB)    PRTC=(CT)    PCHG=0.00710
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.00780
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.00780
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.06750
+UNIQ=(HG2)    PRTC=(HC)    PCHG=-0.05480
+UNIQ=(HG3)    PRTC=(HC)    PCHG=-0.05480
+UNIQ=(CD)    PRTC=(C)    PCHG=0.81830
+UNIQ=(OE1)    PRTC=(O2)    PCHG=-0.82200
+UNIQ=(OE2)    PRTC=(O2)    PCHG=-0.82200
+UNIQ=(C)    PRTC=(C)    PCHG=0.74200
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.79300
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.79300
+DONE
+~Bonds for CGLU
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   OE1-CD   OE2-CD   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CGLU is 16   ;
+~total charge in CGLU is-2.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CASP)   #prt=13   chrg=-2.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.51920
+UNIQ=(H)    PRTC=(H)    PCHG=0.30550
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.18170
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.10460
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.06770
+UNIQ=(HB2)    PRTC=(HC)    PCHG=-0.02120
+UNIQ=(HB3)    PRTC=(HC)    PCHG=-0.02120
+UNIQ=(CG)    PRTC=(C)    PCHG=0.88510
+UNIQ=(OD1)    PRTC=(O2)    PCHG=-0.81620
+UNIQ=(OD2)    PRTC=(O2)    PCHG=-0.81620
+UNIQ=(C)    PRTC=(C)    PCHG=0.72560
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.78870
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.78870
+DONE
+~Bonds for CASP
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   OD1-CG  
+ OD2-CG   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CASP is 13   ;
+~total charge in CASP is-2.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CLYS)   #prt=23   chrg=-0.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.34810
+UNIQ=(H)    PRTC=(H)    PCHG=0.27640
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.29030
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.14380
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.05380
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04820
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04820
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.02270
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01340
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01340
+UNIQ=(CD)    PRTC=(CT)    PCHG=-0.03920
+UNIQ=(HD2)    PRTC=(HC)    PCHG=0.06110
+UNIQ=(HD3)    PRTC=(HC)    PCHG=0.06110
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.01760
+UNIQ=(HE2)    PRTC=(HP)    PCHG=0.11210
+UNIQ=(HE3)    PRTC=(HP)    PCHG=0.11210
+UNIQ=(NZ)    PRTC=(N3)    PCHG=-0.37410
+UNIQ=(HZ1)    PRTC=(H)    PCHG=0.33740
+UNIQ=(HZ2)    PRTC=(H)    PCHG=0.33740
+UNIQ=(HZ3)    PRTC=(H)    PCHG=0.33740
+UNIQ=(C)    PRTC=(C)    PCHG=0.84880
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.82520
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.82520
+DONE
+~Bonds for CLYS
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   CD-CG   HD2-CD   HD3-CD   CE-CD   HE2-CE   HE3-CE   NZ-CE  
+ HZ1-NZ   HZ2-NZ   HZ3-NZ   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CLYS is 23   ;
+~total charge in CLYS is-0.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CPRO)   #prt=15   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.28020
+UNIQ=(CD)    PRTC=(CT)    PCHG=0.04340
+UNIQ=(HD2)    PRTC=(H1)    PCHG=0.03310
+UNIQ=(HD3)    PRTC=(H1)    PCHG=0.03310
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.04660
+UNIQ=(HG2)    PRTC=(HC)    PCHG=0.01720
+UNIQ=(HG3)    PRTC=(HC)    PCHG=0.01720
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.05430
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.03810
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.03810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.13360
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.07760
+UNIQ=(C)    PRTC=(C)    PCHG=0.66310
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.76970
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.76970
+DONE
+~Bonds for CPRO
+BOND
+ CD-N    HD2-CD   HD3-CD   CG-CD   HG2-CG   HG3-CG   CB-CG   HB2-CB  
+ HB3-CB   CA-N    HA-CA   C-CA   O-C    CB-CA  OXT-C   
+DONE
+~number prtc-s in CPRO is 15   ;
+~total charge in CPRO is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CCYS)   #prt=12   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.16350
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.13960
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.19960
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.14370
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.14370
+UNIQ=(SG)    PRTC=(SH)    PCHG=-0.31020
+UNIQ=(HSG)    PRTC=(HS)    PCHG=0.20680
+UNIQ=(C)    PRTC=(C)    PCHG=0.74970
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.79810
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.79810
+DONE
+~Bonds for CCYS
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   SG-CB  
+ HSG-SG   C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CCYS is 12   ;
+~total charge in CCYS is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CCYX)   #prt=11   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.13180
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.09380
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.19430
+UNIQ=(HB2)    PRTC=(H1)    PCHG=0.12280
+UNIQ=(HB3)    PRTC=(H1)    PCHG=0.12280
+UNIQ=(SG)    PRTC=(S)    PCHG=-0.05290
+UNIQ=(C)    PRTC=(C)    PCHG=0.76180
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.80410
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.80410
+DONE
+~Bonds for CCYX
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   SG-CB  
+ C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CCYX is 11   ;
+~total charge in CCYX is-1.00  ;
+~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MONO=(CMET)   #prt=18   chrg=-1.0
+~~
+~~
+~~
+UNIQ=(N)    PRTC=(N)    PCHG=-0.38210
+UNIQ=(H)    PRTC=(H)    PCHG=0.26810
+UNIQ=(CA)    PRTC=(CT)    PCHG=-0.25970
+UNIQ=(HA)    PRTC=(H1)    PCHG=0.12770
+UNIQ=(CB)    PRTC=(CT)    PCHG=-0.02360
+UNIQ=(HB2)    PRTC=(HC)    PCHG=0.04800
+UNIQ=(HB3)    PRTC=(HC)    PCHG=0.04800
+UNIQ=(CG)    PRTC=(CT)    PCHG=0.04920
+UNIQ=(HG2)    PRTC=(H1)    PCHG=0.03170
+UNIQ=(HG3)    PRTC=(H1)    PCHG=0.03170
+UNIQ=(SD)    PRTC=(S)    PCHG=-0.26920
+UNIQ=(CE)    PRTC=(CT)    PCHG=-0.03760
+UNIQ=(HE1)    PRTC=(H1)    PCHG=0.06250
+UNIQ=(HE2)    PRTC=(H1)    PCHG=0.06250
+UNIQ=(HE3)    PRTC=(H1)    PCHG=0.06250
+UNIQ=(C)    PRTC=(C)    PCHG=0.80130
+UNIQ=(O)    PRTC=(O2)    PCHG=-0.81050
+UNIQ=(OXT)    PRTC=(O2)    PCHG=-0.81050
+DONE
+~Bonds for CMET
+BOND
+ H-N    CA-N    HA-CA   CB-CA   HB2-CB   HB3-CB   CG-CB   HG2-CG  
+ HG3-CG   SD-CG   CE-SD   HE1-CE   HE2-CE   HE3-CE  
+ C-CA   O-C    OXT-C   
+DONE
+~number prtc-s in CMET is 18   ;
+~total charge in CMET is-1.00  ;
+~
+~
+~Chloride
+MONO=(CL) #prt=1 chrg=-1.0
+UNIQ=(CL)   PRTC=(CL)
+DONE
+DONE
+~
+~NA ion
+MONO=(NAO) #prt=1 chrg=1.0
+UNIQ=(NAO)   PRTC=(Na)
+DONE
+DONE
+~
+~ileana; spin label-NO; R1
+~
+MONO=(R1) #prt=15  chrg=0.0
+UNIQ=(C1) PRTC=(C1IL)   PCHG=-0.2596
+UNIQ=(C2) PRTC=(C2IL)   PCHG=-0.2596
+UNIQ=(C3) PRTC=(C3IL)   PCHG=0.0779
+UNIQ=(C4) PRTC=(N4IL)    PCHG=0.2553
+UNIQ=(C5) PRTC=(C5IL)    PCHG=0.0779
+UNIQ=(C6) PRTC=(O6IL)     PCHG=-0.4671
+UNIQ=(C7) PRTC=(C7IL)    PCHG=0.1720
+UNIQ=(C8) PRTC=(S8IL)    PCHG=-0.1824
+UNIQ=(C9) PRTC=(H9IL)     PCHG=0.1720
+UNIQ=(H10)  PRTC=(H1)     PCHG=0.0579
+UNIQ=(H11)  PRTC=(H1)     PCHG=0.0579
+UNIQ=(H12)  PRTC=(H1)     PCHG=0.0579
+UNIQ=(H13)  PRTC=(H1)     PCHG=0.0579
+UNIQ=(H14)  PRTC=(H1)     PCHG=0.09100
+UNIQ=(H15)  PRTC=(H1)     PCHG=0.09100
+DONE
+BOND 
+ C1-C2 C2-C3 C3-C4 C4-C5 C5-C1 
+ C4-C6 C1-C7 C7-C8 C2-C9 C3-H10  C3-H11
+ C5-H12  C5-H13  C7-H14  C7-H15 
+DONE 
+~ileana -- the heme group
+MONO=(HEM)    #prt=73   chrg=-2.00
+UNIQ=(FE)    PRTC=(FE)    PCHG=0.2500
+UNIQ=(NA)    PRTC=(NP)    PCHG=-0.1800
+UNIQ=(C1A)    PRTC=(CC)    PCHG=0.0300
+UNIQ=(C2A)    PRTC=(CB)    PCHG=-0.0200
+UNIQ=(CAA)    PRTC=(CT)    PCHG=-0.1600
+UNIQ=(HP71)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HP72)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(CBA)    PRTC=(CT)    PCHG=-0.3000
+UNIQ=(HP73)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HP74)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(CGA)    PRTC=(C)    PCHG=0.3000
+UNIQ=(O1A)    PRTC=(O2)    PCHG=-0.5000
+UNIQ=(O2A)    PRTC=(O2)    PCHG=-0.5000
+UNIQ=(C3A)    PRTC=(CB)    PCHG=0.0200
+UNIQ=(CMA)    PRTC=(CT)    PCHG=-0.2650
+UNIQ=(HM81)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM82)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM83)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(C4A)    PRTC=(CC)    PCHG=0.0200
+UNIQ=(CHB)    PRTC=(CD)    PCHG=-0.1100
+UNIQ=(HDM)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(C1B)    PRTC=(CC)    PCHG=0.0300
+UNIQ=(NB)    PRTC=(NO)    PCHG=-0.1800
+UNIQ=(C2B)    PRTC=(CB)    PCHG=0.0200
+UNIQ=(CMB)    PRTC=(CT)    PCHG=-0.2650
+UNIQ=(HM11)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM12)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM13)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(C3B)    PRTC=(CB)    PCHG=-0.0500
+UNIQ=(CAB)    PRTC=(CY)    PCHG=-0.1300
+UNIQ=(HV2)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(CBB)    PRTC=(CX)    PCHG=-0.3000
+UNIQ=(HVC2)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HVT2)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(C4B)    PRTC=(CC)    PCHG=0.0200
+UNIQ=(CHC)    PRTC=(CD)    PCHG=-0.1100
+UNIQ=(HAM)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(C1C)    PRTC=(CC)    PCHG=0.0300
+UNIQ=(NC)    PRTC=(NP)    PCHG=-0.1800
+UNIQ=(C2C)    PRTC=(CB)    PCHG=0.0200
+UNIQ=(CMC)    PRTC=(CT)    PCHG=-0.2650
+UNIQ=(HM31)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM32)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM33)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(C3C)    PRTC=(CB)    PCHG=-0.0500
+UNIQ=(CAC)    PRTC=(CY)    PCHG=-0.1200
+UNIQ=(HV4)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(CBC)    PRTC=(CX)    PCHG=-0.3000
+UNIQ=(HVC4)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HVT4)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(C4C)    PRTC=(CC)    PCHG=0.0200
+UNIQ=(CHD)    PRTC=(CD)    PCHG=-0.1100
+UNIQ=(HBM)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(C1D)    PRTC=(CC)    PCHG=0.0300
+UNIQ=(ND)    PRTC=(NO)    PCHG=-0.1800
+UNIQ=(C2D)    PRTC=(CB)    PCHG=0.0200
+UNIQ=(CMD)    PRTC=(CT)    PCHG=-0.2650
+UNIQ=(HM51)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM52)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(HM53)    PRTC=(HC)    PCHG=0.0750
+UNIQ=(C3D)    PRTC=(CB)    PCHG=-0.0200
+UNIQ=(C4D)    PRTC=(CC)    PCHG=0.0200
+UNIQ=(CHA)    PRTC=(CD)    PCHG=-0.1100
+UNIQ=(HGM)    PRTC=(HC)    PCHG=0.1500
+UNIQ=(CAD)    PRTC=(CT)    PCHG=-0.1600
+UNIQ=(HP61)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HP62)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(CBD)    PRTC=(CT)    PCHG=-0.3000
+UNIQ=(HP63)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(HP64)    PRTC=(HC)    PCHG=0.1000
+UNIQ=(CGD)    PRTC=(C)    PCHG=0.3000
+UNIQ=(O1D)    PRTC=(O2)     PCHG=-0.5000
+UNIQ=(O2D)    PRTC=(O2)    PCHG=-0.5000
+DONE
+~
+~Bonds for HEM
+BOND
+HP71-CAA  HP72-CAA  HP73-CBA  HP74-CBA  
+HM81-CMA  HM82-CMA  HM83-CMA  HDM-CHB  
+HM11-CMB  HM12-CMB  HM13-CMB  HV2-CAB  
+HVC2-CBB  HVT2-CBB    HAM-CHC   
+HM31-CMC  HM32-CMC  HM33-CMC  
+HV4-CAC  HVC4-CBC  HVT4-CBC 
+HBM-CHD   HM51-CMD  HM52-CMD  HM53-CMD 
+HGM-CHA   HP61-CAD  HP62-CAD  HP63-CBD  HP64-CBD 
+FE-NA  FE-NB FE-NC FE-ND NA-C1A C1A-C2A C2A-C3A C3A-C4A
+NA-C4A C2A-CAA CAA-CBA CBA-CGA CGA-O1A CGA-O2A C3A-CMA
+CHB-C4A CHB-C1B NB-C1B C1B-C2B C2B-C3B C3B-C4B NB-C4B
+C2B-CMB C3B-CAB CAB-CBB CHC-C4B CHC-C1C NC-C1C C1C-C2C
+C2C-C3C C3C-C4C NC-C4C C2C-CMC C3C-CAC CAC-CBC CHD-C4C
+CHD-C1D ND-C1D C1D-C2D C2D-C3D C3D-C4D ND-C4D C2D-CMD C3D-CAD
+CAD-CBD CBD-CGD CGD-O1D CGD-O2D CHA-C4D CHA-C1A 
+~number prtc-s in HEM is 72   ;
+DONE
+*EOD

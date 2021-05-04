@@ -1,0 +1,10 @@
+HEADER    CAPRI_30_68
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: CASP target T0759;                                                      
+COMPND   3 CHAIN: A, B                                                         
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 SYNTHETIC: YES
+EXPDTA    THEORETICAL MODEL,10 STRUCTURES
+AUTHOR    RON ELBER, D.V.S RAVIKANT, SHRUTHI VISWANATH, MING HAN (DOCK/PIERR)
+REMARK 300 FFT docking with models scored according to PIE (residue potential), 
+REMARK 300 PISA (atomic piotential) and Hyd-NN (hydrogen bond potential).

@@ -1,0 +1,59 @@
+Hydrogen bond energy from Neural Networks
+
+Authors: Shruthi Viswanath and Ron Elber, 2014.
+Reference: Viswanath and Elber, Role of hydrogen bonding in docking coarse-grained complexes in aqueous solution and membrane, submitted to Proteins, 2014. 
+
+*****************************************************************************************************
+Installation
+
+Dependencies:
+1. Cmake http://www.cmake.org/
+2. FANN (Fast Artificial Neural Network) http://leenissen.dk/
+
+Note that to run the hydrogen bond energy we first need to install FANN, the neural net library.
+For this we need cmake binary for the appropriate OS.
+Both these come bundled with the hydrogen bond code, but can be downloaded and installed separately. 
+
+Steps for installing:
+1. Download/install cmake binaries for your OS.
+If your system is of type Linux 64 bit, then download the binary for cmake-2.8.12.2-Linux-i386 from the Cmake website.
+You should have the executable cmake-2.8.12.2-Linux-i386/bin/cmake
+
+Here onwards we assume that cmake is currently setup in the subdirectory cmake-2.8.12.2-Linux-i386, of the current directory where the hydrogen bond code is present. 
+
+2. Go to fann-source subdirectory and run cmake with your choice of install prefix. 
+../cmake-2.8.12.2-Linux-i386/bin/cmake -DCMAKE_INSTALL_PREFIX:PATH=$HOME/bin/include .
+
+3. In same fann-source directory type
+make install
+
+This should install FANN on your system.
+
+4. Compile hydrogen bond code using FANN libraries, for example using G++ compiler
+g++ -Ifann-source/src/ -Ifann-source/src/include/ -lm -O3 hbeneNN.cpp -o hbnn
+
+This should give the executable hbnn which can be run as shown below.
+
+Note that the hbeneNN.cpp file should contain the location of FANN files in its header:
+#include "fann-source/src/floatfann.c"
+#include "fann-source/src/include/fann_cpp.h"
+
+*****************************************************************************************************
+Usage
+
+The current folder contains:
+hbnet.params: The topology and parameters for the neural network. 
+
+hbeneNN.cpp: The C++ source code for a program that calculates the hydrogen bond energy from neural networks, for a given structure. It also takes the parameters file as command line argument.
+
+An executable of this code has been compiled for Linux using G++,like this:
+g++ hbeneNN.cpp -o hbnn 
+
+Once compiled, it can be run like this:
+./hbnn path_to_pdb_file receptor_chain_list ligand_chain_list params_file
+
+Note that multiple chains in receptor or ligand protein are writted as a single string. 
+e.g. if we want to score a model m0.pdb wwhose receptor contains chains A and B and ligand has chain C, we write:
+./hbnn  m0.pdb AB C hbnet.params
+
+*****************************************************************************************************

@@ -1,0 +1,10 @@
+Need the following items for submission:
+1. Directory containing models
+
+2. ranking of models 
+
+3. capri header file from .brk file
+
+Run it like this:
+sh writeModelsForSubmission.sh ~/capri30/models modelRanking.txt capri_header_T68 T68_server_submission
+

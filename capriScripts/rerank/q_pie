@@ -1,0 +1,20 @@
+#$ -N pie.SeqNumber
+#$ -cwd
+#$ -V
+#$ -l h_rt=1000:00:00
+#$ -q all.q
+#$ -pe mpich 1
+#$ -S /bin/bash
+
+module load openmpi
+ulimit -c unlimited
+
+rm pie.SeqNumber.energy /state/partition1/pie.SeqNumber.energy
+
+for i in `cat models_list_SeqNumber`
+do
+        ~/pie/bin/pie_score models/m$i'.pdb' A B ~/pie/bin/pie.params >> /state/partition1/pie.SeqNumber.energy 
+done
+
+mv /state/partition1/pie.SeqNumber.energy . 
+

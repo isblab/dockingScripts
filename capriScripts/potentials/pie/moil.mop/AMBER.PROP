@@ -1,0 +1,851 @@
+PRTC
+~
+~a new ALL.PROP file, with parameters taken from AMBER (parm98.dat)
+~ and fitted to the MOIL format
+~
+~now particle property list follows 
+~particle name; particle mass; charge set to 0; individual epsilon and sigma
+~units: epsilon: kcal/mol; sigma:A 
+~ partial charges will be specified in ALL.MONO
+~  
+PNAM=(C)   PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(1)
+PNAM=(CA)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(2)
+PNAM=(CB)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.5144	(3)
+PNAM=(CC)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.3492	(4)
+PNAM=(CD)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(5)
+PNAM=(CM)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(6)
+PNAM=(CK)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.5144	(7)
+PNAM=(CN)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.3492	(8)
+PNAM=(CQ)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.2020	(9)
+PNAM=(CR)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.0708	(10)
+PNAM=(CV)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=0.9540	(11)
+PNAM=(CW)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=0.8499	(12)
+~PNAM=(CY)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=0.7572	(13)
+PNAM=(C*)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=0.6746	(14)
+PNAM=(CT)  PMAS=12.0     PCHG=0.00    PEPS=0.1094    PSGM=1.6998	(15)
+PNAM=(CY)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(16)
+PNAM=(CZ)  PMAS=12.0     PCHG=0.00    PEPS=0.0860    PSGM=1.6998	(17)
+PNAM=(C0)  PMAS=40.1     PCHG=0.00    PEPS=0.4598    PSGM=1.5262	(18)
+PNAM=(H)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=0.5345		(19)
+PNAM=(HC)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=1.3248	(20)
+PNAM=(H1)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=1.2357	(21)
+PNAM=(H2)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=1.1466	(22)
+PNAM=(H3)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=1.0575	(23)
+PNAM=(HA)  PMAS=1.0      PCHG=0.00    PEPS=0.0150    PSGM=1.2998	(24)
+PNAM=(H4)  PMAS=1.0      PCHG=0.00    PEPS=0.0150    PSGM=1.2553	(25)
+PNAM=(H5)  PMAS=1.0      PCHG=0.00    PEPS=0.0150    PSGM=1.2107	(26)
+PNAM=(HO)  PMAS=1.0      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(27)
+PNAM=(HS)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=0.5345	(28)
+PNAM=(HW)  PMAS=1.0      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(29)
+PNAM=(HP)  PMAS=1.0      PCHG=0.00    PEPS=0.0157    PSGM=0.9800	(30)
+PNAM=(HZ)  PMAS=1.0      PCHG=0.00    PEPS=0.0150    PSGM=1.2998	(31)
+PNAM=(F)  PMAS=19.0     PCHG=0.00    PEPS=0.0610    PSGM=1.5591		(32)
+PNAM=(CL)  PMAS=35.5     PCHG=-1.00    PEPS=0.2650    PSGM=1.7355	(33)
+PNAM=(BR)  PMAS=79.9     PCHG=0.00    PEPS=0.3200    PSGM=1.9778	(34)
+PNAM=(I)  PMAS=126.9    PCHG=0.00    PEPS=0.4000    PSGM=2.0936		(35)
+PNAM=(IM)  PMAS=35.5     PCHG=0.00    PEPS=0.1000    PSGM=2.2005	(36)
+PNAM=(IB)  PMAS=131.0    PCHG=0.00    PEPS=0.1000    PSGM=4.4545	(37)
+PNAM=(MG)  PMAS=24.3     PCHG=0.00    PEPS=0.8947    PSGM=0.7061	(38)
+PNAM=(N)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.6250		(39)
+PNAM=(NA)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.4477	(40)
+PNAM=(NB)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.2898	(41)
+PNAM=(NC)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.1490	(42)
+PNAM=(N2)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.0237	(43)
+PNAM=(N3)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=0.9120	(44)
+PNAM=(N*)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=0.8125	(45)
+PNAM=(NY)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.6250	(46)
+PNAM=(NT)  PMAS=14.0     PCHG=0.00    PEPS=0.1700    PSGM=1.8240	(47)
+PNAM=(O)  PMAS=16.0     PCHG=0.00    PEPS=0.2100    PSGM=1.4800		(48)
+PNAM=(O2)  PMAS=16.0     PCHG=0.00    PEPS=0.2100    PSGM=1.4800	(49)
+PNAM=(OW)  PMAS=16.0     PCHG=0.00    PEPS=0.1520    PSGM=1.5754	(50)
+PNAM=(OH)  PMAS=16.0     PCHG=0.00    PEPS=0.2104    PSGM=1.5332	(51)
+PNAM=(OS)  PMAS=16.0     PCHG=0.00    PEPS=0.1700    PSGM=1.5000	(52)
+PNAM=(P)  PMAS=31.0     PCHG=0.00    PEPS=0.2000    PSGM=1.8709		(53)
+PNAM=(S)  PMAS=32.1     PCHG=0.00    PEPS=0.2500    PSGM=1.7818		(54)
+PNAM=(SH)  PMAS=32.1     PCHG=0.00    PEPS=0.2500    PSGM=1.7818	(55)
+PNAM=(LI)  PMAS=6.9      PCHG=0.00    PEPS=0.0183    PSGM=1.0130	(56)
+PNAM=(IP)  PMAS=23.0     PCHG=0.00    PEPS=0.0028    PSGM=1.6642	(57)
+PNAM=(Na)  PMAS=23.0     PCHG=1.00    PEPS=0.0028    PSGM=1.6642	(58)
+PNAM=(K)  PMAS=39.1     PCHG=0.00    PEPS=0.0003    PSGM=2.3680		(59)
+PNAM=(RB)  PMAS=85.5     PCHG=0.00    PEPS=0.0002    PSGM=2.6335	(60)
+PNAM=(CS)  PMAS=132.9    PCHG=0.00    PEPS=0.0001    PSGM=3.0246	(61)
+PNAM=(ZN)  PMAS=65.4     PCHG=0.00    PEPS=0.0125    PSGM=0.9800	(62)
+PNAM=(LP)  PMAS=3.0      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(63)
+~
+~added for spin label_NO; R1 molecule; ileana
+~
+PNAM=(C1IL)  PMAS=12  PCHG=-0.2596  PEPS=0.110   PSGM=3.750   (64)
+PNAM=(C2IL)  PMAS=13  PCHG=-0.2596  PEPS=0.110   PSGM=3.750   (65)
+PNAM=(C3IL)  PMAS=14  PCHG=0.0779   PEPS=0.118   PSGM=3.905   (66)
+PNAM=(N4IL)  PMAS=14  PCHG=0.2553  PEPS=0.17    PSGM=3.25    (67)
+PNAM=(C5IL)  PMAS=14 PCHG=0.0779   PEPS=0.118   PSGM=3.905   (68)
+PNAM=(O6IL)  PMAS=16 PCHG=-0.4671  PEPS=0.159   PSGM=3.12     (69)
+PNAM=(C7IL)  PMAS=14 PCHG=0.1720    PEPS=0.118   PSGM=3.800     (70)
+PNAM=(S8IL)  PMAS=32 PCHG=-0.1824   PEPS=0.250   PSGM=3.550    (71)
+PNAM=(H9IL)  PMAS=1  PCHG=0.1720   PEPS=0.0498  PSGM=0.300   (72)
+~
+~
+~for nucleic acid connectivity
+~PNAM=(P*)  PMAS=31.0     PCHG=0.00    PEPS=0.2000    PSGM=1.8709		(73)
+~for heme
+PNAM=(NP)  PMAS=14.01      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(74)
+PNAM=(NO)  PMAS=14.01      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(75)
+PNAM=(CX)  PMAS=12.0      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(76)
+PNAM=(LC)  PMAS=12.01      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(77)
+PNAM=(LO)  PMAS=16.00      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(78)
+PNAM=(FE)  PMAS=55.00      PCHG=0.00    PEPS=0.0000    PSGM=0.0000	(79)
+DONE
+BOND
+~
+~now BOND list follows
+~the names of bonded particles; force constant; equilibrium value of bond length
+~units: kbond:kcal/(mol*A**2) ; length:A
+~
+OW     HW   553.0    0.9572
+HW     HW   553.0    1.5136
+C      C    310.0    1.5250
+C      CA   469.0    1.4090
+C      CB   447.0    1.4190
+C      CM   410.0    1.4440
+C      CT   317.0    1.5220
+C      N    490.0    1.3350
+C      N*   424.0    1.3830
+C      NA   418.0    1.3880
+C      NC   457.0    1.3580
+C      O    570.0    1.2290
+C      O2   656.0    1.2500
+C      OH   450.0    1.3640
+C      OS   450.0    1.3230
+C      H4   367.0    1.0800
+C      H5   367.0    1.0800
+CA     CA   469.0    1.4000
+CA     CB   469.0    1.4040
+CA     CM   427.0    1.4330
+CA     CN   469.0    1.4000
+CA     CT   317.0    1.5100
+CA     HA   367.0    1.0800
+CA     H4   367.0    1.0800
+CA     N2   481.0    1.3400
+CA     NA   427.0    1.3810
+CA     NC   483.0    1.3390
+CA     OH   450.0    1.3640
+CB     CB   520.0    1.3700
+CB     N*   436.0    1.3740
+CB     NB   414.0    1.3910
+CB     NC   461.0    1.3540
+CD     HA   367.0    1.0800
+CD     CD   469.0    1.4000
+CD     CM   549.0    1.3500
+CD     CT   317.0    1.5100
+CK     H5   367.0    1.0800
+CK     N*   440.0    1.3710
+CK     NB   529.0    1.3040
+CM     CM   549.0    1.3500
+CM     CT   317.0    1.5100
+CM     HA   367.0    1.0800
+CM     H4   367.0    1.0800
+CM     H5   367.0    1.0800
+CM     N*   448.0    1.3650
+CM     OS   480.0    1.2400
+CQ     H5   367.0    1.0800
+CQ     NC   502.0    1.3240
+CT     CT   310.0    1.5260
+CT     HC   340.0    1.0900
+CT     H1   340.0    1.0900
+CT     H2   340.0    1.0900
+CT     H3   340.0    1.0900
+CT     HP   340.0    1.0900
+CT     N*   337.0    1.4750
+CT     N2   337.0    1.4630
+CT     OH   320.0    1.4100
+CT     OS   320.0    1.4100
+C*     HC   367.0    1.0800
+C*     CB   388.0    1.4590
+C*     CT   317.0    1.4950
+C*     CW   546.0    1.3520
+CB     CN   447.0    1.4190
+CC     CT   317.0    1.5040
+CC     CV   512.0    1.3750
+CC     CW   518.0    1.3710
+CC     NA   422.0    1.3850
+CC     NB   410.0    1.3940
+CN     NA   428.0    1.3800
+CR     H5   367.0    1.0800
+CR     NA   477.0    1.3430
+CR     NB   488.0    1.3350
+CT     N    337.0    1.4490
+CT     N3   367.0    1.4710
+CT     NT   367.0    1.4710
+CT     S    227.0    1.8100
+CT     SH   237.0    1.8100
+CT     CY   400.0    1.4580
+CT     CZ   400.0    1.4590
+CV     H4   367.0    1.0800
+CV     NB   410.0    1.3940
+CW     H4   367.0    1.0800
+CW     NA   427.0    1.3810
+CY     NY   600.0    1.1500
+CZ     CZ   600.0    1.2060
+CZ     HZ   400.0    1.0560
+O2     P    525.0    1.4800
+OH     P    230.0    1.6100
+OS     P    230.0    1.6100
+H      N2   434.0    1.0100
+H      N*   434.0    1.0100
+H      NA   434.0    1.0100
+H      N    434.0    1.0100
+H      N3   434.0    1.0100
+H      NT   434.0    1.0100
+HO     OH   553.0    0.9600
+HO     OS   553.0    0.9600
+HS     SH   274.0    1.3360
+S      S    166.0    2.0380
+F      CT   367.0    1.3800
+CL     CT   232.0    1.7660
+BR     CT   159.0    1.9440
+I      CT   148.0    2.1660
+F      CA   386.0    1.3590
+CL     CA   193.0    1.7270
+I      CA   171.0    2.0750
+BR     CA   172.0    1.8900
+LP     O    600.0    0.2000
+LP     OH   600.0    0.2000
+LP     OS   600.0    0.2000
+LP     N3   600.0    0.2000
+LP     NT   600.0    0.2000
+LP     NB   600.0    0.2000
+LP     NC   600.0    0.2000
+LP     S    600.0    0.7000
+LP     SH   600.0    0.7000
+~ileana -- spin label R1
+~
+N4IL O6IL    826.9   1.248
+C3IL   N4IL   427.0    1.454
+C5IL   N4IL   427.0    1.454
+C7IL   S8IL     222.0    1.81
+C3IL   C2IL       317.0 1.504
+C1IL   C2IL       317.0 1.321
+C1IL   C5IL   317.0  1.504
+C1IL   C7IL  317.0  1.501
+H9IL  C2IL  300.0   1.074
+C3IL   H1    340.0  1.0865
+C5IL   H1    340.0  1.0864
+C7IL   H1    340.0    1.0900
+~for patch1
+S8IL   S    166.0    2.0380
+~for heme
+FE     NP   50.000     2.01000
+FE     LO  200.000     1.78
+FE      LC  200.000     1.75000
+LC     LO 1000.000     1.12000
+FE      NB   60.000     2.01000
+FE     NO   50.000     2.01000
+NP     CC  316.000     1.38400
+NO   CC  316.000     1.38400
+CC   CB  273.000     1.44400
+CC   CD  391.000     1.39100
+CB   CB  418.000     1.35700
+CB   CT  297.000     1.50100
+CB   CY  297.000     1.50100
+CD   HC  338.000     1.09000
+CY   HC  340.000     1.08000
+CX   HC  340.000     1.08000
+CY   CX  570.000     1.34000
+LO   LO  848.000     1.25000     unbound O2 ligand
+DONE
+ANGLE
+~now ANGLE list follows
+~particle names; then force constant; then equilibrium value of angle
+~ units: kangle:kcal/(mol*deg**2); angle:deg
+~  
+HW     OW     HW     10.0     104.5
+HW     HW     OW     0.0     127.7
+C      C      O      80.0     120.0
+C      C      OH     80.0     120.0
+CA     C      CA     63.0     120.0
+CA     C      OH     70.0     120.0
+CB     C      NA     70.0     111.3
+CB     C      O      80.0     128.8
+CM     C      NA     70.0     114.1
+CM     C      O      80.0     125.3
+CT     C      O      80.0     120.4
+CT     C      O2     70.0     117.0
+CT     C      N      70.0     116.6
+CT     C      CT     63.0     117.0
+CT     C      OS     80.0     115.0
+CT     C      OH     80.0     110.0
+N*     C      NA     70.0     115.4
+N*     C      NC     70.0     118.6
+N*     C      O      80.0     120.9
+NA     C      O      80.0     120.6
+NC     C      O      80.0     122.5
+N      C      O      80.0     122.9
+O      C      O      80.0     126.0
+O      C      OH     80.0     120.0
+O      C      OS     80.0     125.0
+O2     C      O2     80.0     126.0
+H4     C      C      50.0     120.0
+H4     C      CM     50.0     115.0
+H4     C      CT     50.0     115.0
+H4     C      O      50.0     120.0
+H4     C      OH     50.0     120.0
+H5     C      N      50.0     120.0
+H5     C      O      50.0     119.0
+H5     C      OH     50.0     107.0
+H5     C      OS     50.0     107.0
+C      CA     CA     63.0     120.0
+C      CA     HA     50.0     120.0
+CA     CA     CA     63.0     120.0
+CA     CA     CB     63.0     120.0
+CA     CA     CT     70.0     120.0
+CA     CA     HA     50.0     120.0
+CA     CA     H4     50.0     120.0
+CA     CA     OH     70.0     120.0
+CA     CA     CN     63.0     120.0
+CB     CA     HA     50.0     120.0
+CB     CA     H4     50.0     120.0
+CB     CA     N2     70.0     123.5
+CB     CA     NC     70.0     117.3
+CM     CA     N2     70.0     120.1
+CM     CA     NC     70.0     121.5
+CN     CA     HA     50.0     120.0
+NA     CA     NC     70.0     123.3
+N2     CA     NA     70.0     116.0
+N2     CA     NC     70.0     119.3
+N2     CA     N2     70.0     120.0
+F      CA     CA     70.0     121.0
+CL     CA     CA     70.0     118.8
+BR     CA     CA     70.0     118.8
+I      CA     CA     70.0     118.8
+C      CB     CB     63.0     119.2
+C      CB     NB     70.0     130.0
+CA     CB     CB     63.0     117.3
+CA     CB     NB     70.0     132.4
+CB     CB     N*     70.0     106.2
+CB     CB     NB     70.0     110.4
+CB     CB     NC     70.0     127.7
+C*     CB     CA     63.0     134.9
+C*     CB     CN     63.0     108.8
+CA     CB     CN     63.0     116.2
+N*     CB     NC     70.0     126.2
+CD     CD     CM     63.0     120.0
+CD     CD     CT     70.0     120.0
+CM     CD     CT     70.0     120.0
+HA     CD     HA     35.0     119.0
+HA     CD     CD     50.0     120.0
+HA     CD     CM     50.0     120.0
+H5     CK     N*     50.0     123.0
+H5     CK     NB     50.0     123.0
+N*     CK     NB     70.0     113.9
+C      CM     CM     63.0     120.7
+C      CM     CT     70.0     119.7
+C      CM     HA     50.0     119.7
+C      CM     H4     50.0     119.7
+CA     CM     CM     63.0     117.0
+CA     CM     HA     50.0     123.3
+CA     CM     H4     50.0     123.3
+CM     CM     CT     70.0     119.7
+CM     CM     HA     50.0     119.7
+CM     CM     H4     50.0     119.7
+CM     CM     N*     70.0     121.2
+CM     CM     OS     80.0     125.0
+H4     CM     N*     50.0     119.1
+H4     CM     OS     50.0     113.0
+HA     CM     HA     35.0     120.0
+HA     CM     CD     50.0     120.0
+HA     CM     CT     50.0     120.0
+NC     CQ     NC     70.0     129.1
+H5     CQ     NC     50.0     115.4
+H1     CT     H1     35.0     109.5
+H1     CT     N*     50.0     109.5
+H1     CT     OH     50.0     109.5
+H1     CT     OS     50.0     109.5
+H1     CT     CM     50.0     109.5
+H1     CT     CY     50.0     110.0
+H1     CT     CZ     50.0     110.0
+H1     CT     N      50.0     109.5
+H1     CT     S      50.0     109.5
+H1     CT     SH     50.0     109.5
+H1     CT     N2     50.0     109.5
+H1     CT     NT     50.0     109.5
+H2     CT     H2     35.0     109.5
+H2     CT     N*     50.0     109.5
+H2     CT     OS     50.0     109.5
+HP     CT     HP     35.0     109.5
+HP     CT     N3     50.0     109.5
+HC     CT     HC     35.0     109.5
+HC     CT     CM     50.0     109.5
+HC     CT     CD     50.0     109.5
+HC     CT     CZ     50.0     110.0
+C      CT     H1     50.0     109.5
+C      CT     HP     50.0     109.5
+C      CT     HC     50.0     109.5
+C      CT     N      63.0     110.1
+C      CT     N3     80.0     111.2
+C      CT     CT     63.0     111.1
+C      CT     OS     60.0     109.5
+CA     CT     HC     50.0     109.5
+CC     CT     CT     63.0     113.1
+CC     CT     HC     50.0     109.5
+CM     CT     CT     63.0     111.0
+CM     CT     OS     50.0     109.5
+CT     CT     CT     40.0     109.5
+CT     CT     HC     50.0     109.5
+CT     CT     H1     50.0     109.5
+CT     CT     H2     50.0     109.5
+CT     CT     HP     50.0     109.5
+CT     CT     N*     50.0     109.5
+CT     CT     OH     50.0     109.5
+CT     CT     OS     50.0     109.5
+CT     CT     S      50.0     114.7
+CT     CT     SH     50.0     108.6
+CT     CT     CA     63.0     114.0
+CT     CT     N2     80.0     111.2
+CT     CT     N      80.0     109.7
+CT     CT     N3     80.0     111.2
+CT     CT     NT     80.0     111.2
+CT     CT     CY     63.0     110.0
+CT     CT     CZ     63.0     110.0
+C*     CT     CT     63.0     115.6
+C*     CT     HC     50.0     109.5
+OS     CT     OS     160.0     101.0
+OS     CT     CY     50.0     110.0
+OS     CT     CZ     50.0     110.0
+OS     CT     CZ     50.0     110.0
+OS     CT     CY     50.0     110.0
+OS     CT     N*     50.0     109.5
+F      CT     F      77.0     109.1
+F      CT     H1     50.0     109.5
+F      CT     CT     50.0     109.0
+F      CT     H2     50.0     109.5
+CL     CT     CT     50.0     108.5
+CL     CT     H1     50.0     108.5
+BR     CT     CT     50.0     108.0
+BR     CT     H1     50.0     106.5
+I      CT     CT     50.0     106.0
+CT     CC     NA     70.0     120.0
+CT     CC     CV     70.0     120.0
+CT     CC     NB     70.0     120.0
+CV     CC     NA     70.0     120.0
+CW     CC     NA     70.0     120.0
+CW     CC     NB     70.0     120.0
+CT     CC     CW     70.0     120.0
+H5     CR     NA     50.0     120.0
+H5     CR     NB     50.0     120.0
+NA     CR     NA     70.0     120.0
+NA     CR     NB     70.0     120.0
+CC     CV     H4     50.0     120.0
+CC     CV     NB     70.0     120.0
+H4     CV     NB     50.0     120.0
+CC     CW     H4     50.0     120.0
+CC     CW     NA     70.0     120.0
+C*     CW     H4     50.0     120.0
+C*     CW     NA     70.0     108.7
+H4     CW     NA     50.0     120.0
+CB     C*     CT     70.0     128.6
+CB     C*     CW     63.0     106.4
+CT     C*     CW     70.0     125.0
+CA     CN     CB     63.0     122.7
+CA     CN     NA     70.0     132.8
+CB     CN     NA     70.0     104.4
+CT     CY     NY     80.0     180.0
+CT     CZ     CZ     80.0     180.0
+CZ     CZ     HZ     50.0     180.0
+C      N      CT     50.0     121.9
+C      N      H      50.0     120.0
+CT     N      H      50.0     118.0
+CT     N      CT     50.0     118.0
+H      N      H      35.0     120.0
+C      N*     CM     70.0     121.6
+C      N*     CT     70.0     117.6
+C      N*     H      50.0     119.2
+CB     N*     CK     70.0     105.4
+CB     N*     CT     70.0     125.8
+CB     N*     H      50.0     125.8
+CK     N*     CT     70.0     128.8
+CK     N*     H      50.0     128.8
+CM     N*     CT     70.0     121.2
+CM     N*     H      50.0     121.2
+CA     N2     H      50.0     120.0
+CA     N2     CT     50.0     123.2
+CT     N2     H      50.0     118.4
+H      N2     H      35.0     120.0
+CT     N3     H      50.0     109.5
+CT     N3     CT     50.0     109.5
+H      N3     H      35.0     109.5
+CT     NT     H      50.0     109.5
+CT     NT     CT     50.0     109.5
+H      NT     H      35.0     109.5
+C      NA     C      70.0     126.4
+C      NA     CA     70.0     125.2
+C      NA     H      50.0     116.8
+CA     NA     H      50.0     118.0
+CC     NA     CR     70.0     120.0
+CC     NA     H      50.0     120.0
+CR     NA     CW     70.0     120.0
+CR     NA     H      50.0     120.0
+CW     NA     H      50.0     120.0
+CN     NA     CW     70.0     111.6
+CN     NA     H      50.0     123.1
+CB     NB     CK     70.0     103.8
+CC     NB     CR     70.0     117.0
+CR     NB     CV     70.0     117.0
+C      NC     CA     70.0     120.5
+CA     NC     CB     70.0     112.2
+CA     NC     CQ     70.0     118.6
+CB     NC     CQ     70.0     111.0
+C      OH     HO     50.0     113.0
+CA     OH     HO     50.0     113.0
+CT     OH     HO     55.0     108.5
+HO     OH     P      45.0     108.5
+C      OS     CT     60.0     117.0
+CM     OS     CT     60.0     117.0
+CT     OS     CT     60.0     109.5
+CT     OS     P      100.0     120.5
+P      OS     P      100.0     120.5
+O2     P      OH     45.0     108.2
+O2     P      O2     140.0     119.9
+O2     P      OS     100.0     108.2
+OH     P      OS     45.0     102.6
+OS     P      OS     45.0     102.6
+CT     S      CT     62.0     98.9
+CT     S      S      68.0     103.7
+CT     SH     HS     43.0     96.0
+HS     SH     HS     35.0     92.0
+CB     NB     LP     150.0     126.0
+CC     NB     LP     150.0     126.0
+CK     NB     LP     150.0     126.0
+CR     NB     LP     150.0     126.0
+CV     NB     LP     150.0     126.0
+C      NC     LP     150.0     120.0
+CA     NC     LP     150.0     120.0
+CB     NC     LP     150.0     120.0
+CQ     NC     LP     150.0     120.0
+CT     N3     LP     150.0     109.0
+H      N3     LP     150.0     109.0
+CT     NT     LP     150.0     109.0
+H      NT     LP     150.0     109.0
+C      O      LP     150.0     120.0
+LP     O      LP     150.0     120.0
+C      OH     LP     150.0     120.0
+CT     OH     LP     150.0     109.0
+HO     OH     LP     150.0     109.0
+LP     OH     LP     150.0     109.0
+C      OS     LP     150.0     109.0
+CM     OS     LP     150.0     109.0
+CT     OS     LP     150.0     109.0
+LP     OS     LP     150.0     109.0
+CT     S      LP     150.0     90.0
+CT     SH     LP     150.0     90.0
+P      OS     LP     150.0     109.0
+LP     S      LP     150.0     180.0
+LP     SH     LP     150.0     180.0
+HS     SH     LP     150.0     90.0
+~ileana; R1 (spin label-NO)
+~
+C1IL     C2IL    C3IL   70.0    111.835
+C2IL    C3IL N4IL      70.0 101.145
+C3IL   N4IL   C5IL    70.0   114.038
+N4IL    C5IL  C1IL     70.0   101.145
+C5IL   C1IL   C2IL    85.0   111.835
+C3IL   N4IL   O6IL    35.0   122.981
+C5IL   N4IL   O6IL    35.0   122.981
+C5IL   C1IL   C7IL    70.0   125.0
+C2IL   C1IL   C7IL    70.0   108.7
+C1IL   C7IL  S8IL     63.0   114.0
+H9IL  C2IL  C3IL      30.0    122.543
+H9IL  C2IL   C1IL     30.0        125.621
+H1    C3IL   C2IL     30.0   110.543
+H1    C3IL   N4IL     30.0   110.543
+H1   C3IL     H1      35.0    109.5     
+H1    C5IL   C1IL     30.0      113.178
+H1    C5IL    N4IL    30.0      113.17
+H1   C5IL     H1      35.0    109.5
+H1    C7IL   C1IL     50.0    109.5
+H1    C7IL  S8IL      50.0     109.5
+H1   C7IL     H1      35.0    109.5
+~now for patch1
+C7IL   S8IL     S     68.0     103.7
+CT     S        S8IL   62.0     98.9
+~for heme
+NB   FE   NP    50.000      90.000
+NB   FE   NO    50.000      90.000
+NB   FE   LC     0.000      90.000
+NB   FE   LO     0.000      90.000
+NP   FE   NP     0.000      90.000
+NO   FE   NO     0.000      90.000
+NO   FE   NP    50.000      90.000
+NO   FE   LC    45.000      90.000
+NO   FE   LO    45.000      90.000
+NP   FE   LC    45.000      90.000
+NP   FE   LO    45.000      90.000
+FE   NP   CC    30.000     127.400
+FE   NO   CC    30.000     127.400
+NO   CC   CB    70.000     110.300
+NP   CC   CB    70.000     110.300
+NO   CC   CD    70.000     125.500
+NP   CC   CD    70.000     125.500
+CC   NP   CC    70.000     105.400
+CC   NO   CC    70.000     105.400
+CC   CB   CB    70.000     107.000
+CC   CD   CC    70.000     124.100
+CB   CC   CD    70.000     125.400
+CC   CB   CT    70.000     124.900
+CB   CB   CT    70.000     128.200
+CC   CD   HC    30.000     118.000
+CR   NB   FE     0.000     110.000
+CV   NB   FE     0.000     110.000
+CB   CT   HC    35.000     109.500
+CB   CB   CY    70.000     128.200
+CB   CY   HC    35.000     120.000
+CB   CY   CX    70.000     120.000
+CY   CX   HC    35.000     120.000
+CC   CB   CY    70.000     124.900
+CX   CY   HC    35.000     120.000
+CB   CT   CT    63.000     114.000
+HC   CX   HC    35.000     120.000
+FE   LC   LO    35.000     180.000
+FE   LO   LO    35.000     135.000
+LP   SH   LP   600.000     160.000
+DONE
+TORSION
+~now TORSIONS list follows
+~particle names (4), then k1, k2, k3 -- in kcal/mol, then n, and then cos(gamma)
+~torsion energy =  k(n)*(1+cos(n*phi - gamma(n)))
+~positive n: one single term in the sum;
+~negative n: lines below should be included in the sum (same set of 4 atoms involved in dihedrals);
+~
+N      CT     C     N  0.0   1.700   0.0   -1    -1.00
+N      CT     C     N  0.0   2.000   0.0   2    -1.00
+C      N      CT    C  0.0   0.850   0.0   -2    -1.00
+C      N      CT    C  0.0   0.800   0.0   1    1.00
+CT     CT     N     C  0.0   0.500   0.0   -4    -1.00
+CT     CT     N     C  0.0   0.150   0.0   -3    -1.00
+CT     CT     N     C  0.0   0.530   0.0   1    1.00
+CT     CT     C     N  0.0   0.100   0.0   -4    1.00
+CT     CT     C     N  0.0   0.070   0.0   2    1.00
+H      N      C     O  0.0   2.500   0.0   -2    -1.00
+H      N      C     O  0.0   2.000   0.0   1    1.00
+CT     S      S     CT 0.0   3.500   0.0   -2    1.00
+CT     S      S     CT 0.0   0.600   0.0   3    1.00
+OH     P      OS    CT 0.0   0.250   0.0   -3    1.00
+OH     P      OS    CT 0.0   1.200   0.0   2    1.00
+OS     P      OS    CT 0.0   0.250   0.0   -3    1.00
+OS     P      OS    CT 0.0   1.200   0.0   2    1.00
+H1     CT     C     O  0.0   0.800   0.0   -1    1.00
+H1     CT     C     O  0.0   0.080   0.0   3    -1.00
+HC     CT     C     O  0.0   0.800   0.0   -1    1.00
+HC     CT     C     O  0.0   0.080   0.0   3    -1.00
+HC     CT     CT    HC 0.0   0.150   0.0   3    1.00
+HC     CT     CT    CT 0.0   0.160   0.0   3    1.00
+HC     CT     CM    CM 0.0   0.380   0.0   -3    -1.00
+HC     CT     CM    CM 0.0   1.150   0.0   1    1.00
+HO     OH     CT    CT 0.0   0.160   0.0   -3    1.00
+HO     OH     CT    CT 0.0   0.250   0.0   1    1.00
+HO     OH     C     O  0.0   2.300   0.0   -2    -1.00
+HO     OH     C     O  0.0   1.900   0.0   1    1.00
+CM     CM     C     O  0.0   2.175   0.0   -2    -1.00
+CM     CM     C     O  0.0   0.300   0.0   3    1.00
+CT     CM     CM    CT 0.0   6.650   0.0   -2    -1.00
+CT     CM     CM    CT 0.0   1.900   0.0   1    -1.00
+CT     CT     CT    CT 0.0   0.180   0.0   -3    1.00
+CT     CT     CT    CT 0.0   0.250   0.0   -2    -1.00
+CT     CT     CT    CT 0.0   0.200   0.0   1    -1.00
+CT     CT     NT    CT 0.0   0.300   0.0   -3    1.00
+CT     CT     NT    CT 0.0   0.480   0.0   2    -1.00
+CT     CT     OS    CT 0.0   0.383   0.0   -3    1.00
+CT     CT     OS    CT 0.0   0.100   0.0   2    -1.00
+CT     CT     OS    C  0.0   0.383   0.0   -3    1.00
+CT     CT     OS    C  0.0   0.800   0.0   1    -1.00
+CT     OS     CT    OS 0.0   0.100   0.0   -3    1.00
+CT     OS     CT    OS 0.0   0.850   0.0   -2    -1.00
+CT     OS     CT    OS 0.0   1.350   0.0   1    -1.00
+CT     OS     CT    N* 0.0   0.383   0.0   -3    1.00
+CT     OS     CT    N* 0.0   0.650   0.0   2    1.00
+CT     CZ     CZ    HZ 0.0   0.000   0.0   1    1.00
+O      C      OS    CT 0.0   2.700   0.0   -2    -1.00
+O      C      OS    CT 0.0   1.400   0.0   1    -1.00
+OS     CT     N*    CK 0.0   0.000   0.0   -2    1.00
+OS     CT     N*    CK 0.0   2.500   0.0   1    1.00
+OS     CT     N*    CM 0.0   0.000   0.0   -2    1.00
+OS     CT     N*    CM 0.0   2.500   0.0   1    1.00
+OS     CT     CT    OS 0.0   0.144   0.0   -3    1.00
+OS     CT     CT    OS 0.0   1.175   0.0   2    1.00
+OS     CT     CT    OH 0.0   0.144   0.0   -3    1.00
+OS     CT     CT    OH 0.0   1.175   0.0   2    1.00
+OH     CT     CT    OH 0.0   0.144   0.0   -3    1.00
+OH     CT     CT    OH 0.0   1.175   0.0   2    1.00
+F      CT     CT    F  0.0   1.200   0.0   1    -1.00
+CL     CT     CT    CL 0.0   0.450   0.0   1    -1.00
+BR     CT     CT    BR 0.0   0.000   0.0   1    -1.00
+H1     CT     CT    OS 0.0   0.250   0.0   1    1.00
+H1     CT     CT    OH 0.0   0.250   0.0   1    1.00
+H1     CT     CT    F  0.0   0.190   0.0   1    1.00
+H1     CT     CT    CL 0.0   0.250   0.0   1    1.00
+H1     CT     CT    BR 0.0   0.550   0.0   1    1.00
+HC     CT     CT    OS 0.0   0.250   0.0   1    1.00
+HC     CT     CT    OH 0.0   0.250   0.0   1    1.00
+HC     CT     CT    F  0.0   0.190   0.0   1    1.00
+HC     CT     CT    CL 0.0   0.250   0.0   1    1.00
+HC     CT     CT    BR 0.0   0.550   0.0   1    1.00
+H1     CT     NT    LP 0.0   0.000   0.0   3    1.00
+CT     CT     NT    LP 0.0   0.000   0.0   3    1.00
+CT     C      N     LP 0.0   0.000   0.0   2    -1.00
+O      C      N     LP 0.0   0.000   0.0   2    -1.00
+H1     CT     OH    LP 0.0   0.000   0.0   3    1.00
+CT     CT     OH    LP 0.0   0.000   0.0   3    1.00
+H1     CT     OS    LP 0.0   0.000   0.0   3    1.00
+H2     CT     OS    LP 0.0   0.000   0.0   3    1.00
+CT     CT     OS    LP 0.0   0.000   0.0   3    1.00
+CM     CM     OS    LP 0.0   0.000   0.0   2    -1.00
+HA     CM     OS    LP 0.0   0.000   0.0   2    -1.00
+H4     CM     OS    LP 0.0   0.000   0.0   2    -1.00
+X      C      C     X  0.0   3.625   0.0   2    -1.00
+X      C      CA    X  0.0   3.625   0.0   2    -1.00
+X      C      CB    X  0.0   3.000   0.0   2    -1.00
+X      C      CM    X  0.0   2.175   0.0   2    -1.00
+X      C      CT    X  0.0   0.000   0.0   2    1.00
+X      C      N     X  0.0   2.500   0.0   2    -1.00
+X      C      N*    X  0.0   1.450   0.0   2    -1.00
+X      C      NA    X  0.0   1.350   0.0   2    -1.00
+X      C      NC    X  0.0   4.000   0.0   2    -1.00
+X      C      O     X  0.0   2.800   0.0   2    -1.00
+X      C      OH    X  0.0   2.300   0.0   2    -1.00
+X      C      OS    X  0.0   2.700   0.0   2    -1.00
+X      CA     CA    X  0.0   3.625   0.0   2    -1.00
+X      CA     CB    X  0.0   3.500   0.0   2    -1.00
+X      CA     CM    X  0.0   2.550   0.0   2    -1.00
+X      CA     CN    X  0.0   3.625   0.0   2    -1.00
+X      CA     CT    X  0.0   0.000   0.0   2    1.00
+X      CA     N2    X  0.0   2.400   0.0   2    -1.00
+X      CA     NA    X  0.0   1.500   0.0   2    -1.00
+X      CA     NC    X  0.0   4.800   0.0   2    -1.00
+X      CA     OH    X  0.0   0.900   0.0   2    -1.00
+X      CB     CB    X  0.0   5.450   0.0   2    -1.00
+X      CB     CN    X  0.0   3.000   0.0   2    -1.00
+X      CB     N*    X  0.0   1.650   0.0   2    -1.00
+X      CB     NB    X  0.0   2.550   0.0   2    -1.00
+X      CB     NC    X  0.0   4.150   0.0   2    -1.00
+X      CC     CT    X  0.0   0.000   0.0   2    1.00
+X      CC     CV    X  0.0   5.150   0.0   2    -1.00
+X      CC     CW    X  0.0   5.375   0.0   2    -1.00
+X      CC     NA    X  0.0   1.400   0.0   2    -1.00
+X      CC     NB    X  0.0   2.400   0.0   2    -1.00
+X      CD     CD    X  0.0   1.000   0.0   2    -1.00
+X      CD     CT    X  0.0   0.000   0.0   2    1.00
+X      CD     CM    X  0.0   6.650   0.0   2    -1.00
+X      CK     N*    X  0.0   1.700   0.0   2    -1.00
+X      CK     NB    X  0.0  10.000   0.0   2    -1.00
+X      CM     CM    X  0.0   6.650   0.0   2    -1.00
+X      CM     CT    X  0.0   0.000   0.0   3    1.00
+X      CM     N*    X  0.0   1.850   0.0   2    -1.00
+X      CM     OS    X  0.0   1.050   0.0   2    -1.00
+X      CN     NA    X  0.0   1.525   0.0   2    -1.00
+X      CQ     NC    X  0.0   6.800   0.0   2    -1.00
+X      CT     CT    X  0.0   0.156   0.0   3    1.00
+X      CT     CY    X  0.0   0.000   0.0   1    1.00
+X      CT     CZ    X  0.0   0.000   0.0   1    1.00
+X      CT     N     X  0.0   0.000   0.0   2    1.00
+X      CT     N*    X  0.0   0.000   0.0   2    1.00
+X      CT     N2    X  0.0   0.000   0.0   3    1.00
+X      CT     NT    X  0.0   0.300   0.0   3    1.00
+X      CT     N3    X  0.0   0.156   0.0   3    1.00
+X      CT     OH    X  0.0   0.167   0.0   3    1.00
+X      CT     OS    X  0.0   0.383   0.0   3    1.00
+X      CT     S     X  0.0   0.333   0.0   3    1.00
+X      CT     SH    X  0.0   0.250   0.0   3    1.00
+X      C*     CB    X  0.0   1.675   0.0   2    -1.00
+X      C*     CT    X  0.0   0.000   0.0   2    1.00
+X      C*     CW    X  0.0   6.525   0.0   2    -1.00
+X      CR     NA    X  0.0   2.325   0.0   2    -1.00
+X      CR     NB    X  0.0   5.000   0.0   2    -1.00
+X      CV     NB    X  0.0   2.400   0.0   2    -1.00
+X      CW     NA    X  0.0   1.500   0.0   2    -1.00
+X      OH     P     X  0.0   0.250   0.0   3    1.00
+X      OS     P     X  0.0   0.250   0.0   3    1.00
+~for heme
+X    NB    FE    X   0.0  0.000  0.0       2       1.00   1
+X    NO    FE    X   0.0  0.000  0.0       2      -1.00   1
+X    NP    FE    X   0.0  0.000   0.0      2      -1.00   1
+X    NO    CC    X   0.0  5.700   0.0      2      -1.00   4
+X    NP    CC    X   0.0  5.700  0.0       2      -1.00   4
+X    CC    CB    X   0.0  3.150   0.0      2      -1.00   4
+X    CB    CB    X   0.0  21.500  0.0        2  -1.00   4
+X    CD    CC    X   0.0  7.900   0.0        2   -1.00   4
+X    CB    CT    X    0.0  0.000  0.0        2   -1.00   1
+X    CB    CY    X    0.0  0.000  0.0         2  -1.00   4
+X    CY    CX    X   0.0   30.000  0.0         2  -1.00   4
+X    FE    LO    X   0.0   0.0     0.0        2   -1.00   1
+DONE
+IMPROPER
+~
+~ now IMPROPERS list follows
+~same format as for torsions;
+~ 4 atoms, then k in kcal/mol, then n. and then cos(gamma)
+~
+~
+N*     CB     CK    CT    1.0    2   -1.00
+N*     C      CM    CT    1.0    2   -1.00
+CM     C      CM    CT    1.1    2   -1.00
+C      O      CT    OH   10.5    2   -1.00
+CC     CV     NA    CT    1.1    2   -1.00
+CC     CW     NB    CT    1.1    2   -1.00
+CC     CW     NA    CT    1.1    2   -1.00
+C*     CB     CW    CT    1.1    2   -1.00
+CA     CA     CA    CT    1.1    2   -1.00
+CM     CM     C     CT    1.1    2   -1.00
+CA     CM     NC    N2    1.1    2   -1.00
+CA     NC     CB    N2    1.1    2   -1.00
+CA     NC     NA    N2    1.1    2   -1.00
+C      CA     CA    OH    1.1    2   -1.00
+CA     CA     CA    OH    1.1    2   -1.00
+C      O      H5    OH    1.1    2   -1.00
+C      O      H5    OS    1.1    2   -1.00
+CM     CT     CM    HA    1.1    2   -1.00
+CA     CA     CA    BR    1.1    2   -1.00
+C      H4     CM    O     1.1    2   -1.00
+N      CT     C     H     1.1    2   -1.00
+N      CT     C     O     1.1    2   -1.00
+C      X      X     O    10.5    2   -1.00
+C      O2     X     O2   10.5    2   -1.00
+N      X      X     H     1.0    2   -1.00
+N2     X      X     H     1.0    2   -1.00
+NA     X      X     H     1.0    2   -1.00
+CA     N2     X     N2   10.5    2   -1.00
+N      CT     X     CT    1.0    2   -1.00
+CA     X      X     HA    1.1    2   -1.00
+CW     X      X     H4    1.1    2   -1.00
+CR     X      X     H5    1.1    2   -1.00
+CV     X      X     H4    1.1    2   -1.00
+CQ     X      X     H5    1.1    2   -1.00
+CK     X      X     H5    1.1    2   -1.00
+CM     X      X     H4    1.1    2   -1.00
+CM     X      X     HA    1.1    2   -1.00
+CA     X      X     H4    1.1    2   -1.00
+CA     X      X     H5    1.1    2   -1.00
+~ileana -- for TRP
+CN     NA     CB    CA    1.1    2   -1.00
+CB     C*     CN    CA    1.1    2   -1.00
+~ileana; spin label-NO; R1
+~
+~
+C1IL   C2IL   C5IL   C7IL   1.1    2   -1.00
+N4IL   C3IL   C5IL   O6IL   1.1    2   -1.00
+C2IL  C3IL  C1IL  H9IL      1.1    2   -1.00
+~added for phospho-diester bond in nucleic acids
+P     O2    O2    OS     10.5    2     -1.00
+CB    X      X   CB      1.1     2     -1.00
+CB    N*    CB    NC     1.1     2      -1.00
+~for heme
+X    X    CC   X  1.0   2   -1.0
+X    X    CB   X  1.0   2   -1.0
+X    X    NP   X  1.0   2   -1.0
+X    X    NO   X  1.0   2   -1.0
+CX   CY   HC   HC 10.5  2   -1.0 
+DONE
+*EOD
+
+
+
+
+
